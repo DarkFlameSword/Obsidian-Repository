@@ -1,5 +1,5 @@
 {
-  "remoteURL": "git@github.com:DarkFlameSword/Obsidian-Repository.git",
+  "remoteURL": "https://github.com/DarkFlameSword/Obsidian-Repository.git",
   "gitLocation": "D:/Git/Git/bin/",
   "syncinterval": 4,
   "isSyncOnLoad": true,
