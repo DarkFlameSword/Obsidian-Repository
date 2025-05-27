@@ -1,0 +1,206 @@
+{
+  "main": {
+    "id": "b8a964c7b352ff57",
+    "type": "split",
+    "children": [
+      {
+        "id": "27d5532bf0d52f10",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1a2be713c6c5325f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Quiz 3-Review before the quiz.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Quiz 3-Review before the quiz"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f721a3b9fbec3e7d",
+    "type": "split",
+    "children": [
+      {
+        "id": "8feec2a290c7f05a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b6b5238e248641dc",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "2c0a5912ec561244",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "[\"tags\"]",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "61dbfaf989bdc044",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "e4962ae75ca05781",
+    "type": "split",
+    "children": [
+      {
+        "id": "9ba68ea273022436",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "307f6adada531873",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Quiz 3-Review before the quiz.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Quiz 3-Review before the quiz 的反向链接列表"
+            }
+          },
+          {
+            "id": "a8f1ef3a577e4a75",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Quiz 3-Review before the quiz.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Quiz 3-Review before the quiz 的出链列表"
+            }
+          },
+          {
+            "id": "9d757852c1fd74d5",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "3dccc8213aa821ef",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Quiz 3-Review before the quiz.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Quiz 3-Review before the quiz 的大纲"
+            }
+          },
+          {
+            "id": "577e343e9f33d0ca",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "fc5b16608a953896",
+            "type": "leaf",
+            "state": {
+              "type": "file-properties",
+              "state": {
+                "file": "Quiz 3-Review before the quiz.md"
+              },
+              "icon": "lucide-info",
+              "title": "Quiz 3-Review before the quiz的笔记属性"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "github-sync:Sync with Remote": false,
+      "canvas:新建白板": false,
+      "graph:查看关系图谱": false,
+      "switcher:打开快速切换": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "b6b5238e248641dc",
+  "lastOpenFiles": [
+    "Quiz 3-Review before the quiz.md",
+    "未命名.canvas",
+    "Pasted image 20250527200452.png",
+    "Pasted image 20250527200556.png",
+    "欢迎.md"
+  ]
+}
