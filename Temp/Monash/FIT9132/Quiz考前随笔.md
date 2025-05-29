@@ -20,4 +20,4 @@ TO_DATE(): TO_DATE('2025/5/29 15:43:23', 'YYYY/MM/DD HH24:MI:SS')
 
 # ATTENTION
 the alias in SELECT clause should only be used in ORDER BY and some LIMIT clauses
-the alias in FROM cla
+the alias in FROM clause could be used in everywhere
