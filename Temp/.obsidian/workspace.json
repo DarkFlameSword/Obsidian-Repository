@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Quiz 3-Review before the quiz.md",
+                "file": "Monash/FIT9132/Quiz考前随笔.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Quiz 3-Review before the quiz"
+              "title": "Quiz考前随笔"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Quiz 3-Review before the quiz.md",
+                "file": "Monash/FIT9132/Quiz考前随笔.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Quiz 3-Review before the quiz 的大纲"
+              "title": "Quiz考前随笔 的大纲"
             }
           },
           {
@@ -171,14 +171,14 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Quiz 3-Review before the quiz.md"
+                "file": "Monash/FIT9132/Quiz考前随笔.md"
               },
               "icon": "lucide-info",
-              "title": "Quiz 3-Review before the quiz的笔记属性"
+              "title": "Quiz考前随笔的笔记属性"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -197,11 +197,17 @@
   },
   "active": "1a2be713c6c5325f",
   "lastOpenFiles": [
+    "未命名.md",
+    "Monash/FIT9132/Quiz考前随笔.md",
+    "Monash/FIT9132",
+    "Monash/FIT9136",
+    "随笔",
+    "Monash/FIT9136/Quiz 3-Review before the quiz.md",
+    "Monash",
     "2025-05-27.md",
-    "Quiz 3-Review before the quiz.md",
     "未命名.canvas",
     "Pasted image 20250527200452.png",
-    "Pasted image 20250527200556.png",
+    "Monash/FIT9136/Pasted image 20250527200556.png",
     "欢迎.md"
   ]
 }
