@@ -8,8 +8,6 @@
 		{"id":"650e452cfde0cb35","x":-150,"y":230,"width":250,"height":60,"type":"text","text":"买电话卡,枕头,myki公交卡"},
 		{"id":"6e57f80c1e8b5c2a","x":-480,"y":420,"width":250,"height":60,"type":"text","text":"第二天"},
 		{"id":"2d0e57512add42e3","x":-480,"y":580,"width":250,"height":60,"type":"text","text":"第三天"},
-		{"id":"d4678b3528811ab2","x":-199,"y":699,"width":250,"height":60,"type":"text","text":"淘金小镇"},
-		{"id":"55a19f282f34a697","x":199,"y":584,"width":250,"height":60,"type":"text","text":"Maria Island"},
 		{"id":"885d9dc3256bb1df","x":-480,"y":729,"width":250,"height":60,"type":"text","text":"第四天"},
 		{"id":"2e8f1b451769b2e5","x":-480,"y":900,"width":250,"height":60,"type":"text","text":"第五天"},
 		{"id":"169b6e76c3c177fd","x":-480,"y":1040,"width":250,"height":60,"type":"text","text":"第六天"},
@@ -19,12 +17,14 @@
 		{"id":"1a3668c7088e19b9","type":"text","text":"第十天","x":-480,"y":1720,"width":250,"height":60},
 		{"id":"e3603f4099e901c9","type":"text","text":"第十一天","x":-480,"y":1860,"width":250,"height":60},
 		{"id":"33f380b585d980af","type":"text","text":"第十二天(墨尔本机场回国)","x":-480,"y":2020,"width":250,"height":60},
-		{"id":"485ccc1d6ccc0b9b","x":545,"y":699,"width":250,"height":60,"type":"text","text":"1000 Steps Kokoda Track Outdoor Gym"},
 		{"id":"f1e3df7f2652db16","x":545,"y":840,"width":250,"height":60,"type":"text","text":"Mornington 温泉"},
-		{"id":"54d999d757a1edbc","x":160,"y":796,"width":250,"height":60,"type":"text","text":"healesville Sanctuary(zoo victoria)"},
 		{"id":"c5ca346ee3363e58","x":-180,"y":420,"width":250,"height":60,"type":"text","text":"Red Bluff Lookout沿海岸向下走"},
+		{"id":"55a19f282f34a697","x":220,"y":669,"width":250,"height":60,"type":"text","text":"Maria Island"},
+		{"id":"d4678b3528811ab2","x":-176,"y":729,"width":250,"height":60,"type":"text","text":"sovereignhill淘金小镇"},
+		{"id":"485ccc1d6ccc0b9b","x":-176,"y":900,"width":250,"height":60,"type":"text","text":"1000 Steps Kokoda Track Outdoor Gym"},
+		{"id":"be84980062246e70","x":-180,"y":1400,"width":250,"height":60,"type":"text","text":"Yering Station Winery红酒庄园"},
 		{"id":"adc4a758409e7726","x":-180,"y":580,"width":250,"height":60,"type":"text","text":"Monash"},
-		{"id":"be84980062246e70","x":-180,"y":900,"width":250,"height":60,"type":"text","text":"红酒庄园"}
+		{"id":"54d999d757a1edbc","x":-180,"y":1200,"width":250,"height":60,"type":"text","text":"healesville Sanctuary(zoo victoria)"}
 	],
 	"edges":[
 		{"id":"dc5adedfb012f6a4","fromNode":"d5b72924ec209c3f","fromSide":"right","toNode":"504366f8a10899ed","toSide":"left"},
