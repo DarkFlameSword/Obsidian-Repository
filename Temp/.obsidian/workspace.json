@@ -4,20 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "27d5532bf0d52f10",
+        "id": "13314fe07e7217d4",
         "type": "tabs",
         "children": [
           {
-            "id": "1a2be713c6c5325f",
+            "id": "c89bb6f8e9ade5d9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "canvas",
               "state": {
-                "file": "随笔/未命名.md",
-                "mode": "source",
-                "source": false
+                "file": "随笔/未命名.canvas",
+                "viewState": {
+                  "x": 92,
+                  "y": 4,
+                  "zoom": 0
+                }
               },
-              "icon": "lucide-file",
+              "icon": "lucide-layout-dashboard",
               "title": "未命名"
             }
           }
@@ -171,7 +174,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "随笔/未命名.md"
+                "file": "随笔/未命名.canvas"
               },
               "icon": "lucide-info",
               "title": "未命名的笔记属性"
@@ -195,12 +198,14 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "1a2be713c6c5325f",
+  "active": "c89bb6f8e9ade5d9",
   "lastOpenFiles": [
+    "随笔/未命名.md",
+    "随笔/未命名.canvas",
+    "Pasted image 20250530115905.png",
     "Pasted image 20250530115826.png",
     "Pasted image 20250530112857.png",
     "Monash/FIT9132/Quiz考前随笔.md",
-    "随笔/未命名.md",
     "未命名.md",
     "Monash/FIT9132",
     "Monash/FIT9136",
