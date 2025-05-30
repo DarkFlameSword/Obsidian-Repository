@@ -12,7 +12,8 @@
 		{"id":"485ccc1d6ccc0b9b","x":-25,"y":360,"width":250,"height":60,"type":"text","text":"1000 Steps Kokoda Track Outdoor Gym"},
 		{"id":"c5ca346ee3363e58","x":-54,"y":592,"width":250,"height":60,"type":"text","text":"Red Bluff Lookout沿海岸向下走"},
 		{"id":"d4678b3528811ab2","x":-199,"y":699,"width":250,"height":60,"type":"text","text":"淘金小镇"},
-		{"id":"be84980062246e70","x":-192,"y":796,"width":250,"height":60,"type":"text","text":"红酒庄园"}
+		{"id":"be84980062246e70","x":-192,"y":796,"width":250,"height":60,"type":"text","text":"红酒庄园"},
+		{"id":"f1e3df7f2652db16","x":128,"y":739,"width":250,"height":60,"type":"text","text":"Mornington 温泉"}
 	],
 	"edges":[
 		{"id":"dc5adedfb012f6a4","fromNode":"d5b72924ec209c3f","fromSide":"right","toNode":"504366f8a10899ed","toSide":"left"},
