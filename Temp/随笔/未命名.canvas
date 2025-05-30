@@ -1,7 +1,19 @@
 {
 	"nodes":[
-		{"id":"504366f8a10899ed","x":15,"y":-51,"width":250,"height":60,"type":"text","text":""},
-		{"id":"d5b72924ec209c3f","x":-380,"y":-40,"width":250,"height":60,"type":"text","text":"# 主要活动地区"}
+		{"id":"54d999d757a1edbc","x":-194,"y":393,"width":250,"height":60,"type":"text","text":""},
+		{"id":"504366f8a10899ed","x":-60,"y":-100,"width":250,"height":60,"type":"text","text":"墨尔本city"},
+		{"id":"a90b6bc9cd50f230","x":-60,"y":-10,"width":250,"height":60,"type":"text","text":"我家附近(Monash校区)"},
+		{"id":"f674f130e17069c1","x":-60,"y":80,"width":250,"height":60,"type":"text","text":"悉尼"},
+		{"id":"d5b72924ec209c3f","x":-400,"y":-10,"width":250,"height":60,"type":"text","text":"# 主要活动地区"},
+		{"id":"d6af3fc78c95f3a9","x":-480,"y":260,"width":250,"height":60,"type":"text","text":"第一天(落地下飞机)"},
+		{"id":"650e452cfde0cb35","x":-150,"y":230,"width":250,"height":60,"type":"text","text":"买电话卡,枕头,myki公交卡"},
+		{"id":"6e57f80c1e8b5c2a","x":-480,"y":420,"width":250,"height":60,"type":"text","text":"第二天"},
+		{"id":"2d0e57512add42e3","x":-480,"y":580,"width":250,"height":60,"type":"text","text":"第三天"}
 	],
-	"edges":[]
+	"edges":[
+		{"id":"dc5adedfb012f6a4","fromNode":"d5b72924ec209c3f","fromSide":"right","toNode":"504366f8a10899ed","toSide":"left"},
+		{"id":"0ac41c46ea209540","fromNode":"d5b72924ec209c3f","fromSide":"right","toNode":"a90b6bc9cd50f230","toSide":"left"},
+		{"id":"c40283c53a478110","fromNode":"d5b72924ec209c3f","fromSide":"right","toNode":"f674f130e17069c1","toSide":"left"},
+		{"id":"f42f8e576f3fa93e","fromNode":"d6af3fc78c95f3a9","fromSide":"right","toNode":"650e452cfde0cb35","toSide":"left"}
+	]
 }
