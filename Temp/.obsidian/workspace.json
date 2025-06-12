@@ -11,17 +11,34 @@
             "id": "c89bb6f8e9ade5d9",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "随笔/未命名.canvas",
-                "viewState": {
-                  "x": 59.94689126107119,
-                  "y": 1211.3648651944268,
-                  "zoom": -0.6666666666666667
-                }
+                "file": "随笔/送礼统计.md",
+                "mode": "source",
+                "source": true
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "未命名"
+              "icon": "lucide-file",
+              "title": "送礼统计"
+            }
+          }
+        ]
+      },
+      {
+        "id": "17ca7420eaf4976d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "19c5a8bae17fcc08",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "随笔/送礼统计.md",
+                "mode": "preview",
+                "source": true
+              },
+              "icon": "lucide-file",
+              "title": "送礼统计"
             }
           }
         ]
@@ -56,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "[\"tags\"]",
+                "query": "[\"author\"]",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -145,13 +162,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Monash/FIT9132/Quiz考前随笔.md",
+                "file": "随笔/送礼统计.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Quiz考前随笔 的大纲"
+              "title": "送礼统计 的大纲"
             }
           },
           {
@@ -174,10 +191,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "随笔/未命名.canvas"
+                "file": "随笔/送礼统计.md"
               },
               "icon": "lucide-info",
-              "title": "未命名的笔记属性"
+              "title": "送礼统计的笔记属性"
             }
           }
         ],
@@ -200,8 +217,8 @@
   },
   "active": "c89bb6f8e9ade5d9",
   "lastOpenFiles": [
-    "随笔/未命名.md",
     "随笔/未命名.canvas",
+    "随笔/送礼统计.md",
     "Pasted image 20250530115905.png",
     "Pasted image 20250530115826.png",
     "Pasted image 20250530112857.png",
