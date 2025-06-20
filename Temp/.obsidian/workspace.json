@@ -206,6 +206,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "canvas:新建白板": false,
       "graph:查看关系图谱": false,
       "switcher:打开快速切换": false,
