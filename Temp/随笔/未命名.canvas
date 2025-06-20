@@ -29,10 +29,13 @@
 		{"id":"a7b9246effa36d28","type":"text","text":"### 待定可选","x":320,"y":1010,"width":250,"height":60},
 		{"id":"55a19f282f34a697","type":"text","text":"Maria Island","x":720,"y":1010,"width":250,"height":60},
 		{"id":"d2124791dff14f70","type":"text","text":"### 第九天 7.4","x":-480,"y":1549,"width":250,"height":60},
-		{"id":"8003bc482c4bbc0a","x":500,"y":1291,"width":250,"height":60,"type":"text","text":"## 携带物品提醒"},
 		{"id":"0d708d7aae6ab46f","x":880,"y":1261,"width":250,"height":60,"type":"text","text":"枕头(如果不想用我的枕头的话,我平时是垫了枕巾的)"},
 		{"id":"685f3c86f2f0d98f","x":880,"y":1351,"width":250,"height":60,"type":"text","text":"浴巾(如果不习惯澳洲这边粗浴巾)"},
-		{"id":"5a55eac2dadbff03","x":880,"y":1460,"width":250,"height":60,"type":"text","text":"牙刷,牙膏(必带)"}
+		{"id":"5a55eac2dadbff03","x":880,"y":1460,"width":250,"height":60,"type":"text","text":"牙刷,牙膏(必带)"},
+		{"id":"3032240355ffd84c","x":880,"y":1579,"width":250,"height":60,"type":"text","text":"厚底鞋子(登山用)"},
+		{"id":"da9817975165133a","x":880,"y":1690,"width":250,"height":60,"type":"text","text":"换洗衣物,厚的外套"},
+		{"id":"8003bc482c4bbc0a","x":445,"y":1460,"width":250,"height":60,"type":"text","text":"## 携带物品提醒"},
+		{"id":"78fb857725312610","x":-96,"y":900,"width":250,"height":60,"type":"text","text":"Victoria Market"}
 	],
 	"edges":[
 		{"id":"dc5adedfb012f6a4","fromNode":"d5b72924ec209c3f","fromSide":"right","toNode":"504366f8a10899ed","toSide":"left"},
@@ -52,6 +55,11 @@
 		{"id":"3b62437b6da04737","fromNode":"d05c77fff38ae2d3","fromSide":"bottom","toNode":"fbea5eae071789c0","toSide":"top"},
 		{"id":"5c1f330246e66556","fromNode":"6e57f80c1e8b5c2a","fromSide":"right","toNode":"c5ca346ee3363e58","toSide":"left"},
 		{"id":"e772ad6d8ae9bca3","fromNode":"650e452cfde0cb35","fromSide":"right","toNode":"adc4a758409e7726","toSide":"left"},
-		{"id":"ecb226cdeb71706e","fromNode":"a7b9246effa36d28","fromSide":"right","toNode":"55a19f282f34a697","toSide":"left"}
+		{"id":"ecb226cdeb71706e","fromNode":"a7b9246effa36d28","fromSide":"right","toNode":"55a19f282f34a697","toSide":"left"},
+		{"id":"62ae2cd06a4639fc","fromNode":"8003bc482c4bbc0a","fromSide":"right","toNode":"0d708d7aae6ab46f","toSide":"left"},
+		{"id":"c32ae10cd49977bc","fromNode":"8003bc482c4bbc0a","fromSide":"right","toNode":"685f3c86f2f0d98f","toSide":"left"},
+		{"id":"289495e10fd5e125","fromNode":"8003bc482c4bbc0a","fromSide":"right","toNode":"5a55eac2dadbff03","toSide":"left"},
+		{"id":"11452435444d8480","fromNode":"8003bc482c4bbc0a","fromSide":"right","toNode":"3032240355ffd84c","toSide":"left"},
+		{"id":"9f1e70a5fbb81c40","fromNode":"8003bc482c4bbc0a","fromSide":"right","toNode":"da9817975165133a","toSide":"left"}
 	]
 }
