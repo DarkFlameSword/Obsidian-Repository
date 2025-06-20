@@ -1,10 +1,10 @@
 {
 	"nodes":[
-		{"id":"d6af3fc78c95f3a9","type":"text","text":"### 第一天(落地下飞机)","x":-480,"y":240,"width":250,"height":80},
-		{"id":"6e57f80c1e8b5c2a","type":"text","text":"### 第二天","x":-480,"y":420,"width":250,"height":60},
-		{"id":"2d0e57512add42e3","type":"text","text":"### 第三天","x":-480,"y":580,"width":250,"height":60},
-		{"id":"885d9dc3256bb1df","type":"text","text":"### 第四天","x":-480,"y":729,"width":250,"height":60},
-		{"id":"2e8f1b451769b2e5","type":"text","text":"### 第五天","x":-480,"y":900,"width":250,"height":60},
+		{"id":"d6af3fc78c95f3a9","type":"text","text":"### 第一天(落地下飞机) 6.26","x":-480,"y":240,"width":250,"height":80},
+		{"id":"6e57f80c1e8b5c2a","type":"text","text":"### 第二天 6.27","x":-480,"y":420,"width":250,"height":60},
+		{"id":"2d0e57512add42e3","type":"text","text":"### 第三天 6.28","x":-480,"y":580,"width":250,"height":60},
+		{"id":"885d9dc3256bb1df","type":"text","text":"### 第四天 6.29","x":-480,"y":729,"width":250,"height":60},
+		{"id":"2e8f1b451769b2e5","type":"text","text":"### 第五天 6.30","x":-480,"y":900,"width":250,"height":60},
 		{"id":"169b6e76c3c177fd","type":"text","text":"### 第六天","x":-480,"y":1040,"width":250,"height":60},
 		{"id":"d05c77fff38ae2d3","type":"text","text":"### 第七天","x":-480,"y":1200,"width":250,"height":60},
 		{"id":"fbea5eae071789c0","type":"text","text":"### 第八天","x":-480,"y":1400,"width":250,"height":60},
@@ -28,7 +28,7 @@
 		{"id":"f1e3df7f2652db16","type":"text","text":"Mornington 温泉","x":-100,"y":900,"width":250,"height":60},
 		{"id":"650e452cfde0cb35","type":"text","text":"买电话卡,枕头,myki公交卡","x":-96,"y":250,"width":250,"height":60},
 		{"id":"adc4a758409e7726","type":"text","text":"Monash","x":300,"y":250,"width":250,"height":60},
-		{"id":"a7b9246effa36d28","x":320,"y":1010,"width":250,"height":60,"type":"text","text":"### 待定可选"},
+		{"id":"a7b9246effa36d28","type":"text","text":"### 待定可选","x":320,"y":1010,"width":250,"height":60},
 		{"id":"55a19f282f34a697","type":"text","text":"Maria Island","x":720,"y":1010,"width":250,"height":60}
 	],
 	"edges":[
