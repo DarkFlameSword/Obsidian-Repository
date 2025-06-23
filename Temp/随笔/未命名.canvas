@@ -19,7 +19,6 @@
 		{"id":"d5b72924ec209c3f","type":"text","text":"# 主要活动地区","x":-1200,"y":1080,"width":250,"height":60},
 		{"id":"a90b6bc9cd50f230","type":"text","text":"我家附近(Monash校区)","x":-860,"y":1080,"width":250,"height":60},
 		{"id":"f674f130e17069c1","type":"text","text":"悉尼","x":-860,"y":1170,"width":250,"height":60},
-		{"id":"be84980062246e70","type":"text","text":"Yering Station Winery红酒庄园","x":-100,"y":1200,"width":250,"height":60},
 		{"id":"c5ca346ee3363e58","type":"text","text":"Red Bluff Lookout沿海岸向下走","x":-100,"y":420,"width":250,"height":60},
 		{"id":"650e452cfde0cb35","type":"text","text":"买电话卡,myki公交卡","x":-96,"y":250,"width":250,"height":60},
 		{"id":"adc4a758409e7726","type":"text","text":"Monash","x":300,"y":250,"width":250,"height":60},
@@ -33,7 +32,7 @@
 		{"id":"78fb857725312610","type":"text","text":"Victoria Market","x":-100,"y":729,"width":250,"height":60},
 		{"id":"d4678b3528811ab2","type":"text","text":"sovereignhill淘金小镇","x":-100,"y":580,"width":250,"height":60},
 		{"id":"485ccc1d6ccc0b9b","type":"text","text":"1000 Steps Kokoda Track Outdoor Gym","x":-100,"y":900,"width":250,"height":60},
-		{"id":"54d999d757a1edbc","type":"text","text":"healesville Sanctuary(zoo victoria)","x":-100,"y":1040,"width":250,"height":60}
+		{"id":"be84980062246e70","type":"text","text":"Yering Station Winery红酒庄园","x":-100,"y":1040,"width":250,"height":60}
 	],
 	"edges":[
 		{"id":"dc5adedfb012f6a4","fromNode":"d5b72924ec209c3f","fromSide":"right","toNode":"504366f8a10899ed","toSide":"left"},
