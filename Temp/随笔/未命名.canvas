@@ -32,7 +32,8 @@
 		{"id":"78fb857725312610","type":"text","text":"Victoria Market","x":-100,"y":729,"width":250,"height":60},
 		{"id":"d4678b3528811ab2","type":"text","text":"sovereignhill淘金小镇","x":-100,"y":580,"width":250,"height":60},
 		{"id":"485ccc1d6ccc0b9b","type":"text","text":"1000 Steps Kokoda Track Outdoor Gym","x":-100,"y":900,"width":250,"height":60},
-		{"id":"be84980062246e70","type":"text","text":"Yering Station Winery红酒庄园","x":-100,"y":1040,"width":250,"height":60}
+		{"id":"be84980062246e70","type":"text","text":"Yering Station Winery红酒庄园","x":-100,"y":1040,"width":250,"height":60},
+		{"id":"ca5c6c8a0e24e218","x":-196,"y":1181,"width":250,"height":60,"type":"text","text":"打枪\n"}
 	],
 	"edges":[
 		{"id":"dc5adedfb012f6a4","fromNode":"d5b72924ec209c3f","fromSide":"right","toNode":"504366f8a10899ed","toSide":"left"},
