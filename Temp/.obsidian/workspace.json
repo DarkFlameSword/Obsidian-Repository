@@ -11,17 +11,14 @@
             "id": "c89bb6f8e9ade5d9",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "随笔/未命名.canvas",
-                "viewState": {
-                  "x": 158.3621850272026,
-                  "y": 781.5203553403331,
-                  "zoom": 0.016232327987736883
-                }
+                "file": "随笔/送礼统计.md",
+                "mode": "preview",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "未命名"
+              "icon": "lucide-file",
+              "title": "送礼统计"
             }
           }
         ]
@@ -174,10 +171,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "随笔/未命名.canvas"
+                "file": "随笔/送礼统计.md"
               },
               "icon": "lucide-info",
-              "title": "未命名的笔记属性"
+              "title": "送礼统计的笔记属性"
             }
           }
         ],
@@ -201,8 +198,8 @@
   },
   "active": "c89bb6f8e9ade5d9",
   "lastOpenFiles": [
-    "随笔/送礼统计.md",
     "随笔/未命名.canvas",
+    "随笔/送礼统计.md",
     "Pasted image 20250530115905.png",
     "Pasted image 20250530115826.png",
     "Pasted image 20250530112857.png",
