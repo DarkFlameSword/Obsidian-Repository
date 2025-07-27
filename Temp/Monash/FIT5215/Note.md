@@ -49,3 +49,7 @@ aliases:
 个人理解: 计算预测结果与真实结果之间的差距, CE越大预测结果越离谱
 
 **H(p, q) = - Σ p(x) * log₂(q(x))**
+
+![[Pasted image 20250727174454.png]]
+==Attention:==
+1. CrossEntropy(p, q) = Entropy(p) + KL_Divergence(p || q) **所以最小化交叉熵就等价于最小化KL散度**
