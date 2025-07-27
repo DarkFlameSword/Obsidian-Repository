@@ -17,3 +17,4 @@ aliases:
 ![[Pasted image 20250727164902.png]]
 ## Transpose
 ![[Pasted image 20250727165020.png]]
+## p-norm范数
