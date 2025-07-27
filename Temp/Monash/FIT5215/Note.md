@@ -26,4 +26,6 @@ aliases:
 ![[Pasted image 20250727170036.png]]
 ### The Angel between Two Vectors
 ![[Pasted image 20250727170151.png]]
-                   
+# Matrix 2D
+![[Pasted image 20250727171416.png]]
+==Attention==
