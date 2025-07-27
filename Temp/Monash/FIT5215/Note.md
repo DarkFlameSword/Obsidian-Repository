@@ -26,3 +26,4 @@ aliases:
 ![[Pasted image 20250727170036.png]]
 ### The Angel between Two Vectors
 ![[Pasted image 20250727170151.png]]
+                   
