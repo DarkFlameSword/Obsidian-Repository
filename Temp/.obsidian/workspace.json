@@ -11,10 +11,14 @@
             "id": "99f613974c980d10",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Monash/FIT5215/Note.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "Note"
             }
           }
         ]
@@ -166,9 +170,11 @@
             "type": "leaf",
             "state": {
               "type": "file-properties",
-              "state": {},
+              "state": {
+                "file": "Monash/FIT5215/Note.md"
+              },
               "icon": "lucide-info",
-              "title": "笔记属性"
+              "title": "Note的笔记属性"
             }
           }
         ],
@@ -190,13 +196,13 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "b6b5238e248641dc",
+  "active": "99f613974c980d10",
   "lastOpenFiles": [
+    "Monash/FIT9136/Quiz 3-Review before the quiz.md",
+    "Monash/FIT5215/Note.md",
     "未命名 1.canvas",
     "未命名.canvas",
-    "Monash/FIT5215/未命名.md",
     "Pasted image 20250727164025.png",
-    "Monash/FIT9136/Quiz 3-Review before the quiz.md",
     "Monash/FIT9136/Pasted image 20250527200556.png",
     "Monash/FIT9132/Quiz考前随笔.md",
     "Pasted image 20250530115905.png",
