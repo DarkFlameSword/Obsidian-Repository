@@ -33,4 +33,6 @@ aliases:
 2. 第一个矩阵 (A) 的列数必须等于第二个矩阵 (B) 的行数, 否则不能相
 # Kullback-Leibler (KL) divergence
 个人理解: KL散度用来计算, 当前模型距离真实案例的偏差值
+![[Pasted image 20250727172836.png]]
+# Entropy of the distribution
 
