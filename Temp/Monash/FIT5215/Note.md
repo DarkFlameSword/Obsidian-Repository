@@ -29,3 +29,5 @@ aliases:
 # Matrix 2D
 ![[Pasted image 20250727171416.png]]
 ==Attention==
+1. AB矩阵相乘, 最后的结果矩阵的shape会取A的行数B的列数
+2. 第一个矩阵 (A) 的列数必须等于第二个矩阵 (B) 的行数, 否则不能相乘Kullback-Leibler (KL) divergence between 𝒑
