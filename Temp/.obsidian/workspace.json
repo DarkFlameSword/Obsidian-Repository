@@ -4,24 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "13314fe07e7217d4",
+        "id": "92879f8bf56ec62c",
         "type": "tabs",
         "children": [
           {
-            "id": "c89bb6f8e9ade5d9",
+            "id": "99f613974c980d10",
             "type": "leaf",
             "state": {
-              "type": "canvas",
-              "state": {
-                "file": "随笔/未命名.canvas",
-                "viewState": {
-                  "x": -35,
-                  "y": 1025.081492764661,
-                  "zoom": -0.639939228852442
-                }
-              },
-              "icon": "lucide-layout-dashboard",
-              "title": "未命名"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "新标签页"
             }
           }
         ]
@@ -56,7 +49,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "[\"author\"]",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -173,11 +166,9 @@
             "type": "leaf",
             "state": {
               "type": "file-properties",
-              "state": {
-                "file": "随笔/未命名.canvas"
-              },
+              "state": {},
               "icon": "lucide-info",
-              "title": "未命名的笔记属性"
+              "title": "笔记属性"
             }
           }
         ],
@@ -199,24 +190,28 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "c89bb6f8e9ade5d9",
+  "active": "b6b5238e248641dc",
   "lastOpenFiles": [
-    "随笔/送礼统计.md",
-    "随笔/未命名.canvas",
+    "未命名 1.canvas",
+    "未命名.canvas",
+    "Monash/FIT5215/未命名.md",
+    "Pasted image 20250727164025.png",
+    "Monash/FIT9136/Quiz 3-Review before the quiz.md",
+    "Monash/FIT9136/Pasted image 20250527200556.png",
+    "Monash/FIT9132/Quiz考前随笔.md",
     "Pasted image 20250530115905.png",
+    "Monash/FIT5215",
     "Pasted image 20250530115826.png",
     "Pasted image 20250530112857.png",
-    "Monash/FIT9132/Quiz考前随笔.md",
+    "随笔/未命名.canvas",
+    "随笔/送礼统计.md",
     "未命名.md",
     "Monash/FIT9132",
     "Monash/FIT9136",
     "随笔",
-    "Monash/FIT9136/Quiz 3-Review before the quiz.md",
     "Monash",
     "2025-05-27.md",
-    "未命名.canvas",
     "Pasted image 20250527200452.png",
-    "Monash/FIT9136/Pasted image 20250527200556.png",
     "欢迎.md"
   ]
 }
