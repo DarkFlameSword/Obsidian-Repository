@@ -12,4 +12,7 @@ aliases:
 
 # 一些格外需要注意的细节
 1. `torch.tensor()` always copies `data`, which means If you have a Tensor `data` and just want to change its `requires_grad` flag, use `requires_grad_()` or `detach()` to avoid a copy. If you have a `numpy array` and want to avoid a copy, use `torch.as_tensor()`
-2. 
+
+
+# `requires_grad=True`
+**作用**: 告诉`PyTorch`的自动求导引擎 ([`torch.autograd`](https://docs.pytorch.org/docs/stable/autograd.html#module-torch.autograd "torch.autograd"))：“请开始追踪对这个张量（Tensor）所做的所有操作. `PyTorch` 会在内存中构建一个**计算图 (Computational Graph)**, 记录下所有与它相关的数学运算，以便后续能够自动计算梯度”
