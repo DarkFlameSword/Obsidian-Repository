@@ -35,6 +35,7 @@ aliases:
 个人理解: KL散度用来计算, 当前模型距离真实案例的偏差值
 
 **D_KL(P || Q) = Σ P(x) * log₂( P(x) / Q(x) )**
+==![[Pasted image 20250728164017.png]]==
 
 ![[Pasted image 20250727172836.png]]
 # Entropy of the distribution
@@ -43,12 +44,14 @@ aliases:
 - **熵越低**，代表系统越有序，结果越容易预测
 
 **H(X) = - Σ p(x) * log₂(p(x))**
+==![[Pasted image 20250728164017.png]]
 
 ![[Pasted image 20250727173520.png]]
 # Cross-entropy (CE)
 个人理解: 计算预测结果与真实结果之间的差距, CE越大预测结果越离谱
 
 **H(p, q) = - Σ p(x) * log₂(q(x))**
+==![[Pasted image 20250728164017.png]]
 
 ![[Pasted image 20250727174454.png]]
 ==Attention:==
