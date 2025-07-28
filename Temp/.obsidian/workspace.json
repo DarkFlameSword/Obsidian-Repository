@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Monash/FIT5215/Note.md",
+                "file": "Monash/FIT5057/未命名.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Note"
+              "title": "未命名"
             }
           }
         ]
@@ -171,10 +171,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Monash/FIT5215/Note.md"
+                "file": "Monash/FIT5057/未命名.md"
               },
               "icon": "lucide-info",
-              "title": "Note的笔记属性"
+              "title": "未命名的笔记属性"
             }
           }
         ],
@@ -198,6 +198,8 @@
   },
   "active": "99f613974c980d10",
   "lastOpenFiles": [
+    "Monash/FIT5215/Note.md",
+    "Monash/FIT5057/未命名.md",
     "Pasted image 20250727174454.png",
     "Pasted image 20250727173520.png",
     "Pasted image 20250727173445.png",
@@ -207,12 +209,10 @@
     "Pasted image 20250727170036.png",
     "Pasted image 20250727165647.png",
     "Monash/FIT9136/Quiz 3-Review before the quiz.md",
-    "Monash/FIT5215/Note.md",
     "Pasted image 20250727165020.png",
     "Pasted image 20250727164902.png",
     "未命名 1.canvas",
     "未命名.canvas",
-    "Pasted image 20250727164025.png",
     "Monash/FIT9132/Quiz考前随笔.md",
     "Monash/FIT5215",
     "随笔/未命名.canvas",
