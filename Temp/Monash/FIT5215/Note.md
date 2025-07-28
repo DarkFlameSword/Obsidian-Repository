@@ -56,3 +56,10 @@ aliases:
 ![[Pasted image 20250727174454.png]]
 ==Attention:==
 1. CrossEntropy(p, q) = Entropy(p) + KL_Divergence(p || q) **在机器学习中, 真实数据分布 `p` 是固定的, 所以 `Entropy(p)` 是一个常数, 所以最小化交叉熵就等价于最小化KL散度**
+
+# AI Model Types
+### Classification
+### Regression
+### Supervised Learning
+
+### Reinforce Learning
