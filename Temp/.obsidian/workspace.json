@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "92879f8bf56ec62c",
+        "id": "b3f710659bd985ac",
         "type": "tabs",
         "children": [
           {
-            "id": "99f613974c980d10",
+            "id": "47e31fa4b916129b",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "e4962ae75ca05781",
@@ -183,7 +182,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -197,10 +197,12 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "99f613974c980d10",
+  "active": "47e31fa4b916129b",
   "lastOpenFiles": [
-    "Monash/FIT5215/Note.md",
+    "Monash/FIT9136/Quiz 3-Review before the quiz.md",
     "Monash/FIT5215/Pytorch.md",
+    "Monash/FIT9136/Pasted image 20250527200556.png",
+    "Monash/FIT5215/Note.md",
     "Pasted image 20250728164017.png",
     "Monash/FIT5057/未命名.md",
     "Pasted image 20250728123831.png",
@@ -211,8 +213,6 @@
     "Pasted image 20250727171416.png",
     "Pasted image 20250727170151.png",
     "Pasted image 20250727170036.png",
-    "Pasted image 20250727165647.png",
-    "Monash/FIT9136/Quiz 3-Review before the quiz.md",
     "未命名 1.canvas",
     "未命名.canvas",
     "Monash/FIT9132/Quiz考前随笔.md",

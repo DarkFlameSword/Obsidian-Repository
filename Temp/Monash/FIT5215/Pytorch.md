@@ -7,7 +7,5 @@ author:
 aliases:
   - Summary
 ---
-# torch.tensor
-创建一个张量对象
-## 内置数据类型
-1. torch.float32
+# 关于torch包下所有的操作,直接查看官方doc
+[The Offical DOC](https://docs.pytorch.org/docs)
