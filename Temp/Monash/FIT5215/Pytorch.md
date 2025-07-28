@@ -11,5 +11,5 @@ aliases:
 [The Official DOC](https://docs.pytorch.org/docs)
 
 # 一些格外需要注意的细节
-1. torch.tensor() always copies `data`
+1. `torch.tensor()` always copies `data`, which means If you have a Tensor `data` and just want to change its `requires_grad` flag, use `requires_grad_()` or `detach()` to avoid a copy. If you have a `numpy array` and want to avoid a copy, use `torch.as_tensor()`
 2. 
