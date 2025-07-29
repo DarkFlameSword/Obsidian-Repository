@@ -34,4 +34,6 @@ requires tensors to be in `torch.float32` or it throws errors
 
 
 ### `torch.stack(tensors, dim=0)`
-### `toch.permute`
+### `toch.permute(input, dims)`
+==Attention:==
+`torch.permute` **不会**复制数据，而是返回一个共享原始数据存储的**视图**
