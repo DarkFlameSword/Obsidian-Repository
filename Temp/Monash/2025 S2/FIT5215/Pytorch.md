@@ -34,3 +34,4 @@ requires tensors to be in `torch.float32` or it throws errors
 
 
 ### `torch.stack(tensors, dim=0)`
+### `toch.permute`
