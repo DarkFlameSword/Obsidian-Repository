@@ -56,6 +56,7 @@ aliases:
 ![[Pasted image 20250727174454.png]]
 ==Attention:==
 1. CrossEntropy(p, q) = Entropy(p) + KL_Divergence(p || q) **在机器学习中, 真实数据分布 `p` 是固定的, 所以 `Entropy(p)` 是一个常数, 所以最小化交叉熵就等价于最小化KL散度**
+2. CE越接近0, 则说明该事件越接近真实概率
 
 # `Softmax`
 
@@ -114,6 +115,10 @@ aliases:
 模型的任务是将输入数据分到一个预先定义好的类别中。输出的结果是有限的、不连续的类别。
 
 **目标：** 输出是一个**类别 (Class)**。
+#### 计算Loss的公式
+- Mean Squared Error, MSE
+    MSE = (1/n) * Σ(yᵢ - ŷᵢ)²
+- 
 ### Regression
 **核心思想：** 预测一个**连续的数值**。简单说，就是做“填空题”，填一个具体的数字。
 
