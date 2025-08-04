@@ -16,6 +16,23 @@ aliases:
 ```
 #### Backtracking 回溯
 理解: 追踪一条路径的数据. 专注于**next step** ,如果**next step** 失败则回溯到上一个状态, 然后选择另一条路
+```
+# 通用模板
+
+res = []    # 存放所欲符合条件结果的集合
+path = []   # 存放当前符合条件的结果
+def backtracking(nums):             # nums 为选择元素列表
+    if 遇到边界条件:                  # 说明找到了一组符合条件的结果
+        res.append(path[:])         # 将当前符合条件的结果放入集合中
+        return
+
+    for i in range(len(nums)):      # 枚举可选元素列表
+        path.append(nums[i])        # 选择元素
+        backtracking(nums)          # 递归搜索
+        path.pop()                  # 撤销当前选择, 准备寻找下一个符合条件的选择
+
+backtracking(nums)
+```
 
 ==Attention:==
 1. backtrack 只在以下任意一个情况下发生:
