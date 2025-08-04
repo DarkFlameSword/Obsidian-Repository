@@ -9,9 +9,11 @@ aliases:
 ---
 # Control Strategies
 
-## Tentative
-### Uninformed
-Backtracking
+## Tentative Strategy 试探性策略
+### Uninformed 盲目搜索
+Backtracking 回溯
+理解: 专注于**next step** ,如果**next step** 失败则回溯到上一个状态, 然后选择另一条路
+
 Tree- and Graph search
 ### informed
 Greedy best-first search, A, A*
