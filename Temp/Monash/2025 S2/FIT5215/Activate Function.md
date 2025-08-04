@@ -7,7 +7,8 @@ author:
 aliases:
   - note
 ---
-# Saturated Activate Function
+# Saturated Activate Function 饱和激活函数
+![[Pasted image 20250804160215.png]]
 ## `Sigmoid`
 ![[Pasted image 20250804154105.png]]
 $$ \sigma(x) = \frac{1}{1 + e^{-x}} $$
@@ -37,7 +38,7 @@ $$ \mathrm{ReLU}(x) = \max(0, x) $$
 
 ## `Leaky ReLU`
 ![[Pasted image 20250804154446.png]]
-$$ \mathrm{ReLU}(x) = \max(ax, x) $$==优:==
+$$ \mathrm{ReLU}(x) = \max(\alpha x, x) $$==优:==
 - ReLU解决了梯度消失的问题，当输入值为正时，神经元不会饱和
 - 由于ReLU线性、非饱和的性质，在SGD中能够快速收敛
 - 计算复杂度低，不需要进行指数运算
@@ -54,7 +55,7 @@ $f(x) = \begin{cases} x, & x \geq 0 \\ a x, & x < 0 \end{cases}$
 
 ## `ELU`
 ![[Pasted image 20250804155451.png]]
-$$ \mathrm{ELU}(x) = \begin{cases} x, & x > 0 \\ a(e^x - 1), & x \leq 0 \end{cases} $$
+$$ \mathrm{ELU}(x) = \begin{cases} x, & x > 0 \\ \alpha(e^x - 1), & x \leq 0 \end{cases} $$
 ==优:==
 - ELU试图将激活函数的输出均值接近于零，使正常梯度更接近于单位自然梯度，从而加快学习速度
 - ELU 在较小的输入下会饱和至负值，从而减少前向传播的变异和信息
@@ -72,5 +73,14 @@ x & \text{if } x > 0 \\
 $$
 ==优:==
 - 它的值有正有负：在整个ReLU的family里里面，除了一开始最原始的ReLU以外都有负值，该函数也贯彻了这个特性
+- SELU激活函数是在自归一化网络中定义的，通过调整均值和方差来实现内部的归一化，这种内部归一化比外部归一化更快，这使得网络能够更快得收敛
+- SELU 允许构建一个映射 g，其性质能够实现 SNN（自归一化神经网络）
 ==缺:==
+
+## `Swish`
+![[Pasted image 20250804160431.png]]
+$$ \mathrm{Swish}(x) = x \cdot \sigma(x) $$
+
+## `Softmax`
+
 
