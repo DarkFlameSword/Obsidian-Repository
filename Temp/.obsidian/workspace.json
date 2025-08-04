@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "随笔/送礼统计.md",
+                "file": "Monash/2025 S2/FIT5215/Activate Function.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "送礼统计 的大纲"
+              "title": "Activate Function 的大纲"
             }
           },
           {
@@ -196,7 +196,7 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "47e31fa4b916129b",
+  "active": "fc5b16608a953896",
   "lastOpenFiles": [
     "Monash/2025 S2/FIT5215/Pytorch.md",
     "Monash/2025 S2/FIT5215/Note.md",
