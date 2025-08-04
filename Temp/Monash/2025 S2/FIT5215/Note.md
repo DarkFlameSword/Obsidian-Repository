@@ -170,3 +170,4 @@ CCE = - (1/n) * Σ Σ [ yᵢ,c * log(ŷᵢ,c) ]
 ### Precision
 ### F-score
 
+# Feed-forward Neural Networks
