@@ -7,7 +7,7 @@ tags:
 aliases:
   - note
 ---
-# Control Strategies
+# Search Strategies
 
 ## Tentative Strategy 试探性策略
 ### Uninformed 盲目搜索
@@ -26,7 +26,22 @@ Tree- and Graph search
 #### A*
 理解: A* 算法是A算法的一个特例, A* 对启发函数h(n)有严格要求（必须可采纳）
 - h(n)必须是“可采纳的/乐观的/低估的”（admissible）：即h(n)永远不能高估从n到目标的真实最小代价。
-    - 如果h(n)满足可采纳性，则A*算法保证找到一条**最优路径**。
-## Irrevocable
+- 如果h(n)满足可采纳性，则A*算法保证找到一条**最优路径**。
+
+## Irrevocable Strategy 不可逆策略
 ### Informed
-Hill climbing, Local beam search, Simulated annealing, Genetic algorithms
+#### Hill climbing
+理解: 不断微调频率，只要信号变强就继续调，直到信号无法再增强为止（但可能只是“局部最优”）
+#### Local beam search 局部束搜索
+理解: 初始挑选5个人，每轮只保留表现最好的5人，淘汰差的，再各自扩展新候选人，继续选最优
+#### Simulated annealing 模拟退火
+理解: 爬山法基础上，偶尔允许“走下坡路”，以一定概率接受更差的解，有助于跳出局部最优点
+#### Genetic algorithms 遗传算法
+理解: 一群解（个体）交叉、变异，优胜劣汰。比如用遗传算法优化神经网络结构，每代都会产生新一批组合，保留表现最好的
+
+## Adversarial search algorithms 对抗性搜索算法
+
+### Optimal decisions
+### Minimax
+
+### α-β pruning
