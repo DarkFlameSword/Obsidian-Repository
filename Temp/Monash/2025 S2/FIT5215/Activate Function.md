@@ -35,10 +35,9 @@ $$ \mathrm{ReLU}(x) = \max(0, x) $$
 
 ==缺:==
 
-## `Leaky Relu`
+## `Leaky ReLU`
 ![[Pasted image 20250804154446.png]]
-$$ \mathrm{ReLU}(x) = \max(ax, x) $$
-==优:==
+$$ \mathrm{ReLU}(x) = \max(ax, x) $$==优:==
 - ReLU解决了梯度消失的问题，当输入值为正时，神经元不会饱和
 - 由于ReLU线性、非饱和的性质，在SGD中能够快速收敛
 - 计算复杂度低，不需要进行指数运算
@@ -46,10 +45,16 @@ $$ \mathrm{ReLU}(x) = \max(ax, x) $$
 - 与Sigmoid一样，其输出不是以0为中心的
 - Dead ReLU 问题。当输入为负时，梯度为0。这个神经元及之后的神经元梯度永远为0，不再对任何数据有所响应，导致相应参数永远不会被更新
 
-## `Leaky Relu`
+## `Parametric ReLU/PReLU`
+![[Pasted image 20250804155221.png]]
+$f(x) = \begin{cases} x, & x \geq 0 \\ a x, & x < 0 \end{cases}$
+==优:==
+- 解决ReLU带来的神经元坏死的问题, 与Leaky ReLU激活函数不同的是，PRelu激活函数负半轴的斜率参数**α** 是通过学习得到的，而不是手动设置的恒定值
+==缺:==
 
 ## `ELU`
-
+![[Pasted image 20250804155451.png]]
+$$ \mathrm{ELU}(x) = \begin{cases} x, & x > 0 \ \alpha (e^x - 1), & x \leq 0 \end{cases} $$
 ==优:==
 
 ==缺:==
