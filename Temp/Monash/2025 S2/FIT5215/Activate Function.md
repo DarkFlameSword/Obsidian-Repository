@@ -39,8 +39,7 @@ $$ \mathrm{ReLU}(x) = \max(0, x) $$
 ==缺:==
 - 与Sigmoid一样，其输出不是以0为中心的
 - Dead ReLU 问题。当输入为负时，梯度为0。这个神经元及之后的神经元梯度永远为0，不再对任何数据有所响应，导致相应参数永远不会被更新
-==Attention:==
-1. $$$$1/5.5
+
 ## `Leaky ReLU`
 ![[Pasted image 20250804154446.png]]
 $$ \mathrm{Leaky ReLU}(x) = \max(\alpha x, x) $$==优:==
@@ -51,7 +50,7 @@ $$ \mathrm{Leaky ReLU}(x) = \max(\alpha x, x) $$==优:==
 - 函数中的α，需要通过先验知识人工赋值（一般设为0.01）
 - 有些近似线性，导致在复杂分类中效果不好。
 ==Attention:==
-从理论上讲，`Leaky ReLU` 具有 `ReLU` 的所有优点，而且 `Dead ReLU` 不会有任何问题，但在实际操作中，尚未完全证明 `Leaky ReLU` 总是比 `ReLU` 更好
+1. `ɑ`一般取1/5.5
 
 ## `Parametric ReLU/PReLU`
 ![[Pasted image 20250804155221.png]]
