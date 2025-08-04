@@ -39,9 +39,11 @@ $$ \mathrm{ReLU}(x) = \max(0, x) $$
 ==缺:==
 - 与Sigmoid一样，其输出不是以0为中心的
 - Dead ReLU 问题。当输入为负时，梯度为0。这个神经元及之后的神经元梯度永远为0，不再对任何数据有所响应，导致相应参数永远不会被更新
+==Attention:==
+1. $$$$1/5.5
 ## `Leaky ReLU`
 ![[Pasted image 20250804154446.png]]
-$$ \mathrm{ReLU}(x) = \max(\alpha x, x) $$==优:==
+$$ \mathrm{Leaky ReLU}(x) = \max(\alpha x, x) $$==优:==
 - 解决了ReLU输入值为负时神经元出现的死亡的问题
 - Leaky ReLU线性、非饱和的性质，在SGD中能够快速收敛
 - 计算复杂度低，不需要进行指数运算
