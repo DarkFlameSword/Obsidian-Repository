@@ -40,13 +40,14 @@ backtracking(nums)
 - 已经没有可以应用的规则
 - 生成了一个以前遇到过的状态
 - 已经应用了任意数量的规则但仍未达到目标
-#### Tree- and Graph search (BFS,DFS, DLS, IDS, UCS)
+#### Tree- and Graph search
 理解: 追踪多条路线的数据. 从起点出发，沿着所有可能的通路走（比如广度优先、深度优先），直到找到出口。你不提前判断哪条路可能更好，只是机械地遍历所有路径
-##### Breadth-first search(BFS)
-##### Depth-first search(DFS)
-##### Depth-limited search
-##### Uniform-cost search
-
+![[Pasted image 20250804131655.png]]
+##### Breadth-first search (BFS)
+##### Depth-first search (DFS)
+##### Depth-limited search (DLS)
+##### Uniform-cost search (UCS)
+##### Iterative deepening search (IDS)
 ### informed 启发式搜索
 ```
 算法利用问题特定的信息或启发函数（heuristic），指导搜索更快地找到解。决策时会估计哪些路径“看起来”更有希望
