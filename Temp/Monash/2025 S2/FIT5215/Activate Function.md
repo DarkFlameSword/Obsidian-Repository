@@ -7,3 +7,12 @@ author:
 aliases:
   - note
 ---
+# Saturated Activate Function
+## Sigmoid
+## Tanh
+# Unsaturated Activate Function
+## ReLU 
+Leaky Relu
+ELU
+PReLU
+RReLU
