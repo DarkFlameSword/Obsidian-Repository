@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/Activate Function.md",
+                "file": "Monash/2025 S2/FIT5215/Pytorch.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Activate Function"
+              "title": "Pytorch"
             }
           }
         ]
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/Activate Function.md",
+                "file": "Monash/2025 S2/FIT5215/Pytorch.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Activate Function 的大纲"
+              "title": "Pytorch 的大纲"
             }
           },
           {
@@ -171,10 +171,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/Activate Function.md"
+                "file": "Monash/2025 S2/FIT5215/Pytorch.md"
               },
               "icon": "lucide-info",
-              "title": "Activate Function的笔记属性"
+              "title": "Pytorch的笔记属性"
             }
           }
         ],
@@ -198,8 +198,8 @@
   },
   "active": "47e31fa4b916129b",
   "lastOpenFiles": [
-    "Monash/2025 S2/FIT5215/Pytorch.md",
     "Monash/2025 S2/FIT5215/Note.md",
+    "Monash/2025 S2/FIT5215/Pytorch.md",
     "Monash/2025 S2/FIT5215/Activate Function.md",
     "Monash/2025 S2/FIT5047/Note.md",
     "Pasted image 20250804160702.png",
