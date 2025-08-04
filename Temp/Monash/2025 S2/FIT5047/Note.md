@@ -7,3 +7,6 @@ tags:
 aliases:
   - note
 ---
+# Control Strategies
+
+## Tentative
