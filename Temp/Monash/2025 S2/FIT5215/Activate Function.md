@@ -54,8 +54,23 @@ $f(x) = \begin{cases} x, & x \geq 0 \\ a x, & x < 0 \end{cases}$
 
 ## `ELU`
 ![[Pasted image 20250804155451.png]]
-$$ \mathrm{ELU}(x) = \begin{cases} x, & x > 0 \ \alpha (e^x - 1), & x \leq 0 \end{cases} $$
+$$ \mathrm{ELU}(x) = \begin{cases} x, & x > 0 \\ a(e^x - 1), & x \leq 0 \end{cases} $$
 ==优:==
-
+- ELU试图将激活函数的输出均值接近于零，使正常梯度更接近于单位自然梯度，从而加快学习速度
+- ELU 在较小的输入下会饱和至负值，从而减少前向传播的变异和信息
+==缺:==
+- 计算的时需要计算指数，计算效率低
+## `SeLU`
+![[Pasted image 20250804155914.png]]
+$$
+\mathrm{SeLU}(x) = 
+\lambda
+\begin{cases}
+x & \text{if } x > 0 \\
+\alpha (e^x - 1) & \text{if } x \leq 0
+\end{cases}
+$$
+==优:==
+- 它的值有正有负：在整个ReLU的family里里面，除了一开始最原始的ReLU以外都有负值，该函数也贯彻了这个特性
 ==缺:==
 
