@@ -47,10 +47,9 @@ $$ \mathrm{ReLU}(x) = \max(\alpha x, x) $$==优:==
 - 计算复杂度低，不需要进行指数运算
 ==缺:==
 - 函数中的α，需要通过先验知识人工赋值（一般设为0.01）
-    
 - 有些近似线性，导致在复杂分类中效果不好。
 ==Attention:==
-从理论上讲，`Leaky ReLU` 具有 `ReLU` 的所有优点，而且 `Dead ReLU` 不会有任何问题，但在实际操作中，尚未完全证明 `Leaky ReLU` 总是比 `ReLU 更好
+从理论上讲，`Leaky ReLU` 具有 `ReLU` 的所有优点，而且 `Dead ReLU` 不会有任何问题，但在实际操作中，尚未完全证明 `Leaky ReLU` 总是比 `ReLU` 更好
 
 ## `Parametric ReLU/PReLU`
 ![[Pasted image 20250804155221.png]]
