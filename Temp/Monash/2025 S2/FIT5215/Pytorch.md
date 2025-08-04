@@ -27,6 +27,7 @@ aliases:
 ### `torch.mean()` 
 requires tensors to be in `torch.float32` or it throws errors
 ### `torch.reshape(input, shape)`
+shape参数可以是多维数据, 假如某一维度值为-1, 说明需要根据确定的其他维度自动重构shape
 ==Attention:==
 1. **返回视图 (View) - 不创建新对象**： 如果原始张量是**内存连续的 (contiguous)**，并且改变形状后的张量也能维持这种连续性，那么 `reshape()` **不会**创建新的数据副本。它会返回一个指向原始数据的新“视图 (view)”。这个新的张量对象会与原始张量共享底层的数据存储。这意味着，如果你修改了其中一个张量的数据，另一个也会随之改变。你可以用 `torch.is_storage_shared(x, y)` 来检查两个张量是否共享底层存储。
     
