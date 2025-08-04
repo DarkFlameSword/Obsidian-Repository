@@ -33,18 +33,24 @@ $$ \tanh(x) = \frac{e^x - e^{-x}}{e^x + e^{-x}} $$
 ![[Pasted image 20250804154218.png]]
 $$ \mathrm{ReLU}(x) = \max(0, x) $$
 ==优:==
-
-==缺:==
-
-## `Leaky ReLU`
-![[Pasted image 20250804154446.png]]
-$$ \mathrm{ReLU}(x) = \max(\alpha x, x) $$==优:==
-- ReLU解决了梯度消失的问题，当输入值为正时，神经元不会饱和
+ - ReLU解决了梯度消失的问题，当输入值为正时，神经元不会饱和
 - 由于ReLU线性、非饱和的性质，在SGD中能够快速收敛
 - 计算复杂度低，不需要进行指数运算
 ==缺:==
 - 与Sigmoid一样，其输出不是以0为中心的
 - Dead ReLU 问题。当输入为负时，梯度为0。这个神经元及之后的神经元梯度永远为0，不再对任何数据有所响应，导致相应参数永远不会被更新
+## `Leaky ReLU`
+![[Pasted image 20250804154446.png]]
+$$ \mathrm{ReLU}(x) = \max(\alpha x, x) $$==优:==
+- 解决了ReLU输入值为负时神经元出现的死亡的问题
+- Leaky ReLU线性、非饱和的性质，在SGD中能够快速收敛
+- 计算复杂度低，不需要进行指数运算
+==缺:==
+- 函数中的α，需要通过先验知识人工赋值（一般设为0.01）
+    
+- 有些近似线性，导致在复杂分类中效果不好。
+==Attention:==
+从理论上讲，`Leaky ReLU` 具有 `ReLU` 的所有优点，而且 `Dead ReLU` 不会有任何问题，但在实际操作中，尚未完全证明 `Leaky ReLU` 总是比 `ReLU 更好
 
 ## `Parametric ReLU/PReLU`
 ![[Pasted image 20250804155221.png]]
