@@ -45,6 +45,18 @@ backtracking(nums)
 ![[Pasted image 20250804131655.png]]
 ##### Breadth-first search (BFS)
 ##### Depth-first search (DFS)
+==特点:==
+1. 后进先出
+2. 使用dui
+==逻辑:==
+3. 选择起始节点 u，并将其标记为已访问。
+4. 检查当前节点是否为目标节点（看具体题目要求）。
+5. 如果当前节点 u 是目标节点，则直接返回结果。
+6. 如果当前节点 u 不是目标节点，则遍历当前节点 u 的所有未访问邻接节点。
+7. 对每个未访问的邻接节点 v，从节点 v 出发继续进行深度优先搜索（递归）。
+8. 如果节点 u 没有未访问的相邻节点，回溯到上一个节点，继续搜索其他路径。
+9. 重复 2∼6 步骤，直到遍历完整个图或找到目标节点为止。
+
 ##### Depth-limited search (DLS)
 ##### Uniform-cost search (UCS)
 ##### Iterative deepening search (IDS)
