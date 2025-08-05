@@ -44,10 +44,53 @@ backtracking(nums)
 理解: 追踪多条路线的数据. 从起点出发，沿着所有可能的通路走（比如广度优先、深度优先），直到找到出口。你不提前判断哪条路可能更好，只是机械地遍历所有路径
 ![[Pasted image 20250804131655.png]]
 ##### Breadth-first search (BFS)
+==特点:==
+1.  先进先出
+2. 使用队列实现
+
+==逻辑:==
+1. 将起始节点 u 放入队列中，并标记为已访问。
+2. 从队列中取出一个节点，访问它并将其所有的未访问邻接节点 v 放入队列中。
+3. 标记已访问的节点 v，以避免重复访问。
+4. 重复步骤 2∼3，直到队列为空或找到目标节点。
+
+```Python
+import collections
+
+class Solution:
+    def bfs(self, graph, u):
+        visited = set()                     # 使用 visited 标记访问过的节点
+        queue = collections.deque([])       # 使用 queue 存放临时节点
+        
+        visited.add(u)                      # 将起始节点 u 标记为已访问
+        queue.append(u)                     # 将起始节点 u 加入队列中
+        
+        while queue:                        # 队列不为空
+            u = queue.popleft()             # 取出队头节点 u
+            print(u)                        # 访问节点 u
+            for v in graph[u]:              # 遍历节点 u 的所有未访问邻接节点 v
+                if v not in visited:        # 节点 v 未被访问
+                    visited.add(v)          # 将节点 v 标记为已访问
+                    queue.append(v)         # 将节点 v 加入队列中
+                
+
+graph = {
+    "0": ["1", "2"],
+    "1": ["0", "2", "3"],
+    "2": ["0", "1", "3", "4"],
+    "3": ["1", "2", "4", "5"],
+    "4": ["2", "3"],
+    "5": ["3", "6"],
+    "6": []
+}
+
+# 基于队列实现的广度优先搜索
+Solution().bfs(graph, "0")
+```
 ##### Depth-first search (DFS)
 ==特点:==
 1. 后进先出
-2. 使用dui
+2. 使用堆栈/递归实现
 ==逻辑:==
 3. 选择起始节点 u，并将其标记为已访问。
 4. 检查当前节点是否为目标节点（看具体题目要求）。
@@ -56,6 +99,33 @@ backtracking(nums)
 7. 对每个未访问的邻接节点 v，从节点 v 出发继续进行深度优先搜索（递归）。
 8. 如果节点 u 没有未访问的相邻节点，回溯到上一个节点，继续搜索其他路径。
 9. 重复 2∼6 步骤，直到遍历完整个图或找到目标节点为止。
+
+```
+class Solution:
+    def dfs_recursive(self, graph, u, visited):
+        print(u)                        # 访问节点
+        visited.add(u)                  # 节点 u 标记其已访问
+
+        for v in graph[u]:
+            if v not in visited:        # 节点 v 未访问过
+                # 深度优先搜索遍历节点
+                self.dfs_recursive(graph, v, visited)
+        
+
+graph = {
+    "A": ["B", "C"],
+    "B": ["A", "C", "D"],
+    "C": ["A", "B", "D", "E"],
+    "D": ["B", "C", "E", "F"],
+    "E": ["C", "D"],
+    "F": ["D", "G"],
+    "G": []
+}
+
+# 基于递归实现的深度优先搜索
+visited = set()
+Solution().dfs_recursive(graph, "A", visited)
+```
 
 ##### Depth-limited search (DLS)
 ##### Uniform-cost search (UCS)
