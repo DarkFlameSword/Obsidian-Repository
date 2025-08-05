@@ -100,7 +100,7 @@ Solution().bfs(graph, "0")
 8. 如果节点 u 没有未访问的相邻节点，回溯到上一个节点，继续搜索其他路径。
 9. 重复 2∼6 步骤，直到遍历完整个图或找到目标节点为止。
 
-```
+```Python
 class Solution:
     def dfs_recursive(self, graph, u, visited):
         print(u)                        # 访问节点
