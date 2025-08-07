@@ -5,7 +5,7 @@ tags:
 author:
   - Siyuan Liu
 aliases:
-  - note
+  - base
 ---
 # Saturated Activate Function 饱和激活函数
 ![[Pasted image 20250804160215.png]]

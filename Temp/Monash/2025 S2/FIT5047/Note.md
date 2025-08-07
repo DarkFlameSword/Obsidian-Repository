@@ -11,31 +11,38 @@ aliases:
 ==An agent is anything that can be viewed as perceiving its environment using sensors, and acting upon that environment via actuators==
 ## Agent Type
 ### Simple reflex
-==这种Agent基于当前的感知（当前状态）直接做出反应。它有一个“如果...那么...”的规则集合==
-- **特点:**
+`这种Agent基于当前的感知（当前状态）直接做出反应。它有一个“如果...那么...”的规则集合`
+**特点:**
     - 简单、直接。
     - 不维护任何内部状态或历史信息。
     - 只能对当前感知做出反应，无法处理部分可观测的环境。
 ### Model based
-- 这种Agent维护一个内部模型，描述环境如何运作。它会根据感知更新模型，并基于模型选择行动。
-- **特点:**
+`这种Agent维护一个内部模型，描述环境如何运作。它会根据感知更新模型，并基于模型选择行动`
+**特点:**
     - 比简单反射Agent更复杂。
     - 能够处理部分可观测的环境，因为它可以通过模型推断出环境的隐藏状态。
     - 需要维护和更新模型，这可能需要计算资源。
 ### Goal based
-- 这种Agent有一个明确的目标，它会选择能够最快达到目标的行动。
-- **特点:**
+`这种Agent有一个明确的目标，它会选择能够最快达到目标的行动`
+**特点:**
     - 需要知道目标是什么。
     - 需要搜索和规划能力，找到达到目标的最佳路径。
     - 比基于模型的Agent更智能，因为它知道自己想要什么。
 ### Utility based
-- 这种Agent不仅有目标，还有效用函数，用于评估不同状态的“好坏”。它会选择能够最大化期望效用的行动。
-- **特点:**
+`这种Agent不仅有目标，还有效用函数，用于评估不同状态的“好坏”。它会选择能够最大化期望效用的行动`
+**特点:**
     - 比基于目标的Agent更灵活，因为它可以在多个目标之间进行权衡。
     - 效用函数可以考虑各种因素，例如成本、风险、时间等。
     - 需要学习或估计效用函数。
-### Learning (performance elem +critic +learning element +problem generator)
-- observes the world & informs learning elem formulates new driving rules based on the feedback from critic + perf agent knowledge might suggest some driving exercises
+### Learning (performance element +critic +learning element +problem generator)
+`学习Agent是一种能够通过经验改进自身性能的Agent。 它与之前提到的Agent类型不同，因为它不仅仅是基于预先设定的规则或模型来行动，而是能够从环境中学习并调整自己的行为`
+
+学习Agent通常由以下几个关键组件组成：
+
+- **Performance Element (性能元件):** 这是Agent的核心部分，负责选择外部行动。它接收感知输入，并根据已有的知识和策略做出决策。可以将性能元件看作是前面提到的几种Agent类型（Simple Reflex, Model-Based, Goal-Based, Utility-Based）之一，它负责实际的行动。
+- **Critic (评价器):** 评价器接收性能元件的历史记录，并给出一个反馈信号，说明Agent的表现如何。这个反馈信号可以是一个奖励或惩罚，用于衡量Agent的行动是否成功。简单来说，评价器告诉Agent“你做得好”或“你做得不好”。
+- **Learning Element (学习元件):** 学习元件负责根据评价器的反馈信号改进性能元件。它可以调整性能元件的规则、模型、目标或效用函数，使其在未来能够做出更好的决策。学习元件是学习Agent的核心，它利用经验来提升Agent的性能。
+- **Problem Generator (问题生成器):** 问题生成器负责提出新的、具有挑战性的问题或探索性的行动，以便Agent能够学习到新的知识。它可以主动探索环境，尝试不同的行动，并观察结果。问题生成器的作用是帮助Agent打破已有的模式，发现新的可能性。
 # Rationality
 ==Rationality depends on (PEAS)==
 ## PEAS

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Monash/2025 S2/FIT5047/Note.md",
+                "file": "Monash/2025 S2/FIT5215/Note.md",
                 "mode": "source",
                 "source": false
               },
@@ -171,7 +171,7 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Monash/2025 S2/FIT5047/Note.md"
+                "file": "Monash/2025 S2/FIT5215/Note.md"
               },
               "icon": "lucide-info",
               "title": "Note的笔记属性"
@@ -198,11 +198,12 @@
   },
   "active": "47e31fa4b916129b",
   "lastOpenFiles": [
+    "Monash/2025 S2/FIT5215/Loss Function.md",
     "Monash/2025 S2/FIT5215/Note.md",
-    "Monash/2025 S2/FIT5047/Note.md",
-    "Monash/2025 S2/FIT5047/算法.md",
     "Monash/2025 S2/FIT5215/Activate Function.md",
+    "Monash/2025 S2/FIT5047/算法.md",
     "Monash/2025 S2/FIT5215/Pytorch.md",
+    "Monash/2025 S2/FIT5047/Note.md",
     "Pasted image 20250804160702.png",
     "Pasted image 20250804160431.png",
     "Pasted image 20250804160215.png",
