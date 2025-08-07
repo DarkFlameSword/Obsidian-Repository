@@ -34,29 +34,11 @@ aliases:
 #### Environment Type
 1. Fully / partially observable: An agent's sensors give it access to the complete state of the environment at all times
 2. Known / unknown: An agent knows the “laws” of the environment
-
 3. Single / multi agent: An agent operating by itself in an environment
-
 4. Deterministic / stochastic: The next state is completely determined by the current state and the action executed by the agent
-5. Episodic (sequential) – The agent's experience
-
-is divided into atomic episodes. The next
-
-episode does NOT depend on previous actions
-
-– In each episode an agent perceives a percept and
-
-performs a single action
-
-• Static (dynamic) – The environment is
-
-unchanged while an agent is deliberating
-
-• Discrete (continuous) – Pertains to number of
-
-states, the way time is handled, and number of
-
-percepts and actions
+5. Episodic / sequential: The agent's experience is divided into atomic episodes. The next episode does NOT depend on previous actions
+6. Static / dynamic: The environment is unchanged while an agent is deliberating
+7. Discrete / continuous: Pertains to number of states, the way time is handled, and number of percepts and actions
 ### Actuators
 系统可以采取的行动，例如控制机器人、推荐商品、预测结果等
 ### Sensors
