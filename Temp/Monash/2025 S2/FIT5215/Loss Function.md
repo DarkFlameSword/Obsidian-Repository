@@ -10,15 +10,18 @@ aliases:
 # Classification
 ## `Kullback-Leibler (KL) divergence`
 个人理解: KL散度用来计算, 当前模型距离真实案例的偏差值
-
-**D_KL(P || Q) = Σ P(x) * log₂( P(x) / Q(x) )**
+$$
+D_{KL}(P || Q) = \sum_{x} P(x) \cdot \log_2 \left( \frac{P(x)}{Q(x)} \right)
+$$
 ==![[Pasted image 20250728164017.png]]==
 
 ![[Pasted image 20250727172836.png]]
 ## `Cross-entropy (CE)`
 个人理解: 计算预测结果与真实结果之间的差距, CE越大预测结果越离谱
 
-**H(p, q) = - Σ p(x) * log₂(q(x))**
+$$
+H(p, q) = - \sum_{x} p(x) \cdot \log_2(q(x))
+$$
 ==![[Pasted image 20250728164017.png]]
 
 ![[Pasted image 20250727174454.png]]
@@ -38,9 +41,13 @@ aliases:
 # Regression
 
 # `L1 Norm Loss / Mean Absolute Error Loss (MAE)`
+
+$$ L = \frac{1}{n} \sum_{i=1}^{n} |y_i - p_i|$$
+`y_i` 是真实值，`p_i` 是模型预测值，`n` 是样本数量
 # `L2 Norm Loss / Mean Squared Error Loss(MSE)`
 
-
+$$ L = \frac{1}{n} \sum_{i=1}^{n} |y_i - p_i|^2$$
+`y_i` 是真实值，`p_i` 是模型预测值，`n` 是样本数量
 
 
 
