@@ -7,14 +7,23 @@ author:
 aliases:
   - base
 ---
-# Kullback-Leibler (KL) divergence
+# Classification
+## `Kullback-Leibler (KL) divergence`
 个人理解: KL散度用来计算, 当前模型距离真实案例的偏差值
 
 **D_KL(P || Q) = Σ P(x) * log₂( P(x) / Q(x) )**
 ==![[Pasted image 20250728164017.png]]==
 
 ![[Pasted image 20250727172836.png]]
-# Entropy of the distribution
+# Regression
+## `Mean Squared Error Loss`
+
+# `L1 Norm Loss`
+# `L2 Norm Loss`
+
+
+
+# `Entropy of the Distribution`
 个人理解: 衡量的是一个随机事件或一个概率分布的**不确定性**或**混乱程度**, 也就是要搞清楚一个随机事件的最终结果，平均需要多少信息量（通常用比特`bit`来衡量）
 - **熵越高**，代表系统越混乱，结果越不可预测
 - **熵越低**，代表系统越有序，结果越容易预测
@@ -23,7 +32,7 @@ aliases:
 ==![[Pasted image 20250728164017.png]]
 
 ![[Pasted image 20250727173520.png]]
-# Cross-entropy (CE)
+# `Cross-entropy (CE)`
 个人理解: 计算预测结果与真实结果之间的差距, CE越大预测结果越离谱
 
 **H(p, q) = - Σ p(x) * log₂(q(x))**

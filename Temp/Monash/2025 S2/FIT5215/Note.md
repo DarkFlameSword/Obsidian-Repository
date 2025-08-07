@@ -128,5 +128,3 @@ model = SimpleFFNN()
 output = model(input)
 print(output)
 ```
-
-  `X_valid, X_train, y_valid, y_train = train_test_split(X1, y1, train_size = float(train_size)/ 1 - test_size )`
