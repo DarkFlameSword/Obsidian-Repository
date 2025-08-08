@@ -7,7 +7,7 @@ tags:
 aliases:
   - summary
 ---
-![[Pasted image 20250808111646.png]]
+**定义:** FFNNs 的核心特征是信息单向流动。 每一层接收前一层的输出作为输入，并通过激活函数传递，最终到达输出层。 简单的感知机就是一个 FFNN，它没有隐藏层
 ```
 import torch
 import torch.nn as nn
@@ -32,3 +32,5 @@ model = SimpleFFNN()
 output = model(input)
 print(output)
 ```
+# DNNs(Deep Neural Networks)
+**定义:** DNNs 是一种特殊的 FFNN，其显著特征是拥有大量的隐藏层。 这些额外的层使 DNN 能够学习输入数据中更复杂、抽象的表示。 这种深度是 DNN 能够胜任图像识别、自然语言处理等复杂任务的关键
