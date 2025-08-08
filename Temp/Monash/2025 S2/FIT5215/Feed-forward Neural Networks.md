@@ -57,10 +57,10 @@ print(output)
 - **Convolutional Layer:** 使用卷积核对输入数据进行卷积操作，提取局部特征 (常用于图像处理)
 - **Recurrent Layer:** 具有循环连接，能够处理序列数据 (常用于自然语言处理)
 - **Pooling Layer:** 对输入数据进行降采样，减少特征维度 (常用于图像处理)
-- **Activate Function:** 每个隐藏层通常都包含一个激活函数，用于引入非线性，例如 ReLU, sigmoid, tanh 等
+- **Activate Function:** 每个隐藏层通常都包含一个激活函数，用于引入非线性，例如 `ReLU`, `sigmoid`, `tanh` 等
 
 **参数:** 
-权重 (weights) 和偏置 (biases)，这些参数在训练过程中通过反向传播算法进行学习
+`weights`和`biases`，这些参数在训练过程中通过反向传播算法进行学习
 ### Output Layer
 **功能:** 
 产生最终的预测结果
@@ -71,11 +71,11 @@ print(output)
 - **回归任务:** 输出层通常只有一个神经元，输出一个连续值
 
 **参数:** 
-权重 (weights) 和偏置 (biases)，这些参数在训练过程中通过反向传播算法进行学习
+`weights`和`biases`，这些参数在训练过程中通过反向传播算法进行学习
 
 **激活函数:**
 输出层的激活函数取决于任务的类型
-- **分类任务:** Softmax (多分类)，Sigmoid (二分类)
+- **分类任务:** `Softmax` (多分类)，`Sigmoid` (二分类)
 - **回归任务:** 通常没有激活函数，或者使用线性激活函数
 ### Optional Layers
  **嵌入层 (Embedding Layer):** 
