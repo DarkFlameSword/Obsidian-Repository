@@ -84,3 +84,13 @@ CCE = - (1/n) * Σ Σ [ yᵢ,c * log(ŷᵢ,c) ]
 ![[Pasted image 20250808104946.png]]
 ## The Relationship  between DL and ML
 ![[Pasted image 20250808105229.png]]
+# SOTA Deep Neural Nets
+
+## Multilayered feedforward neural nets
+For working with vectors, 1D tensors
+## Convolutional neural nets / ViT
+For working with images, 2D/3D tensors
+## Recurrent neural nets / Transformers
+For working with sequences, sentences, texts
+
+# 

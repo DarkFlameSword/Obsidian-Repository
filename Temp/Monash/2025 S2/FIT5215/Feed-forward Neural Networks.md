@@ -7,7 +7,7 @@ tags:
 aliases:
   - summary
 ---
-
+![[Pasted image 20250808111646.png]]
 ```
 import torch
 import torch.nn as nn
