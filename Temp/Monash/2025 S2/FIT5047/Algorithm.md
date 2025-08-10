@@ -87,6 +87,9 @@ graph = {
 # 基于队列实现的广度优先搜索
 Solution().bfs(graph, "0")
 ```
+###### `Djkstra`
+==理解:==
+广度优先算法的拓展算法，广度优先算法每走一步cost都是1，``Djkstra`考虑不同的cost，并引入优先队列
 ##### Depth-first search (DFS)
 ==特点:==
 1. 后进先出
@@ -130,7 +133,6 @@ Solution().dfs_recursive(graph, "A", visited)
 ##### Depth-limited search (DLS)
 ##### Uniform-cost search (UCS)
 ##### Iterative deepening search (IDS)
-#### `Djkstra`
 
 ### informed [[Heuristic Graph-Search|启发式搜索]]
 ```

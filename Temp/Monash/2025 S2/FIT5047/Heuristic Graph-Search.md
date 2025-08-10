@@ -7,6 +7,8 @@ tags:
 aliases:
   - base
 ---
+# Understand
+在暴力搜索的基础上, 引入路径记忆, 并且对于下一步路径的选择引入优先队列, **哪一条路径是优先的**通过`Heuristic Function`计算得出
 # Heuristic Function
 $$f(n) = g(n) + h(n)$$
 - **n**：代表图中的任意一个节点（状态）。
