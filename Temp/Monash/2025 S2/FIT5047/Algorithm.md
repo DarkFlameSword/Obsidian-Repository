@@ -130,6 +130,8 @@ Solution().dfs_recursive(graph, "A", visited)
 ##### Depth-limited search (DLS)
 ##### Uniform-cost search (UCS)
 ##### Iterative deepening search (IDS)
+#### `Djkstra`
+
 ### informed [[Heuristic Graph-Search|启发式搜索]]
 ```
 算法利用问题特定的信息或启发函数（heuristic），指导搜索更快地找到解。决策时会估计哪些路径“看起来”更有希望
@@ -165,7 +167,7 @@ $$f(n) = h(n)$$
 #### A*
 理解: A* 算法是A算法的一个特例, A* 对启发函数h(n)有严格要求（必须可采纳）
 - h(n)必须是“可采纳的/乐观的/低估的”（admissible）：即h(n)永远不能高估从n到目标的真实最小代价。
-- 如果h(n)满足可采纳性，则A*算法保证找到一条**最优路径**。
+- 如果h(n)满足可采纳性，则A*算法保证找到一条**最优路径**
 
 ## Irrevocable Strategy 不可逆策略
 ### Informed
