@@ -176,7 +176,8 @@ $$f(n) = h(n)$$
 `Dijkstra`与`Greedy Best-first Search`的结合, 同时属于A算法下的特例
 
 ==特征:==
-- h(n)必须是**admissible**：即h(n)永远不能高估从n到目标的真实最小代价。
+- h(n)必须是**admissible**: 即h(n)永远不能高估从n到目标的真实最小代价。
+- h(n)必须具有**Monotonicity**: $If \;\; ∀n \; h(n) ≤ c(n,m) + h(m)$ where m is any child of n then A* has found an optimal path to any node in the frontier that it selects for expansion
 - 在极端情况下，当h(n)始终为0，则将由g(n)决定节点的优先级，此时算法就退化成了`Dijkstra`算法
 - 在极端情况下，当g(n)始终为0，则将由h(n)决定节点的优先级，此时算法就退化成了`Greedy Best-first`算法
 
