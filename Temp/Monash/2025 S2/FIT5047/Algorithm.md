@@ -130,7 +130,7 @@ Solution().dfs_recursive(graph, "A", visited)
 ##### Depth-limited search (DLS)
 ##### Uniform-cost search (UCS)
 ##### Iterative deepening search (IDS)
-### informed 启发式搜索
+### informed [[Heuristic Graph-Search|启发式搜索]]
 ```
 算法利用问题特定的信息或启发函数（heuristic），指导搜索更快地找到解。决策时会估计哪些路径“看起来”更有希望
 ```
