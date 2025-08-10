@@ -23,12 +23,12 @@ Feature Extraction
 4. **生成特征图**：卷积核滑完整张图片后，就生成了一张新的“特征图”。这张图上的每个点，都代表了原始图像对应位置**是否存在该卷积核所探测的特征**。值越大，代表特征越明显
 ![[Pasted image 20250810192009.png]]
 $$
-W_o = \lfloor \frac{W_i - K + 2P}{S} \rfloor + 1 \;\;\;\;\;\;\; H_o = \lfloor \frac{H_i - K + 2P}{S} \rfloor + 1
+W_o = \lfloor \frac{W_i - K_w + 2P}{S_w} \rfloor + 1 \;\;\;\;\;\;\; H_o = \lfloor \frac{H_i - K_h + 2P}{S_h} \rfloor + 1
 $$
 - `Wi,Hi`: 输入图像尺寸
 - `Wo,Ho`: 输出图像尺寸
-- `K`: 卷积核大小
-- `S`: 步长
+- `Kw,Kh`: 卷积核宽, 高
+- `Sw,Sh`: 步长核宽, 高
 -  `P`: 填充
 ## Activation Layer
 ==作用:==
