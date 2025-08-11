@@ -190,7 +190,7 @@ $$f(n) = h(n)$$
 
 ##### UCS (Uniform-Cost Search)
 ==理解:==
-基于`BFS`的一种扩展, 通过cost的优先队列实现
+基于`BFS`的一种扩展, 不同于BFS的FIFO, UCS通过cost的优先队列实现
 
 ## Irrevocable Strategy 不可逆策略
 ### Informed
