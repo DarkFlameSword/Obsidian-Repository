@@ -48,10 +48,8 @@ ssh -T git@github.com
 ```
 3. 如果一切顺利，您将看到一条欢迎信息：
 ```
-Hi <your name! You've successfully authenticated, but GitHub does not provide shell acce
+Hi <your name>! You've successfully authenticated, but GitHub does not provide shell acce
 ```
-> 
-
 # 安装Git
 # 在Github创建空白仓库
 ==注意:==
@@ -67,8 +65,9 @@ Hi <your name! You've successfully authenticated, but GitHub does not provide sh
 # 推送目标文件夹
 ==注意:==
 - 请逐行运行, 不要全部复制
+- 在Github上新建的空白仓库页面, 会提供完全正确的命令行, 下列代码行需要自行替换`YourUsername`和`RepoName`
 ```
-git remote add origin git@github.com:DarkFlameSword/FIT5047-Assignment1.git
+git remote add origin git@github.com:YourUsername/RepoName.git
 git branch -M main
 git push -u origin main
 ```
