@@ -51,7 +51,22 @@ ssh -T git@github.com
 Hi <your name>! You've successfully authenticated, but GitHub does not provide shell acce
 ```
 # 安装Git
-==自行百度==
+## 1. 下载 Git 安装包[Git - Downloads](https://git-scm.com/downloads)
+==注意:==
+- 选择组件**Git Bash Here**、**Git GUI Here** 必须勾上
+## 2.验证安装
+```
+git --version
+```
+如果显示类似以下消息,则表示安装成功
+```
+git version 2.45.1.windows.1
+```
+## 3.配置用户名和邮箱
+```
+git config --global user.name "your GitHub username"
+git config --global user.email "your GitHub E-mail"
+```
 # 在Github创建空白仓库
 ==注意:==
 - 不要勾选 Initialize this repository with a README
