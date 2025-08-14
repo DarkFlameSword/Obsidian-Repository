@@ -51,6 +51,7 @@ ssh -T git@github.com
 Hi <your name>! You've successfully authenticated, but GitHub does not provide shell acce
 ```
 # 安装Git
+==自行百度==
 # 在Github创建空白仓库
 ==注意:==
 - 不要勾选 Initialize this repository with a README
