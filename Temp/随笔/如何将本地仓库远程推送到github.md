@@ -26,6 +26,7 @@ ls -al ~/.ssh
 ```
 cat ~/.ssh/id_ed25519.pub
 ```
+==或者在`C:\Users\<你的用户名>\.ssh\`路径下寻找.pub文件==
 命令执行后，终端会显示一串以 `ssh-ed25519` 或 `ssh-rsa` 开头的文本。这就是您的公钥。请完整地复制这串文本
 ## 4.将SSH公yect添加到您的GitHub账户
 1. 登录您的 [GitHub](https://github.com/) 账户。
