@@ -179,7 +179,8 @@ $${\nabla L(\theta)} =
 \end{bmatrix}
 }$$
 对于一个输入为多维向量 `θ`（代表所有模型参数），输出为一个标量（损失值 `L`）的函数 `L(θ)`，梯度 `∇L(θ)` 是一个**向量**。这个向量的每个分量是损失函数 `L` 对每个参数 `θᵢ` 的**偏导数**
-==也就是说==
+
+==也就是说:==
 - 梯度向量 `∇L(θ)` 指向在当前参数点 `θ` 处，**损失函数 `L` 增长最快的方向**
 - 在深度学习中，我们的目标是**最小化**损失函数。因此，我们不应该沿着梯度方向走，而应该沿着**梯度的反方向 (`-∇L`)** 走，因为这是损失函数**下降最快**的方向
 - 这正是**梯度下降 (Gradient Descent)** 算法的核心思想： $$ \theta_{new} = \theta_{old} - \alpha \nabla L(\theta_{old}) $$ 其中 `α` 是学习率。梯度是驱动所有现代深度学习模型训练的**基本引擎**。它是**一阶优化算法**（First-Order Optimization）的基石
@@ -201,5 +202,34 @@ H=
 $$
 $$H(L) = ∇(∇L)$$
 海森矩阵 `H` 是一个**方阵**，它包含了损失函数 `L` 所有的**二阶偏导数**。如果模型有 `n` 个参数，海森矩阵就是一个 `n x n` 的矩阵。
-
 矩阵中第 `i` 行、第 `j` 列的元素是 `L` 先对 `θᵢ` 求导，再对 `θⱼ` 求导的结果。
+
+==也就是说:==
+海森矩阵描述了损失函数在某个点附近的**局部曲率 (local curvature)**。换句话说，它描述了“山谷”的几何形状。
+
+- 如果海森矩阵在某点是**正定的 (positive-definite)**，意味着损失函数在该点附近是**向上凸的**（像一个碗），这表明我们处在一个**局部最小值 (local minimum)**。
+- 如果海森矩阵是**负定的 (negative-definite)**，意味着损失函数是**向下凹的**（像一座山峰），这表明我们处在一个**局部最大值 (local maximum)**。
+- 如果海森矩阵是**不定的 (indefinite)**（特征值有正有负），这表明我们处在一个**鞍点 (saddle point)**
+- 海森矩阵是**二阶优化算法**（Second-Order Optimization），如**牛顿法 (Newton's Method)** 的核心。牛顿法的参数更新规则是： $$ \theta_{new} = \theta_{old} - H^{-1} \nabla L(\theta_{old}) $$ 这里 `H⁻¹` 是海森矩阵的逆。与梯度下降相比，牛顿法不仅考虑了下降最快的方向（梯度），还考虑了曲率（海森矩阵），从而能够更智能、更直接地跳向最小值点
+# Local Minima, Maxima and Saddle Point
+## Local Minima
+![[Pasted image 20250818163944.png]]
+- **Analogy:** The bottom of a valley or a bowl.
+- **Description:** This is a point where the loss is lower than at all its immediate neighbors. It's a "good" place for the optimization to stop, as we have successfully minimized the loss in this local region.
+- **Mathematical Conditions:**
+    1. **Gradient is zero:** `∇L(θ) = 0`.
+    2. **Curvature is positive in all directions:** The Hessian matrix `H` is **positive-definite**. This means if you move away from this point in any direction, the loss will increase. (All eigenvalues of the Hessian are positive).
+## Local Maxima
+![[Pasted image 20250818164006.png]]
+- **Analogy:** The peak of a hill.
+- **Description:** This is a point where the loss is higher than at all its immediate neighbors. It's a "bad" place to get stuck, but fortunately, it's very unstable.
+- **Mathematical Conditions:**
+    1. **Gradient is zero:** `∇L(θ) = 0`.
+    2. **Curvature is negative in all directions:** The Hessian matrix `H` is **negative-definite**. This means if you move away from this point in any direction, the loss will decrease. (All eigenvalues of the Hessian are negative).
+## Local Saddle Point
+![[Pasted image 20250818164013.png]]
+- **Analogy:** The middle of a mountain pass or a horse's saddle.
+- **Description:** This is the most interesting and challenging type of critical point. From a saddle point, the loss goes **up** in some directions and **down** in others. It's a minimum along one axis but a maximum along another.
+- **Mathematical Conditions:**
+    1. **Gradient is zero:** `∇L(θ) = 0`.
+    2. **Curvature is mixed:** The Hessian matrix `H` is **indefinite**. It has both positive and negative eigenvalues.
