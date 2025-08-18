@@ -77,6 +77,18 @@ $$ \frac{\partial y}{\partial x}(a) = \nabla f(a) =
 $$
 y = f(x) = f(x_1, x_2, x_3) = (x_1^2 + x_2^2, x_2^2 + x_3^2x_2)
 $$
-$$f: \mathbb{R}^3 \to \mathbb{R}^2$$
-$$f_1(x) = f_1(x_1, x_2, x_3) = x_1^2 + x_2^2$$
-$$f_2(x) = f_2(x_1, x_2, x_3) = x_2^2 + x_3^2x_2$$
+- $f: \mathbb{R}^3 \to \mathbb{R}^2$
+- $f_1(x) = f_1(x_1, x_2, x_3) = x_1^2 + x_2^2$
+- $f_2(x) = f_2(x_1, x_2, x_3) = x_2^2 + x_3^2x_2$
+- $\frac{\partial y}{\partial x} = \nabla f \in \mathbb{R}^{2 \times 3}$
+$${\color{red}\frac{\partial y}{\partial x}} = {\color{red}\nabla_x f} = 
+{\color{green}
+\begin{bmatrix} 
+\frac{\partial f_1}{\partial x_1} & \frac{\partial f_1}{\partial x_2} & \frac{\partial f_1}{\partial x_3} \\
+\frac{\partial f_2}{\partial x_1} & \frac{\partial f_2}{\partial x_2} & \frac{\partial f_2}{\partial x_3} 
+\end{bmatrix}}
+=
+\begin{bmatrix} 
+2x_1 & 2x_2 & 0 \\
+0 & 2x_2 + x_3^2 & 2x_2x_3
+\end{bmatrix}$$
