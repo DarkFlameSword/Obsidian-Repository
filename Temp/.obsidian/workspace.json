@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/Feed-forward Neural Networks.md",
+                "file": "Monash/2025 S2/FIT5215/Lecture Note.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Feed-forward Neural Networks"
+              "title": "Lecture Note"
             }
           },
           {
@@ -213,10 +213,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/Feed-forward Neural Networks.md"
+                "file": "Monash/2025 S2/FIT5215/Lecture Note.md"
               },
               "icon": "lucide-info",
-              "title": "Feed-forward Neural Networks的笔记属性"
+              "title": "Lecture Note的笔记属性"
             }
           }
         ],
@@ -240,8 +240,8 @@
   },
   "active": "8c7c68ac41fbbe8b",
   "lastOpenFiles": [
-    "Monash/2025 S2/FIT5215/Convolutional Neural Networks(CNNs).md",
     "Monash/2025 S2/FIT5215/Feed-forward Neural Networks.md",
+    "Monash/2025 S2/FIT5215/Convolutional Neural Networks(CNNs).md",
     "Monash/2025 S2/FIT5215/Mathematics.md",
     "Monash/2025 S2/FIT5215/Activate Function.md",
     "Monash/2025 S2/FIT5215/Loss Function.md",

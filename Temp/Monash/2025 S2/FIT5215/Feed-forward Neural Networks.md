@@ -87,3 +87,27 @@ print(output)
 **Dropout 层:** 
 在训练过程中随机丢弃一部分神经元，防止过拟合
 
+## Mathematics in Hidden Layer
+**神经网络层的定义:**
+$$\bar{h} = xW + b \quad \text{and} \quad h = \sigma(\bar{h})$$
+- $h = \sigma(xW + b)$
+- 其中 `σ` 是激活函数 (activation function)
+
+**使用链式法则求导:**
+$$\frac{\partial h}{\partial x} = \frac{\partial h}{\partial \bar{h}} \frac{\partial \bar{h}}{\partial x} = \text{diag}(\sigma'(\bar{h})) W^T \in \mathbb{R}^{4 \times 3}$$
+$$\frac{\partial h}{\partial \bar{h}} = 
+\begin{bmatrix}
+\frac{\partial h_1}{\partial \bar{h}_1} & \frac{\partial h_1}{\partial \bar{h}_2} & \frac{\partial h_1}{\partial \bar{h}_3} & \frac{\partial h_1}{\partial \bar{h}_4} \\
+\frac{\partial h_2}{\partial \bar{h}_1} & \frac{\partial h_2}{\partial \bar{h}_2} & \frac{\partial h_2}{\partial \bar{h}_3} & \frac{\partial h_2}{\partial \bar{h}_4} \\
+\frac{\partial h_3}{\partial \bar{h}_1} & \frac{\partial h_3}{\partial \bar{h}_2} & \frac{\partial h_3}{\partial \bar{h}_3} & \frac{\partial h_3}{\partial \bar{h}_4} \\
+\frac{\partial h_4}{\partial \bar{h}_1} & \frac{\partial h_4}{\partial \bar{h}_2} & \frac{\partial h_4}{\partial \bar{h}_3} & \frac{\partial h_4}{\partial \bar{h}_4}
+\end{bmatrix}
+=
+\begin{bmatrix}
+\sigma'(\bar{h}_1) & 0 & 0 & 0 \\
+0 & \sigma'(\bar{h}_2) & 0 & 0 \\
+0 & 0 & \sigma'(\bar{h}_3) & 0 \\
+0 & 0 & 0 & \sigma'(\bar{h}_4)
+\end{bmatrix}
+= \text{diag}(\sigma'(\bar{h}))$$
+$$\frac{\partial \bar{h}}{\partial x} = W^T$$
