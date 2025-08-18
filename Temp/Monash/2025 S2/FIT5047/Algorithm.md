@@ -226,6 +226,30 @@ $$f(n) = h(n)$$
 #### 使用场景: 
 两人零和博弈（一个人赢，另一个人必然输）
 
+#### Pseudocode
+```
+function Minimax-Decision(state) returns an action
+    return argmax_a ∈ Actions(state) Min-Value(Result(state, a))
+
+
+function Max-Value(state) returns a utility value
+    if Terminal-Test(state) then
+        return Utility(state)
+    v ← -∞
+    for each a in Actions(state) do
+        v ← Max(v, Min-Value(Result(state, a)))
+    return v
+
+
+function Min-Value(state) returns a utility value
+    if Terminal-Test(state) then
+        return Utility(state)
+    v ← +∞
+    for each a in Actions(state) do
+        v ← Min(v, Max-Value(Result(state, a)))
+    return v
+```
+
 ### α-β pruning
 #### 理解:
 - Minimax虽然能找最优解，但当“棋盘很大”时（如国际象棋），它会枚举无数分支，速度极慢。
@@ -264,6 +288,31 @@ $$f(n) = h(n)$$
 - 但现在这个 MAX 节点的 **最好情况（α）** 已经 ≥ 上面某个 MIN 的 β。
 - 对那个祖先 MIN 来说，它已经有更小（更差）的选择，所以不会选择这条路径。  
 - 所以，继续搜索这个 MAX 节点的其他子节点也是 **浪费时间**。
+
+#### Pseudocode
+```
+function ALPHA-BETA-SEARCH(state) returns an action
+    v ← MAX-VALUE(state, -∞, +∞)
+    return the action in ACTIONS(state) with value v
+
+function MAX-VALUE(state, α, β) returns a utility value
+    if TERMINAL-TEST(state) then return UTILITY(state)
+    v ← -∞
+    for each a in ACTIONS(state) do
+        v ← MAX(v, MIN-VALUE(RESULT(state, a), α, β))
+        if v ≥ β then return v  // β cut-off
+        α ← MAX(α, v)
+    return v
+
+function MIN-VALUE(state, α, β) returns a utility value
+    if TERMINAL-TEST(state) then return UTILITY(state)
+    v ← +∞
+    for each a in ACTIONS(state) do
+        v ← MIN(v, MAX-VALUE(RESULT(state, a), α, β))
+        if v ≤ α then return v  // α cut-off
+        β ← MIN(β, v)
+    return v
+```
 # Basic Algorithm
 ## Recursion
 ==递归步骤==
