@@ -58,3 +58,4 @@ Introduce Non-linearity
 ![[Pasted image 20250810192747.png]]
 
 ## Output Layer
+
