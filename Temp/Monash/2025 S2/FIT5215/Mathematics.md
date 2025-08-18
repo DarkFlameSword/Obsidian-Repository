@@ -62,11 +62,21 @@ $$𝑓: ℝ^𝑚 → ℝ^n$$
 - 所有这些偏导数都在点 $a$ 进行求值
 
 $$ \frac{\partial y}{\partial x}(a) = \nabla f(a) = 
-\begin{bmatrix}
+\overset{\color{red}m}
+{\begin{bmatrix}
 \frac{\partial f_1}{\partial x_1}(a) & \cdots & \frac{\partial f_1}{\partial x_j}(a) & \cdots & \frac{\partial f_1}{\partial x_m}(a) \\
 \vdots & \ddots & \vdots & \ddots & \vdots \\
 \frac{\partial f_i}{\partial x_1}(a) & \cdots & \frac{\partial f_i}{\partial x_j}(a) & \cdots & \frac{\partial f_i}{\partial x_m}(a) \\
 \vdots & \ddots & \vdots & \ddots & \vdots \\
 \frac{\partial f_n}{\partial x_1}(a) & \cdots & \frac{\partial f_n}{\partial x_j}(a) & \cdots & \frac{\partial f_n}{\partial x_m}(a)
-\end{bmatrix} \\ \text{$n \times m$}$$
+\end{bmatrix}
+}\rlap{\quad \color{red}n}$$
 
+
+### 例子:
+$$
+y = f(x) = f(x_1, x_2, x_3) = (x_1^2 + x_2^2, x_2^2 + x_3^2x_2)
+$$
+$$f: \mathbb{R}^3 \to \mathbb{R}^2$$
+$$f_1(x) = f_1(x_1, x_2, x_3) = x_1^2 + x_2^2$$
+$$f_2(x) = f_2(x_1, x_2, x_3) = x_2^2 + x_3^2x_2$$
