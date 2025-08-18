@@ -63,8 +63,7 @@
               "title": "MathJax"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -214,10 +213,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/Mathematics.md"
+                "file": "Monash/2025 S2/FIT5215/Lecture Note.md"
               },
               "icon": "lucide-info",
-              "title": "Mathematics的笔记属性"
+              "title": "Lecture Note的笔记属性"
             }
           }
         ],
@@ -239,10 +238,10 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "369b6c5e7e5459fa",
+  "active": "8c7c68ac41fbbe8b",
   "lastOpenFiles": [
-    "Monash/2025 S2/FIT5215/Lecture Note.md",
     "Monash/2025 S2/FIT5215/Mathematics.md",
+    "Monash/2025 S2/FIT5215/Lecture Note.md",
     "Monash/2025 S2/FIT5215/Loss Function.md",
     "Monash/2025 S2/FIT5215/Activate Function.md",
     "Monash/2025 S2/FIT5215/Feed-forward Neural Networks.md",

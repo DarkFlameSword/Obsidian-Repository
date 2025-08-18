@@ -167,6 +167,20 @@ $$\theta^*=arg⁡min_\theta L(\theta)$$
         - **动量**：像一个从山上滚下来的重球，即使遇到小的颠簸或平坦区域，也能凭借惯性冲过去。
         - **自适应学习率**：在平坦的区域迈大步，在陡峭、狭窄的区域迈小步，让优化过程更智能、更稳定。
 
-# Gredient
-
+# Gradient
+$${\nabla L(\theta)} = 
+{
+\begin{bmatrix} 
+\frac{\partial}{\partial{\theta_1}}
+\frac{\partial}{\partial{\theta_2}}
+\frac{\partial}{\partial{\theta_3}} 
+\;\cdots\;
+\frac{\partial}{\partial{\theta_n}}
+\end{bmatrix}
+}$$
 对于一个输入为多维向量 `θ`（代表所有模型参数），输出为一个标量（损失值 `L`）的函数 `L(θ)`，梯度 `∇L(θ)` 是一个**向量**。这个向量的每个分量是损失函数 `L` 对每个参数 `θᵢ` 的**偏导数**
+==也就是说==
+- 梯度向量 `∇L(θ)` 指向在当前参数点 `θ` 处，**损失函数 `L` 增长最快的方向**
+- 在深度学习中，我们的目标是**最小化**损失函数。因此，我们不应该沿着梯度方向走，而应该沿着**梯度的反方向 (`-∇L`)** 走，因为这是损失函数**下降最快**的方向
+- 这正是**梯度下降 (Gradient Descent)** 算法的核心思想： $$ \theta_{new} = \theta_{old} - \alpha \nabla L(\theta_{old}) $$ 其中 `α` 是学习率。梯度是驱动所有现代深度学习模型训练的**基本引擎**。它是**一阶优化算法**（First-Order Optimization）的基石
+# Hessian Matrix
