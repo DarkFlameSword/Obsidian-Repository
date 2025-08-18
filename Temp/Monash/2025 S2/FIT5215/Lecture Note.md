@@ -103,4 +103,20 @@ For working with sequences, sentences, texts
 5. Zero-sum (vs non-zero sum games)
 
 # Game Trees(博弈树)
-## 
+## Concept
+- **MAX**：希望最大化自己的得分
+- **MIN**：希望最小化对手的得分
+- A position favorable to MAX → utility > 0
+    - 如果某个局面对 MAX 有利，就给它一个 **正数值**，越大越好。
+    - MAX 获胜的终局，通常赋值 **+∞**
+- A position favorable to MIN → utility < 0
+    - 如果某个局面对 MIN 有利，就给它一个 **负数值**，越小越好
+    - MIN 获胜的终局，通常赋值 **−∞**
+- The set of nodes generated for one player is called a **ply**
+    - **ply** 表示一层搜索深度：
+    - 1 ply = 一个玩家下的一步棋   
+    - 2 ply = 双方各下一步（即一个来回）
+    - 3 ply = MAX → MIN → MAX
+    ### Each node has an associated utility
+
+- 每个状态（节点）都有一个 **效用值 (utility)**，用来评估该局面对双方的好坏。
