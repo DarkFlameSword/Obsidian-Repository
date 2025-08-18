@@ -167,7 +167,7 @@ $$\theta^*=arg⁡min_\theta L(\theta)$$
         - **动量**：像一个从山上滚下来的重球，即使遇到小的颠簸或平坦区域，也能凭借惯性冲过去。
         - **自适应学习率**：在平坦的区域迈大步，在陡峭、狭窄的区域迈小步，让优化过程更智能、更稳定。
 
-# Gradient
+# Gradient 
 $${\nabla L(\theta)} = 
 {
 \begin{bmatrix} 
@@ -184,3 +184,22 @@ $${\nabla L(\theta)} =
 - 在深度学习中，我们的目标是**最小化**损失函数。因此，我们不应该沿着梯度方向走，而应该沿着**梯度的反方向 (`-∇L`)** 走，因为这是损失函数**下降最快**的方向
 - 这正是**梯度下降 (Gradient Descent)** 算法的核心思想： $$ \theta_{new} = \theta_{old} - \alpha \nabla L(\theta_{old}) $$ 其中 `α` 是学习率。梯度是驱动所有现代深度学习模型训练的**基本引擎**。它是**一阶优化算法**（First-Order Optimization）的基石
 # Hessian Matrix
+$$
+H=
+{\begin{bmatrix}
+\frac{\partial L}{\partial \theta_1\theta_1} & \cdots & 
+\frac{\partial L}{\partial \theta_1\theta_5} & \cdots & 
+\frac{\partial L}{\partial \theta_1\theta_n} \\ \vdots & \ddots & \vdots & \ddots & \vdots \\
+\frac{\partial L}{\partial \theta_5\theta_1} & \cdots & 
+\frac{\partial L}{\partial \theta_5\theta_5} & \cdots & 
+\frac{\partial L}{\partial \theta_5\theta_n} \\ \vdots & \ddots & \vdots & \ddots & \vdots \\
+\frac{\partial L}{\partial \theta_n\theta_1} & \cdots & 
+\frac{\partial L}{\partial \theta_n\theta_5} & \cdots & 
+\frac{\partial L}{\partial \theta_n\theta_n}
+\end{bmatrix}
+}
+$$
+$$H(L) = ∇(∇L)$$
+海森矩阵 `H` 是一个**方阵**，它包含了损失函数 `L` 所有的**二阶偏导数**。如果模型有 `n` 个参数，海森矩阵就是一个 `n x n` 的矩阵。
+
+矩阵中第 `i` 行、第 `j` 列的元素是 `L` 先对 `θᵢ` 求导，再对 `θⱼ` 求导的结果。
