@@ -117,6 +117,11 @@ For working with sequences, sentences, texts
     - 1 ply = 一个玩家下的一步棋   
     - 2 ply = 双方各下一步（即一个来回）
     - 3 ply = MAX → MIN → MAX
-    ### Each node has an associated utility
-
-- 每个状态（节点）都有一个 **效用值 (utility)**，用来评估该局面对双方的好坏。
+- Each node has an associated **utility**
+    - 每个状态（节点）都有一个 **效用值 (utility)**，用来评估该局面对双方的好坏。
+- **Terminal nodes (终局节点)**
+- 当游戏结束（胜负已定 / 平局），树的叶子节点就是 **terminal nodes**。
+    - 它们的 utility 通常是：
+    - MAX 胜 → +∞ 或 +1
+    - MIN 胜 → −∞ 或 −1
+    - 平局 → 0
