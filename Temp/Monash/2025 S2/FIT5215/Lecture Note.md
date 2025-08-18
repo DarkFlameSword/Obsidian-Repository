@@ -102,4 +102,5 @@ For working with sequences, sentences, texts
 4. Sequential (vs. simultaneous)
 5. Zero-sum (vs non-zero sum games)
 
-# Game Trees
+# Game Trees(博弈树)
+## 
