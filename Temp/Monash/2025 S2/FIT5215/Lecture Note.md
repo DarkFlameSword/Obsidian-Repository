@@ -93,4 +93,13 @@ For working with images, 2D/3D tensors
 ## Recurrent neural nets / Transformers
 For working with sequences, sentences, texts
 
-# 
+# Types of Games
+1. Perfect information (deterministic, full observe.)
+    Chess, Go, noughts-and-crosses (tic-tac-toe), draught (checkers), etc.
+2. Imperfect information (stochastic, partially observe.)
+    Poker, Texas hold’em (variant of poker), bridge, backgammon, etc
+3. n-Players (e.g., n = 2 for chess)
+4. Sequential (vs. simultaneous)
+5. Zero-sum (vs non-zero sum games)
+
+# Game Trees
