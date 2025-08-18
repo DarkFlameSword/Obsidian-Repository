@@ -104,8 +104,8 @@ For working with sequences, sentences, texts
 
 # Game Trees(博弈树)
 ## Concept
-- **MAX**：希望最大化自己的得分
-- **MIN**：希望最小化对手的得分
+1. **MAX**：希望最大化自己的得分
+2. **MIN**：希望最小化对手的得分
 - A position favorable to MAX → utility > 0
     - 如果某个局面对 MAX 有利，就给它一个 **正数值**，越大越好。
     - MAX 获胜的终局，通常赋值 **+∞**
@@ -125,3 +125,4 @@ For working with sequences, sentences, texts
     - MAX 胜 → +∞ 或 +1
     - MIN 胜 → −∞ 或 −1
     - 平局 → 0
+-
