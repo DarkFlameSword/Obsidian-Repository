@@ -70,3 +70,40 @@ aliases:
 - **A**ctuators：方向盘、油门、刹车、转向灯。
 - **S**ensors：摄像头、激光雷达、雷达、GPS、惯性测量单元（IMU）。
 
+# Types of Games
+1. Perfect information (deterministic, full observe.)
+    Chess, Go, noughts-and-crosses (tic-tac-toe), draught (checkers), etc.
+2. Imperfect information (stochastic, partially observe.)
+    Poker, Texas hold’em (variant of poker), bridge, backgammon, etc
+3. n-Players (e.g., n = 2 for chess)
+4. Sequential (vs. simultaneous)
+5. Zero-sum (vs non-zero sum games)
+
+# Game Trees(博弈树)
+## Concept
+1. **MAX**：希望最大化自己的得分
+2. **MIN**：希望最小化对手的得分
+3. A position favorable to MAX → utility > 0
+    - 如果某个局面对 MAX 有利，就给它一个 **正数值**，越大越好。
+    - MAX 获胜的终局，通常赋值 **+∞**
+4. A position favorable to MIN → utility < 0
+    - 如果某个局面对 MIN 有利，就给它一个 **负数值**，越小越好
+    - MIN 获胜的终局，通常赋值 **−∞**
+5. The set of nodes generated for one player is called a **ply**
+    - **ply** 表示一层搜索深度：
+    - 1 ply = 一个玩家下的一步棋   
+    - 2 ply = 双方各下一步（即一个来回）
+    - 3 ply = MAX → MIN → MAX
+6. Each node has an associated **utility**
+    - 每个状态（节点）都有一个 **效用值 (utility)**，用来评估该局面对双方的好坏。
+7. **Terminal nodes (终局节点)**
+8. 当游戏结束（胜负已定 / 平局），树的叶子节点就是 **terminal nodes**。
+    - 它们的 utility 通常是：
+    - MAX 胜 → +∞ 或 +1
+    - MIN 胜 → −∞ 或 −1
+    - 平局 → 0
+9. `So`: the initial state of the game
+10. `Actions(s)`: moves applicable in state `s`
+11. `Result(s,a)`: transition (apply action a in state s)
+12. `Is-Terminal(s)`: tests whether the game is over
+13. `Utility(s)`: payoff in state s for the current player
