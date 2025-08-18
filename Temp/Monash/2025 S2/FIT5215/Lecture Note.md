@@ -233,3 +233,7 @@ $$H(L) = ∇(∇L)$$
 - **Mathematical Conditions:**
     1. **Gradient is zero:** `∇L(θ) = 0`.
     2. **Curvature is mixed:** The Hessian matrix `H` is **indefinite**. It has both positive and negative eigenvalues.
+
+
+
+sssss

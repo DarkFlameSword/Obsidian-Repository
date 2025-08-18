@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/RCNNs.md",
+                "file": "Monash/2025 S2/FIT5215/Lecture Note.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "RCNNs"
+              "title": "Lecture Note"
             }
           },
           {
@@ -214,10 +214,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/RCNNs.md"
+                "file": "Monash/2025 S2/FIT5215/Lecture Note.md"
               },
               "icon": "lucide-info",
-              "title": "RCNNs的笔记属性"
+              "title": "Lecture Note的笔记属性"
             }
           }
         ],
@@ -241,24 +241,24 @@
   },
   "active": "369b6c5e7e5459fa",
   "lastOpenFiles": [
-    "Monash/2025 S2/FIT5215/Optimizer.md",
+    "Monash/2025 S2/FIT5215/Loss Function.md",
+    "随笔/MathJax.md",
+    "随笔/如何将本地仓库远程推送到github.md",
+    "随笔/送礼统计.md",
+    "随笔/未命名.canvas",
     "Monash/2025 S2/FIT5215/RCNNs.md",
+    "Monash/2025 S2/FIT5215/Optimizer.md",
     "Monash/2025 S2/FIT5215/Mathematics.md",
     "Monash/2025 S2/FIT5215/Feed-forward Neural Networks.md",
     "Monash/2025 S2/FIT5215/Lecture Note.md",
     "Pasted image 20250818164013.png",
     "Pasted image 20250818164006.png",
     "Pasted image 20250818163944.png",
-    "Monash/2025 S2/FIT5215/Loss Function.md",
     "Monash/2025 S2/FIT5215/Activate Function.md",
     "Monash/2025 S2/FIT5215/Convolutional Neural Networks(CNNs).md",
-    "随笔/MathJax.md",
     "随笔/Git.md",
     "Monash/2025 S2/FIT5047/Algorithm.md",
     "Monash/2025 S2/FIT5047/Lecture Note.md",
-    "随笔/如何将本地仓库远程推送到github.md",
-    "随笔/送礼统计.md",
-    "随笔/未命名.canvas",
     "Monash/2025 S2/FIT5047/Heuristic Graph-Search.md",
     "Pasted image 20250810192747.png",
     "Pasted image 20250810192009.png",
