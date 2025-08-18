@@ -335,7 +335,18 @@ function MIN-VALUE(state, α, β) returns a utility value
 
 ### ### Heuristic α-β
 #### 适用场景
-当计算量过大, 无法找到`Terminnal State`, 则须
+当计算量过大, 无法找到`Terminnal State`
+#### ### Heuristic Evaluation Function
+==简单来说，启发式函数为算法提供了一个“人造”的终点，让它在无法看到真正结局时，也能基于“专家经验”做出判断==
+1. **设定一个搜索深度限制 (Depth Limit)**，比如 "只往下搜索 6 步"。
+2. 算法从当前状态开始向下递归搜索。
+3. 在递归的每一步，检查是否满足**终止条件**。这里的终止条件**不再只是**“是否为游戏终局”，而是：
+    - **是游戏终局吗？(Is it a terminal state?)** 如果是，返回其真实的效用值 (win/loss/draw)。
+    - **达到搜索深度限制了吗？(Has the depth limit been reached?)** 如果是，**调用启发式评估函数 `EVAL(state)`**，并返回评估得到的分数。
+4. 这个由启发式函数返回的分数，在 Alpha-Beta 算法的后续步骤中，被当作是终局的效用值来使用，用于更新 `α` 和 `β` 的值，并进行剪枝
+
+### Monte Carlo Simulation(蒙特卡洛模拟)
+
 # Basic Algorithm
 ## Recursion
 ==递归步骤==
