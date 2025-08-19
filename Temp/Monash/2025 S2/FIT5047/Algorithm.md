@@ -266,7 +266,7 @@ function Min-Value(state) returns a utility value
     - 因为 MAX 至少能保证 α
     - MIN 至多能保证 β
     - 如果 α ≥ β，就代表父节点不会选择这个分支
-#### Pruning Rules
+#### Pruning Rules[[https://www.bilibili.com/video/BV1yG411o7uH/?spm_id_from=333.337.search-card.all.click&vd_source=f806f0b5de8473aed3dce8c7ed57725c|剪枝参考视频]]
 ##### 1. α cut-off （Alpha 剪枝）
 
 **定义：**
