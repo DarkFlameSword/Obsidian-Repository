@@ -88,10 +88,12 @@ GELU = 输入值 × 该值小于某个随机高斯变量的概率
 ![[Pasted image 20250820222131.png]]
 $$\text{GELU}(x) = x \cdot \Phi(x)$$
 - $Φ(x)$ 是标准正态分布的累积分布函数 (CDF)
-- $erf$ 是误差函数
+
 $$\Phi(x) = \frac{1}{2} \left[ 1 + \mathrm{erf}\left(\frac{x}{\sqrt{2}}\right) \right]$$
-==因为 erf 比较复杂，实践中常用一个近似公式, `PyTorch`使用的就是这个==
+- $erf$ 是误差函数
+
 $$\text{GELU}(x) \approx 0.5 \cdot x \cdot \left( 1 + \tanh\left[ \sqrt{\frac{2}{\pi}} \left( x + 0.044715 x^3 \right) \right] \right)$$
+因为 erf 比较复杂，实践中常用一个近似公式, `PyTorch`使用的就是上面这个
 
 ==优:==
 - 平滑的非线性激活函数
