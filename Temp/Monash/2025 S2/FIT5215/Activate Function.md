@@ -96,7 +96,9 @@ $$\text{GELU}(x) \approx 0.5 \cdot x \cdot \left( 1 + \tanh\left[ \sqrt{\frac{2}
 因为 erf 比较复杂，实践中常用一个近似公式, `PyTorch`使用的就是上面这个
 
 ==优:==
-- 平滑的非线性激活函数
+- **平滑性**：可导，训练时梯度更稳定
+- **概率解释**：输入大 → 更可能“通过”；输入小 → 更可能被抑制
+- **实践效果好**：在 NLP 任务（BERT、GPT 等）中表现优于 ReLU 和 ELU
 ==缺:==
 ## `Swish`
 ![[Pasted image 20250804160431.png]]
