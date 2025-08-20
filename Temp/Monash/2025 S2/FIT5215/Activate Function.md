@@ -82,7 +82,14 @@ $$
 - SELU激活函数是在自归一化网络中定义的，通过调整均值和方差来实现内部的归一化，这种内部归一化比外部归一化更快，这使得网络能够更快得收敛
 - SELU 允许构建一个映射 g，其性质能够实现 SNN（自归一化神经网络）
 ==缺:==
-
+## `GeLU`
+==理解:==
+GELU = 输入值 × 该值小于某个随机高斯变量的概率
+![[Pasted image 20250820222131.png]]
+$$\text{GELU}(x) = x \cdot \Phi(x)$$
+$$\Phi(x) = \frac{1}{2} \left[ 1 + \mathrm{erf}\left(\frac{x}{\sqrt{2}}\right) \right]$$
+==因为 erf 比较复杂，实践中常用一个近似公式, `PyTorch`使用的就是这个==
+$$\text{GELU}(x) \approx 0.5 \cdot x \cdot \left( 1 + \tanh\left[ \sqrt{\frac{2}{\pi}} \left( x + 0.044715 x^3 \right) \right] \right)$$
 ## `Swish`
 ![[Pasted image 20250804160431.png]]
 $$ \mathrm{Swish}(x) = x \cdot \sigma(x) $$
