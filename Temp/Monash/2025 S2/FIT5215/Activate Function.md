@@ -93,7 +93,7 @@ $$\Phi(x) = \frac{1}{2} \left[ 1 + \mathrm{erf}\left(\frac{x}{\sqrt{2}}\right) \
 - $erf$ 是误差函数
 
 $$\text{GELU}(x) \approx 0.5 \cdot x \cdot \left( 1 + \tanh\left[ \sqrt{\frac{2}{\pi}} \left( x + 0.044715 x^3 \right) \right] \right)$$
-因为 erf 比较复杂，实践中常用一个近似公式, `PyTorch`使用的就是上面这个
+因为 erf 比较复杂，实践中GELU常用一个近似公式进行计算, `PyTorch`使用的就是上面这个
 
 ==优:==
 - **平滑性**：可导，训练时梯度更稳定
