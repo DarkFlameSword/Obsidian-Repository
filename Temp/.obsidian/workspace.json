@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/Activate Function.md",
+                "file": "Monash/2025 S2/FIT5215/Mathematics.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Activate Function"
+              "title": "Mathematics"
             }
           },
           {
@@ -240,10 +240,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/Activate Function.md"
+                "file": "Monash/2025 S2/FIT5215/Mathematics.md"
               },
               "icon": "lucide-info",
-              "title": "Activate Function的笔记属性"
+              "title": "Mathematics的笔记属性"
             }
           }
         ],
@@ -268,6 +268,7 @@
   },
   "active": "3fcf1ac7725a6dfc",
   "lastOpenFiles": [
+    "Monash/2025 S2/FIT5215/Activate Function.md",
     "Pasted image 20250820222131.png",
     "随笔/Git.md",
     "随笔/如何将本地仓库远程推送到github.md",
@@ -286,7 +287,6 @@
     "Pasted image 20250818164013.png",
     "Pasted image 20250818164006.png",
     "Pasted image 20250818163944.png",
-    "Monash/2025 S2/FIT5215/Activate Function.md",
     "Monash/2025 S2/FIT5215/Convolutional Neural Networks(CNNs).md",
     "Monash/2025 S2/FIT5047/Heuristic Graph-Search.md",
     "Pasted image 20250810192747.png",
@@ -300,7 +300,6 @@
     "Pasted image 20250808111646.png",
     "Monash/2025 S2/FIT5215/Pytorch.md",
     "Monash/2025 S2/FIT5215/模型训练现象分析.md",
-    "Pasted image 20250808105229.png",
     "Monash/2025 S1/FIT9136/Quiz 3-Review before the quiz.md",
     "Monash/2025 S1/FIT9132/Quiz考前随笔.md",
     "Monash/2025 S1/FIT5057/未命名.md",

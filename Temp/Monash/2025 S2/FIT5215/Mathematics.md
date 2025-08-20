@@ -92,3 +92,80 @@ $${\color{red}\frac{\partial y}{\partial x}} = {\color{red}\nabla_x f} =
 2x_1 & 2x_2 & 0 \\
 0 & 2x_2 + x_3^2 & 2x_2x_3
 \end{bmatrix}$$
+# Probabilistic
+## **1. PDF：Probability Density Function（概率密度函数）**
+
+### 定义
+
+- 对连续随机变量 XXX，PDF 是一个函数 fX(x)f_X(x)fX​(x)，满足：$fX(x)≥0∀xf_X(x) \ge 0 \quad \forall xfX​(x)≥0∀x ∫−∞∞fX(x) dx=1\int_{-\infty}^{\infty} f_X(x) \, dx = 1∫−∞∞​fX​(x)dx=1$
+
+### 含义
+
+- fX(x)f_X(x)fX​(x) 本身 **不是概率**，而是概率密度。
+    
+- 在一个小区间 [a,b][a, b][a,b] 上的概率可以通过积分得到：
+    
+
+P(a≤X≤b)=∫abfX(x) dxP(a \le X \le b) = \int_a^b f_X(x) \, dxP(a≤X≤b)=∫ab​fX​(x)dx
+
+### 举例
+
+- 标准正态分布：
+    
+
+fX(x)=12πe−x2/2f_X(x) = \frac{1}{\sqrt{2\pi}} e^{-x^2/2}fX​(x)=2π​1​e−x2/2
+
+---
+
+## **2. CDF：Cumulative Distribution Function（累积分布函数）**
+
+### 定义
+
+- 对连续随机变量 XXX，CDF 是：
+    
+
+FX(x)=P(X≤x)=∫−∞xfX(t) dtF_X(x) = P(X \le x) = \int_{-\infty}^{x} f_X(t) \, dtFX​(x)=P(X≤x)=∫−∞x​fX​(t)dt
+
+### 含义
+
+- 给定一个 xxx，CDF 告诉你 **随机变量小于等于 x 的概率**。
+    
+- 单调递增，范围从 0 到 1：
+    
+
+FX(−∞)=0,FX(∞)=1F_X(-\infty) = 0, \quad F_X(\infty) = 1FX​(−∞)=0,FX​(∞)=1
+
+### 举例
+
+- 标准正态分布的 CDF：
+    
+
+FX(x)=∫−∞x12πe−t2/2dtF_X(x) = \int_{-\infty}^{x} \frac{1}{\sqrt{2\pi}} e^{-t^2/2} dtFX​(x)=∫−∞x​2π​1​e−t2/2dt
+
+---
+
+## **3. PDF 与 CDF 的关系**
+
+FX(x)=∫−∞xfX(t) dtF_X(x) = \int_{-\infty}^{x} f_X(t) \, dtFX​(x)=∫−∞x​fX​(t)dt fX(x)=ddxFX(x)f_X(x) = \frac{d}{dx} F_X(x)fX​(x)=dxd​FX​(x)
+
+- **CDF 是 PDF 的积分**
+    
+- **PDF 是 CDF 的导数**
+    
+
+---
+
+## **4. 直观理解**
+
+- **PDF**：描述“每个点附近概率的密集程度”，类似曲线高度
+    
+- **CDF**：描述“累积概率”，类似曲线从 0 到 1 逐渐爬升
+    
+
+---
+
+## **5. 图像示意**
+
+- PDF 曲线：钟形（标准正态）
+    
+- CDF 曲线：S 形，从 0 慢慢上升到 1
