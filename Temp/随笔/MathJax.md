@@ -52,53 +52,33 @@ aliases:
     - `$\frac{d}{dx} f(x)$` → $\frac{d}{dx} f(x)$
     - `$f'(x)$` → $f'(x)$
 ## **9. 逻辑与集合符号**
-- `\neq` → $\neq$
-- `\approx` → $\approx$
-- `\le` → $\le$
-- `\ge` → $\ge$
-    
-- `\in, , \subset, \cup, \cap`  
-- `\notin` → $\notin$
-- →
-`$A \subseteq B$` → $A \subseteq B$
-→
-→
+- `$\neq$` → $\neq$
+- `$\approx$` → $\approx$
+- `$\le$` → $\le$
+- `$\ge$` → $\ge$
+- `$\in$` →  $\in$
+- `$\notin$` → $\notin$
+- `$\subset$` → $\subset$
+- `$A \subseteq B$` → $A \subseteq B$
+- `$\cup$` → $\cup$
+- `$\cap$` → $\cap$
 
----
-
+| ≤   | `\le`       | 小于等于 |
+| --- | ----------- | ---- |
+| ≥   | `\ge`       | 大于等于 |
+| ≠   | `\ne`       | 不等于  |
+| <   | `<` 或 `\lt` | 小于   |
+| >   | `>` 或 `\gt` | 大于   |
+| ≈   | `\approx`   | 约等于  |
+| ≡   | `\equiv`    | 恒等于  |
 ## **10. 其他符号**
-
-- 分隔符：`\cdot, \times, \div`  
-    `$ a \cdot b, a \times b $` → a⋅b,a×ba \cdot b, a \times ba⋅b,a×b
-    
-- 无穷：`\infty`  
-    `$ \lim_{x \to \infty} f(x) $` → lim⁡x→∞f(x)\lim_{x \to \infty} f(x)limx→∞​f(x)
-    
-- 省略号：
-    
-    - 水平省略：`\dots` → 1,2,3,…,n1,2,3,\dots,n1,2,3,…,n
-        
-    - 垂直省略：`\vdots`
-        
-    - 对角省略：`\ddots`
-        
-
----
-
-如果你想，我可以帮你做一张 **MathJax 速查表 PDF/图片**，把这些常用语法都放在一页里，方便随时查。
-
-你希望我做吗？
-
-##### 您说：
-
-空格如何表示
-
-###### ChatGPT 说：
-
-在 **MathJax/LaTeX** 中，空格的处理和普通文字不同，因为公式环境会自动忽略多余的空格。你可以用一些特殊命令来控制空格。常用方法如下：
-
----
-
+- `$a \cdot b$` → $a \cdot b$
+- `$a \times b$` → $a \times b$
+- `$a \div b$` → $a \div b$
+- `$\lim_{x \to \infty} f(x)$` → $\lim_{x \to \infty} f(x)$
+- `$\dots$` → $1,2,3,\dots, n$
+- `$\vdots$` → $1,2,3,\vdots, n$
+- `$\ddots$` → $1,2,3,\ddots, n$
 ## **11. 小空格命令**
 
 | 命令       | 含义                 | 示例                            |
@@ -129,11 +109,4 @@ aliases:
 | Unit Vector (hat) | `\hat{i}`             | $\hat{i}$             |
 | Bold Letter       | `\mathbf{x}`          | $\mathbf{x}$          |
 ## 15
-| ≤   | `\le`       | 小于等于 |
-| --- | ----------- | ---- |
-| ≥   | `\ge`       | 大于等于 |
-| ≠   | `\ne`       | 不等于  |
-| <   | `<` 或 `\lt` | 小于   |
-| >   | `>` 或 `\gt` | 大于   |
-| ≈   | `\approx`   | 约等于  |
-| ≡   | `\equiv`    | 恒等于  |
+
