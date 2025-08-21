@@ -7,9 +7,10 @@ author:
 aliases:
   - base
 ---
-# Saturated Activate Function 饱和激活函数
+# 单输入激活函数
+## Saturated Activate Function 饱和激活函数
 ![[Pasted image 20250804160215.png]]
-## `Sigmoid`
+### `Sigmoid`
 ![[Pasted image 20250804154105.png]]
 $$ \sigma(x) = \frac{1}{1 + e^{-x}} $$
 ==优:==
@@ -19,7 +20,7 @@ $$ \sigma(x) = \frac{1}{1 + e^{-x}} $$
 - 容易造成梯度消失。我们从导函数图像中了解到sigmoid的导数都是小于0.25的，那么在进行反向传播的时候，梯度相乘结果会慢慢的趋向于0。这样几乎就没有梯度信号通过神经元传递到前面层的梯度更新中，因此这时前面层的权值几乎没有更新，这就叫梯度消失。除此之外，为了防止饱和，必须对于权重矩阵的初始化特别留意。如果初始化权重过大，可能很多神经元得到一个比较小的梯度，致使神经元不能很好的更新权重提前饱和，神经网络就几乎不学习
 - 函数输出不是以 0 为中心的，梯度可能就会向特定方向移动，从而降低权重更新的效率
 - Sigmoid 函数执行指数运算，计算机运行得较慢，比较消耗计算资源
-## `Tanh`
+### `Tanh`
 ![[Pasted image 20250804154147.png]]
 $$ \tanh(x) = \frac{e^x - e^{-x}}{e^x + e^{-x}} $$
 ==优:==
@@ -28,8 +29,8 @@ $$ \tanh(x) = \frac{e^x - e^{-x}}{e^x + e^{-x}} $$
 ==缺:==
 - 仍然存在梯度饱和的问题
 - 依然进行的是指数运算
-# Unsaturated Activate Function
-## `ReLU` 
+## Unsaturated Activate Function
+### `ReLU` 
 ![[Pasted image 20250804154218.png]]
 $$ \mathrm{ReLU}(x) = \max(0, x) $$
 ==优:==
@@ -40,7 +41,7 @@ $$ \mathrm{ReLU}(x) = \max(0, x) $$
 - 与Sigmoid一样，其输出不是以0为中心的
 - Dead ReLU 问题。当输入为负时，梯度为0。这个神经元及之后的神经元梯度永远为0，不再对任何数据有所响应，导致相应参数永远不会被更新
 
-## `Leaky ReLU`
+### `Leaky ReLU`
 ![[Pasted image 20250804154446.png]]
 $$ \mathrm{Leaky ReLU}(x) = \max(\alpha x, x) $$==优:==
 - 解决了ReLU输入值为负时神经元出现的死亡的问题
@@ -52,14 +53,14 @@ $$ \mathrm{Leaky ReLU}(x) = \max(\alpha x, x) $$==优:==
 ==Attention:==
 1. `ɑ`一般取1/5.5
 
-## `Parametric ReLU/PReLU`
+### `Parametric ReLU/PReLU`
 ![[Pasted image 20250804155221.png]]
 $f(x) = \begin{cases} x, & x \geq 0 \\ a x, & x < 0 \end{cases}$
 ==优:==
 - 解决ReLU带来的神经元坏死的问题, 与Leaky ReLU激活函数不同的是，PRelu激活函数负半轴的斜率参数**α** 是通过学习得到的，而不是手动设置的恒定值
 ==缺:==
 
-## `ELU`
+### `ELU`
 ![[Pasted image 20250804155451.png]]
 $$ \mathrm{ELU}(x) = \begin{cases} x, & x > 0 \\ \alpha(e^x - 1), & x \leq 0 \end{cases} $$
 ==优:==
@@ -67,7 +68,7 @@ $$ \mathrm{ELU}(x) = \begin{cases} x, & x > 0 \\ \alpha(e^x - 1), & x \leq 0 \en
 - ELU 在较小的输入下会饱和至负值，从而减少前向传播的变异和信息
 ==缺:==
 - 计算的时需要计算指数，计算效率低
-## `SeLU`
+### `SeLU`
 ![[Pasted image 20250804155914.png]]
 $$
 \mathrm{SeLU}(x) = 
@@ -82,7 +83,7 @@ $$
 - SELU激活函数是在自归一化网络中定义的，通过调整均值和方差来实现内部的归一化，这种内部归一化比外部归一化更快，这使得网络能够更快得收敛
 - SELU 允许构建一个映射 g，其性质能够实现 SNN（自归一化神经网络）
 ==缺:==
-## `GELU`
+### `GELU`
 ==理解:==
 GELU = 输入值 × 该值小于某个随机高斯变量的概率
 ![[Pasted image 20250820222131.png]]
@@ -100,7 +101,7 @@ $$\text{GELU}(x) \approx 0.5 \cdot x \cdot \left( 1 + \tanh\left[ \sqrt{\frac{2}
 - **概率解释**：输入大 → 更可能“通过”；输入小 → 更可能被抑制
 - **实践效果好**：在 NLP 任务（BERT、GPT 等）中表现优于 ReLU 和 ELU
 ==缺:==
-## `Swish`
+### `Swish`
 ![[Pasted image 20250804160431.png]]
 $$ \mathrm{Swish}(x) = x \cdot \sigma(x) $$
 ==优:==
@@ -108,6 +109,7 @@ $$ \mathrm{Swish}(x) = x \cdot \sigma(x) $$
 - **有界性**也是有优势的，因为有界激活函数可以具有很强的正则化(防止过拟合， 进而增强泛化能力)，并且较大的负输入问题也能解决
 - Swish激活函数在`x=0`附近更为平滑，而非单调的特性增强了输入数据和要学习的权重的表达能力
 ==缺:==
+# 多输入激活函数
 ## `Softmax`
 ==`Softmax` function transforms real-valued discriminative scores `ℎ` to discrete probabilities `p`==
 ![[Pasted image 20250804160702.png]]
