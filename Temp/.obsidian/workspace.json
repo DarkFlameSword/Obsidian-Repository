@@ -50,7 +50,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -200,10 +200,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/Feed-forward Neural Networks.md"
+                "file": "随笔/MathJax.md"
               },
               "icon": "lucide-info",
-              "title": "Feed-forward Neural Networks的笔记属性"
+              "title": "MathJax的笔记属性"
             }
           }
         ],
@@ -226,8 +226,9 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "9f697c895d6e0ff9",
+  "active": "3fcf1ac7725a6dfc",
   "lastOpenFiles": [
+    "Monash/2025 S2/FIT5215/Feed-forward Neural Networks.md",
     "Monash/2025 S2/FIT5215/Activate Function.md",
     "Monash/2025 S2/FIT5047/Algorithm.md",
     "随笔/MathJax.md",
@@ -240,7 +241,6 @@
     "随笔/本地多项目不同仓库拉取与推送.md",
     "随笔/未命名.canvas",
     "Monash/2025 S2/FIT5047/Lecture Note.md",
-    "Monash/2025 S2/FIT5215/Feed-forward Neural Networks.md",
     "Monash/2025 S2/FIT5215/RCNNs.md",
     "随笔/送礼统计.md",
     "Monash/2025 S2/FIT5215/Optimizer.md",

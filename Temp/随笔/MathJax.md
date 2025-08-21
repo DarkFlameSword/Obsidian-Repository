@@ -151,7 +151,7 @@ $$ \sum_{i=1}^n i^2 $$ → ∑i=1ni2\sum_{i=1}^n i^2∑i=1n​i2
 
 ---
 
-## **1. 小空格命令**
+## **11. 小空格命令**
 
 |命令|含义|示例|
 |---|---|---|
@@ -160,7 +160,7 @@ $$ \sum_{i=1}^n i^2 $$ → ∑i=1ni2\sum_{i=1}^n i^2∑i=1n​i2
 |`\;`|5/18 个 `quad`，中等|`$a\;b$` → a  ba\;bab|
 |`\quad`|大空格，相当于当前字体宽度的 1 倍|`$a\quad b$` → aba\quad bab|
 |`\qquad`|特大空格，2 倍 `quad`|`$a\qquad b$` → aba\qquad bab|
-## **2. 固定长度空格**
+## **12. 固定长度空格**
 
 - `\hspace{长度}`：可以指定任意长度  
     示例：
@@ -170,7 +170,14 @@ $$ \sum_{i=1}^n i^2 $$ → ∑i=1ni2\sum_{i=1}^n i^2∑i=1n​i2
     → aba\hspace{10pt}bab
     
 - 支持单位：`pt`（点），`cm`（厘米），`mm`（毫米），`em`（字体宽度），`ex`（x 高度）
-# 插入文本
+## 13插入文本
 使用 `\text{ }` 在公式中插入普通文本：
 
 `$\text{anything}$`
+## 14
+| Desired Output    | MathJax Syntax        | Rendered Result       |
+| ----------------- | --------------------- | --------------------- |
+| Vector (short)    | `\vec{v}`             | $\vec{v}$             |
+| Vector (long)     | `\overrightarrow{AB}` | $\overrightarrow{AB}$ |
+| Unit Vector (hat) | `\hat{i}`             | $\hat{i}$             |
+| Bold Letter       | `\mathbf{x}`          | $\mathbf{x}$          |
