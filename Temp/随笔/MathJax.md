@@ -7,77 +7,39 @@ tags:
 aliases:
   - base
 ---
-
-
-# 上标   
+# 1. 上标   
 - `$x^2$` → $x^2$
 - `$x^{10}$` → $x^{10}$
     
-# 下标   
-- `$a_1$` → a1a_1a1​  
+# 2. 下标   
+- `$a_1$` → $a_1$
 - `$a_{ij}$` → $a_{ij}$
-    
-- 上下标同时：`$x_i^2$` → $x_i^2$
-    
+- `$x_i^2$` → $x_i^2$
+- `$ \frac{a+b}{c+d} $` → $\frac{a+b}{c+d}$
+## **3. 根号**
+- `$\sqrt{x}$` → $\sqrt{x}$
+-  `$\sqrt[3]{x}$` → $\sqrt[3]{x}$
 
-- `\frac{分子}{分母}`  
-    `$ \frac{a+b}{c+d} $` → a+bc+d\frac{a+b}{c+d}c+da+b​
-    
-
----
-
-## **4. 根号**
-
-- 平方根：`\sqrt{...}`  
-    `$ \sqrt{x} $` → x\sqrt{x}x​
-    
-- 任意次方根：`\sqrt[n]{...}`  
-    `$ \sqrt[3]{x} $` → x3\sqrt[3]{x}3x​
-    
-
----
-
+# 4. 插入文本
+`$\text{anything}$` → $\text{anything}$
 ## **5. 求和与积分**
 
-- 求和：`\sum`  
-$$ \sum_{i=1}^n i^2 $$ → ∑i=1ni2\sum_{i=1}^n i^2∑i=1n​i2
-    
-- 积分：`\int`  
-    `$ \int_0^1 x^2 dx $` → ∫01x2dx\int_0^1 x^2 dx∫01​x2dx
-    
-- 极限：`\lim`  
-    `$ \lim_{x \to 0} \frac{\sin x}{x} $` → lim⁡x→0sin⁡xx\lim_{x \to 0} \frac{\sin x}{x}limx→0​xsinx​
-    
-
----
-
+- `\sum_{i=1}^n i^2` →$\sum_{i=1}^n i^2$
+- `$\int_0^1 x^2 dx$` → $\int_0^1 x^2 dx$
+- `$\lim_{x \to 0} \frac{\sin x}{x}$` → $\lim_{x \to 0} \frac{\sin x}{x}$
 ## **6. 括号与绝对值**
 
 - 普通括号：`( ... )`
-    
-- 自动大小括号：`\left( ... \right)`  
-    `$ \left( \frac{a}{b} \right) $` → (ab)\left(\frac{a}{b}\right)(ba​)
-    
-- 绝对值：`| ... |` 或 `\left| ... \right|`  
-    `$ \left| x \right| $` → ∣x∣\left|x\right|∣x∣
-    
-
----
-
+- 自动大小括号：`$\left( \frac{a}{b} \right)$` → $\left( \frac{a}{b} \right)$
+- 绝对值：`$\left| x \right|$` → $\left| x \right|$
 ## **7. 矢量、矩阵与行列式**
 
 - 矢量：`\vec{v}` → v⃗\vec{v}v
     
-- 单行矩阵：`\begin{matrix} ... \end{matrix}`
-    
-    `$ \begin{matrix} a & b \\ c & d \end{matrix} $`
-    
-    →
-    
-    abcd\begin{matrix} a & b \\ c & d \end{matrix}ac​bd​
+- 单行矩阵：`$\begin{matrix} a & b \\ c & d \end{matrix}$` → $\begin{matrix} a & b \\ c & d \end{matrix}$
 - 带括号矩阵：
     
-    `\begin{pmatrix} a & b \\ c & d \end{pmatrix}  % () \begin{bmatrix} a & b \\ c & d \end{bmatrix}  % [] \begin{Bmatrix} a & b \\ c & d \end{Bmatrix}  % {} \begin{vmatrix} a & b \\ c & d \end{vmatrix}  % | \begin{Vmatrix} a & b \\ c & d \end{Vmatrix}  % ||`
+    `$\begin{pmatrix} a & b \\ c & d \end{pmatrix}  % () \begin{bmatrix} a & b \\ c & d \end{bmatrix}  % [] \begin{Bmatrix} a & b \\ c & d \end{Bmatrix}  % {} \begin{vmatrix} a & b \\ c & d \end{vmatrix}  % | \begin{Vmatrix} a & b \\ c & d \end{Vmatrix}  % ||$` - $\begin{pmatrix} a & b \\ c & d \end{pmatrix}  % () \begin{bmatrix} a & b \\ c & d \end{bmatrix}  % [] \begin{Bmatrix} a & b \\ c & d \end{Bmatrix}  % {} \begin{vmatrix} a & b \\ c & d \end{vmatrix}  % | \begin{Vmatrix} a & b \\ c & d \end{Vmatrix}  % ||$
     
 
 ---
@@ -167,10 +129,7 @@ $$ \sum_{i=1}^n i^2 $$ → ∑i=1ni2\sum_{i=1}^n i^2∑i=1n​i2
     → aba\hspace{10pt}bab
     
 - 支持单位：`pt`（点），`cm`（厘米），`mm`（毫米），`em`（字体宽度），`ex`（x 高度）
-## 13插入文本
-使用 `\text{ }` 在公式中插入普通文本：
 
-`$\text{anything}$`
 ## 14
 
 | Desired Output    | MathJax Syntax        | Rendered Result       |
