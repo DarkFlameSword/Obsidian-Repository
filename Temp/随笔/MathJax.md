@@ -38,41 +38,31 @@ aliases:
     
 - 单行矩阵：`$\begin{matrix} a & b \\ c & d \end{matrix}$` → $\begin{matrix} a & b \\ c & d \end{matrix}$
 - 带括号矩阵：
-    
-    `$\begin{pmatrix} a & b \\ c & d \end{pmatrix}  % () \begin{bmatrix} a & b \\ c & d \end{bmatrix}  % [] \begin{Bmatrix} a & b \\ c & d \end{Bmatrix}  % {} \begin{vmatrix} a & b \\ c & d \end{vmatrix}  % | \begin{Vmatrix} a & b \\ c & d \end{Vmatrix}  % ||$` - $\begin{pmatrix} a & b \\ c & d \end{pmatrix}  % () \begin{bmatrix} a & b \\ c & d \end{bmatrix}  % [] \begin{Bmatrix} a & b \\ c & d \end{Bmatrix}  % {} \begin{vmatrix} a & b \\ c & d \end{vmatrix}  % | \begin{Vmatrix} a & b \\ c & d \end{Vmatrix}  % ||$
-    
-
----
-
+`$\begin{pmatrix} -1 & 1 & -1 \\ 1 & 1 & -1\\ -1 & 1 & 1 \\ -1 & -1 & 2\end{pmatrix}$`  → $\begin{pmatrix} -1 & 1 & -1 \\ 1 & 1 & -1\\ -1 & 1 & 1 \\ -1 & -1 & 2\end{pmatrix}$
+`$\begin{bmatrix} -1 & 1 & -1 \\ 1 & 1 & -1\\ -1 & 1 & 1 \\ -1 & -1 & 2\end{bmatrix}$` → $\begin{bmatrix} -1 & 1 & -1 \\ 1 & 1 & -1\\ -1 & 1 & 1 \\ -1 & -1 & 2\end{bmatrix}$
 ## **8. 常用函数**
 
 - 三角函数：`\sin`, `\cos`, `\tan`, `\cot`, `\sec`, `\csc`  
-    `$ \sin x + \cos y $` → sin⁡x+cos⁡y\sin x + \cos ysinx+cosy
-    
+    `$\sin x + \cos y$` → $\sin x + \cos y$
 - 指数与对数：
-    
-    - `$ e^x $` → exe^xex
-        
-    - `$ \ln x $` → ln⁡x\ln xlnx
-        
-    - `$ \log_{10} x $` → log⁡10x\log_{10} xlog10​x
-        
+    - `$e^x$` → $e^x$
+    - `$\ln x$` → $\ln x$
+    - `$\log_{10} x$` → $\log_{10} x$
 - 极限与导数：
-    
-    - `$ \frac{d}{dx} f(x) $` → ddxf(x)\frac{d}{dx} f(x)dxd​f(x)
-        
-    - `$ f'(x) $` → f′(x)f'(x)f′(x)
-        
-
----
-
+    - `$\frac{d}{dx} f(x)$` → $\frac{d}{dx} f(x)$
+    - `$f'(x)$` → $f'(x)$
 ## **9. 逻辑与集合符号**
-
-- 等号与不等号：`=, \neq, \approx, \le, \ge`
+- `\neq` → $\neq$
+- `\approx` → $\approx$
+- `\le` → $\le$
+- `\ge` → $\ge$
     
-- 集合：`\in, \notin, \subset, \subseteq, \cup, \cap`  
-    `$ A \subseteq B $` → A⊆BA \subseteq BA⊆B
-    
+- `\in, , \subset, \cup, \cap`  
+- `\notin` → $\notin$
+- →
+`$A \subseteq B$` → $A \subseteq B$
+→
+→
 
 ---
 
