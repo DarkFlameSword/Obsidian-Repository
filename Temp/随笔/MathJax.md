@@ -175,9 +175,19 @@ $$ \sum_{i=1}^n i^2 $$ → ∑i=1ni2\sum_{i=1}^n i^2∑i=1n​i2
 
 `$\text{anything}$`
 ## 14
+
 | Desired Output    | MathJax Syntax        | Rendered Result       |
 | ----------------- | --------------------- | --------------------- |
 | Vector (short)    | `\vec{v}`             | $\vec{v}$             |
 | Vector (long)     | `\overrightarrow{AB}` | $\overrightarrow{AB}$ |
 | Unit Vector (hat) | `\hat{i}`             | $\hat{i}$             |
 | Bold Letter       | `\mathbf{x}`          | $\mathbf{x}$          |
+## 15
+| ≤   | `\le`       | 小于等于 |
+| --- | ----------- | ---- |
+| ≥   | `\ge`       | 大于等于 |
+| ≠   | `\ne`       | 不等于  |
+| <   | `<` 或 `\lt` | 小于   |
+| >   | `>` 或 `\gt` | 大于   |
+| ≈   | `\approx`   | 约等于  |
+| ≡   | `\equiv`    | 恒等于  |
