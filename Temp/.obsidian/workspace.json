@@ -49,8 +49,7 @@
               "title": "Feed-forward Neural Networks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -200,10 +199,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/Loss Function.md"
+                "file": "随笔/如何将本地仓库远程推送到github.md"
               },
               "icon": "lucide-info",
-              "title": "Loss Function的笔记属性"
+              "title": "如何将本地仓库远程推送到github的笔记属性"
             }
           }
         ],
@@ -226,15 +225,15 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "3fcf1ac7725a6dfc",
+  "active": "8c7c68ac41fbbe8b",
   "lastOpenFiles": [
+    "Monash/2025 S2/FIT5215/Loss Function.md",
     "随笔/MathJax.md",
     "Monash/2025 S2/FIT5215/Feed-forward Neural Networks.md",
     "Monash/2025 S2/FIT5215/Activate Function.md",
     "Monash/2025 S2/FIT5047/Algorithm.md",
     "Monash/2025 S2/FIT5215/Mathematics.md",
     "Monash/2025 S2/FIT5215/Lecture Note.md",
-    "Monash/2025 S2/FIT5215/Loss Function.md",
     "Pasted image 20250820222131.png",
     "随笔/Git.md",
     "随笔/如何将本地仓库远程推送到github.md",
