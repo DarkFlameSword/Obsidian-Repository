@@ -62,7 +62,7 @@ print(output)
 **参数:** 
 `weights`和`biases`，这些参数在训练过程中通过反向传播算法进行学习
 
-==注意从Hidden Layer 到Output Layer之间不需要使用激活函数==
+==注意从Hidden Layer 到Output Layer之间的h计算不需要使用激活函数==
 ### Output Layer
 **功能:** 
 产生最终的预测结果
