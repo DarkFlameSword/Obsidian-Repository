@@ -62,15 +62,6 @@ aliases:
 - `$A \subseteq B$` → $A \subseteq B$
 - `$\cup$` → $\cup$
 - `$\cap$` → $\cap$
-
-| ≤   | `\le`       | 小于等于 |
-| --- | ----------- | ---- |
-| ≥   | `\ge`       | 大于等于 |
-| ≠   | `\ne`       | 不等于  |
-| <   | `<` 或 `\lt` | 小于   |
-| >   | `>` 或 `\gt` | 大于   |
-| ≈   | `\approx`   | 约等于  |
-| ≡   | `\equiv`    | 恒等于  |
 ## **10. 其他符号**
 - `$a \cdot b$` → $a \cdot b$
 - `$a \times b$` → $a \times b$
