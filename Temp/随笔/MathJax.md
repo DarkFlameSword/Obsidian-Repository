@@ -44,7 +44,7 @@ aliases:
 ## **5. 求和与积分**
 
 - 求和：`\sum`  
-    `$ \sum_{i=1}^n i^2 $` → ∑i=1ni2\sum_{i=1}^n i^2∑i=1n​i2
+$$ \sum_{i=1}^n i^2 $$ → ∑i=1ni2\sum_{i=1}^n i^2∑i=1n​i2
     
 - 积分：`\int`  
     `$ \int_0^1 x^2 dx $` → ∫01x2dx\int_0^1 x^2 dx∫01​x2dx
