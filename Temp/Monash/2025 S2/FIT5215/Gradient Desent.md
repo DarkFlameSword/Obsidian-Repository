@@ -106,6 +106,35 @@ $$\theta_{t+1}​=\theta_t​−\eta \cdot \nabla_{\theta}\ell(xi​,yi​;\thet
 |**SGD**|每次只看一个路标（一个样本），走得快，但路线有点抖动|
 |**Mini-batch SGD**| 折中方案，比如每次用 32 个样本，既快又相对稳定|
 ## SGD with momentum
+
+1. **采样一个 mini-batch**
+
+$\{(x_1, y_1), (x_2, y_2), \dots, (x_b, y_b)\}$
+这里 b 是 batch size。
+
+2. **计算梯度的 mini-batch 平均值**
+$g = \frac{1}{b}\sum_{i=1}^{b} \nabla_\theta \, l(f(x_i;\theta), y_i)$
+- $l(\cdot)$：损失函数
+- $f(x_i;\theta)$：模型预测
+- g：当前 batch 的平均梯度
+
+2. **更新动量（velocity）**
+    
+
+$v \leftarrow \alpha v + (1-\alpha) g$
+
+- v：动量（类似“速度”）
+- $\alpha \in [0,1))$：动量系数（常见 0.9）
+- **解释**：新的速度是“历史速度的一部分 + 当前梯度的一部分”
+    - 如果 $\alpha$ 很大（接近 1），说明更重视历史方向
+    - 如果 $\alpha$ 较小，说明更重视当前梯度
+
+4. **更新参数**
+$\theta \leftarrow \theta - \eta v$
+- $\eta > 0$：学习率
+- 参数的更新方向 = “动量方向”
+- **好处**：不会被单个 batch 的噪声干扰太大，更新更平滑、更快收敛
+
 引入一个“速度项” $v_t$：
 
 $$v_{t+1} = \mu v_t - \eta \nabla_\theta L(\theta_t)$$
