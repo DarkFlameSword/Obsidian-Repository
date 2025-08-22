@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/Gradient Desent.md",
-                "mode": "source",
-                "source": false
+                "file": "随笔/MathJax.md",
+                "mode": "preview",
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "Gradient Desent"
+              "title": "MathJax"
             }
           },
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/Loss Function.md",
+                "file": "Monash/2025 S2/FIT5215/Gradient Desent.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Loss Function"
+              "title": "Gradient Desent"
             }
           },
           {
@@ -49,7 +49,8 @@
               "title": "Feed-forward Neural Networks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -81,7 +82,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#η",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -102,8 +103,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -226,16 +226,18 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "8c7c68ac41fbbe8b",
+  "active": "3fcf1ac7725a6dfc",
   "lastOpenFiles": [
-    "Pasted image 20250822171531.png",
-    "Monash/2025 S2/FIT5215/Feed-forward Neural Networks.md",
+    "Pasted image 20250822174832.png",
+    "Pasted image 20250822174736.png",
+    "随笔/MathJax.md",
     "Monash/2025 S2/FIT5215/Gradient Desent.md",
+    "Monash/2025 S2/FIT5215/Loss Function.md",
+    "Monash/2025 S2/FIT5215/Feed-forward Neural Networks.md",
+    "Pasted image 20250822171531.png",
     "Monash/2025 S2/FIT5215/Lecture Note.md",
     "Pasted image 20250822161854.png",
-    "随笔/MathJax.md",
     "随笔/如何将本地仓库远程推送到github.md",
-    "Monash/2025 S2/FIT5215/Loss Function.md",
     "Monash/2025 S2/FIT5215/Activate Function.md",
     "Monash/2025 S2/FIT5047/Algorithm.md",
     "Monash/2025 S2/FIT5215/Mathematics.md",
@@ -258,8 +260,6 @@
     "Pasted image 20250810173513.png",
     "Monash/2025 S2/FIT5047/Assignment1/Analysis.md",
     "Monash/2025 S2/FIT5047/Assignment1",
-    "Pasted image 20250808112718.png",
-    "Pasted image 20250808112001.png",
     "Monash/2025 S2/FIT5215/Pytorch.md",
     "Monash/2025 S2/FIT5215/模型训练现象分析.md",
     "Monash/2025 S1/FIT9136/Quiz 3-Review before the quiz.md",
