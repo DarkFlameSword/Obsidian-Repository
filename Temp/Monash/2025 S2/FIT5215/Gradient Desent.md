@@ -162,18 +162,18 @@ $$\text{Sample a mini-batch}\; {(x₁, y₁), ..., (xᵦ, yᵦ)}$$
 - `b` 是批次大小 (batch size)
 - `(xᵢ, yᵢ)` 是第 i 个样本的输入和标签
 ### 计算当前批次所有样本的平均梯度
-$$Compute g = \fraction{1}{b} \sum ∇θl(f(xᵢ, θ), yᵢ)$$
+$$Compute g = \frac{1}{b} \sum_{i=1}^b \nabla_\theta l(f(x^i, \theta), y^i)$$
 - `l(f(xᵢ, θ), yᵢ)`: 对第 i 个样本的损失函数
 - `∇θl(...)`: 损失函数对参数 θ 的梯度
 - `Σᵢ₌₁ᵇ`: 对批次中所有样本求和
 - `(1/b)`: 计算平均梯度
 ### 累积平方梯度
-$$\text{Accumulate the square gradient}: γ = γ + g⊙g$$
+$$\text{Accumulate the square gradient}: \gamma = \gamma + g\odot g$$
 - `γ` (gamma): **累积平方梯度** 向量，初始为零向量
 - `g⊙g`: 梯度的**逐元素平方** (element-wise square)
 - `γ = γ + g⊙g`: 将当前梯度的平方累加到历史记录中
 ### 自适应参数更新
-$$θ = θ - η/(ε + √γ) ⊙ g$$
+$$\theta = \theta - \frac{\eta}{\sqrt{\epsilon + \gamma}} \odot g$$
 1. **`√γ`**: 累积平方梯度的平方根
 2. **`ε + √γ`**: 加上数值稳定项
 3. **`η/(ε + √γ)`**: **自适应学习率**，每个参数都有不同的学习率
