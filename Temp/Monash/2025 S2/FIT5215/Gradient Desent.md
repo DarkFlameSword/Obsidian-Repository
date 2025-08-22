@@ -97,6 +97,7 @@ $$\theta_{t+1} = \theta_t - \eta \cdot \frac{1}{N} \sum_{i=1}^N \nabla_{\theta} 
 $$\theta_{t+1}​=\theta_t​−\eta \cdot \nabla_{\theta}\ell(xi​,yi​;\theta_t​)$$这样每次更新都 **非常快**，只需一个样本, 但缺点是：更新方向比较“抖动”，不如全量梯度那么稳定
 ## 举例
 ![[Pasted image 20250822174832.png]]
+![[Pasted image 20250822182635.png]]
 
 |Optimizer|understand|
 |---|---|
