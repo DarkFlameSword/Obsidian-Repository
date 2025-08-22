@@ -81,7 +81,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#η",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -102,7 +102,8 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -225,7 +226,7 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "fc5b16608a953896",
+  "active": "8c7c68ac41fbbe8b",
   "lastOpenFiles": [
     "Monash/2025 S2/FIT5215/Feed-forward Neural Networks.md",
     "Monash/2025 S2/FIT5215/Gradient Desent.md",
