@@ -107,21 +107,18 @@ $$\theta_{t+1}​=\theta_t​−\eta \cdot \nabla_{\theta}\ell(xi​,yi​;\thet
 |**Mini-batch SGD**| 折中方案，比如每次用 32 个样本，既快又相对稳定|
 ## SGD with momentum
 
-1. **采样一个 mini-batch**
-
-$\{(x_1, y_1), (x_2, y_2), \dots, (x_b, y_b)\}$
+**采样一个 mini-batch**
+$$\{(x_1, y_1), (x_2, y_2), \dots, (x_b, y_b)\}$$
 这里 b 是 batch size。
 
-2. **计算梯度的 mini-batch 平均值**
-$g = \frac{1}{b}\sum_{i=1}^{b} \nabla_\theta \, l(f(x_i;\theta), y_i)$
+ **计算梯度的 mini-batch 平均值**
+$$g = \frac{1}{b}\sum_{i=1}^{b} \nabla_\theta \, l(f(x_i;\theta), y_i)$$
 - $l(\cdot)$：损失函数
 - $f(x_i;\theta)$：模型预测
 - g：当前 batch 的平均梯度
 
-2. **更新动量（velocity）**
-    
-
-$v \leftarrow \alpha v + (1-\alpha) g$
+**更新动量（velocity）**
+$$v = \alpha v + (1-\alpha) g$$
 
 - v：动量（类似“速度”）
 - $\alpha \in [0,1))$：动量系数（常见 0.9）
@@ -129,23 +126,11 @@ $v \leftarrow \alpha v + (1-\alpha) g$
     - 如果 $\alpha$ 很大（接近 1），说明更重视历史方向
     - 如果 $\alpha$ 较小，说明更重视当前梯度
 
-4. **更新参数**
-$\theta \leftarrow \theta - \eta v$
+**更新参数**
+$$\theta = \theta - \eta v$$
 - $\eta > 0$：学习率
 - 参数的更新方向 = “动量方向”
 - **好处**：不会被单个 batch 的噪声干扰太大，更新更平滑、更快收敛
-
-引入一个“速度项” $v_t$：
-
-$$v_{t+1} = \mu v_t - \eta \nabla_\theta L(\theta_t)$$
-$$\theta_{t+1} = \theta_t + v_{t+1}$$
-然后我们就得到:
-$$\theta_{t+1} = \theta_t + (\mu v_t - \eta \nabla_\theta L(\theta_t))$$
-其中：
-- $v_t​$：类似“速度”，记录之前梯度的累计趋势
-- $\mu \in [0,1)$：动量系数（常用 0.9）
-- $\eta$：学习率
-- $\nabla_\theta L(\theta_t)$：当前梯度
 
 ==理解:==
 - **普通 SGD**：小球每次只看当前位置的坡度，容易在谷底左右震荡。
