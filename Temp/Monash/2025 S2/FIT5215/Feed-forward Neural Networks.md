@@ -34,7 +34,7 @@ print(output)
 ```
 # DNNs(Deep Neural Networks)
 **定义:** DNNs 是一种特殊的 FFNN，其显著特征是拥有大量的隐藏层。 这些额外的层使 DNN 能够学习输入数据中更复杂、抽象的表示。 这种深度是 DNN 能够胜任图像识别、自然语言处理等复杂任务的关键
-![[Pasted image 20250808112718.png]]
+![[Pasted image 20250822161854.png]]
 ## Structure
 ### Input Layer
 **功能:** 
