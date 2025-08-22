@@ -95,7 +95,8 @@ $$\theta_{t+1} = \theta_t - \eta \cdot \frac{1}{N} \sum_{i=1}^N \nabla_{\theta} 
 # Stochastic Gradient Descent(SGD)
 **随机抽取 1 个样本** $(x_j, y_j)$，近似当前梯度：
 $$\theta_{t+1}​=\theta_t​−\eta \cdot \nabla_{\theta}\ell(xi​,yi​;\theta_t​)$$这样每次更新都 **非常快**，只需一个样本, 但缺点是：更新方向比较“抖动”，不如全量梯度那么稳定
-## 举例
+
+==举例==
 ![[Pasted image 20250822174832.png]]
 ![[Pasted image 20250822182635.png]]
 
@@ -104,4 +105,19 @@ $$\theta_{t+1}​=\theta_t​−\eta \cdot \nabla_{\theta}\ell(xi​,yi​;\thet
 |**BGD**|像一个人走路前要看完整张地图（全量数据），走得稳，但慢|
 |**SGD**|每次只看一个路标（一个样本），走得快，但路线有点抖动|
 |**Mini-batch SGD**| 折中方案，比如每次用 32 个样本，既快又相对稳定|
+## SGD with momentum
+引入一个“速度项” $v_t$：
+$$\theta_{t+1} = \theta_t + (\mu v_t - \eta \nabla_\theta L(\theta_t))$$
+$$v_{t+1} = \mu v_t - \eta \nabla_\theta L(\theta_t)$$
+$$\theta_{t+1} = \theta_t + v_{t+1}$$
+
+其中：
+
+- $v_t​$：类似“速度”，记录之前梯度的累计趋势
+    
+- $\mu \in [0,1)$：动量系数（常用 0.9）
+    
+- $\eta$：学习率
+    
+- $\nabla_\theta L(\theta_t)$：当前梯度
 # Back Propagation in feed
