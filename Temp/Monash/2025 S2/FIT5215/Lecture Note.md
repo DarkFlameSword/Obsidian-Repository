@@ -52,6 +52,15 @@ MAE = (1/n) * Σ|yᵢ - ŷᵢ|
 
 ## Reinforce Learning
 
+
+# Data Set
+##  **训练集 (Training Set)**
+- 模型能直接看到、学习到的数据。
+## **验证集 (Validation Set)**
+- 模型不能用它来更新参数，只是用来“考察”模型在训练集的效果。
+## **测试集 (Test Set)**
+- **特征**：完全独立于训练集和验证集，直到最后才用。
+
 # Performance Metrics
 
 ### Accuracy
