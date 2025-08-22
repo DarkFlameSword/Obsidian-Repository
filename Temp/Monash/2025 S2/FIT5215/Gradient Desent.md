@@ -162,7 +162,7 @@ $$\text{Sample a mini-batch}\; {(x₁, y₁), ..., (xᵦ, yᵦ)}$$
 - `b` 是批次大小 (batch size)
 - `(xᵢ, yᵢ)` 是第 i 个样本的输入和标签
 ### 计算当前批次所有样本的平均梯度
-$$Compute g = \frac{1}{b} \sum_{i=1}^b \nabla_\theta l(f(x^i, \theta), y^i)$$
+$$g = \frac{1}{b} \sum_{i=1}^b \nabla_\theta l(f(x^i, \theta), y^i)$$
 - `l(f(xᵢ, θ), yᵢ)`: 对第 i 个样本的损失函数
 - `∇θl(...)`: 损失函数对参数 θ 的梯度
 - `Σᵢ₌₁ᵇ`: 对批次中所有样本求和
