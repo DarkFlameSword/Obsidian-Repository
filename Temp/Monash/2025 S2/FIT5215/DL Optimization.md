@@ -47,4 +47,14 @@ The gradients can grow bigger and bigger, so many layers get insanely large weig
 - 残差连接（Residual Connections）
     - `ResNet` 中的 shortcut/skip connection 可以让梯度绕过深层传播，极大缓解梯度消失/爆炸
 ---
-# He and Xavier weight initialization
+# weight initialization
+## What is a good weight/filter initialization?
+- Break the ‘symmetry’ of the network: two hidden nodes with the same input should have different weights
+    - Large initial weights has better symmetry breaking effect, help avoiding losing signals and redundant units, but could result in exploding values during back-ward and forward passes, especially in Recurrent Neural Networks
+- the gradient will not vanishing or exploding
+## Xavier initialization
+**作用:**
+Try to ensure the variance of the outputs of each layer equal to the
+variance of its input. This way, signals and gradients don't shrink or amplify layer by layer in the network
+
+
