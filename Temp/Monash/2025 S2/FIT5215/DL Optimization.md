@@ -81,55 +81,9 @@ $$W \sim N\left(0, \frac{2}{n_{in}}\right)$$
 
 # Regularization Techniques
 ## Regularization related to Weight
-## Regularization related to 
-## Regularization related to
-## Regularization related to
-## Regularization related to
-## Regularization related to
-## Regularization related to
-## Early Stopping
-![[Pasted image 20250824211637.png]]
-**理解:**
-在验证集表现最好的时候停下来
-
-**代码:**
-```
-import torch
-
-class EarlyStopping:
-    def __init__(self, patience=5, delta=0.0):
-        self.patience = patience
-        self.delta = delta
-        self.best_loss = float('inf')
-        self.counter = 0
-        self.early_stop = False
-        self.best_model_state = None
-
-    def __call__(self, val_loss, model):
-        if val_loss < self.best_loss - self.delta:
-            self.best_loss = val_loss
-            self.counter = 0
-            self.best_model_state = model.state_dict()  # 保存最佳权重
-        else:
-            self.counter += 1
-            if self.counter >= self.patience:
-                self.early_stop = True
-
-# ===== 使用示例 =====
-early_stopping = EarlyStopping(patience=5)
-
-for epoch in range(100):
-    train(...)   # 训练
-    val_loss = validate(...)  # 验证
-    
-    early_stopping(val_loss, model)
-
-    if early_stopping.early_stop:
-        print("Early stopping!")
-        model.load_state_dict(early_stopping.best_model_state)  # 恢复最佳参数
-        break
-```
-# Dropout
+### L1 / L2 Regularization
+## Regularization related to Construction
+### Dropout
 ![[Pasted image 20250824212935.png]]
 **理解:**
 In each iteration, at each layer, randomly choose some neurons and drop all connections from these neurons
@@ -152,33 +106,8 @@ model = nn.Sequential(
 
 ```
 ---
-# Batch Normalization
-**理解:**
-网络每一层的输入分布在训练中不断改变 → 导致训练难以收敛；所以通过BN 等方法规范化输入来缓解`Internal Covariate Shift`
-
-**公式:**
-在每一层对输入做标准化：
-$$\hat{x} = \frac{x - \mu}{\sigma}$$
-- $\mu$: mini-batch 的均值
-- $\sigma$: mini-batch 的方差
-- $x$: mini-batch 的输入h
-- $\hat x$: mini-batch 第一次处理后的输入
-$$y = \gamma \hat{x} + \beta$$
-- $\gamma$: 可训练参数,保证网络有足够的表达能力
-- $\beta$: 可训练参数,保证网络有足够的表达能力
-- $y$: mini-batch在BN后的输入
-
-**作用:**
-- Cope with internal covariate shift
-- Reduce gradient
-- vanishing/exploding
-- Reduce overfitting
-- Make training more stable
-- Converge faster
-
----
-
-# Data Augmentation
+## Regularization related to Data
+### Data Augmentation
 **理解:**
 在不额外收集新数据的情况下，通过对已有数据进行变换，来人工增加训练数据的多样性的一种方法
 
@@ -258,11 +187,101 @@ transform = transforms.Compose([
 
 ```
 
+### Label smoothing
+### Data mix-up
+### Data Cut-mix
+## Indirect Regularization
+### Batch Normalization
+**理解:**
+网络每一层的输入分布在训练中不断改变 → 导致训练难以收敛；所以通过BN 等方法规范化输入来缓解`Internal Covariate Shift`
+
+**公式:**
+在每一层对输入做标准化：
+$$\hat{x} = \frac{x - \mu}{\sigma}$$
+- $\mu$: mini-batch 的均值
+- $\sigma$: mini-batch 的方差
+- $x$: mini-batch 的输入h
+- $\hat x$: mini-batch 第一次处理后的输入
+$$y = \gamma \hat{x} + \beta$$
+- $\gamma$: 可训练参数,保证网络有足够的表达能力
+- $\beta$: 可训练参数,保证网络有足够的表达能力
+- $y$: mini-batch在BN后的输入
+
+**作用:**
+- Cope with internal covariate shift
+- Reduce gradient
+- vanishing/exploding
+- Reduce overfitting
+- Make training more stable
+- Converge faster
+
+---
 
 
+## Early Stopping
+![[Pasted image 20250824211637.png]]
+**理解:**
+在验证集表现最好的时候停下来
+
+**代码:**
+```
+import torch
+
+class EarlyStopping:
+    def __init__(self, patience=5, delta=0.0):
+        self.patience = patience
+        self.delta = delta
+        self.best_loss = float('inf')
+        self.counter = 0
+        self.early_stop = False
+        self.best_model_state = None
+
+    def __call__(self, val_loss, model):
+        if val_loss < self.best_loss - self.delta:
+            self.best_loss = val_loss
+            self.counter = 0
+            self.best_model_state = model.state_dict()  # 保存最佳权重
+        else:
+            self.counter += 1
+            if self.counter >= self.patience:
+                self.early_stop = True
+
+# ===== 使用示例 =====
+early_stopping = EarlyStopping(patience=5)
+
+for epoch in range(100):
+    train(...)   # 训练
+    val_loss = validate(...)  # 验证
+    
+    early_stopping(val_loss, model)
+
+    if early_stopping.early_stop:
+        print("Early stopping!")
+        model.load_state_dict(early_stopping.best_model_state)  # 恢复最佳参数
+        break
+```
+
+# Transfer Learning
+**理解:**
+Remove FC layers from the pretrained model, then replace them with a brand-new FC head
+
+**适用场景:**
+- **标注数据不足**
+    - 训练大模型需要大量数据，但很多任务数据稀缺（例如医学图像、低资源语言）
+- **训练成本太高**
+    - 从零开始训练深度网络需要大量算力
+- **相似任务间知识可迁移**
+    - 比如图像特征、语言模型中的词向量，这些都是通用的，可以复用
 
 
-
+## Feature Transfer
+- 使用在大数据集（如 ImageNet）上预训练好的模型提取特征。
+- 在新任务中只训练一个分类器（如 SVM、全连接层）。
+## Fine-Tuning
+- 加载预训练模型的参数。
+- 在新任务上继续训练：
+    - **冻结前几层**（保持通用特征，如边缘、颜色），只训练后几层。
+    - 或者 **全模型微调**，学习率设置较小。
 
 # Ill-conditioning problem
 
