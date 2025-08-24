@@ -52,7 +52,7 @@ The gradients can grow bigger and bigger, so many layers get insanely large weig
 - Break the ‘symmetry’ of the network: two hidden nodes with the same input should have different weights
     - Large initial weights has better symmetry breaking effect, help avoiding losing signals and redundant units, but could result in exploding values during back-ward and forward passes, especially in Recurrent Neural Networks
 - the gradient will not vanishing or exploding
-## Xavier initialization
+## Xavier Weight Initialization
 **作用:**
 Try to ensure the variance of the outputs of each layer equal to the
 variance of its input. This way, signals and gradients don't shrink or amplify layer by layer in the network
@@ -66,15 +66,47 @@ $$Var(Wx)≈Var(x)Var(W x) \approx Var(x)Var(Wx)≈Var(x)$$
 
 Xavier 初始化给出了一个简单公式：
 - 对**均匀分布**：
-$$W \sim U\big[
+$$W \sim U\left[
 -\sqrt{\frac{6}{n_in + n_out}},\sqrt{\frac{6}{n_in + n_out}}
-\big]$$
+\right]$$
 
 - 对**正态分布**：
-$$W∼N(0,2nin+nout)W \sim N\Big(0, \frac{2}{n_{in} + n_{out}}\Big)W∼N(0,nin​+nout​2​)$$
+$$W \sim N\Big(0, \frac{2}{n_{in} + n_{out}}\Big)$$
 
-- ​ 是输入节点数
-- noutn_{out}nout​ 是输出节点数
+- ​ $n_in$是输入节点数
+- $n_out$是输出节点数
 **适应场景:**
 - `sigmoid`, `tanh`
+    - 因为这两个函数在输入较大时会饱和，容易导致梯度消失
+- 不适用`ReLU`
+![[Pasted image 20250824184323.png]]
+
+## He Weight Initialization
+**作用:**
+Ensure the variance of the outputs of each layer equal to the variance of its inputs, but `He` specially optimized `ReLU`
+
+**Why?:**
+Xavier 初始化假设激活函数近似**线性**（例如 tanh），但 ReLU 并非对称线性函数，特别是它会把负数全部置零，这会改变输出的方差。因此，需要针对 ReLU 设计新的初始化方式
+
+**计算步骤:**
+假设某一层有：
+- 输入单元数：ninn_{in}nin​
+- 输出单元数：noutn_{out}nout​
+权重矩阵 WWW 的元素希望满足：
+$$Var(Wx)≈Var(x)Var(W x) \approx Var(x)Var(Wx)≈Var(x)$$
+
+Xavier 初始化给出了一个简单公式：
+- 对**均匀分布**：
+$$W \sim U\left[
+-\sqrt{\frac{6}{n_in + n_out}},\sqrt{\frac{6}{n_in + n_out}}
+\right]$$
+
+- 对**正态分布**：
+$$W \sim N\Big(0, \frac{2}{n_{in} + n_{out}}\Big)$$
+
+- ​ $n_in$是输入节点数
+- $n_out$是输出节点数
+**适应场景:**
+- `sigmoid`, `tanh`
+    - 因为这两个函数在输入较大时会饱和，容易导致梯度消失
 - 不适用`ReLU`
