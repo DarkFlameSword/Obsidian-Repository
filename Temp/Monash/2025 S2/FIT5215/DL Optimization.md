@@ -114,3 +114,10 @@ $$W \sim N\left(0, \frac{2}{n_{in}}\right)$$
 - 深层卷积神经网络 / 前馈网络 都可以用 He 初始化
 
 ![[Pasted image 20250824185407.png]]
+# Ill-conditioning problem
+
+# Long-term dependencies
+
+# Poor correspondence between local and global structures
+
+# Theoretical limits of optimization (but they usually have little use in practice of deep learning)

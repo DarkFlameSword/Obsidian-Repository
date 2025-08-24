@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/DL Optimization.md",
+                "file": "Monash/2025 S2/FIT5215/模型训练现象分析.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "DL Optimization"
+              "title": "模型训练现象分析"
             }
           }
         ]
@@ -74,8 +74,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -143,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/DL Optimization.md",
+                "file": "Monash/2025 S2/FIT5215/模型训练现象分析.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "DL Optimization 的大纲"
+              "title": "模型训练现象分析 的大纲"
             }
           },
           {
@@ -172,10 +171,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/DL Optimization.md"
+                "file": "Monash/2025 S2/FIT5215/模型训练现象分析.md"
               },
               "icon": "lucide-info",
-              "title": "DL Optimization的笔记属性"
+              "title": "模型训练现象分析的笔记属性"
             }
           }
         ],
@@ -200,10 +199,12 @@
   },
   "active": "8c7c68ac41fbbe8b",
   "lastOpenFiles": [
+    "Monash/2025 S2/FIT5215/DL Optimization.md",
+    "Monash/2025 S2/FIT5215/Optimizer.md",
+    "Monash/2025 S2/FIT5215/模型训练现象分析.md",
     "Pasted image 20250824185407.png",
     "Pasted image 20250824184323.png",
     "Monash/2025 S2/FIT5215/Loss Function.md",
-    "Monash/2025 S2/FIT5215/DL Optimization.md",
     "Monash/2025 S2/FIT5215/Lecture Note.md",
     "随笔/MathJax.md",
     "Monash/2025 S2/FIT5215/Mathematics.md",
@@ -224,17 +225,14 @@
     "Monash/2025 S2/FIT5047/Lecture Note.md",
     "Monash/2025 S2/FIT5215/RCNNs.md",
     "随笔/送礼统计.md",
-    "Monash/2025 S2/FIT5215/Optimizer.md",
     "Pasted image 20250818164013.png",
     "Pasted image 20250818164006.png",
-    "Pasted image 20250818163944.png",
     "Monash/2025 S2/FIT5215/Convolutional Neural Networks(CNNs).md",
     "Monash/2025 S2/FIT5047/Heuristic Graph-Search.md",
     "Monash/2025 S2/FIT5215/对于线性提取和非线性提取的理解.md",
     "Monash/2025 S2/FIT5047/Assignment1/Analysis.md",
     "Monash/2025 S2/FIT5047/Assignment1",
     "Monash/2025 S2/FIT5215/Pytorch.md",
-    "Monash/2025 S2/FIT5215/模型训练现象分析.md",
     "Monash/2025 S1/FIT9136/Quiz 3-Review before the quiz.md",
     "Monash/2025 S1/FIT9132/Quiz考前随笔.md",
     "Monash/2025 S1/FIT5057/未命名.md",
