@@ -146,7 +146,29 @@ model = nn.Sequential(
 ---
 # Batch Normalization
 **理解:**
+网络每一层的输入分布在训练中不断改变 → 导致训练难以收敛；所以通过BN 等方法规范化输入来缓解`Internal Covariate Shift`
 
+**公式:**
+在每一层对输入做标准化：
+$$\hat{x} = \frac{x - \mu}{\sigma}$$
+- $\mu$: mini-batch 的均值
+- $\sigma$: mini-batch 的方差
+- $x$: mini-batch 的输入h
+- $\hat x$: mini-batch 第一次处理后的输入
+$$y = \gamma \hat{x} + \beta$$
+- $\gamma$: 可训练参数,保证网络有足够的表达能力
+- $\beta$: 可训练参数,保证网络有足够的表达能力
+- $y$: mini-batch在BN后的输入
+
+**作用:**
+- Cope with internal covariate shift
+- Reduce gradient
+- vanishing/exploding
+- Reduce overfitting
+- Make training more stable
+- Converge faster
+
+---
 # Ill-conditioning problem
 
 # Long-term dependencies
