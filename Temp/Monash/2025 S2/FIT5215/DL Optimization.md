@@ -81,9 +81,29 @@ $$W \sim N\left(0, \frac{2}{n_{in}}\right)$$
 
 # Early Stopping
 ![[Pasted image 20250824211637.png]]
+**理解:**
+在验证集表现最好的时候停下来
 
-# Regularization
+**代码:**
+```
+from tensorflow.keras.callbacks import EarlyStopping
 
+# 定义 early stopping 回调
+early_stopping = EarlyStopping(
+    monitor='val_loss',   # 监控的指标
+    patience=5,           # 容忍loss没有下降,acc没有上升的 epoch 有多少个
+    restore_best_weights=True  # 恢复验证集上表现最好的权重
+)
+
+# 训练模型时加入 callback
+history = model.fit(
+    X_train, y_train,
+    validation_data=(X_val, y_val),
+    epochs=100,
+    callbacks=[early_stopping]
+)
+
+```
 
 # Ill-conditioning problem
 
