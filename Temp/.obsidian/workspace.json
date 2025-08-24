@@ -15,7 +15,7 @@
               "state": {
                 "file": "Monash/2025 S2/FIT5215/DL Optimization.md",
                 "mode": "source",
-                "source": true
+                "source": false
               },
               "icon": "lucide-file",
               "title": "DL Optimization"
@@ -92,7 +92,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "e4962ae75ca05781",

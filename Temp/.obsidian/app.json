@@ -1,5 +1,6 @@
 {
-  "useTab": false,
+  "useTab": true,
   "showLineNumber": true,
-  "rightToLeft": false
+  "rightToLeft": false,
+  "livePreview": true
 }

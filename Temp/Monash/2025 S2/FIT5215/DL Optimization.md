@@ -79,6 +79,8 @@ $$W \sim N\left(0, \frac{2}{n_{in}}\right)$$
 
 ---
 
+# Early Stopping
+
 # Regularization
 
 
