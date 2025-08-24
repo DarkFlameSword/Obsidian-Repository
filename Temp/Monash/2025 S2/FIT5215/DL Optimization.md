@@ -144,6 +144,7 @@ $$W \sim N\left(0, \frac{2}{n_{in}}\right)$$
 ![[Pasted image 20250824192802.png]]
 
 
+
 # Underfitting
 
 # Regularization
