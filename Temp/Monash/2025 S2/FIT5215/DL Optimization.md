@@ -326,11 +326,11 @@ print("Val acc:", accuracy_score(yva, pred))
 ![[Pasted image 20250824221050.png]]
 1. Freeze all CONV layers in the network
 2. Only allow the gradient to backpropagate through the FC layers. Doing this allows our network to warm up(1-5 epoch)
+![[Pasted image 20250824221458.png]]
 3. unfreeze all layers in the network
 4. Continue training the entire network, but with a very small learning rate
-5. We do not want to deviate our CONV filters dramatically.
-Training is then allowed to continue until sufficient accuracy
-is obtained
+5. We do not want to deviate our CONV filters dramatically. Training is then allowed to continue until sufficient accuracy is obtained
+
 **特点:**
 - 加载预训练模型的参数。
 - 在新任务上继续训练：
