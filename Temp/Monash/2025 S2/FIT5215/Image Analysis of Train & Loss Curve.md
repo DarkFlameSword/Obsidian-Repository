@@ -74,14 +74,7 @@ The gradients can grow bigger and bigger, so many layers get insanely large weig
 ![[Pasted image 20250824192802.png]]
 ![[Pasted image 20250824204807.png]]
 **表现:**
-- **Loss 曲线:**
-    - 训练集 Loss 快速下降，loss 值很低
-    - 验证集 Loss 先下降后上升，在后期高于训练集 Loss
-    - 训练集和验证集 Loss 曲线分离
-- **Accuracy 曲线:**
-    - 训练集 Accuracy 快速提升，accuracy 值很高
-    - 验证集 Accuracy 先提升后下降，在后期低于训练集 Accuracy
-    - 训练集和验证集 Accuracy 曲线分离
+At a certain point, the train loss still decreases, while the valid loss starts increasing
 
 **解决方法:**
 1. **增加训练数据**

@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/模型训练现象分析.md",
+                "file": "Monash/2025 S2/FIT5215/Image Analysis of Train & Loss Curve.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "模型训练现象分析"
+              "title": "Image Analysis of Train & Loss Curve"
             }
           }
         ]
@@ -92,8 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "e4962ae75ca05781",
@@ -214,7 +213,8 @@
   },
   "active": "8c7c68ac41fbbe8b",
   "lastOpenFiles": [
-    "Monash/2025 S2/FIT5215/模型训练现象分析.md",
+    "Pasted image 20250824211637.png",
+    "Monash/2025 S2/FIT5215/Image Analysis of Train & Loss Curve.md",
     "Monash/2025 S2/FIT5215/DL Optimization.md",
     "E751AE193BB8D450C419CACD708E93C2.png",
     "Pasted image 20250824204807.png",

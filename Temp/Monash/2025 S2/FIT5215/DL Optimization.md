@@ -80,6 +80,7 @@ $$W \sim N\left(0, \frac{2}{n_{in}}\right)$$
 ---
 
 # Early Stopping
+![[Pasted image 20250824211637.png]]
 
 # Regularization
 
