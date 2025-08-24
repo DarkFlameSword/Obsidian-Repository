@@ -86,25 +86,60 @@ $$W \sim N\left(0, \frac{2}{n_{in}}\right)$$
 
 **代码:**
 ```
-from tensorflow.keras.callbacks import EarlyStopping
+import torch
 
-# 定义 early stopping 回调
-early_stopping = EarlyStopping(
-    monitor='val_loss',   # 监控的指标
-    patience=5,           # 容忍loss没有下降,acc没有上升的 epoch 有多少个
-    restore_best_weights=True  # 恢复验证集上表现最好的权重
-)
+class EarlyStopping:
+    def __init__(self, patience=5, delta=0.0):
+        self.patience = patience
+        self.delta = delta
+        self.best_loss = float('inf')
+        self.counter = 0
+        self.early_stop = False
+        self.best_model_state = None
 
-# 训练模型时加入 callback
-history = model.fit(
-    X_train, y_train,
-    validation_data=(X_val, y_val),
-    epochs=100,
-    callbacks=[early_stopping]
+    def __call__(self, val_loss, model):
+        if val_loss < self.best_loss - self.delta:
+            self.best_loss = val_loss
+            self.counter = 0
+            self.best_model_state = model.state_dict()  # 保存最佳权重
+        else:
+            self.counter += 1
+            if self.counter >= self.patience:
+                self.early_stop = True
+
+# ===== 使用示例 =====
+early_stopping = EarlyStopping(patience=5)
+
+for epoch in range(100):
+    train(...)   # 训练
+    val_loss = validate(...)  # 验证
+    
+    early_stopping(val_loss, model)
+
+    if early_stopping.early_stop:
+        print("Early stopping!")
+        model.load_state_dict(early_stopping.best_model_state)  # 恢复最佳参数
+        break
+```
+# Dropout
+![[Pasted image 20250824212935.png]]
+**理解:**
+In each iteration, at each layer, randomly choose some neurons and drop all connections from these neurons
+
+**代码:**
+```
+import torch.nn as nn
+
+model = nn.Sequential(
+    nn.Linear(128, 64),
+    nn.ReLU(),
+    nn.Dropout(p=0.5),  输入层一般用小一些（如 0.1–0.2）
+    
+- 隐藏层常用 0.5 左右
+    nn.Linear(64, 10)
 )
 
 ```
-
 # Ill-conditioning problem
 
 # Long-term dependencies
