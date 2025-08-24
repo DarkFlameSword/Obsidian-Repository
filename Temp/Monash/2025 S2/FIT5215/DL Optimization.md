@@ -7,6 +7,7 @@ tags:
 aliases:
   - summary
 ---
+![[Pasted image 20250824192446.png]]
 # Gradient vanishing
 ![[Pasted image 20250807174530.png]]
 **定义:**
@@ -136,6 +137,17 @@ $$W \sim N\left(0, \frac{2}{n_{in}}\right)$$
 - 深层卷积神经网络 / 前馈网络 都可以用 He 初始化
 
 ![[Pasted image 20250824185407.png]]
+
+# Regularization
+
+# Overfitting
+
+# Underfitting
+
+
+
+
+
 # Ill-conditioning problem
 
 # Long-term dependencies
@@ -145,4 +157,3 @@ $$W \sim N\left(0, \frac{2}{n_{in}}\right)$$
 # Theoretical limits of optimization (but they usually have little use in practice of deep learning)
 
 
-# 
