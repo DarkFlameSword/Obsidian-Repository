@@ -35,8 +35,7 @@
               "title": "模型训练现象分析"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -157,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/模型训练现象分析.md",
+                "file": "Monash/2025 S2/FIT5215/DL Optimization.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "模型训练现象分析 的大纲"
+              "title": "DL Optimization 的大纲"
             }
           },
           {
@@ -186,10 +185,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/模型训练现象分析.md"
+                "file": "Monash/2025 S2/FIT5215/DL Optimization.md"
               },
               "icon": "lucide-info",
-              "title": "模型训练现象分析的笔记属性"
+              "title": "DL Optimization的笔记属性"
             }
           }
         ],
@@ -212,10 +211,11 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "502d3924e85b8cf8",
+  "active": "8c7c68ac41fbbe8b",
   "lastOpenFiles": [
-    "Monash/2025 S2/FIT5215/DL Optimization.md",
     "Monash/2025 S2/FIT5215/模型训练现象分析.md",
+    "Monash/2025 S2/FIT5215/DL Optimization.md",
+    "E751AE193BB8D450C419CACD708E93C2.png",
     "Pasted image 20250824204807.png",
     "Pasted image 20250824192802.png",
     "Pasted image 20250824192640.png",
@@ -234,7 +234,6 @@
     "Pasted image 20250822182635.png",
     "Pasted image 20250822174832.png",
     "Pasted image 20250822174736.png",
-    "Pasted image 20250822171531.png",
     "随笔/如何将本地仓库远程推送到github.md",
     "Monash/2025 S2/FIT5215/Activate Function.md",
     "Monash/2025 S2/FIT5047/Algorithm.md",
