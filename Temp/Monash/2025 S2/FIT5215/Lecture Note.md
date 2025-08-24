@@ -224,5 +224,5 @@ $$H(L) = ∇(∇L)$$
     2. **Curvature is mixed:** The Hessian matrix `H` is **indefinite**. It has both positive and negative eigenvalues.
 
 
-
-sssss
+# Optimization Problem in ML and DL
+$$\min_{\theta}{J(\theta)} = \omega(\theta)$$
