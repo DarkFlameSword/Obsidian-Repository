@@ -275,13 +275,87 @@ Remove FC layers from the pretrained model, then replace them with a brand-new F
 
 
 ## Feature Transfer
-- 使用在大数据集（如 ImageNet）上预训练好的模型提取特征。
-- 在新任务中只训练一个分类器（如 SVM、全连接层）。
+**特点:**
+- 使用在大数据集（如 ImageNet）上预训练好的模型提取特征
+- 在新任务中只训练一个分类器（如 SVM、全连接层）
+
+**代码**:
+```
+# pip install torch torchvision scikit-learn
+import torch, numpy as np
+import torch.nn as nn
+from torchvision import models, datasets, transforms
+from torch.utils.data import DataLoader
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score
+
+# 1) 预处理与数据
+tfm = transforms.Compose([transforms.Resize(256), transforms.CenterCrop(224),
+                          transforms.ToTensor(), transforms.Normalize(
+                          mean=[0.485,0.456,0.406], std=[0.229,0.224,0.225])])
+train_set = datasets.ImageFolder("data/train", tfm)
+val_set   = datasets.ImageFolder("data/val",   tfm)
+train_loader = DataLoader(train_set, batch_size=64, shuffle=False, num_workers=2)
+val_loader   = DataLoader(val_set,   batch_size=64, shuffle=False, num_workers=2)
+
+# 2) 预训练模型做特征提取（去掉最后分类层）
+backbone = models.resnet18(weights=models.ResNet18_Weights.DEFAULT)
+backbone.fc = nn.Identity()   # 直接输出全局特征
+backbone.eval().cuda()
+
+def extract_feats(loader):
+    X, y = [], []
+    with torch.no_grad():
+        for imgs, labels in loader:
+            feats = backbone(imgs.cuda()).cpu().numpy()
+            X.append(feats); y.append(labels.numpy())
+    return np.vstack(X), np.concatenate(y)
+
+Xtr, ytr = extract_feats(train_loader)
+Xva, yva = extract_feats(val_loader)
+
+# 3) 只训练一个轻量分类器（逻辑回归 / 也可 SVM）
+clf = LogisticRegression(max_iter=2000, n_jobs=-1)
+clf.fit(Xtr, ytr)
+pred = clf.predict(Xva)
+print("Val acc:", accuracy_score(yva, pred))
+
+```
 ## Fine-Tuning
+**步骤:**
+![[Pasted image 20250824221050.png]]
+1. Freeze all CONV layers in the network
+2. Only allow the gradient to backpropagate through the FC layers. Doing this allows our network to warm up(1-5 epoch)
+3. unfreeze all layers in the network
+4. Continue training the entire network, but with a very small learning rate
+5. We do not want to deviate our CONV filters dramatically.
+Training is then allowed to continue until sufficient accuracy
+is obtained
+**特点:**
 - 加载预训练模型的参数。
 - 在新任务上继续训练：
-    - **冻结前几层**（保持通用特征，如边缘、颜色），只训练后几层。
-    - 或者 **全模型微调**，学习率设置较小。
+    - **冻结前几层**（保持通用特征，如边缘、颜色），只训练后几层
+    - 或者 **全模型微调**，学习率设置较小
+
+**代码**:
+```
+import torch
+import torchvision.models as models
+import torch.nn as nn
+
+# 加载预训练的 ResNet18
+model = models.resnet18(pretrained=True)
+
+# 冻结前面的层
+for param in model.parameters():
+    param.requires_grad = False
+
+# 替换最后一层分类器（假设新任务有 10 类）
+model.fc = nn.Linear(model.fc.in_features, 10)
+
+# 现在只训练最后一层
+
+```
 
 # Ill-conditioning problem
 
