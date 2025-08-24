@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/Loss Function.md",
+                "file": "Monash/2025 S2/FIT5215/DL Optimization.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Loss Function"
+              "title": "DL Optimization"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "[\"cssclasses\"]",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -142,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/Pytorch.md",
+                "file": "Monash/2025 S2/FIT5215/DL Optimization.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Pytorch 的大纲"
+              "title": "DL Optimization 的大纲"
             }
           },
           {
@@ -171,10 +172,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/Loss Function.md"
+                "file": "Monash/2025 S2/FIT5215/DL Optimization.md"
               },
               "icon": "lucide-info",
-              "title": "Loss Function的笔记属性"
+              "title": "DL Optimization的笔记属性"
             }
           }
         ],
@@ -197,10 +198,11 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "8c7c68ac41fbbe8b",
+  "active": "fc5b16608a953896",
   "lastOpenFiles": [
-    "Monash/2025 S2/FIT5215/Lecture Note.md",
     "Monash/2025 S2/FIT5215/Loss Function.md",
+    "Monash/2025 S2/FIT5215/DL Optimization.md",
+    "Monash/2025 S2/FIT5215/Lecture Note.md",
     "随笔/MathJax.md",
     "Monash/2025 S2/FIT5215/Mathematics.md",
     "Monash/2025 S2/FIT5215/Feed-forward Neural Networks.md",
