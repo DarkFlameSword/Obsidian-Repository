@@ -133,13 +133,20 @@ import torch.nn as nn
 model = nn.Sequential(
     nn.Linear(128, 64),
     nn.ReLU(),
-    nn.Dropout(p=0.5),  输入层一般用小一些（如 0.1–0.2）
+    # 常用 0.2–0.5
+    # 输入层一般用小一些,如 0.1–0.2
+    # 隐藏层常用 0.5 左右
+    nn.Dropout(p=0.5),  
     
 - 隐藏层常用 0.5 左右
     nn.Linear(64, 10)
 )
 
 ```
+---
+# Batch Normalization
+**理解:**
+
 # Ill-conditioning problem
 
 # Long-term dependencies
