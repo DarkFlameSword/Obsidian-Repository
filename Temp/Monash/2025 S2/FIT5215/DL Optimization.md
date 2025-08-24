@@ -8,8 +8,19 @@ aliases:
   - summary
 ---
 # Gradient vanishing
+![[Pasted image 20250807174530.png]]
 **定义:**
 Gradients get smaller and smaller as the algorithm progresses down to the lower layers
+
+**表现:**
+- **Loss 曲线:**
+    - 训练集 Loss 下降缓慢
+    - 训练集 Loss 在后期几乎不再下降，趋于平缓
+    - 验证集 Loss 也呈现相似的趋势
+- **Accuracy 曲线:**
+    - 训练集 Accuracy 提升缓慢
+    - 训练集 Accuracy 在后期几乎不再提升，趋于平缓
+    - 验证集 Accuracy 也呈现相似的趋势
 
 **多发场景:**
 - activate function 使用的是`Sigmoid`,`tanh`
@@ -27,8 +38,19 @@ Gradients get smaller and smaller as the algorithm progresses down to the lower 
     - `ResNet` 中的 shortcut/skip connection 可以让梯度绕过深层传播，极大缓解梯度消失/爆炸
 ---
 # Gradient exploding
+![[Pasted image 20250807173729.png]]
 **定义:**
 The gradients can grow bigger and bigger, so many layers get insanely large weight updates, and the training diverges
+
+**表现:**
+- **Loss 曲线:**
+    - 训练集 Loss 在初期迅速增加
+    - 训练集 Loss 出现明显的震荡，可能包含 NaN 值
+    - 验证集 Loss 也可能受到影响，出现震荡
+- **Accuracy 曲线:**
+    - 训练集 Accuracy 在初期迅速下降
+    - 训练集 Accuracy 出现明显的震荡
+    - 验证集 Accuracy 也可能受到影响，出现下降
 
 **多发场景:**
 - 深层神经网络
@@ -121,3 +143,6 @@ $$W \sim N\left(0, \frac{2}{n_{in}}\right)$$
 # Poor correspondence between local and global structures
 
 # Theoretical limits of optimization (but they usually have little use in practice of deep learning)
+
+
+# 
