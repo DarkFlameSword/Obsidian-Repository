@@ -57,4 +57,24 @@ The gradients can grow bigger and bigger, so many layers get insanely large weig
 Try to ensure the variance of the outputs of each layer equal to the
 variance of its input. This way, signals and gradients don't shrink or amplify layer by layer in the network
 
+**计算步骤:**
+假设某一层有：
+- 输入单元数：ninn_{in}nin​
+- 输出单元数：noutn_{out}nout​
+权重矩阵 WWW 的元素希望满足：
+$$Var(Wx)≈Var(x)Var(W x) \approx Var(x)Var(Wx)≈Var(x)$$
 
+Xavier 初始化给出了一个简单公式：
+- 对**均匀分布**：
+$$W \sim U\big[
+-\sqrt{\frac{6}{n_in + n_out}},\sqrt{\frac{6}{n_in + n_out}}
+\big]$$
+
+- 对**正态分布**：
+$$W∼N(0,2nin+nout)W \sim N\Big(0, \frac{2}{n_{in} + n_{out}}\Big)W∼N(0,nin​+nout​2​)$$
+
+- ​ 是输入节点数
+- noutn_{out}nout​ 是输出节点数
+**适应场景:**
+- `sigmoid`, `tanh`
+- 不适用`ReLU`
