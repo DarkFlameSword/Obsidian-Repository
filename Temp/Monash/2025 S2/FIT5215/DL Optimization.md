@@ -79,7 +79,15 @@ $$W \sim N\left(0, \frac{2}{n_{in}}\right)$$
 
 ---
 
-# Early Stopping
+# Regularization Techniques
+## Regularization related to Weight
+## Regularization related to 
+## Regularization related to
+## Regularization related to
+## Regularization related to
+## Regularization related to
+## Regularization related to
+## Early Stopping
 ![[Pasted image 20250824211637.png]]
 **理解:**
 在验证集表现最好的时候停下来
@@ -169,6 +177,93 @@ $$y = \gamma \hat{x} + \beta$$
 - Converge faster
 
 ---
+
+# Data Augmentation
+**理解:**
+在不额外收集新数据的情况下，通过对已有数据进行变换，来人工增加训练数据的多样性的一种方法
+
+**例子:**
+- 图像数据
+
+	- **几何变换**
+    
+	    - 翻转（horizontal / vertical flip）
+	        
+	    - 旋转（rotation）
+	        
+	    - 平移（translation）
+	        
+	    - 缩放（scaling, zoom）
+	        
+	    - 剪裁（random crop, center crop）
+        
+	- **颜色与光照调整**
+	    
+	    - 随机亮度、对比度、饱和度变化
+	        
+	    - 色彩抖动（color jitter）
+	        
+	    - 灰度化
+	        
+	- **噪声与模糊**
+	    
+	    - 加入高斯噪声
+	        
+	    - 模糊处理（Gaussian blur, motion blur）
+	        
+	- **高级方法**
+	    
+	    - **Cutout**：随机遮挡部分区域
+	        
+	    - **Mixup**：将两张图像混合
+	        
+	    - **CutMix**：将一张图像的部分区域替换为另一张
+        
+
+- 文本数据
+
+	- 同义词替换（synonym replacement）
+	    
+	- 随机插入 / 删除 / 交换词语
+	    
+	- 回译（back translation，例如中译英再译回中）
+	    
+	- 使用预训练模型生成增强句子（如 GPT 生成 paraphrase）
+    
+- 音频数据
+
+	- 时间拉伸（time stretching）
+	    
+	- 音调变化（pitch shifting）
+	    
+	- 加噪声（background noise）
+	    
+	- 裁剪、拼接
+    
+- 表格数据
+
+	- 对数值特征加噪声
+	    
+	- SMOTE（合成少数类过采样技术，用于类别不平衡问题）
+**代码:**
+```
+import torchvision.transforms as transforms
+
+transform = transforms.Compose([
+    transforms.RandomHorizontalFlip(),  # 随机水平翻转
+    transforms.RandomRotation(15),      # 随机旋转 ±15°
+    transforms.ColorJitter(brightness=0.2, contrast=0.2, saturation=0.2),
+    transforms.ToTensor()
+])
+
+```
+
+
+
+
+
+
+
 # Ill-conditioning problem
 
 # Long-term dependencies
