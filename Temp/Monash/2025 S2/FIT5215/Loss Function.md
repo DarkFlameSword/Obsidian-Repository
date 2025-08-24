@@ -7,7 +7,7 @@ author:
 aliases:
   - base
 ---
-# Classification
+# Multi-class Classification
 ## `Kullback-Leibler (KL) divergence`
 个人理解: KL散度用来计算, 当前模型距离真实案例的偏差值
 $$
@@ -133,6 +133,7 @@ $$ L = \frac{1}{n} \sum_{i=1}^{n} |y_i - p_i|$$
 ![[Pasted image 20250807170451.png]]
 $$ L = \frac{1}{n} \sum_{i=1}^{n} |y_i - p_i|^2$$
 `y_i` 是真实值，`p_i` 是模型预测值，`n` 是样本数量
+## ε−insensitive Loss
 
 
 

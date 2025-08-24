@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/Lecture Note.md",
-                "mode": "preview",
+                "file": "Monash/2025 S2/FIT5215/Loss Function.md",
+                "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Lecture Note"
+              "title": "Loss Function"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "e4962ae75ca05781",
@@ -172,10 +171,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/Lecture Note.md"
+                "file": "Monash/2025 S2/FIT5215/Loss Function.md"
               },
               "icon": "lucide-info",
-              "title": "Lecture Note的笔记属性"
+              "title": "Loss Function的笔记属性"
             }
           }
         ],
@@ -200,8 +199,8 @@
   },
   "active": "8c7c68ac41fbbe8b",
   "lastOpenFiles": [
-    "Monash/2025 S2/FIT5215/Loss Function.md",
     "Monash/2025 S2/FIT5215/Lecture Note.md",
+    "Monash/2025 S2/FIT5215/Loss Function.md",
     "随笔/MathJax.md",
     "Monash/2025 S2/FIT5215/Mathematics.md",
     "Monash/2025 S2/FIT5215/Feed-forward Neural Networks.md",
