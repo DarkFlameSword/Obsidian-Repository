@@ -100,6 +100,8 @@ $${\color{red}\frac{\partial y}{\partial x}} = {\color{red}\nabla_x f} =
 $$ \forall x \quad f_X(x)≥0$$
 $$\forall x \quad \int_{-\infty}^{\infty} f_X(x)dx=1$$
 $$P(a\le X \le b) = \int_{a}^{b} f_X(x)dx$$
+**理解:**
+PDF: 给定一个 $x$，PDF 告诉你随机变量在$x$ 附近取值的“概率密度”，也就是概率在数轴上的分布浓度，只有把它在区间上积分，才得到真实的概率
 
 ---
 ## Cumulative Distribution Function(CDF)
@@ -107,53 +109,13 @@ $$P(a\le X \le b) = \int_{a}^{b} f_X(x)dx$$
 **定义:**
 对连续随机变量 X，CDF 是：
 $$F_X(x)=P(X \le x)$$
-表示随机变量 XXX 取值 不大于某个值 $x$ 的概率
-同时CDF满足:
+CDF满足:
 $$F(x_1)\le F(x_2),\quad x_1<x_2$$
 $$\begin{align} \lim_{x \to - \infty} F(x) =0 \\ \lim_{x \to \infty} F(x) =1 \end{align}$$
 $$$$
-$$∫−∞xfX(t) dtF_X(x) = P(X \le x) = \int_{-\infty}^{x} f_X(t) \, dtFX​(x)=P(X≤x)=∫−∞x​fX​(t)dt$$
+$$\begin{align} f(x) = \frac{d}{dx} F(x) \\ F(x) = \int_{-\infty}^{x} f_X(t) dt \end{align}$$
 
-### 含义
-
-- 给定一个 xxx，CDF 告诉你 **随机变量小于等于 x 的概率**。
-    
-- 单调递增，范围从 0 到 1：
-    
-
-FX(−∞)=0,FX(∞)=1F_X(-\infty) = 0, \quad F_X(\infty) = 1FX​(−∞)=0,FX​(∞)=1
-
-### 举例
-
-- 标准正态分布的 CDF：
-    
-
-FX(x)=∫−∞x12πe−t2/2dtF_X(x) = \int_{-\infty}^{x} \frac{1}{\sqrt{2\pi}} e^{-t^2/2} dtFX​(x)=∫−∞x​2π​1​e−t2/2dt
+**理解:**
+给定一个 $x$，CDF 告诉你随机变量小于等于 x 的概率
 
 ---
-
-## **3. PDF 与 CDF 的关系**
-
-FX(x)=∫−∞xfX(t) dtF_X(x) = \int_{-\infty}^{x} f_X(t) \, dtFX​(x)=∫−∞x​fX​(t)dt fX(x)=ddxFX(x)f_X(x) = \frac{d}{dx} F_X(x)fX​(x)=dxd​FX​(x)
-
-- **CDF 是 PDF 的积分**
-    
-- **PDF 是 CDF 的导数**
-    
-
----
-
-## **4. 直观理解**
-
-- **PDF**：描述“每个点附近概率的密集程度”，类似曲线高度
-    
-- **CDF**：描述“累积概率”，类似曲线从 0 到 1 逐渐爬升
-    
-
----
-
-## **5. 图像示意**
-
-- PDF 曲线：钟形（标准正态）
-    
-- CDF 曲线：S 形，从 0 慢慢上升到 1
