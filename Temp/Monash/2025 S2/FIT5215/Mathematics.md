@@ -93,41 +93,22 @@ $${\color{red}\frac{\partial y}{\partial x}} = {\color{red}\nabla_x f} =
 0 & 2x_2 + x_3^2 & 2x_2x_3
 \end{bmatrix}$$
 # Probabilistic
-## **1. PDF：Probability Density Function（概率密度函数）**
+## Probability Density Function(PDF)
 
-### 定义
-
-- 对连续随机变量 $X$，PDF 是一个函数 $f_X(x)$，满足：
-- $$ \forall x \quad f(x)≥0$$
-- $$\forall x \int_{-\infty}^{\infty} f(x)dx=1$$
-- - $$\forall x \int_{-\infty}^{\infty} f(x)dx=1$$
-
-### 含义
-
-- fX(x)f_X(x)fX​(x) 本身 **不是概率**，而是概率密度。
-    
-- 在一个小区间 [a,b][a, b][a,b] 上的概率可以通过积分得到：
-    
-
-P(a≤X≤b)=∫abfX(x) dxP(a \le X \le b) = \int_a^b f_X(x) \, dxP(a≤X≤b)=∫ab​fX​(x)dx
-
-### 举例
-
-- 标准正态分布：
-    
-
-fX(x)=12πe−x2/2f_X(x) = \frac{1}{\sqrt{2\pi}} e^{-x^2/2}fX​(x)=2π​1​e−x2/2
+**定义:**
+对连续随机变量 $X$，PDF 是一个函数 $f_X(x)$，满足：
+$$ \forall x \quad f_X(x)≥0$$
+$$\forall x \quad \int_{-\infty}^{\infty} f_X(x)dx=1$$
+$$P(a\le X \le b) = \int_{a}^{b} f_X(x)dx$$
 
 ---
+## Cumulative Distribution Function(CDF)
 
-## **2. CDF：Cumulative Distribution Function（累积分布函数）**
-
-### 定义
-
-- 对连续随机变量 XXX，CDF 是：
-    
-
-FX(x)=P(X≤x)=∫−∞xfX(t) dtF_X(x) = P(X \le x) = \int_{-\infty}^{x} f_X(t) \, dtFX​(x)=P(X≤x)=∫−∞x​fX​(t)dt
+**定义:**
+对连续随机变量 X，CDF 是：
+$$F_X(x)=P(X \le x)$$
+表示随机变量 XXX 取值 **不大于某个值 x 的概率**
+$$∫−∞xfX(t) dtF_X(x) = P(X \le x) = \int_{-\infty}^{x} f_X(t) \, dtFX​(x)=P(X≤x)=∫−∞x​fX​(t)dt$$
 
 ### 含义
 
