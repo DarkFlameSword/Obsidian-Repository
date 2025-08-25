@@ -107,7 +107,11 @@ $$P(a\le X \le b) = \int_{a}^{b} f_X(x)dx$$
 **定义:**
 对连续随机变量 X，CDF 是：
 $$F_X(x)=P(X \le x)$$
-表示随机变量 XXX 取值 **不大于某个值 x 的概率**
+表示随机变量 XXX 取值 不大于某个值 $x$ 的概率
+同时CDF满足:
+$$F(x_1)\le F(x_2),\quad x_1<x_2$$
+$$\begin{align} \lim_{x \to - \infty} F(x) =0 \\ \lim_{x \to \infty} F(x) =1 \end{align}$$
+$$$$
 $$∫−∞xfX(t) dtF_X(x) = P(X \le x) = \int_{-\infty}^{x} f_X(t) \, dtFX​(x)=P(X≤x)=∫−∞x​fX​(t)dt$$
 
 ### 含义

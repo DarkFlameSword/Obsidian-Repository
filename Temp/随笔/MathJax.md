@@ -48,9 +48,11 @@ aliases:
     - `$e^x$` → $e^x$
     - `$\ln x$` → $\ln x$
     - `$\log_{10} x$` → $\log_{10} x$
-- 极限与导数：
+- 导数：
     - `$\frac{d}{dx} f(x)$` → $\frac{d}{dx} f(x)$
     - `$f'(x)$` → $f'(x)$
+- 偏导:
+	- `$\frac{\partial y}{\partial x}$`→ $\frac{\partial y}{\partial x}$
 ## **9. 逻辑与集合符号**
 - `$\neq$` → $\neq$
 - `$\approx$` → $\approx$
@@ -91,4 +93,27 @@ aliases:
 | Unit Vector (hat) | `\hat{i}`             | $\hat{i}$             |
 | Bold Letter       | `\mathbf{x}`          | $\mathbf{x}$          |
 ## 15
-
+|显示|语法|显示|语法|
+|---|---|---|---|
+|γ|\gamma|δ|\delta|
+|ϵ|\epsilon|ζ|\zeta|
+|η|\eta|θ|\theta|
+|ι|\iota|κ|\kappa|
+|λ|\lambda|μ|\mu|
+|ν|\nu|ξ|\xi|
+|π|\pi|ρ|\rho|
+|σ|\sigma|τ|\tau|
+|υ|\upsilon|ϕ|\phi|
+|χ|\chi|ψ|\psi|
+|ω|\omega|||
+# 16
+|显示|语法|显示|语法|
+|---|---|---|---|
+|∞|\infty|∪|\cup|
+|∩|\cap|⊂|\subset|
+|⊆|\subseteq|⊃|\supset|
+|∈|\in|∉|\notin|
+|∅|\varnothing|∀|\forall|
+|∃|\exists|¬|\lnot|
+|∇|\nabla|∂|\partial|
+|⩾|\geqslant|⩽|\leqslant|
