@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "25d9f8a59fabed41",
+        "id": "0fc86a6e1fe7ca16",
         "type": "tabs",
         "children": [
           {
-            "id": "1ce1ddb565ceeee6",
+            "id": "8350b051b01212bc",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -197,16 +197,21 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "1ce1ddb565ceeee6",
+  "active": "8350b051b01212bc",
   "lastOpenFiles": [
     "随笔/如何将本地仓库远程推送到github.md",
     "随笔/本地多项目不同仓库拉取与推送.md",
+    "().md",
+    "Monash/2025 S2/FIT5215/Lecture Note.md",
+    "Monash/2025 S2/FIT5215/Gradient Desent.md",
+    "Monash/2025 S2/FIT5215/Feed-forward Neural Networks.md",
+    "Monash/2025 S2/FIT5215/DL Optimization.md",
+    "Monash/2025 S2/FIT5215/Convolutional Neural Networks(CNNs).md",
     "随笔/送礼统计.md",
     "随笔/未命名.canvas",
     "随笔/Git.md",
     "随笔/MathJax.md",
     "Monash/2025 S2/FIT5215/Image Analysis of Train & Loss Curve.md",
-    "Monash/2025 S2/FIT5215/DL Optimization.md",
     "Pasted image 20250824221458.png",
     "Pasted image 20250824221050.png",
     "Pasted image 20250824221000.png",
@@ -219,15 +224,11 @@
     "Pasted image 20250824192640.png",
     "Monash/2025 S2/FIT5215/Optimizer.md",
     "Monash/2025 S2/FIT5215/Loss Function.md",
-    "Monash/2025 S2/FIT5215/Lecture Note.md",
     "Monash/2025 S2/FIT5215/Mathematics.md",
-    "Monash/2025 S2/FIT5215/Feed-forward Neural Networks.md",
-    "Monash/2025 S2/FIT5215/Gradient Desent.md",
     "Monash/2025 S2/FIT5215/Activate Function.md",
     "Monash/2025 S2/FIT5047/Algorithm.md",
     "Monash/2025 S2/FIT5047/Lecture Note.md",
     "Monash/2025 S2/FIT5215/RCNNs.md",
-    "Monash/2025 S2/FIT5215/Convolutional Neural Networks(CNNs).md",
     "Monash/2025 S2/FIT5047/Heuristic Graph-Search.md",
     "Monash/2025 S2/FIT5215/对于线性提取和非线性提取的理解.md",
     "Monash/2025 S2/FIT5047/Assignment1/Analysis.md",
