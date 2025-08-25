@@ -97,7 +97,10 @@ $${\color{red}\frac{\partial y}{\partial x}} = {\color{red}\nabla_x f} =
 
 ### 定义
 
-- 对连续随机变量 $X$，PDF 是一个函数 $f_X(x)$，满足：$$\forall x \quad fX​(x)≥0 \\ ∀x \quad \int_{-\infty}^{\infty} f_X(x) \, dx = 1∫−∞∞​fX​(x)dx=1$$
+- 对连续随机变量 $X$，PDF 是一个函数 $f_X(x)$，满足：
+- $$ \forall x \quad f(x)≥0$$
+- $$\forall x \int_{-\infty}^{\infty} f(x)dx=1$$
+- - $$\forall x \int_{-\infty}^{\infty} f(x)dx=1$$
 
 ### 含义
 

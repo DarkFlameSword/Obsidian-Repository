@@ -35,8 +35,7 @@
               "title": "MathJax"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -186,10 +185,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "随笔/MathJax.md"
+                "file": "Monash/2025 S2/FIT5215/Mathematics.md"
               },
               "icon": "lucide-info",
-              "title": "MathJax的笔记属性"
+              "title": "Mathematics的笔记属性"
             }
           }
         ],
@@ -212,10 +211,10 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "9f1087cc745be7fe",
+  "active": "c094ade35f8c9d13",
   "lastOpenFiles": [
-    "Monash/2025 S2/FIT5215/Mathematics.md",
     "随笔/MathJax.md",
+    "Monash/2025 S2/FIT5215/Mathematics.md",
     "随笔/本地多项目不同仓库拉取与推送.md",
     "随笔/如何将本地仓库远程推送到github.md",
     "为两个Github账号生成SSH.md",
