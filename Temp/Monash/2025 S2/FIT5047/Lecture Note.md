@@ -180,9 +180,22 @@ aliases:
 命题逻辑的语义通常通过真值表来定义。  
 比如：$$P \rightarrow Q$$
 
-| P   | Q   | P\rightarrow Q |
-| --- | --- | -------------- |
-| T   | T   | T              |
-| T   | F   | F              |
-| F   | T   | T              |
-| F   | F   | T              |
+| P   | Q   | $P\rightarrow Q$ |
+| --- | --- | ---------------- |
+| T   | T   | T                |
+| T   | F   | F                |
+| F   | T   | T                |
+| F   | F   | T                |
+$$(P∧Q)→R$$
+
+| P   | Q   | R   | P \land Q | $(P \land Q) \rightarrow R$ |
+| --- | --- | --- | --------- | --------------------------- |
+| T   | T   | T   | T         | T                           |
+| T   | T   | F   | T         | F                           |
+| T   | F   | T   | F         | T                           |
+| F   | T   | T   | F         | T                           |
+| F   | F   | F   | F         | T                           |
+**模型类别:**
+- **Satisfiable（可满足）**：公式在某些赋值下为真。
+- **Unsatisfiable（不可满足）**：公式在任何赋值下都为假。
+- **Valid（有效/永真式, tautology）**：公式在所有赋值下都为真
