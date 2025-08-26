@@ -128,3 +128,24 @@ aliases:
 		类型: 动物
 		特征: 四条腿, 会叫
 		```
+- **产生式规则（Production Rules）**
+
+- 形式为 **IF 条件 THEN 动作/结论**。
+	
+- 例如：
+	
+	`IF 天气 = 下雨 THEN 带雨伞`
+        
+- **本体（Ontology）**
+    
+    - 一种更系统的表示方法，用于定义领域中的概念、关系和约束。
+        
+    - 常见于语义网（Semantic Web）、知识图谱（Knowledge Graph）。
+        
+- **神经网络嵌入（Neural Representation）**
+    
+    - 在深度学习中，用向量或张量表示知识，例如 word embeddings、graph embeddings。
+## Logical Entailment（逻辑蕴涵）
+**类别:**
+- **Syntactic entailment（$\vdash$）**：通过推理规则（如自然演绎、分辨率等）能够推出
+- **Semantic entailment（$\models$）**：基于所有可能模型的真值分布来判断
