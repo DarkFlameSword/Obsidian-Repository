@@ -107,3 +107,22 @@ aliases:
 11. `Result(s,a)`: transition (apply action a in state s)
 12. `Is-Terminal(s)`: tests whether the game is over
 13. `Utility(s)`: payoff in state s for the current player
+
+# Knowledge Representation
+**理解:**
+如何用形式化的方法，把现实世界中的知识存储在计算机系统中，使机器能够“理解”、推理和使用这些知识来解决问题
+
+**表达方式:**
+- **逻辑表示（Logic Representation）**
+    - **命题逻辑**（Propositional Logic）：只表示真/假事实。
+    - **谓词逻辑**（Predicate Logic）：可以表示对象及其关系，更强表达力。
+- **语义网络（Semantic Networks）**
+    - 用**图结构**表示概念和关系，例如：
+        - “猫 → 是一种 → 动物”
+        - “猫 → 会 → 捉老鼠”
+- **框架（Frames）**
+    - 类似面向对象的思想，知识表示为属性-值对（slots）。
+    - 例如：
+    - 狗：
+  类型: 动物
+  特征: 四条腿, 会叫
