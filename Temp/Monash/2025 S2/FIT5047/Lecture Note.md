@@ -161,11 +161,16 @@ aliases:
     - 每个变量的取值为 **真 (T)** 或 **假 (F)**。
         
 -  **逻辑连接词（Logical connectives）**
-    - 否定（NOT）：$\neg P$
-    - 合取（AND）：$P \land Q$
-    - 析取（OR）：$P \lor Q$
+    - 否定（Negation）：$\neg P$
+	    - ¬P 为真，当且仅当 PPP 为假
+    - 合取（Conjunction）：$P \land Q$
+	    - P∧Q 为真，当且仅当 P 和 Q 都为真
+    - 析取（Disjunction）：$P \lor Q$
+	    - P∨Q 为真，当且仅当 P 或 Q 至少一个为真
     - 蕴涵（Implication）：$P \rightarrow Q$
-    - 双条件（Equivalence）：$P \leftrightarrow Q$
+	    - P→Q 为假 **当且仅当** P 为真而 Q 为假，其余情况都为真
+    - 双条件（Biconditional）：$P \leftrightarrow Q$
+	    - P↔Q 为真，当且仅当 P 与 Q 取值相同
 -  **复合命题（Compound propositions）**
     - 由命题变量通过逻辑连接词组合而成。
     - 例如：$(P \land Q) \rightarrow \neg R$
@@ -174,9 +179,10 @@ aliases:
 
 命题逻辑的语义通常通过真值表来定义。  
 比如：$$P \rightarrow Q$$
-|P|Q|$P\rightarrow Q$|
-|---|---|---|
-|T|T|T|
-|T|F|F|
-|F|T|T|
-|F|F|T|
+
+| P   | Q   | P\rightarrow Q |
+| --- | --- | -------------- |
+| T   | T   | T              |
+| T   | F   | F              |
+| F   | T   | T              |
+| F   | F   | T              |
