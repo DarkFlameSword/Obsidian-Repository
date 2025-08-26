@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/Gradient Desent.md",
+                "file": "Monash/2025 S2/FIT5047/Lecture Note.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Gradient Desent"
+              "title": "Lecture Note"
             }
           },
           {
@@ -27,16 +27,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Monash/2025 S2/FIT5047/Lecture Note.md",
+                "file": "随笔/MathJax.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lecture Note"
+              "title": "MathJax"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -212,20 +211,21 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "2ff2258eda789687",
+  "active": "b809acd21a99d96e",
   "lastOpenFiles": [
+    "Monash/2025 S2/FIT5215/Gradient Desent.md",
+    "随笔/MathJax.md",
+    "Monash/2025 S2/FIT5215/Mathematics.md",
+    "Monash/2025 S2/FIT5047/Lecture Note.md",
     "随笔/Git.md",
     "随笔/本地多项目不同仓库拉取与推送.md",
     "随笔/如何将本地仓库远程推送到github.md",
     "Monash/2025 S2/FIT5215/DL Optimization.md",
-    "Monash/2025 S2/FIT5215/Gradient Desent.md",
     "Monash/2025 S2/FIT5215/Loss Function.md",
     "Monash/2025 S2/FIT5215/Image Analysis of Train & Loss Curve.md",
     "Monash/2025 S2/FIT5215/Activate Function.md",
     "Monash/2025 S2/FIT5215/Optimizer.md",
     "Monash/2025 S2/FIT5215/Pytorch.md",
-    "随笔/MathJax.md",
-    "Monash/2025 S2/FIT5215/Mathematics.md",
     "为两个Github账号生成SSH.md",
     "().md",
     "Monash/2025 S2/FIT5215/Lecture Note.md",
@@ -244,7 +244,6 @@
     "Pasted image 20250824192802.png",
     "Pasted image 20250824192640.png",
     "Monash/2025 S2/FIT5047/Algorithm.md",
-    "Monash/2025 S2/FIT5047/Lecture Note.md",
     "Monash/2025 S2/FIT5215/RCNNs.md",
     "Monash/2025 S2/FIT5047/Heuristic Graph-Search.md",
     "Monash/2025 S2/FIT5215/对于线性提取和非线性提取的理解.md",

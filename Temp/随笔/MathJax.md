@@ -107,13 +107,13 @@ aliases:
 |χ|\chi|ψ|\psi|
 |ω|\omega|||
 # 16
-|显示|语法|显示|语法|
-|---|---|---|---|
-|∞|\infty|∪|\cup|
-|∩|\cap|⊂|\subset|
-|⊆|\subseteq|⊃|\supset|
-|∈|\in|∉|\notin|
-|∅|\varnothing|∀|\forall|
-|∃|\exists|¬|\lnot|
-|∇|\nabla|∂|\partial|
-|⩾|\geqslant|⩽|\leqslant|
+| 显示  | 语法          | 显示  | 语法        |
+| --- | ----------- | --- | --------- |
+| ∞   | \infty      | ∪   | \cup      |
+| ∩   | \cap        | ⊂   | \subset   |
+| ⊆   | \subseteq   | ⊃   | \supset   |
+| ∈   | \in         | ∉   | \notin    |
+| ∅   | \varnothing | ∀   | \forall   |
+| ∃   | \exists     | ¬   | \lnot     |
+| ∇   | \nabla      | ∂   | \partial  |
+| ⩾   | \geqslant   | ⩽   | \leqslant |

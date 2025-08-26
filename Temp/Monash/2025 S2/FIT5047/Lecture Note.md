@@ -149,3 +149,34 @@ aliases:
 **类别:**
 - **Syntactic entailment（$\vdash$）**：通过推理规则（如自然演绎、分辨率等）能够推出
 - **Semantic entailment（$\models$）**：基于所有可能模型的真值分布来判断
+## Propositional Logic（命题逻辑）
+**定义:**
+即可以明确判断为 **真 (True)** 或 **假 (False)** 的语句
+
+**基本组成:**
+-  **命题变量（Propositional variables）**
+    
+    - 用大写字母表示：A,B,C,…A, B, C, \ldotsA,B,C,…
+        
+    - 每个变量的取值为 **真 (T)** 或 **假 (F)**。
+        
+-  **逻辑连接词（Logical connectives）**
+    - 否定（NOT）：$\neg P$
+    - 合取（AND）：$P \land Q$
+    - 析取（OR）：$P \lor Q$
+    - 蕴涵（Implication）：$P \rightarrow Q$
+    - 双条件（Equivalence）：$P \leftrightarrow Q$
+-  **复合命题（Compound propositions）**
+    - 由命题变量通过逻辑连接词组合而成。
+    - 例如：$(P \land Q) \rightarrow \neg R$
+
+### 真值表（Truth Table）
+
+命题逻辑的语义通常通过真值表来定义。  
+比如：$$P \rightarrow Q$$
+|P|Q|$P\rightarrow Q$|
+|---|---|---|
+|T|T|T|
+|T|F|F|
+|F|T|T|
+|F|F|T|
