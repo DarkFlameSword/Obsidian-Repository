@@ -162,7 +162,7 @@ aliases:
         
 -  **逻辑连接词（Logical connectives）**
     - 否定（Negation）：$\neg P$
-	    - ¬P 为真，当且仅当 PPP 为假
+	    - ¬P 为真，当且仅当 P 为假
     - 合取（Conjunction）：$P \land Q$
 	    - P∧Q 为真，当且仅当 P 和 Q 都为真
     - 析取（Disjunction）：$P \lor Q$
@@ -188,14 +188,18 @@ aliases:
 | F   | F   | T                |
 $$(P∧Q)→R$$
 
-| P   | Q   | R   | P \land Q | $(P \land Q) \rightarrow R$ |
-| --- | --- | --- | --------- | --------------------------- |
-| T   | T   | T   | T         | T                           |
-| T   | T   | F   | T         | F                           |
-| T   | F   | T   | F         | T                           |
-| F   | T   | T   | F         | T                           |
-| F   | F   | F   | F         | T                           |
-**模型类别:**
-- **Satisfiable（可满足）**：公式在某些赋值下为真。
-- **Unsatisfiable（不可满足）**：公式在任何赋值下都为假。
-- **Valid（有效/永真式, tautology）**：公式在所有赋值下都为真
+| P   | Q   | R   | $P \land Q$ | $(P \land Q) \rightarrow R$ |
+| --- | --- | --- | ----------- | --------------------------- |
+| T   | T   | T   | T           | T                           |
+| T   | T   | F   | T           | F                           |
+| T   | F   | T   | F           | T                           |
+| F   | T   | T   | F           | T                           |
+| F   | F   | F   | F           | T                           |
+![[Pasted image 20250826145431.png]]
+### 模型类别
+- **Satisfiable（可满足）**：if it is true in some model
+- **Unsatisfiable（不可满足）**：if it is true in no model
+- **Valid（有效/永真式, tautology）**：A sentence is valid if it is true in all models
+
+### 逻辑计算公式
+![[Pasted image 20250826145536.png]]
