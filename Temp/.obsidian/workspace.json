@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/Convolutional Neural Networks(CNNs).md",
+                "file": "Monash/2025 S2/FIT5215/Resnet CNNs.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Convolutional Neural Networks(CNNs)"
+              "title": "Resnet CNNs"
             }
           },
           {
@@ -185,10 +185,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Monash/2025 S2/FIT5047/Lecture Note.md"
+                "file": "Monash/2025 S2/FIT5215/Resnet CNNs.md"
               },
               "icon": "lucide-info",
-              "title": "Lecture Note的笔记属性"
+              "title": "Resnet CNNs的笔记属性"
             }
           }
         ],
@@ -196,8 +196,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -214,6 +213,9 @@
   },
   "active": "b809acd21a99d96e",
   "lastOpenFiles": [
+    "Monash/2025 S2/FIT5215/RCNNs.md",
+    "Monash/2025 S2/FIT5215/Resnet CNNs.md",
+    "Monash/2025 S2/FIT5215/Convolutional Neural Networks(CNNs).md",
     "Pasted image 20250901151503.png",
     "Monash/2025 S2/FIT5215/Lecture Note.md",
     "().md",
@@ -236,7 +238,6 @@
     "Monash/2025 S2/FIT5215/Optimizer.md",
     "Monash/2025 S2/FIT5215/Pytorch.md",
     "Monash/2025 S2/FIT5215/Feed-forward Neural Networks.md",
-    "Monash/2025 S2/FIT5215/Convolutional Neural Networks(CNNs).md",
     "随笔/未命名.canvas",
     "Pasted image 20250824221458.png",
     "Pasted image 20250824221050.png",
@@ -244,9 +245,7 @@
     "Pasted image 20250824212935.png",
     "Pasted image 20250824212913.png",
     "Pasted image 20250824211637.png",
-    "E751AE193BB8D450C419CACD708E93C2.png",
     "Monash/2025 S2/FIT5047/Algorithm.md",
-    "Monash/2025 S2/FIT5215/RCNNs.md",
     "Monash/2025 S2/FIT5047/Heuristic Graph-Search.md",
     "Monash/2025 S2/FIT5215/对于线性提取和非线性提取的理解.md",
     "Monash/2025 S2/FIT5047/Assignment1/Analysis.md",
