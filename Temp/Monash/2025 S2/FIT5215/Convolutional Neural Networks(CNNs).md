@@ -44,16 +44,18 @@ Introduce Non-linearity
 3. **尺寸减半**：经过 2x2 的最大池化后，特征图的高度和宽度都会减半，总大小变为原来的 1/4
 
 ### Global Pooling Layer
+相较于普通的池化层, 全局池化的池化窗口不需要移动, 而是将整个input当作池化窗口
+
 **好处**:
 **参数更少**
-    - 传统 CNN 在最后一般会接全连接层（FC）来变成分类 logits，参数量大。
-    - Global Pooling 可以直接把特征图缩成 (C,1,1)，接 softmax 就能分类 → 极大减少参数。
+- 传统 CNN 在最后一般会接全连接层（FC）来变成分类 logits，参数量大。
+- Global Pooling 可以直接把特征图缩成 (C,1,1)，接 softmax 就能分类 → 极大减少参数。
 **减少过拟合**
-    - 因为没有庞大的全连接层，模型更不容易过拟合。
+- 因为没有庞大的全连接层，模型更不容易过拟合。
 **平移不变性**
-    - 位置不重要，整个图像的统计特征（最大值/均值）被保留下来
+- 位置不重要，整个图像的统计特征（最大值/均值）被保留下来
 #### Global Average Pooling
-### Global Max Pooling
+#### Global Max Pooling
 
 
 ### Pooling Type
