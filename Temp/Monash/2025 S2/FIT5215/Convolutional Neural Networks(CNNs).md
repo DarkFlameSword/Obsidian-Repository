@@ -59,3 +59,10 @@ Introduce Non-linearity
 
 ## Output Layer
 
+
+# Receptive Field
+![[Pasted image 20250901151503.png]]
+==Neurons on higher layers have larger receptive fields (patches) on input images==
+
+
+

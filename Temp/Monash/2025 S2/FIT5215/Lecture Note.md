@@ -228,3 +228,5 @@ $$H(L) = ∇(∇L)$$
 Most of optimization problems in machine learning (deep learning) has the
 following formula:
 $$\min_{\theta}{J(\theta)} = \Omega(\theta) + \frac{1}{N}\sum_{i=1}^N l(y_i,f(x_i;\theta))$$
+
+

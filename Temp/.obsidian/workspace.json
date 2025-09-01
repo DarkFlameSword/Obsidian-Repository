@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/Lecture Note.md",
+                "file": "Monash/2025 S2/FIT5215/Convolutional Neural Networks(CNNs).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lecture Note"
+              "title": "Convolutional Neural Networks(CNNs)"
             }
           },
           {
@@ -214,6 +214,10 @@
   },
   "active": "b809acd21a99d96e",
   "lastOpenFiles": [
+    "Pasted image 20250901151503.png",
+    "Monash/2025 S2/FIT5215/Lecture Note.md",
+    "().md",
+    "为两个Github账号生成SSH.md",
     "Monash/2025 S2/FIT5047/Lecture Note.md",
     "Pasted image 20250826145732.png",
     "Pasted image 20250826145536.png",
@@ -231,9 +235,6 @@
     "Monash/2025 S2/FIT5215/Activate Function.md",
     "Monash/2025 S2/FIT5215/Optimizer.md",
     "Monash/2025 S2/FIT5215/Pytorch.md",
-    "为两个Github账号生成SSH.md",
-    "().md",
-    "Monash/2025 S2/FIT5215/Lecture Note.md",
     "Monash/2025 S2/FIT5215/Feed-forward Neural Networks.md",
     "Monash/2025 S2/FIT5215/Convolutional Neural Networks(CNNs).md",
     "随笔/未命名.canvas",
