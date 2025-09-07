@@ -27,7 +27,7 @@ aliases:
 #### 计算Loss的公式
 1. **Mean Squared Error**
 ```
-MSE = (1/n) * Σ(yᵢ - ŷᵢ)²
+MSE = (1/n) * Σ(pᵢ - ŷᵢ)²
 ```
 - `n`: 样本总数
 - `yᵢ`: 第 `i` 个样本的真实值
