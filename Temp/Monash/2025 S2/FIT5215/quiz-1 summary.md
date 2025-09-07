@@ -10,4 +10,5 @@ tags:
 		vector相较于以前人工提取feature, 能够被更好地被电脑处理
 2. [[Mathematics#^42723b|vector]]
 3. [[Mathematics#^839d47|p-normalization]]
-4. 
+4. [[Mathematics#^710368|Distance between two vectors]]
+5. 

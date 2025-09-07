@@ -36,6 +36,9 @@ $$\frac{\partial u}{\partial x} = \frac{\partial u}{\partial v} \times \frac{\pa
 
 ![[Pasted image 20250727165647.png]]
 ### The Length of Vector
+
+^710368
+
 当p=2的时候也叫Frobenius范数, 一般我们求矩阵长度使用的就是该范数
 
 ### Distance between Two Vectors
