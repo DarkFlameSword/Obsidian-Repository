@@ -49,8 +49,7 @@
               "title": "Loss Function"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -200,10 +199,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/Feed-forward Neural Networks.md"
+                "file": "Monash/2025 S2/FIT5215/Lecture Note.md"
               },
               "icon": "lucide-info",
-              "title": "Feed-forward Neural Networks的笔记属性"
+              "title": "Lecture Note的笔记属性"
             }
           }
         ],
@@ -226,8 +225,9 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "2feb4dd7fe4843a2",
+  "active": "7e31ede198a6c868",
   "lastOpenFiles": [
+    "Monash/2025 S2/FIT5215/Feed-forward Neural Networks.md",
     "Monash/2025 S2/FIT5215/Pytorch.md",
     "Monash/2025 S2/FIT5215/In-semester Exam-1 summary.md",
     "Monash/2025 S2/FIT5215/Lecture Note.md",
@@ -257,7 +257,6 @@
     "Monash/2025 S2/FIT5215/DL Optimization.md",
     "Monash/2025 S2/FIT5215/Image Analysis of Train & Loss Curve.md",
     "Monash/2025 S2/FIT5215/Optimizer.md",
-    "Monash/2025 S2/FIT5215/Feed-forward Neural Networks.md",
     "Pasted image 20250824221458.png",
     "Pasted image 20250824221050.png",
     "Pasted image 20250824221000.png",

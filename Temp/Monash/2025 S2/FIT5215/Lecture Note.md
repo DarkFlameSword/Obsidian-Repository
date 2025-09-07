@@ -90,11 +90,11 @@ $$MSE = \frac{1}{n} * \sum{(p_i - q_i)}$$
 ### Deep Q-Network (DQN)
 
 # Data Set
-##  **训练集 (Training Set)**
+##  Training Set: 80%
 - 模型能直接看到、学习到的数据。
-## **验证集 (Validation Set)**
+## Validation Set: 10
 - 模型不能用它来更新参数，只是用来“考察”模型在训练集的效果。
-## **测试集 (Test Set)**
+## Test Set: 10%
 - **特征**：完全独立于训练集和验证集，直到最后才用。
 
 # Performance Metrics

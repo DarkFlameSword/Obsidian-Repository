@@ -118,4 +118,6 @@ $$\frac{\partial \bar{h}}{\partial x} = W^T$$
 **使用步骤:**
 1. 将一个epoch分为很多个Mini-batches
 2. 将每一个Mini-batch当作input传入模型
-3. 对一个Mini-batch中
+3. 对一个Mini-batch中每一个样本得出的loss取总的均值E1
+4. 对每一个Mini-batch做同样的操作得到E1,E2,E3...En
+5. 对E1,E2,E3...En取均值得到e, e就是整个模型的loss
