@@ -34,7 +34,7 @@ log: 对数函数。对数的底 (base) 决定了熵的单位:
 
 ### **Classification Cross-Entropy Loss**
 $$
-\text{BCE} = -\frac{1}{n} \sum_{i=1}^n \Big[ p_i \log(q_i) + (1 - y_i)\log(1 - \hat{y}_i) \Big]
+\text{BCE} = -\sum_{i=1}^n \Big[ p_i \log(q_i) + (1 - p_i)\log(1 - q_i) \Big]
 
 $$
 - $p_i$: 真实标签，只能是 **0 或 1**。
@@ -66,13 +66,13 @@ H(p, q) = -log(q(猫))
 所以，对于这张猫的图片，交叉熵损失就简化成了 模型预测它是猫的概率的负对数
 
 ==Attention:==
-- 如果真实标签 `y=1`: 公式简化为 `-log(ŷ)`。为了让 Loss 变小，`log(ŷ)` 就要变大，这意味着 `ŷ` 必须**趋近于 1
+- 如果真实标签 `p=1`: 公式简化为 `-log(q_i)`。为了让 Loss 变小，`log(ŷ)` 就要变大，这意味着 `ŷ` 必须**趋近于 1
 - 如果真实标签 `y=0`: 公式简化为 `-log(1 - ŷ)`。为了让 Loss 变小，`log(1 - ŷ)` 就要变大，这意味着 `(1 - ŷ)` 必须趋近于 1，也就是 `ŷ` 必须**趋近于 0**
 - `CrossEntropy(p, q) = Entropy(p) + KL_Divergence(p || q)` 在机器学习中, 真实数据分布 `p` 是固定的, 所以 `Entropy(p)` 是一个常数, 所以最小化交叉熵就等价于最小化KL散度
 
 ### **Categorical Cross-Entropy**
 $$
-\text{CCE} = - \frac{1}{n} \sum_{i=1}^{n} \sum_{c=1}^{C} y_{i,c} \log(\hat{y}_{i,c})
+\text{CCE} = -\sum_{i=1}^{n} \sum_{c=1}^{C} y_{i,c} \log(\hat{y}_{i,c})
 
 $$
 - `yᵢ,c`: 是一个 **One-Hot 编码**的向量。如果第 `i` 个样本的真实类别是 `c`，则 `yᵢ,c=1`，否则为 0。
