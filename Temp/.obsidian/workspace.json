@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Latex.md",
+                "file": "Monash/2025 S2/FIT5215/Lecture Note.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Latex"
+              "title": "Lecture Note"
             }
           }
         ],
@@ -214,10 +214,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Latex.md"
+                "file": "Monash/2025 S2/FIT5215/Lecture Note.md"
               },
               "icon": "lucide-info",
-              "title": "Latex的笔记属性"
+              "title": "Lecture Note的笔记属性"
             }
           }
         ],
@@ -242,8 +242,8 @@
   },
   "active": "06c0b53a4ec5fb60",
   "lastOpenFiles": [
-    "Monash/2025 S2/FIT5215/Loss Function.md",
     "Latex.md",
+    "Monash/2025 S2/FIT5215/Loss Function.md",
     "随笔/未命名.canvas",
     "随笔/送礼统计.md",
     "Monash/2025 S2/FIT5215/RCNNs.md",
