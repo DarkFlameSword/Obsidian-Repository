@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/Lecture Note.md",
+                "file": "Monash/2025 S2/FIT5215/quiz summary.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lecture Note"
+              "title": "quiz summary"
             }
           }
         ],
@@ -214,10 +214,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/Lecture Note.md"
+                "file": "Monash/2025 S2/FIT5215/quiz summary.md"
               },
               "icon": "lucide-info",
-              "title": "Lecture Note的笔记属性"
+              "title": "quiz summary的笔记属性"
             }
           }
         ],
@@ -242,6 +242,8 @@
   },
   "active": "06c0b53a4ec5fb60",
   "lastOpenFiles": [
+    "Monash/2025 S2/FIT5215/Lecture Note.md",
+    "Monash/2025 S2/FIT5215/quiz summary.md",
     "Latex.md",
     "Monash/2025 S2/FIT5215/Loss Function.md",
     "随笔/未命名.canvas",
@@ -255,7 +257,6 @@
     "Monash/2025 S2/FIT5215/Resnet CNNs.md",
     "Monash/2025 S2/FIT5215/Convolutional Neural Networks(CNNs).md",
     "Pasted image 20250901151503.png",
-    "Monash/2025 S2/FIT5215/Lecture Note.md",
     "().md",
     "为两个Github账号生成SSH.md",
     "Monash/2025 S2/FIT5047/Lecture Note.md",
@@ -278,7 +279,6 @@
     "Pasted image 20250824212913.png",
     "Pasted image 20250824211637.png",
     "Monash/2025 S2/FIT5047/Algorithm.md",
-    "Monash/2025 S2/FIT5047/Heuristic Graph-Search.md",
     "Monash/2025 S2/FIT5047/Assignment1",
     "未命名 1.canvas",
     "未命名.canvas",
