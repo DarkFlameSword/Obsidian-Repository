@@ -18,4 +18,5 @@ tags:
 9. FFNNs的计算
 10. 激发函数计算:ReLU,Tanh,sigmoid
 11. Assume that we have 4 classes in {cat = 1,dog = 2,lion = 3, monkey = 4}. Given a data example 𝑥 with ground-truth label “dog”, assume that a feed-forward NN gives discriminative scores to this 𝑥 as ℎ1 = −3, ℎ2 = 10, ℎ3 = 5, ℎ4 = 0. What is the CE loss suffered by this prediction?就是求模型的预测值的CE
-12. 模型jichu
+12. 模型基础
+13. 在计算卷积层或池化层出现小数时，`floor()` 是标准操作
