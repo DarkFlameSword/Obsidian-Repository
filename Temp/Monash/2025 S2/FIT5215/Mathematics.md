@@ -45,6 +45,8 @@ $$\frac{\partial u}{\partial x} = \frac{\partial u}{\partial v} \times \frac{\pa
 ![[Pasted image 20250727170036.png]]
 ### The Angel between Two Vectors
 ![[Pasted image 20250727170151.png]]
+==Cosine distance can be computed via Euclidean distance if vectors are made unit vectors:==
+$$d_{cosine}​(x,y)= 1−\cos\theta = \frac{1}{2}||\hat{x}−\hat{y}||^2$$
 # Matrix 2D
 ![[Pasted image 20250727171416.png]]
 ==Attention==
