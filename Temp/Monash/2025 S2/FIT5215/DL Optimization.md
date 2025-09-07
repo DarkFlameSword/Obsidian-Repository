@@ -208,6 +208,10 @@ $$y = \gamma \hat{x} + \beta$$
 - $\beta$: 可训练参数,保证网络有足够的表达能力
 - $y$: mini-batch在BN后的输入
 
+**注意:**
+- In training phase, it uses the batch statistics**批次统计量** (mean and std)
+- In testing phase, it uses the population statistics**总体统计量** (mean and std)
+
 **作用:**
 - Cope with internal covariate shift
 - Reduce gradient
