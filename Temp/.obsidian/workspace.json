@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/Mathematics.md",
+                "file": "Monash/2025 S2/FIT5215/Lecture Note.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Mathematics"
+              "title": "Lecture Note"
             }
           },
           {
@@ -49,8 +49,7 @@
               "title": "Loss Function"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -200,10 +199,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/Loss Function.md"
+                "file": "Monash/2025 S2/FIT5215/Lecture Note.md"
               },
               "icon": "lucide-info",
-              "title": "Loss Function的笔记属性"
+              "title": "Lecture Note的笔记属性"
             }
           }
         ],
@@ -226,15 +225,15 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "a3ce1fb9c2fd9c46",
+  "active": "7e31ede198a6c868",
   "lastOpenFiles": [
-    "Monash/2025 S2/FIT5215/quiz-1 summary.md",
+    "Monash/2025 S2/FIT5215/Loss Function.md",
     "Monash/2025 S2/FIT5215/Mathematics.md",
+    "Monash/2025 S2/FIT5215/quiz-1 summary.md",
     "Monash/2025 S2/FIT5215/Lecture Note.md",
     "随笔/本地多项目不同仓库拉取与推送.md",
     "Monash/2025 S2/FIT5215/Adversarial Machine Learning.md",
     "Latex.md",
-    "Monash/2025 S2/FIT5215/Loss Function.md",
     "随笔/未命名.canvas",
     "随笔/送礼统计.md",
     "Monash/2025 S2/FIT5215/RCNNs.md",

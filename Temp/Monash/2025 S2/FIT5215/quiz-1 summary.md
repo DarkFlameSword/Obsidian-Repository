@@ -12,4 +12,5 @@ tags:
 3. [[Mathematics#^839d47|p-normalization]]
 4. [[Mathematics#^710368|Euclidean distance & cosine similarity & cosine distance]]
 5. the proof of **Cosine distance can be computed via Euclidean distance if vectors are made unit vectors**
-6. 
+6. KL,CE,E的计算
+7. 
