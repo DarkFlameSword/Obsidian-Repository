@@ -20,6 +20,8 @@ $$(\log u)' = \frac{u'}{u}$$
 $$\frac{\partial u}{\partial x} = \frac{\partial u}{\partial v} \times \frac{\partial v}{\partial x}$$
 # Vector
 
+^42723b
+
 ![[Pasted image 20250727164025.png]]
 ==Attention:==
 1. 一般用变量表示的向量默认是列向量, 横向量需要使用转置符号`T`标明
@@ -29,6 +31,9 @@ $$\frac{\partial u}{\partial x} = \frac{\partial u}{\partial v} \times \frac{\pa
 ## Transpose
 ![[Pasted image 20250727165020.png]]
 ## p-norm/范数
+
+^839d47
+
 ![[Pasted image 20250727165647.png]]
 ### The Length of Vector
 当p=2的时候也叫Frobenius范数, 一般我们求矩阵长度使用的就是该范数
