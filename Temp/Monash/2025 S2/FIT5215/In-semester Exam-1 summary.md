@@ -16,4 +16,4 @@ tags:
 7. ground_truth_label的概念
 8. One_hot_label的概念
 9. FFNNs的计算
-10. 激发函数:ReLU,
+10. 激发函数计算:ReLU,Tanh,sigmoid

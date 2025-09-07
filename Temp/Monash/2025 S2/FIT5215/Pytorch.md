@@ -38,3 +38,5 @@ shape参数可以是多维数据, 假如某一维度值为-1, 说明需要根据
 ### `toch.permute(input, dims)`
 ==Attention:==
 `torch.permute` **不会**复制数据，而是返回一个共享原始数据存储的**视图**
+
+# Computational Graph

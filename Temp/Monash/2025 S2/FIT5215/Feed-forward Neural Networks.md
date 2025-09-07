@@ -113,3 +113,9 @@ $$\frac{\partial h}{\partial \bar{h}} =
 \end{bmatrix}
 = \text{diag}(\sigma'(\bar{h}))$$
 $$\frac{\partial \bar{h}}{\partial x} = W^T$$
+# Mini-batches
+
+**使用步骤:**
+1. 将一个epoch分为很多个Mini-batches
+2. 将每一个Mini-batch当作input传入模型
+3. 对一个Mini-batch中
