@@ -40,3 +40,11 @@ shape参数可以是多维数据, 假如某一维度值为-1, 说明需要根据
 `torch.permute` **不会**复制数据，而是返回一个共享原始数据存储的**视图**
 
 # Computational Graph
+# 数据格式标准
+```
+Filters: [output_channel = num_of_filters, input_channel = filter_depth, filter_height, filter_width]
+```
+    
+```
+Data batch: [batch_size, input_channel, input_height, input_width]
+```
