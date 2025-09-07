@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/Pytorch.md",
+                "file": "Monash/2025 S2/FIT5215/DL Optimization.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Pytorch"
+              "title": "DL Optimization"
             }
           },
           {
@@ -199,10 +199,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/Pytorch.md"
+                "file": "Monash/2025 S2/FIT5215/DL Optimization.md"
               },
               "icon": "lucide-info",
-              "title": "Pytorch的笔记属性"
+              "title": "DL Optimization的笔记属性"
             }
           }
         ],
@@ -227,11 +227,13 @@
   },
   "active": "7e31ede198a6c868",
   "lastOpenFiles": [
+    "Monash/2025 S2/FIT5215/Optimizer.md",
+    "Monash/2025 S2/FIT5215/Convolutional Neural Networks(CNNs).md",
+    "Monash/2025 S2/FIT5215/Pytorch.md",
     "Monash/2025 S2/FIT5215/In-semester Exam-1 summary.md",
     "Monash/2025 S2/FIT5215/Activate Function.md",
     "Monash/2025 S2/FIT5215/Lecture Note.md",
     "Monash/2025 S2/FIT5215/Feed-forward Neural Networks.md",
-    "Monash/2025 S2/FIT5215/Pytorch.md",
     "Monash/2025 S2/FIT5215/Loss Function.md",
     "Monash/2025 S2/FIT5215/Mathematics.md",
     "随笔/本地多项目不同仓库拉取与推送.md",
@@ -242,7 +244,6 @@
     "Monash/2025 S2/FIT5215/RCNNs.md",
     "Monash/2025 S2/FIT5215/Visualizing CNNs.md",
     "Monash/2025 S2/FIT5215/Resnet CNNs.md",
-    "Monash/2025 S2/FIT5215/Convolutional Neural Networks(CNNs).md",
     "Pasted image 20250901151503.png",
     "().md",
     "为两个Github账号生成SSH.md",
@@ -256,7 +257,6 @@
     "随笔/如何将本地仓库远程推送到github.md",
     "Monash/2025 S2/FIT5215/DL Optimization.md",
     "Monash/2025 S2/FIT5215/Image Analysis of Train & Loss Curve.md",
-    "Monash/2025 S2/FIT5215/Optimizer.md",
     "Pasted image 20250824221458.png",
     "Pasted image 20250824221050.png",
     "Pasted image 20250824221000.png",
