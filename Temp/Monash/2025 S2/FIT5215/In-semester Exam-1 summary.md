@@ -13,4 +13,7 @@ tags:
 4. [[Mathematics#^710368|Euclidean distance & cosine similarity & cosine distance]]
 5. the proof of **Cosine distance can be computed via Euclidean distance if vectors are made unit vectors**
 6. KL,CE,E的计算
-7. 
+7. ground_truth_label的概念
+8. One_hot_label的概念
+9. FFNNs的计算
+10. 激发函数:ReLU,

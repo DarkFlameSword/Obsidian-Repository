@@ -43,6 +43,7 @@ $$MSE = \frac{1}{n} * \sum{(p_i - q_i)}$$
 ==Attention:==
 -  MAE 对所有大小的误差都给予相同的线性惩罚。它对**异常值 (Outliers)** 不像 MSE 那么敏感。如果你的数据中有很多离谱的异常点，使用 MAE 可能会让模型更稳定
 ### Regression
+
 **核心思想：** 
 预测一个**连续的数值**。简单说，就是做“填空题”，填一个具体的数字
 
@@ -50,22 +51,37 @@ $$MSE = \frac{1}{n} * \sum{(p_i - q_i)}$$
 模型的任务是基于输入数据，预测一个精确的、连续的输出值
 
 ## Unsupervised Learning
+
 **核心思想:**
 任务不是去“预测”什么，而是去“发现”数据本身内在的结构、模式或关系
 
 无监督学习主要解决两类问题：**聚类 (Clustering)** 和 **降维 (Dimensionality Reduction)**
 ### Clustering
+**核心思想:**
+将数据分成不同的组（簇），使得同一组内的数据点彼此相似，而不同组之间的数据点差异较大
+
+#### K-Means
+#### Hierarchical Clustering
 
 ### Dimensionality Reduction
 
+**核心思想:**
+在保留数据最重要信息的前提下，减少数据的特征数量（维度）
+
+#### PCA
+
+#### Autoencoders
+
+#### t-SNE
+---
 ## Reinforce Learning
 **核心思想:**
 通过与环境互动，不断试错，并根据得到的结果（奖励或惩罚）来调整自己的行为，最终学会如何做出最优的决策
 
 **The learning Loop:**
-1. 智能体观察当前**状态 (State)**。
-2. 智能体根据当前状态，选择一个**动作 (Action)** 并执行。
-3. 环境接收到动作后，会转变为一个新的**状态 (State)**。
+1. 智能体观察当前**状态 (State)**
+2. 智能体根据当前状态，选择一个**动作 (Action)** 并执行
+3. 环境接收到动作后，会转变为一个新的**状态 (State)**
 4. 同时，环境会给智能体一个**奖励 (Reward)**。
 5. 智能体接收到新的状态和奖励，然后重复第一步
 
@@ -93,15 +109,6 @@ $$MSE = \frac{1}{n} * \sum{(p_i - q_i)}$$
 ![[Pasted image 20250808104946.png]]
 ## The Relationship  between DL and ML
 ![[Pasted image 20250808105229.png]]
-# SOTA Deep Neural Nets
-
-## Multilayered feedforward neural nets
-For working with vectors, 1D tensors
-## Convolutional neural nets / ViT
-For working with images, 2D/3D tensors
-## Recurrent neural nets / Transformers
-For working with sequences, sentences, texts
-
 # Recall optimization problem in deep learning
 ### 1. 核心目标：最小化损失函数
 
