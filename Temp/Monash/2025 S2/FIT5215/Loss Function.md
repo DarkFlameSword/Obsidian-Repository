@@ -11,7 +11,7 @@ aliases:
 ## `Kullback-Leibler (KL) divergence`
 个人理解: KL散度用来计算, 当前模型距离真实案例的偏差值
 $$
-D_{KL}(P || Q) = \sum_{x} P(x) \cdot \log_2 \left( \frac{P(x)}{Q(x)} \right)
+D_{KL}(P || Q) = \sum_{x} P(x) \cdot \log \left( \frac{P(x)}{Q(x)} \right)
 $$
 ```
 log: 对数函数。对数的底 (base) 决定了熵的单位:
@@ -33,11 +33,12 @@ log: 对数函数。对数的底 (base) 决定了熵的单位:
 个人理解: 计算预测结果与真实结果之间的差距, CE越大预测结果越离谱; CE越接近0, 则说明该事件越接近真实概率
 
 ### **Classification Cross-Entropy Loss**
-```
-BCE = - (1/n) * Σ [ yᵢ * log(ŷᵢ) + (1 - yᵢ) * log(1 - ŷᵢ) ]
-```
-- `yᵢ`: 真实标签，只能是 **0 或 1**。
-- `ŷᵢ`: 模型预测的概率，通常是经过 `Sigmoid` 函数输出的，值在 (0, 1) 之间，表示样本为类别 1 的概率。
+$$
+\text{BCE} = -\frac{1}{n} \sum_{i=1}^n \Big[ p_i \log(q_i) + (1 - y_i)\log(1 - \hat{y}_i) \Big]
+
+$$
+- $p_i$: 真实标签，只能是 **0 或 1**。
+- $q_i$: 模型预测的概率，通常是经过 `Sigmoid` 函数输出的，值在 (0, 1) 之间，表示样本为类别 1 的概率。
 
 **真实标签 (The Truth: p)**
 对于一张确认认为猫的图片，它的“真实”概率分布 p 是非常确定的。我们通常用 one-hot 编码 来表示:
@@ -70,9 +71,10 @@ H(p, q) = -log(q(猫))
 - `CrossEntropy(p, q) = Entropy(p) + KL_Divergence(p || q)` 在机器学习中, 真实数据分布 `p` 是固定的, 所以 `Entropy(p)` 是一个常数, 所以最小化交叉熵就等价于最小化KL散度
 
 ### **Categorical Cross-Entropy**
-```
-CCE = - (1/n) * Σ Σ [ yᵢ,c * log(ŷᵢ,c) ]
-```
+$$
+\text{CCE} = - \frac{1}{n} \sum_{i=1}^{n} \sum_{c=1}^{C} y_{i,c} \log(\hat{y}_{i,c})
+
+$$
 - `yᵢ,c`: 是一个 **One-Hot 编码**的向量。如果第 `i` 个样本的真实类别是 `c`，则 `yᵢ,c=1`，否则为 0。
 - `ŷᵢ,c`: 模型预测的概率分布，通常是经过 `Softmax` 函数输出的，表示第 `i` 个样本属于类别 `c` 的概率。
 
