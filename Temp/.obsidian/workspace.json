@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/DL Optimization.md",
+                "file": "Monash/2025 S2/FIT5215/Convolutional Neural Networks(CNNs).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DL Optimization"
+              "title": "Convolutional Neural Networks(CNNs)"
             }
           },
           {
@@ -214,10 +214,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/DL Optimization.md"
+                "file": "Monash/2025 S2/FIT5215/Convolutional Neural Networks(CNNs).md"
               },
               "icon": "lucide-info",
-              "title": "DL Optimization的笔记属性"
+              "title": "Convolutional Neural Networks(CNNs)的笔记属性"
             }
           }
         ],
@@ -242,6 +242,7 @@
   },
   "active": "b8a23f4fb0fe570b",
   "lastOpenFiles": [
+    "Monash/2025 S2/FIT5215/DL Optimization.md",
     "Monash/2025 S2/FIT5215/Convolutional Neural Networks(CNNs).md",
     "Monash/2025 S2/FIT5215/Lecture Note.md",
     "Monash/2025 S2/FIT5215/In-semester Exam-1 summary.md",
@@ -254,7 +255,6 @@
     "Pasted image 20250907203259.png",
     "Monash/2025 S2/FIT5215/LeNet.md",
     "Pasted image 20250907203248.png",
-    "Monash/2025 S2/FIT5215/DL Optimization.md",
     "Monash/2025 S2/FIT5215/Mathematics.md",
     "Monash/2025 S2/FIT5215/Optimizer.md",
     "Monash/2025 S2/FIT5215/Pytorch.md",

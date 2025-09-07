@@ -10,7 +10,14 @@ aliases:
 # Architecture
 ![[Pasted image 20250810173513.png]]
 ## Input Layer
-==作用:==
+4维张量每一维代表的意思:
+```
+[d,t,r,c]
+d: 样本数量(卷积过程中不会改变)
+t: 通道数
+r: 多少行
+c: 多少列
+```
 
 ## Convolutional Layer
 ==作用:==
