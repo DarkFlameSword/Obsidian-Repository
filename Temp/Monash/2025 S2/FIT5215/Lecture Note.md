@@ -49,9 +49,7 @@ MAE = (1/n) * Σ|yᵢ - ŷᵢ|
 
 **目标：** 输出是一个**数值 (Value)**
 
-
 ## Reinforce Learning
-
 
 # Data Set
 ##  **训练集 (Training Set)**
