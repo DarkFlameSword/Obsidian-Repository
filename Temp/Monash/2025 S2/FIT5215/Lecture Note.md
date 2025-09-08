@@ -187,8 +187,8 @@ $$\theta^*=arg⁡min_\theta L(\theta)$$
 $${\nabla L(\theta)} = 
 {
 \begin{bmatrix} 
-\frac{\partial}{\partial{\theta_1}}
-\frac{\partial}{\partial{\theta_2}}
+\frac{\partial}{\partial{\theta_1}} &
+\frac{\partial}{\partial{\theta_2}} &
 \frac{\partial}{\partial{\theta_3}} 
 \;\cdots\;
 \frac{\partial}{\partial{\theta_n}}

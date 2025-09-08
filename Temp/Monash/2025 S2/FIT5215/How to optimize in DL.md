@@ -82,6 +82,26 @@ $$W \sim N\left(0, \frac{2}{n_{in}}\right)$$
 # Regularization Techniques
 ## Regularization related to Weight
 ### L1 / L2 Regularization
+损失函数原本是：
+
+$$J(\theta) = \frac{1}{N}\sum_{i=1}^N l\big(f(x_i;\theta), y_i\big)$$
+
+加正则化后变成：
+
+$$J(\theta) = \frac{1}{N}\sum_{i=1}^N l\big(f(x_i;\theta), y_i\big) + \lambda R(\theta)$$
+
+其中：
+- λ>0\lambda > 0λ>0：正则化强度系数
+- R(θ)R(\theta)R(θ)：正则化项
+#### L1 Regularization
+$$R(θ)=||\theta||=\sum_j∣θ_j​∣$$
+- **特点**：鼓励参数变为 0，得到**稀疏模型**（很多权重为 0）
+- **用途**：特征选择（自动把不重要的特征权重压到 0）
+#### L2 Regularization
+$$R(θ)=||\theta||^2​=\sum_jθ_j^2​$$
+
+- **特点**：惩罚大权重，鼓励参数更均匀分布，不会直接变成 0
+- **用途**：常用来防止过拟合
 ## Regularization related to Construction
 ### Dropout
 ![[Pasted image 20250824212935.png]]
