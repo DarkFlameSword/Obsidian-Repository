@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/Gradient Back Propagation.md",
+                "file": "Monash/2025 S2/FIT5215/How to optimize in DL.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Gradient Back Propagation"
+              "title": "How to optimize in DL"
             }
           },
           {
@@ -227,10 +227,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/Gradient Back Propagation.md"
+                "file": "Monash/2025 S2/FIT5215/How to optimize in DL.md"
               },
               "icon": "lucide-info",
-              "title": "Gradient Back Propagation的笔记属性"
+              "title": "How to optimize in DL的笔记属性"
             }
           }
         ],
@@ -255,10 +255,10 @@
   },
   "active": "9e634b539369aec9",
   "lastOpenFiles": [
+    "Monash/2025 S2/FIT5215/Gradient Back Propagation.md",
     "Pasted image 20250908130933.png",
     "Pasted image 20250908130929.png",
     "Monash/2025 S2/FIT5215/Mathematics.md",
-    "Monash/2025 S2/FIT5215/Gradient Back Propagation.md",
     "随笔/MathJax.md",
     "Monash/2025 S2/FIT5215/Lecture Note.md",
     "Pasted image 20250908124658.png",
@@ -291,7 +291,6 @@
     "Pasted image 20250826145732.png",
     "Pasted image 20250826145536.png",
     "Pasted image 20250826145431.png",
-    "Pasted image 20250824221458.png",
     "Monash/2025 S2/FIT5047/Assignment1",
     "未命名 1.canvas",
     "未命名.canvas",
