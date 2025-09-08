@@ -7,3 +7,4 @@ tags:
 aliases:
   - summary
 ---
+![[Pasted image 20250908163115.png]]

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/Convolutional Neural Networks(CNNs).md",
+                "file": "Monash/2025 S2/FIT5215/Adversarial Machine Learning.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Convolutional Neural Networks(CNNs)"
+              "title": "Adversarial Machine Learning"
             }
           },
           {
@@ -116,8 +116,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -214,10 +213,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/Convolutional Neural Networks(CNNs).md"
+                "file": "Monash/2025 S2/FIT5215/Adversarial Machine Learning.md"
               },
               "icon": "lucide-info",
-              "title": "Convolutional Neural Networks(CNNs)的笔记属性"
+              "title": "Adversarial Machine Learning的笔记属性"
             }
           }
         ],
@@ -242,8 +241,10 @@
   },
   "active": "9e634b539369aec9",
   "lastOpenFiles": [
-    "Monash/2025 S2/FIT5215/How to optimize in DL.md",
+    "Monash/2025 S2/FIT5215/Resnet CNNs.md",
+    "Pasted image 20250908163115.png",
     "Monash/2025 S2/FIT5215/Convolutional Neural Networks(CNNs).md",
+    "Monash/2025 S2/FIT5215/How to optimize in DL.md",
     "Monash/2025 S2/FIT5215/Activate Function.md",
     "Monash/2025 S2/FIT5215/Image Analysis of Train & Loss Curve.md",
     "Monash/2025 S2/FIT5215/Feed-forward Neural Networks.md",
@@ -276,9 +277,7 @@
     "随笔/送礼统计.md",
     "Monash/2025 S2/FIT5215/RCNNs.md",
     "Monash/2025 S2/FIT5215/Visualizing CNNs.md",
-    "Monash/2025 S2/FIT5215/Resnet CNNs.md",
     "Pasted image 20250901151503.png",
-    "Pasted image 20250826145732.png",
     "Monash/2025 S2/FIT5047/Assignment1",
     "未命名 1.canvas",
     "未命名.canvas",
