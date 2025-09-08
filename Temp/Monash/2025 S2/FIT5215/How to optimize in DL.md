@@ -91,8 +91,8 @@ $$J(\theta) = \frac{1}{N}\sum_{i=1}^N l\big(f(x_i;\theta), y_i\big)$$
 $$J(\theta) = \frac{1}{N}\sum_{i=1}^N l\big(f(x_i;\theta), y_i\big) + \lambda R(\theta)$$
 
 其中：
-- λ>0\lambda > 0λ>0：正则化强度系数
-- R(θ)R(\theta)R(θ)：正则化项
+- $\lambda > 0$：正则化强度系数
+- $R(\theta)$：正则化项
 #### L1 Regularization
 $$R(θ)=||\theta||=\sum_j∣θ_j​∣$$
 - **特点**：鼓励参数变为 0，得到**稀疏模型**（很多权重为 0）
