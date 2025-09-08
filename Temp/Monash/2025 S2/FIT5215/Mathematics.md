@@ -129,3 +129,4 @@ $$\begin{align} f(x) = \frac{d}{dx} F(x) \\ F(x) = \int_{-\infty}^{x} f_X(t) dt 
 给定一个 $x$，CDF 告诉你随机变量小于等于 x 的概率
 
 ---
+# Eigenvalue, Eigenvector, Eigenmatrix
