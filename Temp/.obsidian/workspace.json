@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/How to optimize in DL.md",
+                "file": "Monash/2025 S2/FIT5215/Convolutional Neural Networks(CNNs).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "How to optimize in DL"
+              "title": "Convolutional Neural Networks(CNNs)"
             }
           },
           {
@@ -116,7 +116,8 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -213,10 +214,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/How to optimize in DL.md"
+                "file": "Monash/2025 S2/FIT5215/Convolutional Neural Networks(CNNs).md"
               },
               "icon": "lucide-info",
-              "title": "How to optimize in DL的笔记属性"
+              "title": "Convolutional Neural Networks(CNNs)的笔记属性"
             }
           }
         ],
@@ -241,9 +242,9 @@
   },
   "active": "9e634b539369aec9",
   "lastOpenFiles": [
+    "Monash/2025 S2/FIT5215/How to optimize in DL.md",
     "Monash/2025 S2/FIT5215/Convolutional Neural Networks(CNNs).md",
     "Monash/2025 S2/FIT5215/Activate Function.md",
-    "Monash/2025 S2/FIT5215/How to optimize in DL.md",
     "Monash/2025 S2/FIT5215/Image Analysis of Train & Loss Curve.md",
     "Monash/2025 S2/FIT5215/Feed-forward Neural Networks.md",
     "Monash/2025 S2/FIT5215/Mathematics.md",
