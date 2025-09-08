@@ -46,7 +46,7 @@ $$W \sim N\left(0, \frac{2}{n_{in} + n_{out}}\right)$$
 
 ## He Weight Initialization
 **作用:**
-Ensure the variance of the outputs of each layer equal to the variance of its inputs, but `He` specially optimized `ReLU`
+Ensure the variance of the outputs of each layer equal to the variance of its inputs, but `He` only adapt `ReLU` or similar
 
 **Why?:**
 Xavier 初始化假设激活函数近似**线性**，但 ReLU 并非对称线性函数，特别是它会把负数全部置零，这会改变输出的方差。因此，需要针对 ReLU 设计新的初始化方式
@@ -107,6 +107,10 @@ $$R(θ)=||\theta||^2​=\sum_j \sqrt{θ_j^2}​$$
 ![[Pasted image 20250824212935.png]]
 **理解:**
 In each iteration, at each layer, randomly choose some neurons and drop all connections from these neurons
+
+**作用**:
+- 防止过拟合
+- 减少计算量
 
 **代码:**
 ```
