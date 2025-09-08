@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/Mathematics.md",
+                "file": "Monash/2025 S2/FIT5215/How to optimize in DL.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Mathematics"
+              "title": "How to optimize in DL"
             }
           },
           {
@@ -96,7 +96,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "diag",
+                "query": "Xavier",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -117,7 +117,8 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -214,10 +215,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/Mathematics.md"
+                "file": "Monash/2025 S2/FIT5215/How to optimize in DL.md"
               },
               "icon": "lucide-info",
-              "title": "Mathematics的笔记属性"
+              "title": "How to optimize in DL的笔记属性"
             }
           }
         ],
@@ -242,10 +243,10 @@
   },
   "active": "30d0b6a0dfae982f",
   "lastOpenFiles": [
+    "Monash/2025 S2/FIT5215/Mathematics.md",
     "Monash/2025 S2/FIT5215/How to optimize in DL.md",
     "Monash/2025 S2/FIT5215/Feed-forward Neural Networks.md",
     "Monash/2025 S2/FIT5047/Heuristic Graph-Search.md",
-    "Monash/2025 S2/FIT5215/Mathematics.md",
     "Pasted image 20250908142412.png",
     "Pasted image 20250908142158.png",
     "Monash/2025 S2/FIT5215/Gradient Back Propagation.md",

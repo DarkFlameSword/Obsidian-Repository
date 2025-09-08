@@ -17,8 +17,7 @@ aliases:
 - the gradient will not vanishing or exploding
 ## Xavier Weight Initialization
 **作用:**
-Try to ensure the variance of the outputs of each layer equal to the
-variance of its input. This way, signals and gradients don't shrink or amplify layer by layer in the network
+Try to ensure the variance of the outputs of each layer equal to the variance of its input. This way, signals and gradients don't shrink or amplify layer by layer in the network
 
 **计算步骤:**
 假设某一层有：
