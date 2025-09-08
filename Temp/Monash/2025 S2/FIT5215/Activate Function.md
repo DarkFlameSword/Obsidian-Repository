@@ -114,6 +114,8 @@ $$ \mathrm{Swish}(x) = x \cdot \sigma(x) $$
 ==`Softmax` function transforms real-valued discriminative scores `ℎ` to discrete probabilities `p`==
 ![[Pasted image 20250804160702.png]]
 $$ \mathrm{softmax}(x_i) = \frac{e^{x_i}}{\sum_{j} e^{x_j}} $$
+
+
 ==优:==
 Softmax函数常在神经网络输出层充当激活函数，将输出层的值通过激活函数映射到0-1区间，将神经元输出构造成概率分布，用于多分类问题中，Softmax激活函数映射值越大，则真实类别可能性越大
 ==缺:==
