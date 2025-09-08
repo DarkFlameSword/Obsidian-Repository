@@ -97,6 +97,8 @@ $$\bar{h} = xW + b \quad \text{and} \quad h = \sigma(\bar{h})$$
 
 **使用链式法则求导:**
 $$\frac{\partial h}{\partial x} = \frac{\partial h}{\partial \bar{h}} \frac{\partial \bar{h}}{\partial x} = \text{diag}(\sigma'(\bar{h})) W^T \in \mathbb{R}^{4 \times 3}$$
+
+**推导过程:**
 $$\frac{\partial h}{\partial \bar{h}} = 
 \begin{bmatrix}
 \frac{\partial h_1}{\partial \bar{h}_1} & \frac{\partial h_1}{\partial \bar{h}_2} & \frac{\partial h_1}{\partial \bar{h}_3} & \frac{\partial h_1}{\partial \bar{h}_4} \\
