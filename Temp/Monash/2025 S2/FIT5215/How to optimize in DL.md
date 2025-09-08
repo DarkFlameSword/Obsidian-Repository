@@ -8,7 +8,8 @@ aliases:
   - summary
 ---
 ![[Pasted image 20250824192446.png]]
-
+# Overview of Optimization problem in ML and DL
+![[Pasted image 20250908142412.png]]
 # weight initialization
 ## What is a good weight/filter initialization?
 - Break the ‘symmetry’ of the network: two hidden nodes with the same input should have different weights
