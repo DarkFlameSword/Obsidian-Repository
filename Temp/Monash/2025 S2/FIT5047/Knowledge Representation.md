@@ -14,17 +14,12 @@ tags:
     - **命题逻辑**（Propositional Logic）：只表示真/假事实。
     - **谓词逻辑**（Predicate Logic）：可以表示对象及其关系，更强表达力。
 - **Model**
-		- 模型
-- **框架（Frames）**
-    - 类似面向对象的思想，知识表示为属性-值对（slots）。
-    - 例如：
-		```
-		狗：
-		类型: 动物
-		特征: 四条腿, 会叫
-		```
+	- 模型是一种关于评估**真/假**的形式化表示
+	- If a sentence α is true in a model m, we say that m is a model of α, or m satisfies α
 ---
+
 ## Logical Entailment（逻辑蕴涵）
+
 **类别:**
 - **Syntactic entailment（$\vdash$）**：通过推理规则（如自然演绎、分辨率等）能够推出
 - **Semantic entailment（$\models$）**：基于所有可能模型的真值分布来判断
