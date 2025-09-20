@@ -81,9 +81,31 @@ tags:
 2. $(¬ A ∨ (B ∨ C)) ∧ (¬ (B ∨ C) ∨ A)$
 3. $(¬ A ∨ B ∨ C) ∧ (¬ B ∧ ¬ C ∨ A)$
 4. $(¬A ∨ B ∨ C) ∧ (¬ B ∨ A) ∧ (¬ C ∨ A)$
-# Horn Clauses
+## Horn Clauses
 **定义:**
 - 在一个子句中，**最多只能有一个正文字**（正文字：没有被否定的原子命题）
 - **全是负文字的子句**，例如：¬A ∨ ¬B
 - **仅有一个正文字，其余为负文字的子句**，例如：¬A ∨ ¬B ∨ C
 
+## Backward Chaining & Forward Chaining
+**举例：**
+- R1: A ∧ B → C
+- R2: C → D 
+- 事实：A, B 
+- 目标：证明 D
+### Forward：
+已知 {A,B} 触发 R1 得 C；已知 {A,B,C} 触发 R2 得 D；证得D
+
+优点：
+- 得到所有可推事实；对多目标重用中间结果
+- sound and complete for Horn KBs
+缺点：
+- 若目标很少，可能做了大量与目标无关的推理
+### Backward：
+要证得D，用 R2 需要 C；要证 C，用 R1 需 A、B；查事实库有 A、B，因此 C、D 成立
+
+优点：
+- 聚焦目标，搜索复杂度更小
+- sound and complete for Horn KBs
+缺点：
+- 易陷入递归/环路；没有记忆化时重复子目标代价大
