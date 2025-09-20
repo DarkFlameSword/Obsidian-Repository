@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Monash/2025 S2/FIT5047/First-order Logic (FOL).md",
+                "file": "Monash/2025 S2/FIT5047/Assignment-2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "First-order Logic (FOL)"
+              "title": "Assignment-2"
             }
           },
           {
@@ -81,7 +81,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Pooling",
+                "query": "tag:#Q1",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,7 +89,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "搜索"
+              "title": "Search"
             }
           },
           {
@@ -102,7 +102,8 @@
               "title": "书签"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -199,10 +200,10 @@
             "state": {
               "type": "file-properties",
               "state": {
-                "file": "Monash/2025 S2/FIT5047/First-order Logic (FOL).md"
+                "file": "Monash/2025 S2/FIT5047/Assignment-2.md"
               },
               "icon": "lucide-info",
-              "title": "File properties for First-order Logic (FOL)"
+              "title": "File properties for Assignment-2"
             }
           }
         ],
@@ -227,8 +228,9 @@
   },
   "active": "a93e8f72f4d51f93",
   "lastOpenFiles": [
-    "Monash/2025 S2/FIT5047/Knowledge Representation.md",
     "Monash/2025 S2/FIT5047/First-order Logic (FOL).md",
+    "Monash/2025 S2/FIT5047/Assignment-2.md",
+    "Monash/2025 S2/FIT5047/Knowledge Representation.md",
     "随笔/MathJax.md",
     "Monash/2025 S2/FIT5047/Heuristic Graph-Search.md",
     "Monash/2025 S2/FIT5047/Lecture Note.md",
@@ -260,7 +262,6 @@
     "Pasted image 20250907203310.png",
     "Monash/2025 S2/FIT5215/AlexNet.md",
     "Pasted image 20250907203259.png",
-    "Monash/2025 S2/FIT5215/LeNet.md",
     "Pasted image 20250907203248.png",
     "随笔/未命名.canvas",
     "Pasted image 20250901151503.png",
