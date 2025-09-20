@@ -48,3 +48,17 @@ $$\begin{aligned}
 & s1s2 = \{z|g(x,y)\}\{x|A, y|B, w|C, z|D\}=\{z|g(A,B), x|A, y|B, w|C\} \\
 & s2s1 = \{x|A, y|B, w|C, z|D\} \{z|g(x,y)\} = \{x|A, y|B, w|C, z|D\}
 \end{aligned}$$
+对于计算$s_is_j$
+1. 寻找$s_i$中所有的变量，对每个变量应用$s_j$的替换，且添加到结果中
+2. $s_j$中没有被$s_i$使用的替换需要添加到结果中
+# Unification
+**定义：**
+给定两个（或一组）项/原子式，寻找一个代换 σ，使它们在同时应用 σ 后变得完全相同
+
+**举例：**
+E1 = KNOWS(John, x)
+E2 = KNOWS(y, Bill)
+
+Unification s = {y/John, x/Bill}
+
+# Converting wffs into Clauses
