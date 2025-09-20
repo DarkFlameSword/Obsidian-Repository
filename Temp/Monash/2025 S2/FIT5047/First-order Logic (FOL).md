@@ -38,3 +38,13 @@ $$( x)[P(x) Λ Q(x)] ≡ ( x)P(x) Λ ( y)Q(y)$$
 For all x, P(x) and Q(x) are true ≡ For all x, P(x) is true, and for all y Q(y) is true
 $$( x)[P(x) ν Q(x)] ≡ ( x)P(x) ν ( y)Q(y)$$
 There is an x, such that P(x) is true or Q(x) is true ≡ There is an x, such that P(x) is true, or there is a y, such that Q(y) is true
+
+# Substitution
+$$ P(x, y) \{x|A, y|B\} → P(A, B)$$
+- 花括号里的 {x|A, y|B} 表示一个代换 σ：把 x 替换为 A，把 y 替换为 B
+$$\begin{aligned}
+& s1 = \{z|g(x,y)\} \\ 
+& s2 = \{x|A, y|B, w|C, z|D\} \\
+& s1s2 = \{z|g(x,y)\}\{x|A, y|B, w|C, z|D\}=\{z|g(A,B), x|A, y|B, w|C\} \\
+& s2s1 = \{x|A, y|B, w|C, z|D\} \{z|g(x,y)\} = \{x|A, y|B, w|C, z|D\}
+\end{aligned}$$
