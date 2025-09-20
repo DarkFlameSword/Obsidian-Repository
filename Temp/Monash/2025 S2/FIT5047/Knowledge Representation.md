@@ -30,7 +30,7 @@ tags:
 **基本组成:**
 -  **命题变量（Propositional variables）**
     
-    - 用大写字母表示：A,B,C,…A, B, C,
+    - 用大写字母表示：A,B,C,…
         
     - 每个变量的取值为 **真 (T)** 或 **假 (F)**。
         
@@ -52,24 +52,7 @@ tags:
 ### 真值表（Truth Table）
 
 命题逻辑的语义通常通过真值表来定义。  
-比如：$$P \rightarrow Q$$
-
-| P   | Q   | $P\rightarrow Q$ |
-| --- | --- | ---------------- |
-| T   | T   | T                |
-| T   | F   | F                |
-| F   | T   | T                |
-| F   | F   | T                |
-$$(P∧Q)→R$$
-
-| P   | Q   | R   | $P \land Q$ | $(P \land Q) \rightarrow R$ |
-| --- | --- | --- | ----------- | --------------------------- |
-| T   | T   | T   | T           | T                           |
-| T   | T   | F   | T           | F                           |
-| T   | F   | T   | F           | T                           |
-| F   | T   | T   | F           | T                           |
-| F   | F   | F   | F           | T                           |
-![[Pasted image 20250826145431.png]]
+比如：![[Pasted image 20250826145431.png]]
 ### 模型类别
 - **Satisfiable（可满足）**：if it is true in some model
 - **Unsatisfiable（不可满足）**：if it is true in no model
@@ -77,6 +60,10 @@ $$(P∧Q)→R$$
 
 ### 逻辑计算公式
 ![[Pasted image 20250826145536.png]]
+**简单来说：**
+- 只有∧，∨适用**交换律，分配律，结合律，迪摩根定律**
+- 特殊：蕴涵的对位性
+- 特殊：蕴含的消失性
 ![[Pasted image 20250826145732.png]]
 
 # Horn Clauses
