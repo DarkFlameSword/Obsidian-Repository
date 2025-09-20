@@ -30,7 +30,7 @@ tags:
 **基本组成:**
 -  **命题变量（Propositional variables）**
     
-    - 用大写字母表示：A,B,C,…A, B, C, \ldotsA,B,C,…
+    - 用大写字母表示：A,B,C,…A, B, C,
         
     - 每个变量的取值为 **真 (T)** 或 **假 (F)**。
         
