@@ -14,7 +14,7 @@ tags:
     - **命题逻辑**（Propositional Logic）：只表示真/假事实。
     - **谓词逻辑**（Predicate Logic）：可以表示对象及其关系，更强表达力。
 - **Model**
-		
+		- 模型
 - **框架（Frames）**
     - 类似面向对象的思想，知识表示为属性-值对（slots）。
     - 例如：
