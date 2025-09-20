@@ -1,6 +1,22 @@
 # Q1
 ## a
-ϕ₁satisfiable but not valid
+$$\phi_1 = (((A ∨ (B → C)) ∧ (¬C ∨ D)) → ((A → D) ∨ (C ↔ E)))$$
+**Conclusion:**
+satisfiable
+
+**Justification:**
+if `A = true, D = true`, then the implication holds
+if `A = true, D = false, C = false, E =true`, then the implication fails
+
+$$\phi_2 = $$
+**Conclusion:**
+
+**Justification:**
+
+$$\phi_3 = $$
+**Conclusion:**
+
+**Justification:**
 
 ---
 ## b
