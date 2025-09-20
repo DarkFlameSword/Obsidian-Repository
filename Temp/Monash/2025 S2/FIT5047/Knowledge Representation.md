@@ -71,7 +71,7 @@ tags:
 **从前提得到结论，前提为真则结论为真，前提为假则结论为假**
 
 ---
-## Conjunctive Normal Form(合取范式)
+## Conjunctive Normal Form - CNF(合取范式)
 **定义：**
 命题公式被写成若干子句的合取（AND），每个子句是若干文字的析取（OR）
 

@@ -78,6 +78,20 @@ Unification s = {y/John, x/Bill}
     - 注意：Skolem 化不是语义等价，只是“可满足性等价”，但足够用于反证
 4. Eliminate Λ symbols
     - 用分配律把公式化为“合取的析取”
-    - 或者直接提取成括号：P(x) Λ (x) = {P(x) , P(x)}
+    - 或者直接提取成括号：P(x) Λ Q(x) = {P(x) , Q(x)}
 5. Standardize variables apart
-	- {P(x) , P(B)}
+	- $\{P(x) , Q(x)\} → \{P(x_1) , Q(x_2)\}$
+
+---
+# General Resolution
+子句集：{P∨Q}, {¬Q∨R}, {¬R}
+
+- {¬Q∨R} 与 {¬R} 归结⇒ {¬Q}
+- {P∨Q} 与 {¬Q} 归结⇒ {P}
+# Resolution-refutation
+**Resolution-refutation:**
+1. 消去 →, ↔：φ→ψ ≡ ¬φ∨ψ
+2. Skolem 化（去 ∃）：用 常量/函数 替代存在变量；删除 ∃
+3. 分配 ∨ 到 ∧ 得 CNF
+4. 去掉显式 ∀
+5. 变量标准化（避免不同量词重名）
