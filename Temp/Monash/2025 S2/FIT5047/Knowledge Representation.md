@@ -81,6 +81,11 @@ tags:
 2. $(¬ A ∨ (B ∨ C)) ∧ (¬ (B ∨ C) ∨ A)$
 3. $(¬ A ∨ B ∨ C) ∧ (¬ B ∧ ¬ C ∨ A)$
 4. $(¬A ∨ B ∨ C) ∧ (¬ B ∨ A) ∧ (¬ C ∨ A)$
+
+**常见策略：**
+- Eliminate biconditionals and implications
+- the De Morgan's law eliminate $\lnot$
+- Distribute to eliminate parentheses
 ## Horn Clauses
 **定义:**
 - 在一个子句中，**最多只能有一个正文字**（正文字：没有被否定的原子命题）
