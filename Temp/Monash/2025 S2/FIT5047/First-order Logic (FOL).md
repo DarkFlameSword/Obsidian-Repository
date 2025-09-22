@@ -73,13 +73,13 @@ Unification s = {y/John, x/Bill}
     - 用德摩根与量词对偶：¬∀x φ ≡ ∃x ¬φ；¬∃x φ ≡ ∀x ¬φ
     - 直到 ¬ 只作用在原子公式上
 3. Skolem 化（消去存在量词，保持“可满足性等价”）
-    - 删除所有 ∃：若∃外面有 ∀x 包围，则用新函数 f(x) 代替 y；若外层无 ∀，用常量 c 代替
-    - 删除所有∀
+![[Pasted image 20250922162751.png]]
     - 注意：Skolem 化不是语义等价，只是“可满足性等价”，但足够用于反证
-4. Eliminate Λ symbols
+5. 删除所有∀
+6. Eliminate Λ symbols
     - 用分配律把公式化为“合取的析取”
     - 或者直接提取成括号：P(x) Λ Q(x) = {P(x) , Q(x)}
-5. Standardize variables apart
+7. Standardize variables apart
 	- $\{P(x) , Q(x)\} → \{P(x_1) , Q(x_2)\}$
 
 ---
