@@ -107,13 +107,31 @@ aliases:
 |χ|\chi|ψ|\psi|
 |ω|\omega|||
 # 16
-| 显示  | 语法          | 显示  | 语法        |
-| --- | ----------- | --- | --------- |
-| ∞   | \infty      | ∪   | \cup      |
-| ∩   | \cap        | ⊂   | \subset   |
-| ⊆   | \subseteq   | ⊃   | \supset   |
-| ∈   | \in         | ∉   | \notin    |
-| ∅   | \varnothing | ∀   | \forall   |
-| ∃   | \exists     | ¬   | \lnot     |
-| ∇   | \nabla      | ∂   | \partial  |
-| ⩾   | \geqslant   | ⩽   | \leqslant |
+| 显示  | 语法          | 显示  | 语法              |
+| --- | ----------- | --- | --------------- |
+| ∞   | \infty      | ∪   | \cup            |
+| ∩   | \cap        | ⊂   | \subset         |
+| ⊆   | \subseteq   | ⊃   | \supset         |
+| ∈   | \in         | ∉   | \notin          |
+| ∅   | \varnothing | ∀   | \forall         |
+| ∃   | \exists     | ¬   | \lnot           |
+| ∇   | \nabla      | ∂   | \partial        |
+| ⩾   | \geqslant   | ⩽   | \leqslant       |
+| ∧   | \land       | ∨   | \lor            |
+| →   | \rightarrow | ↔   | \leftrightarrow |
+# 换行
+在对齐位置前放 `&`
+```
+$$
+\begin{aligned}
+a+b &= c \\
+    &= d+e \\
+    &= f
+\end{aligned}
+$$
+```
+
+# 括号
+```
+\left[ ... \right]
+```
