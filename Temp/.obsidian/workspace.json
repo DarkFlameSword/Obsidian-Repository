@@ -92,8 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "e4962ae75ca05781",
@@ -202,7 +201,6 @@
   "left-ribbon": {
     "hiddenItems": {
       "bases:创建新数据库": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
       "canvas:新建白板": false,
       "graph:查看关系图谱": false,
       "switcher:打开快速切换": false,
@@ -214,11 +212,13 @@
   },
   "active": "e84badc78e43ab0f",
   "lastOpenFiles": [
+    "随笔/未命名.md",
+    "Pasted image 20250923145525.png",
+    "Monash/2025 S2/FIT5047/FIT5047-35649917-2024S2-Ass2.pdf.md",
     "Monash/2025 S2/FIT5047/First-order Logic (FOL).md",
     "Monash/2025 S2/FIT5047/Heuristic Graph-Search.md",
     "Monash/2025 S2/FIT5047/Lecture Note.md",
     "Monash/2025 S2/FIT5215/In-semester Exam-1 summary.md",
-    "Monash/2025 S2/FIT5047/FIT5047-35649917-2024S2-Ass2.pdf.md",
     "随笔/MathJax.md",
     "未命名.md",
     "未命名.base",
@@ -246,11 +246,8 @@
     "Monash/2025 S2/FIT5215/Optimizer.md",
     "Monash/2025 S2/FIT5215/Gradient Desent.md",
     "Monash/2025 S2/FIT5047/Algorithm.md",
-    "Monash/2025 S2/FIT5215/Loss Function.md",
-    "Monash/2025 S2/FIT5215/VGG Network.md",
     "Pasted image 20250907203310.png",
     "Pasted image 20250907203259.png",
-    "Pasted image 20250907203248.png",
     "随笔/未命名.canvas",
     "Monash/2025 S2/FIT5047/Assignment1",
     "未命名 1.canvas",
