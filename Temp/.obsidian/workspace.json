@@ -1,38 +1,20 @@
 {
   "main": {
-    "id": "b8a964c7b352ff57",
+    "id": "d49736f25542d4a8",
     "type": "split",
     "children": [
       {
-        "id": "72028a1a883211d1",
+        "id": "2b611284520f767e",
         "type": "tabs",
         "children": [
           {
-            "id": "e84badc78e43ab0f",
+            "id": "667b1d2b137e0685",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Monash/2025 S2/FIT5047/FIT5047-35649917-2024S2-Ass2.pdf.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "FIT5047-35649917-2024S2-Ass2.pdf"
-            }
-          },
-          {
-            "id": "d44d97c3fb8654fd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Monash/2025 S2/FIT5047/First-order Logic (FOL).md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "First-order Logic (FOL)"
+              "title": "新标签页"
             }
           }
         ]
@@ -41,15 +23,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "f721a3b9fbec3e7d",
+    "id": "0d0181d170523f05",
     "type": "split",
     "children": [
       {
-        "id": "8feec2a290c7f05a",
+        "id": "e1587094190426f9",
         "type": "tabs",
         "children": [
           {
-            "id": "b6b5238e248641dc",
+            "id": "847d8c548356a6df",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -62,12 +44,12 @@
             }
           },
           {
-            "id": "2c0a5912ec561244",
+            "id": "67fc2acfe1ccbbae",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "Pooling",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -75,41 +57,39 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "搜索"
+              "title": "Search"
             }
           },
           {
-            "id": "61dbfaf989bdc044",
+            "id": "df46cc51a7eacc35",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
               "state": {},
               "icon": "lucide-bookmark",
-              "title": "书签"
+              "title": "Bookmarks"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
-    "id": "e4962ae75ca05781",
+    "id": "b9617ccdd3d4f57c",
     "type": "split",
     "children": [
       {
-        "id": "9ba68ea273022436",
+        "id": "b07672f432f5b3b9",
         "type": "tabs",
         "children": [
           {
-            "id": "307f6adada531873",
+            "id": "a86c2ef046e1cd1d",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Quiz 3-Review before the quiz.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,25 +99,24 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Quiz 3-Review before the quiz 的反向链接列表"
+              "title": "Backlinks"
             }
           },
           {
-            "id": "a8f1ef3a577e4a75",
+            "id": "1e33e7c8d51ab15f",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Quiz 3-Review before the quiz.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Quiz 3-Review before the quiz 的出链列表"
+              "title": "Outgoing links"
             }
           },
           {
-            "id": "9d757852c1fd74d5",
+            "id": "0c607aa4867a92e1",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -148,120 +127,41 @@
                 "searchQuery": ""
               },
               "icon": "lucide-tags",
-              "title": "标签"
+              "title": "Tags"
             }
           },
           {
-            "id": "3dccc8213aa821ef",
+            "id": "287ef7e47c15ded1",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/DL Optimization.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "DL Optimization 的大纲"
-            }
-          },
-          {
-            "id": "577e343e9f33d0ca",
-            "type": "leaf",
-            "state": {
-              "type": "all-properties",
-              "state": {
-                "sortOrder": "frequency",
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-archive",
-              "title": "添加笔记属性"
-            }
-          },
-          {
-            "id": "fc5b16608a953896",
-            "type": "leaf",
-            "state": {
-              "type": "file-properties",
-              "state": {
-                "file": "Monash/2025 S2/FIT5047/FIT5047-35649917-2024S2-Ass2.pdf.md"
-              },
-              "icon": "lucide-info",
-              "title": "FIT5047-35649917-2024S2-Ass2.pdf的笔记属性"
+              "title": "Outline"
             }
           }
-        ],
-        "currentTab": 5
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
-      "bases:创建新数据库": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "canvas:新建白板": false,
-      "graph:查看关系图谱": false,
       "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "github-sync:Sync with Remote": false
+      "bases:创建新数据库": false
     }
   },
-  "active": "e84badc78e43ab0f",
-  "lastOpenFiles": [
-    "Monash/2025 S2/FIT5047/First-order Logic (FOL).md",
-    "Monash/2025 S2/FIT5047/Heuristic Graph-Search.md",
-    "Monash/2025 S2/FIT5047/Lecture Note.md",
-    "Monash/2025 S2/FIT5215/In-semester Exam-1 summary.md",
-    "Monash/2025 S2/FIT5047/FIT5047-35649917-2024S2-Ass2.pdf.md",
-    "随笔/MathJax.md",
-    "未命名.md",
-    "未命名.base",
-    "Pasted image 20250922162751.png",
-    "Monash/2025 S2/FIT5047/Knowledge Representation.md",
-    "随笔/Git.md",
-    "随笔/如何将本地仓库远程推送到github.md",
-    "Monash/2025 S2/FIT5215/Activate Function.md",
-    "Monash/2025 S2/FIT5215/对于线性提取和非线性提取的理解.md",
-    "Monash/2025 S2/FIT5215/Adversarial Machine Learning.md",
-    "Monash/2025 S2/FIT5215/Resnet CNNs.md",
-    "Pasted image 20250908163115.png",
-    "Monash/2025 S2/FIT5215/Convolutional Neural Networks(CNNs).md",
-    "Monash/2025 S2/FIT5215/How to optimize in DL.md",
-    "Monash/2025 S2/FIT5215/Image Analysis of Train & Loss Curve.md",
-    "Monash/2025 S2/FIT5215/Feed-forward Neural Networks.md",
-    "Monash/2025 S2/FIT5215/Mathematics.md",
-    "Pasted image 20250908142412.png",
-    "Pasted image 20250908142158.png",
-    "Monash/2025 S2/FIT5215/Gradient Back Propagation.md",
-    "Pasted image 20250908130933.png",
-    "Pasted image 20250908130929.png",
-    "Monash/2025 S2/FIT5215/Lecture Note.md",
-    "Pasted image 20250908124658.png",
-    "Monash/2025 S2/FIT5215/Optimizer.md",
-    "Monash/2025 S2/FIT5215/Gradient Desent.md",
-    "Monash/2025 S2/FIT5047/Algorithm.md",
-    "Monash/2025 S2/FIT5215/Loss Function.md",
-    "Monash/2025 S2/FIT5215/VGG Network.md",
-    "Pasted image 20250907203310.png",
-    "Pasted image 20250907203259.png",
-    "Pasted image 20250907203248.png",
-    "随笔/未命名.canvas",
-    "Monash/2025 S2/FIT5047/Assignment1",
-    "未命名 1.canvas",
-    "未命名.canvas",
-    "Monash/2025 S2",
-    "Monash/2025 S1",
-    "Monash/2025 S2/FIT5047",
-    "Monash/2025 S2/FIT5215",
-    "Monash/2025 S1/FIT9132",
-    "Monash/2025 S1/FIT9136",
-    "随笔",
-    "Monash"
-  ]
+  "active": "667b1d2b137e0685",
+  "lastOpenFiles": []
 }
