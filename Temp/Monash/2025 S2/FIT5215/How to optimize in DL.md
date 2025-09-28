@@ -10,12 +10,16 @@ aliases:
 ![[Pasted image 20250824192446.png]]
 # Overview of Optimization problem in ML and DL
 ![[Pasted image 20250908142412.png]]
+
+---
 # weight initialization
 ## What is a good weight/filter initialization?
 - Break the ‘symmetry’ of the network: two hidden nodes with the same input should have different weights
     - Large initial weights has better symmetry breaking effect, help avoiding losing signals and redundant units, but could result in exploding values during back-ward and forward passes, especially in Recurrent Neural Networks
 - the gradient will not vanishing or exploding
 - avoid overfitting
+
+---
 ## Xavier Weight Initialization
 **作用:**
 Try to ensure the variance of the outputs of each layer equal to the variance of its input. This way, signals and gradients don't shrink or amplify layer by layer in the network
@@ -44,6 +48,8 @@ $$W \sim N\left(0, \frac{2}{n_{in} + n_{out}}\right)$$
 - 不适用`ReLU`
 
 ![[Pasted image 20250824184323.png]]
+
+---
 
 ## He Weight Initialization
 **作用:**
@@ -101,6 +107,8 @@ $$R(θ)=||\theta||=\sum_j∣θ_j​∣$$
 
 **特点**：鼓励参数变为 0，得到**稀疏模型**（很多权重为 0）
 **用途**：特征选择（自动把不重要的特征权重压到 0）,压缩模型
+
+---
 #### L2 Regularization
 $$J(\theta) = \frac{1}{N}\sum_{i=1}^N l\big(f(x_i;\theta), y_i\big) + \frac{\lambda}{2N} R(\theta)$$
 
@@ -113,6 +121,8 @@ $$R(θ)=||\theta||^2​=\sum_j \sqrt{θ_j^2}​$$
 
 **特点**：惩罚大权重，鼓励参数更均匀分布，不会直接变成 0
 **用途**：常用来防止过拟合，loss高方差
+
+---
 ## Regularization related to Construction
 ### Dropout
 ![[Pasted image 20250824212935.png]]
@@ -140,6 +150,7 @@ model = nn.Sequential(
 )
 
 ```
+
 ---
 ## Regularization related to Data
 ### Data Augmentation
@@ -235,6 +246,7 @@ transform = transforms.Compose([
 
 ```
 
+---
 ### Label smoothing
 ### Data mix-up
 ### Data Cut-mix
@@ -259,6 +271,7 @@ $$y = \gamma \hat{x} + \beta$$
 **注意:**
 - In training phase, it uses the batch statistics**批次统计量** (mean and std)
 - In testing phase, it uses the population statistics**总体统计量** (mean and std)
+- always used in deep layers(more than 10)
 
 **作用:**
 - Cope with internal covariate shift
@@ -282,11 +295,11 @@ import torch
 
 class EarlyStopping:
     def __init__(self, patience=5, delta=0.0):
-        self.patience = patience
-        self.delta = delta
-        self.best_loss = float('inf')
-        self.counter = 0
-        self.early_stop = False
+        self.patience = patience # 如果连续`patience`个epoch验证损失都没有改善，就触发早停
+        self.delta = delta # 只有当 `new_loss < best_loss - delta` 时才认为是有效改善
+        self.best_loss = float('inf') # 记录到目前为止遇到的最小验证损失
+        self.counter = 0 # 记录连续多少个epoch验证损失没有改善
+        self.early_stop = False # 当`counter >= patience`时设为True
         self.best_model_state = None
 
     def __call__(self, val_loss, model):
@@ -314,6 +327,13 @@ for epoch in range(100):
         break
 ```
 
+==个人建议避免使用early stopping：==
+- 验证损失可能存在短期波动，early stopping可能在全局最优点之前就停止
+- 验证集与测试集分布不一致时效果不佳
+- 与dropout一起使用可能导致验证损失不稳定
+- 不能和Batch Normalization一起使用，因为BN层在训练/评估模式下行为不同
+
+---
 # Transfer Learning
 **理解:**
 Remove FC layers from the pretrained model, then replace them with a brand-new FC head
