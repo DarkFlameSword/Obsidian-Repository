@@ -86,23 +86,33 @@ $$W \sim N\left(0, \frac{2}{n_{in}}\right)$$
 损失函数原本是：
 
 $$J(\theta) = \frac{1}{N}\sum_{i=1}^N l\big(f(x_i;\theta), y_i\big)$$
+- $J(\theta):$ 成本函数
 
-加正则化后变成：
-
-$$J(\theta) = \frac{1}{N}\sum_{i=1}^N l\big(f(x_i;\theta), y_i\big) + \lambda R(\theta)$$
-
-其中：
-- $\lambda > 0$：正则化强度系数
-- $R(\theta)$：正则化项
 #### L1 Regularization
-$$R(θ)=||\theta||=\sum_j∣θ_j​∣$$
-- **特点**：鼓励参数变为 0，得到**稀疏模型**（很多权重为 0）
-- **用途**：特征选择（自动把不重要的特征权重压到 0）
-#### L2 Regularization
-$$R(θ)=||\theta||^2​=\sum_j \sqrt{θ_j^2}​$$
 
-- **特点**：惩罚大权重，鼓励参数更均匀分布，不会直接变成 0
-- **用途**：常用来防止过拟合
+$$J(\theta) = \frac{1}{N}\sum_{i=1}^N l\big(f(x_i;\theta), y_i\big) + \frac{\lambda}{N} R(\theta)$$
+
+- $\lambda > 0$：regularization parameter (正则化强度系数)
+- $R(\theta)$：正则化项
+$$R(θ)=||\theta||=\sum_j∣θ_j​∣$$
+- $θ:$ 是模型的参数向量，例如 $θ = [θ₁, θ₂, θ₃, ..., θₙ]$
+- $j:$ 是索引，从 1 到 n（或从 0 到 n-1，取决于索引约定）
+- $θⱼ:$ 表示参数向量中第 j 个参数
+
+**特点**：鼓励参数变为 0，得到**稀疏模型**（很多权重为 0）
+**用途**：特征选择（自动把不重要的特征权重压到 0）,压缩模型
+#### L2 Regularization
+$$J(\theta) = \frac{1}{N}\sum_{i=1}^N l\big(f(x_i;\theta), y_i\big) + \frac{\lambda}{2N} R(\theta)$$
+
+- $\lambda > 0$：regularization parameter (正则化强度系数)
+- $R(\theta)$：正则化项
+$$R(θ)=||\theta||^2​=\sum_j \sqrt{θ_j^2}​$$
+- $θ:$ 是模型的参数向量，例如 $θ = [θ₁, θ₂, θ₃, ..., θₙ]$
+- $j:$ 是索引，从 1 到 n（或从 0 到 n-1，取决于索引约定）
+- $θⱼ:$ 表示参数向量中第 j 个参数
+
+**特点**：惩罚大权重，鼓励参数更均匀分布，不会直接变成 0
+**用途**：常用来防止过拟合，loss高方差
 ## Regularization related to Construction
 ### Dropout
 ![[Pasted image 20250824212935.png]]
@@ -162,6 +172,8 @@ model = nn.Sequential(
 	    - 剪裁（random crop, center crop）
 	         **禁用:** 
 			 如果随机剪裁的区域太小，可能会裁掉物体的主体部分，导致剪裁出的图像块不再包含有效的物体信息。例如，对一张狗的图片，随机剪裁可能只裁到了一块草地
+		- 扭曲（distortion）
+
 	- **颜色与光照调整**
 	    
 	    - 随机亮度、对比度、饱和度变化

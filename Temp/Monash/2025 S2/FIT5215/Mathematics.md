@@ -130,3 +130,16 @@ $$\begin{align} f(x) = \frac{d}{dx} F(x) \\ F(x) = \int_{-\infty}^{x} f_X(t) dt 
 
 ---
 # Eigenvalue, Eigenvector, Eigenmatrix
+
+# Diagonalizable Matrix
+
+当输入是向量时，`diag()` 创建一个对角矩阵，向量元素作为对角线元素：
+$$\begin{aligned}
+&σ'(h¹) = [a, b, c]\\
+&diag(σ'(h¹)) = 
+\begin{bmatrix}
+a& 0& 0\\
+0& b& 0\\
+0& 0& c\\
+\end{bmatrix}
+\end{aligned}$$
