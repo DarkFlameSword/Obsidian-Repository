@@ -257,9 +257,9 @@ transform = transforms.Compose([
 
 **公式:**
 在每一层对输入做标准化：
-$$\hat{x} = \frac{x - \mu}{\sqrt{\sigma+\epsilon}}$$
+$$\hat{x} = \frac{x - \mu}{\sqrt{\sigma^2+\epsilon}}$$
 - $\mu$: mini-batch 的均值
-- $\sigma$: mini-batch 的方差
+- $\sigma^2$: mini-batch 的方差
 - $\epsilon$: a small value such as $1e^{-7}$
 - $x$: mini-batch 的输入h
 - $\hat x$: mini-batch 第一次处理后的输入
