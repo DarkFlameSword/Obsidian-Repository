@@ -93,5 +93,3 @@ nn.Linear(in_features, out_features)
 ![[Pasted image 20250901151503.png]]
 ==Neurons on higher layers have larger receptive fields (patches) on input images==
 
-
-
