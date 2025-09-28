@@ -256,7 +256,16 @@ transform = transforms.Compose([
 网络每一层的输入分布在训练中不断改变 → 导致训练难以收敛；所以通过BN 等方法规范化输入来缓解`Internal Covariate Shift`
 
 **公式:**
+Let $𝑧 = 𝑊^kℎ^k + 𝑏^𝑘$ be the mini-batch before activation
+
 在每一层对输入做标准化：
+$$\mu = \frac{1}{m} \sum_{i=1}^mz_i$$
+- $m:$ mini-batch有m个数据
+
+$$\sigma^2 = \frac{1}{m} \sum_{i=1}^m(z_i - \mu)$$
+- $m:$ mini-batch有m个数据
+
+
 $$\hat{x} = \frac{x - \mu}{\sqrt{\sigma^2+\epsilon}}$$
 - $\mu$: mini-batch 的均值
 - $\sigma^2$: mini-batch 的方差
