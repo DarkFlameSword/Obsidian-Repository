@@ -7,33 +7,29 @@ tags:
 aliases:
   - base
 ---
-# 1. 上标   
+# 上标   
 - `$x^2$` → $x^2$
 - `$x^{10}$` → $x^{10}$
 - `\overline{}` →$\overline{a_3}\;$适用于长表达式，横线会覆盖整个表达式
 - `\bar{}`→$\bar{a_3}\;$主要用于单个字符，横线较短
-# 2. 下标   
+# 下标   
 - `$a_1$` → $a_1$
 - `$a_{ij}$` → $a_{ij}$
 - `$x_i^2$` → $x_i^2$
 - `$ \frac{a+b}{c+d} $` → $\frac{a+b}{c+d}$
-## 3. 根号
+## 根号
 - `$\sqrt{x}$` → $\sqrt{x}$
 -  `$\sqrt[3]{x}$` → $\sqrt[3]{x}$
 
-# 4. 插入文本
+# 插入文本
 `$\text{anything}$` → $\text{anything}$
-## 5. 求和与积分
 
-- `\sum_{i=1}^n i^2` →$\sum_{i=1}^n i^2$
-- `$\int_0^1 x^2 dx$` → $\int_0^1 x^2 dx$
-- `$\lim_{x \to 0} \frac{\sin x}{x}$` → $\lim_{x \to 0} \frac{\sin x}{x}$
-## 6. 括号与绝对值
+## 括号
 
 - 普通括号：`( ... )`
-- 自动大小括号：`$\left( \frac{a}{b} \right)$` → $\left( \frac{a}{b} \right)$
-- 绝对值：`$\left| x \right|$` → $\left| x \right|$
-## 7. 矢量、矩阵与行列式
+- 自适应大小括号：`$\left( \frac{a}{b} \right)$` → $\left( \frac{a}{b} \right)$
+
+## 矢量、矩阵与行列式
 
 - 矢量：`\vec{v}` → $\vec{v}$
     
@@ -48,7 +44,7 @@ aliases:
 | Vector (long)     | `\overrightarrow{AB}` | $\overrightarrow{AB}$ |
 | Unit Vector (hat) | `\hat{i}`             | $\hat{i}$             |
 | Bold Letter       | `\mathbf{x}`          | $\mathbf{x}$          |
-## 8. 常用函数
+## 常用函数
 
 - 三角函数：`\sin`, `\cos`, `\tan`, `\cot`, `\sec`, `\csc`  
     `$\sin x + \cos y$` → $\sin x + \cos y$
@@ -61,26 +57,15 @@ aliases:
     - `$f'(x)$` → $f'(x)$
 - 偏导:
 	- `$\frac{\partial y}{\partial x}$`→ $\frac{\partial y}{\partial x}$
-## 9. 逻辑与集合符号
-- `$\neq$` → $\neq$
-- `$\approx$` → $\approx$
-- `$\le$` → $\le$
-- `$\ge$` → $\ge$
-- `$\in$` →  $\in$
-- `$\notin$` → $\notin$
-- `$\subset$` → $\subset$
-- `$A \subseteq B$` → $A \subseteq B$
-- `$\cup$` → $\cup$
-- `$\cap$` → $\cap$
-## 10. 计算常用符号
-- `$a \cdot b$` → $a \cdot b$
-- `$a \times b$` → $a \times b$
-- `$a \div b$` → $a \div b$
-- `$\lim_{x \to \infty} f(x)$` → $\lim_{x \to \infty} f(x)$
-- `$\dots$` → $1,2,3,\dots, n$
-- `$\vdots$` → $1,2,3,\vdots, n$
-- `$\ddots$` → $1,2,3,\ddots, n$
-## 11. 空格命令
+- 极限
+	- `\lim_{x \to \infty} f(x)` → $\lim_{x \to \infty} f(x)$
+- 求和
+	- `\sum_{i=1}^n i^2` →$\sum_{i=1}^n i^2$
+- 积分
+	-  `$\int_0^1 x^2 dx$` → $\int_0^1 x^2 dx$
+
+
+## 空格命令
 
 | 命令              | 含义                                                          | 示例                            |
 | --------------- | ----------------------------------------------------------- | ----------------------------- |
@@ -92,36 +77,43 @@ aliases:
 | `&`             | 矩阵空格                                                        |                               |
 | `\hspace{10pt}` | 自定义空格(支持单位：`pt`（点），`cm`（厘米），`mm`（毫米），`em`（字体宽度），`ex`（x 高度）) | $A\hspace{10pt}B$             |
 
-## 12. 希腊字母
+## 希腊字母
 
-|显示|语法|显示|语法|
-|---|---|---|---|
-|γ|\gamma|δ|\delta|
-|ϵ|\epsilon|ζ|\zeta|
-|η|\eta|θ|\theta|
-|ι|\iota|κ|\kappa|
-|λ|\lambda|μ|\mu|
-|ν|\nu|ξ|\xi|
-|π|\pi|ρ|\rho|
-|σ|\sigma|τ|\tau|
-|υ|\upsilon|ϕ|\phi|
-|χ|\chi|ψ|\psi|
-|ω|\omega|||
-# 13. 常用符号
+| 显示  | 语法       | 显示  | 语法     |
+| --- | -------- | --- | ------ |
+| γ   | \gamma   | δ   | \delta |
+| ϵ   | \epsilon | ζ   | \zeta  |
+| η   | \eta     | θ   | \theta |
+| ι   | \iota    | κ   | \kappa |
+| λ   | \lambda  | μ   | \mu    |
+| ν   | \nu      | ξ   | \xi    |
+| π   | \pi      | ρ   | \rho   |
+| σ   | \sigma   | τ   | \tau   |
+| υ   | \upsilon | ϕ   | \phi   |
+| χ   | \chi     | ψ   | \psi   |
+| ω   | \omega   |     |        |
 
-| 显示  | 语法          | 显示  | 语法              |
-| --- | ----------- | --- | --------------- |
-| ∞   | \infty      | ∪   | \cup            |
-| ∩   | \cap        | ⊂   | \subset         |
-| ⊆   | \subseteq   | ⊃   | \supset         |
-| ∈   | \in         | ∉   | \notin          |
-| ∅   | \varnothing | ∀   | \forall         |
-| ∃   | \exists     | ¬   | \lnot           |
-| ∇   | \nabla      | ∂   | \partial        |
-| ⩾   | \geqslant   | ⩽   | \leqslant       |
-| ∧   | \land       | ∨   | \lor            |
-| →   | \rightarrow | ↔   | \leftrightarrow |
-# 14. 换行
+# 常用符号
+
+| 显示          | 语法          | 显示           | 语法              |
+| ----------- | ----------- | ------------ | --------------- |
+| ∞           | \infty      | ∪            | \cup            |
+| ∩           | \cap        | ⊂            | \subset         |
+| ⊆           | \subseteq   | ⊃            | \supset         |
+| ∈           | \in         | ∉            | \notin          |
+| ∅           | \varnothing | ∀            | \forall         |
+| ∃           | \exists     | ¬            | \lnot           |
+| ∇           | \nabla      | ∂            | \partial        |
+| ⩾           | \ge         | ⩽            | \le             |
+| ∧           | \land       | ∨            | \lor            |
+| →           | \rightarrow | ↔            | \leftrightarrow |
+| $\neq$      | \neq        | $\approx$    | \approx         |
+| $a \cdot b$ | \cdot       | $a \times b$ | \times          |
+| $a \div b$  | \div        | $\to$        | \to             |
+| $\dots$     | \dots       | $\vdots$     | \vdots          |
+| $\ddots$    | \ddots      |              |                 |
+
+# 换行
 在对齐位置前放 `&`
 ```
 $$
@@ -131,9 +123,4 @@ a+b &= c \\
     &= f
 \end{aligned}
 $$
-```
-
-# 15. 括号
-```
-\left[ ... \right]
 ```
