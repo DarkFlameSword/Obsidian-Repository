@@ -13,11 +13,25 @@ aliases:
 
 ---
 # weight initialization
-## What is a good weight/filter initialization?
+## 引言
+**What is a good weight/filter initialization?**
+
 - Break the ‘symmetry’ of the network: two hidden nodes with the same input should have different weights
     - Large initial weights has better symmetry breaking effect, help avoiding losing signals and redundant units, but could result in exploding values during back-ward and forward passes, especially in Recurrent Neural Networks
 - the gradient will not vanishing or exploding
 - avoid overfitting
+
+**权重初始化对象**
+
+- 全连接层的权重
+- 卷积层的权重
+- 任何需要学习的线性变换的权重
+
+**作用**
+- 加快模型收敛（良好的初始化让网络从一个"合理"的起点开始，而不是随机漫步）
+- 防止梯度消失/爆炸
+- 打破对称性（Symmetry Breaking）
+- 保持输入输出方差稳定
 
 ---
 ## Xavier Weight Initialization
@@ -26,8 +40,8 @@ Try to ensure the variance of the outputs of each layer equal to the variance of
 
 **计算步骤:**
 假设某一层有：
-- 输入单元数：n_{in}
-- 输出单元数：n_{out}
+- 输入单元数：$n_{in}$
+- 输出单元数：$n_{out}$
 权重矩阵 W 的元素希望满足：
 $$Var(W x) \approx Var(x)$$
 
@@ -47,8 +61,6 @@ $$W \sim N\left(0, \frac{2}{n_{in} + n_{out}}\right)$$
     - 因为这两个函数在输入较大时会饱和，容易导致梯度消失
 - 不适用`ReLU`
 
-![[Pasted image 20250824184323.png]]
-
 ---
 
 ## He Weight Initialization
@@ -60,8 +72,8 @@ Xavier 初始化假设激活函数近似**线性**，但 ReLU 并非对称线性
 
 **计算步骤:**
 假设某一层有：
-- 输入单元数：n_{in}
-- 输出单元数：n_{out}
+- 输入单元数：$n_{in}$
+- 输出单元数：$n_{out}$
 `ReLU` 的特点是：
 $$\text{ReLU}(x) = \max(0,x)$$
 
@@ -72,17 +84,15 @@ $$W \sim U\left[
 \right]$$
 
 - 对**正态分布**：
-$$W \sim N\left(0, \frac{2}{n_{in}}\right)$$
+$$W \sim N\left(0, \alpha \times \sqrt{\frac{2}{n_{in}+n_{out}}}\right)\; \alpha = \begin{cases} 1 & \text{if sigmoid} \\ 4 & \text{if tanh} \\ \sqrt{2} & \text{if ReLU} \end{cases} $$
 
 - ​ $n_{in}$是输入节点数
 - $n_{out}$是输出节点数
-==分母是 2 倍，因为 `ReLU` 会丢掉一半的信号==
+- $\alpha = \sqrt2$，因为 `ReLU` 会丢掉一半的信号
 
 **适应场景:**
 - `ReLU`, `ReLU的所有变种`
 - 深层卷积神经网络 / 前馈网络 都可以用 He 初始化
-
-![[Pasted image 20250824185407.png]]
 
 ---
 

@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "667b1d2b137e0685",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Monash/2025 S2/FIT5215/Optimizer.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Optimizer"
-            }
-          },
-          {
             "id": "39a0baffc698a4c4",
             "type": "leaf",
             "state": {
@@ -34,8 +20,23 @@
               "icon": "lucide-file",
               "title": "MathJax"
             }
+          },
+          {
+            "id": "58b9ae23be8ff10b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Monash/2025 S2/FIT5215/How to optimize in DL.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "How to optimize in DL"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -181,11 +182,16 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "667b1d2b137e0685",
+  "active": "58b9ae23be8ff10b",
   "lastOpenFiles": [
     "随笔/MathJax.md",
-    "Monash/2025 S2/FIT5215/Optimizer.md",
     "Monash/2025 S2/FIT5215/How to optimize in DL.md",
+    "Monash/2025 S2/FIT5215/Image Analysis of Train & Loss Curve.md",
+    "Monash/2025 S2/FIT5215/In-semester Exam-1 summary.md",
+    "Monash/2025 S2/FIT5215/Lecture Note.md",
+    "Monash/2025 S2/FIT5215/LeNet.md",
+    "Monash/2025 S2/FIT5215/Loss Function.md",
+    "Monash/2025 S2/FIT5215/Optimizer.md",
     "Monash/2025 S2/FIT5215/Mathematics.md",
     "Monash/2025 S2/FIT5215/Gradient Desent.md",
     "Monash/2025 S2/FIT5215/Feed-forward Neural Networks.md",
@@ -195,8 +201,6 @@
     "Monash/2025 S2/FIT5215/Adversarial Machine Learning.md",
     "Monash/2025 S2/FIT5215/Activate Function.md",
     "Monash/2025 S2/FIT5215/对于线性提取和非线性提取的理解.md",
-    "Monash/2025 S2/FIT5215/In-semester Exam-1 summary.md",
-    "Monash/2025 S2/FIT5215/Image Analysis of Train & Loss Curve.md",
     "Monash/2025 S2/FIT5047/Heuristic Graph-Search.md",
     "Pasted image 20250908130933.png",
     "Monash/2025 S2/FIT5047/FIT5047-35649917-2025S1-Ass2.pdf.md",

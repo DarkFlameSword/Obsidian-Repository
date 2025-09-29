@@ -111,7 +111,8 @@ aliases:
 | $\dots$     | \dots       | $\vdots$     | \vdots          |
 | $\ddots$    | \ddots      | $\odot$      | \odot           |
 
-# 换行
+# 包裹类命令
+## 换行
 在对齐位置前放 `&`
 ```
 $$
@@ -120,5 +121,16 @@ a+b &= c \\
     &= d+e \\
     &= f
 \end{aligned}
+$$
+```
+
+## 条件
+```
+$$ \alpha = 
+\begin{cases} 
+1 & \text{if sigmoid} \\ 
+4 & \text{if tanh} \\ 
+\sqrt{2} & \text{if ReLU} 
+\end{cases} 
 $$
 ```
