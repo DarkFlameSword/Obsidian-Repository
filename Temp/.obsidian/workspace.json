@@ -68,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "diag",
+                "query": "Label smoothing",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -186,6 +186,12 @@
   "lastOpenFiles": [
     "随笔/MathJax.md",
     "Monash/2025 S2/FIT5215/How to optimize in DL.md",
+    "Pasted image 20250929163619.png",
+    "Pasted image 20250929162925.png",
+    "Pasted image 20250929162835.png",
+    "Pasted image 20250929162732.png",
+    "Pasted image 20250929155623.png",
+    "Pasted image 20250929155616.png",
     "Monash/2025 S2/FIT5215/Image Analysis of Train & Loss Curve.md",
     "Monash/2025 S2/FIT5215/In-semester Exam-1 summary.md",
     "Monash/2025 S2/FIT5215/Lecture Note.md",

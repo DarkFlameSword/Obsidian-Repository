@@ -91,7 +91,6 @@ At a certain point, the train loss still decreases, while the valid loss starts 
     - L1 正则化 (Lasso): 在损失函数中添加 L1 正则项，鼓励模型学习稀疏的权重，即让更多的权重变为 0，从而减少模型的复杂度
     - L2 正则化 (Ridge): 在损失函数中添加 L2 正则项，限制权重的平方和，使得权重更加平滑，从而提高模型的泛化能力
     - Dropout: 在训练过程中，随机地丢弃一部分神经元，强制模型学习更加鲁棒的特征，避免模型过度依赖某些特定的神经元
-    - Batch Normalization: 在每层神经网络的输入之前进行归一化，使得输入数据的分布更加稳定，从而加速训练并提高模型的泛化能力
 
 4. **早停策略 (Early Stopping)**
     - 监控验证集性能: 在训练过程中，定期评估模型在验证集上的性能

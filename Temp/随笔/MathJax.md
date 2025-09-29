@@ -17,11 +17,20 @@ aliases:
 - `\overrightarrow{AB}` → $\overrightarrow{AB}$ 向量(适用于长表达式)
 - `\hat{i}` → $\hat{i}$ 单位向量
 - `\widehat{ab}` → $\widehat{ab}$  单位向量(适用于长表达式)
+- `\tilde{x}` → x̃
+- `\widetilde{ABC}` → $\widetilde{ABC}$
+- `\dot{a}` → $\dot{a}$
+- `\overbrace{(n−2)+(n−1)}` → $\overbrace{(n−2)+(n−1)}^2$
+
 # 下标   
 - `$a_1$` → $a_1$
 - `$a_{ij}$` → $a_{ij}$
 - `$x_i^2$` → $x_i^2$
 - `$ \frac{a+b}{c+d} $` → $\frac{a+b}{c+d}$
+
+# 下面
+
+`\underbrace{(n−2)+(n−1)}` → $\underbrace{(n−2)+(n−1)}_2$
 ## 根号
 - `$\sqrt{x}$` → $\sqrt{x}$
 -  `$\sqrt[3]{x}$` → $\sqrt[3]{x}$
@@ -60,6 +69,8 @@ aliases:
 - 积分
 	-  `$\int_0^1 x^2 dx$` → $\int_0^1 x^2 dx$
 	- `\iint_0^1xy dxdy` → $\iint_0^1xy \;dx dy$
+- 自定义函数
+	- `\operatorname{floor}(x)` → $\operatorname{floor}(x)$
 
 
 ## 空格命令
@@ -110,10 +121,10 @@ aliases:
 | $a \div b$  | \div        | $\to$        | \to             |
 | $\dots$     | \dots       | $\vdots$     | \vdots          |
 | $\ddots$    | \ddots      | $\odot$      | \odot           |
+| \           | \backslash  | $\sim$       | \sim            |
 
 # 包裹类命令
 ## 换行
-在对齐位置前放 `&`
 ```
 $$
 \begin{aligned}
@@ -123,8 +134,16 @@ a+b &= c \\
 \end{aligned}
 $$
 ```
-
+- 在对齐位置前放 `&`
+- 如果想行与行之间宽一点，则使用`\\[2ex]`
 ## 条件
+$$ \alpha = 
+\begin{cases} 
+1 & \text{if sigmoid} \\ 
+4 & \text{if tanh} \\ 
+\sqrt{2} & \text{if ReLU} 
+\end{cases} 
+$$
 ```
 $$ \alpha = 
 \begin{cases} 
