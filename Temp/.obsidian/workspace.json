@@ -35,8 +35,7 @@
               "title": "MathJax"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -182,10 +181,10 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "39a0baffc698a4c4",
+  "active": "667b1d2b137e0685",
   "lastOpenFiles": [
-    "Monash/2025 S2/FIT5215/Optimizer.md",
     "随笔/MathJax.md",
+    "Monash/2025 S2/FIT5215/Optimizer.md",
     "Monash/2025 S2/FIT5215/How to optimize in DL.md",
     "Monash/2025 S2/FIT5215/Mathematics.md",
     "Monash/2025 S2/FIT5215/Gradient Desent.md",

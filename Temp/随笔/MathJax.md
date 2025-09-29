@@ -10,8 +10,13 @@ aliases:
 # 上标   
 - `$x^2$` → $x^2$
 - `$x^{10}$` → $x^{10}$
-- `\overline{}` →$\overline{a_3}\;$适用于长表达式，横线会覆盖整个表达式
-- `\bar{}`→$\bar{a_3}\;$主要用于单个字符，横线较短
+# 头顶
+- `\overline{}` →$\overline{a_3}\;$  适用于长表达式
+- `\bar{}`→$\bar{a_3}\;$  主要用于单个字符
+- `\vec{v}` → $\vec{v}$  向量
+- `\overrightarrow{AB}` → $\overrightarrow{AB}$ 向量(适用于长表达式)
+- `\hat{i}` → $\hat{i}$ 单位向量
+- `\widehat{ab}` → $\widehat{ab}$  单位向量(适用于长表达式)
 # 下标   
 - `$a_1$` → $a_1$
 - `$a_{ij}$` → $a_{ij}$
@@ -29,21 +34,12 @@ aliases:
 - 普通括号：`( ... )`
 - 自适应大小括号：`$\left( \frac{a}{b} \right)$` → $\left( \frac{a}{b} \right)$
 
-## 矢量、矩阵与行列式
-
-- 矢量：`\vec{v}` → $\vec{v}$
-    
+## 矩阵与行列式
 - 单行矩阵：`$\begin{matrix} a & b \\ c & d \end{matrix}$` → $\begin{matrix} a & b \\ c & d \end{matrix}$
 - 带括号矩阵：
 `$\begin{pmatrix} -1 & 1 & -1 \\ 1 & 1 & -1\\ -1 & 1 & 1 \\ -1 & -1 & 2\end{pmatrix}$`  → $\begin{pmatrix} -1 & 1 & -1 \\ 1 & 1 & -1\\ -1 & 1 & 1 \\ -1 & -1 & 2\end{pmatrix}$
 `$\begin{bmatrix} -1 & 1 & -1 \\ 1 & 1 & -1\\ -1 & 1 & 1 \\ -1 & -1 & 2\end{bmatrix}$` → $\begin{bmatrix} -1 & 1 & -1 \\ 1 & 1 & -1\\ -1 & 1 & 1 \\ -1 & -1 & 2\end{bmatrix}$
 
-| Desired Output    | MathJax Syntax        | Rendered Result       |
-| ----------------- | --------------------- | --------------------- |
-| Vector (short)    | `\vec{v}`             | $\vec{v}$             |
-| Vector (long)     | `\overrightarrow{AB}` | $\overrightarrow{AB}$ |
-| Unit Vector (hat) | `\hat{i}`             | $\hat{i}$             |
-| Bold Letter       | `\mathbf{x}`          | $\mathbf{x}$          |
 ## 常用函数
 
 - 三角函数：`\sin`, `\cos`, `\tan`, `\cot`, `\sec`, `\csc`  
@@ -63,6 +59,7 @@ aliases:
 	- `\sum_{i=1}^n i^2` →$\sum_{i=1}^n i^2$
 - 积分
 	-  `$\int_0^1 x^2 dx$` → $\int_0^1 x^2 dx$
+	- `\iint_0^1xy dxdy` → $\iint_0^1xy \;dx dy$
 
 
 ## 空格命令
@@ -105,13 +102,14 @@ aliases:
 | ∃           | \exists     | ¬            | \lnot           |
 | ∇           | \nabla      | ∂            | \partial        |
 | ⩾           | \ge         | ⩽            | \le             |
+| >           | \gt         | <            | \lt             |
 | ∧           | \land       | ∨            | \lor            |
 | →           | \rightarrow | ↔            | \leftrightarrow |
 | $\neq$      | \neq        | $\approx$    | \approx         |
 | $a \cdot b$ | \cdot       | $a \times b$ | \times          |
 | $a \div b$  | \div        | $\to$        | \to             |
 | $\dots$     | \dots       | $\vdots$     | \vdots          |
-| $\ddots$    | \ddots      |              |                 |
+| $\ddots$    | \ddots      | $\odot$      | \odot           |
 
 # 换行
 在对齐位置前放 `&`
