@@ -31,6 +31,19 @@ tags:
 1. 点击**实例管理**
 2. 点击**更新整合包**
 3. 将`落幕曲1.5.1安装包（拖入启动器安装）(1).zip`拖入HMCL界面
+
+---
+## 换肤
+1. 本文档使用Blessing Skin换肤，[[https://skin.prinzeugen.net/|链接]]
+2. 注册账号，==账号名需要和HMCL的离线账号名一模一样==
+3. 回到HMCL主界面，点击**账户**
+4. 点击第三个**上传/编辑皮肤**![[Pasted image 20250930215815.png]]
+5. 选择Blessinng Skin![[Pasted image 20250930215846.png]]
+6. 回到Blessin Skin的用户界面，复制root链接![[Pasted image 20250930215919.png]]
+7. 将root链接粘贴到HMCL中的**服务器地址**
+
+
+---
 ## 进入游戏
 1. 进入HMCL主界面，点击右下角![[Pasted image 20250930200053.png]]
 2. 选择`落幕曲`服务器
