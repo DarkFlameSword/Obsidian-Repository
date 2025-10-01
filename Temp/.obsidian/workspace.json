@@ -13,30 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "随笔/MathJax.md",
+                "file": "随笔/Latex.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MathJax"
-            }
-          },
-          {
-            "id": "83e41070259aec89",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "随笔/Minecraft 服务器详解.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Minecraft 服务器详解"
+              "title": "Latex"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -185,45 +170,44 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "83e41070259aec89",
+  "active": "847d8c548356a6df",
   "lastOpenFiles": [
+    "随笔/MathJax.md",
+    "未命名.base",
+    "未命名 1.base",
+    "未命名.md",
+    "Monash/2025 S2/FIT5215/Recurrent NNs (RNNs).md",
+    "Monash/2025 S2/FIT5215/Sequence Modelling.md",
+    "Monash/2025 S2/FIT5215/Autoregressive Model.md",
+    "Monash/2025 S2/FIT5215/Adversarial Machine Learning.md",
+    "Monash/2025 S2/FIT5215/Markov Assumption.md",
+    "Monash/2025 S2/FIT5215/Convolutional Neural Networks(CNNs).md",
+    "Pasted image 20251001111551.png",
+    "Pasted image 20251001111540.png",
+    "Monash/2025 S2/FIT5215/GoogleNet.md",
+    "Monash/2025 S2/FIT5215/LeNet.md",
+    "Monash/2025 S2/FIT5215/对于线性提取和非线性提取的理解.md",
+    "Pasted image 20251001104131.png",
+    "Pasted image 20251001101301.png",
+    "Monash/2025 S2/FIT5215/Grad-CAM (Gradient-weighted Class Activation Mapping).md",
+    "Pasted image 20251001094706.png",
+    "随笔/Minecraft 服务器详解.md",
     "Pasted image 20250930215919.png",
     "Pasted image 20250930215846.png",
     "Pasted image 20250930215815.png",
     "Pasted image 20250930213955.png",
     "Pasted image 20250930213942.png",
     "Monash/2025 S2/FIT5215/ResNet.md",
-    "Pasted image 20250930203936.png",
-    "随笔/Minecraft 服务器详解.md",
-    "Pasted image 20250930200053.png",
     "随笔/本地多项目不同仓库拉取与推送.md",
-    "随笔/MathJax.md",
     "Monash/2025 S2/FIT5215/Mathematics.md",
     "Monash/2025 S2/FIT5215/Feed-forward Neural Networks.md",
     "Monash/2025 S2/FIT5047/Resolution.md",
-    "Pasted image 20250930163121.png",
     "随笔/MC云服务器搭建.md",
-    "Monash/2025 S2/FIT5215/GoogleNet.md",
-    "Pasted image 20250929164718.png",
-    "Pasted image 20250929164711.png",
-    "未命名 1.base",
-    "未命名.base",
-    "Monash/2025 S2/FIT5215/LeNet.md",
     "Monash/2025 S2/FIT5215/AlexNet.md",
     "Monash/2025 S2/FIT5215/How to optimize in DL.md",
-    "Pasted image 20250929163619.png",
     "Monash/2025 S2/FIT5215/Image Analysis of Train & Loss Curve.md",
     "Monash/2025 S2/FIT5215/In-semester Exam-1 summary.md",
     "Monash/2025 S2/FIT5215/Lecture Note.md",
-    "Monash/2025 S2/FIT5215/Loss Function.md",
-    "Monash/2025 S2/FIT5215/Optimizer.md",
-    "Monash/2025 S2/FIT5215/Gradient Desent.md",
-    "Monash/2025 S2/FIT5215/Convolutional Neural Networks(CNNs).md",
-    "Monash/2025 S2/FIT5215/Back Propagation.md",
-    "Monash/2025 S2/FIT5215/Adversarial Machine Learning.md",
-    "Monash/2025 S2/FIT5215/Activate Function.md",
-    "Monash/2025 S2/FIT5215/对于线性提取和非线性提取的理解.md",
-    "Monash/2025 S2/FIT5047/Heuristic Graph-Search.md",
-    "Monash/2025 S2/FIT5047/FIT5047-35649917-2025S1-Ass2.pdf.md"
+    "Monash/2025 S2/FIT5215/Loss Function.md"
   ]
 }
