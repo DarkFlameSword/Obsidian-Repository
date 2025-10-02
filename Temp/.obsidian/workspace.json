@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/Gated Recurrent Unit (GRU).md",
+                "file": "随笔/Minecraft 服务器详解.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Gated Recurrent Unit (GRU)"
+              "title": "Minecraft 服务器详解"
             }
           },
           {
@@ -186,10 +186,13 @@
   },
   "active": "39a0baffc698a4c4",
   "lastOpenFiles": [
+    "Pasted image 20251002220544.png",
+    "Pasted image 20251001200713.png",
+    "随笔/本地多项目不同仓库拉取与推送.md",
+    "Monash/2025 S2/FIT5215/Gated Recurrent Unit (GRU).md",
     "Pasted image 20251001171833.png",
     "Pasted image 20251001171759.png",
     "Monash/2025 S2/FIT5215/Long-Short Term Memory Cells (LSTM).md",
-    "Monash/2025 S2/FIT5215/Gated Recurrent Unit (GRU).md",
     "随笔/MathJax.md",
     "Pasted image 20251001165505.png",
     "Monash/2025 S2/FIT5215/Recurrent NNs (RNNs).md",
@@ -199,8 +202,6 @@
     "Pasted image 20251001163804.png",
     "Pasted image 20251001163754.png",
     "Pasted image 20251001163747.png",
-    "Pasted image 20251001160427.png",
-    "Pasted image 20251001160405.png",
     "Monash/2025 S2/FIT5215/Gradient Desent.md",
     "随笔/Latex.md",
     "Monash/2025 S2/FIT5047/Resolution.md",
@@ -218,7 +219,6 @@
     "Monash/2025 S2/FIT5215/Grad-CAM (Gradient-weighted Class Activation Mapping).md",
     "随笔/Minecraft 服务器详解.md",
     "Monash/2025 S2/FIT5215/ResNet.md",
-    "随笔/本地多项目不同仓库拉取与推送.md",
     "Monash/2025 S2/FIT5215/Mathematics.md",
     "Monash/2025 S2/FIT5215/Feed-forward Neural Networks.md",
     "随笔/MC云服务器搭建.md",
