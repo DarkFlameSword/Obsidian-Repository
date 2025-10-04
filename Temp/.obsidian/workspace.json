@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/Negative sampling.md",
+                "file": "Monash/2025 S2/FIT5215/Attention Mechanism.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Negative sampling"
+              "title": "Attention Mechanism"
             }
           },
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/Encoder-Decoder Models.md",
+                "file": "Monash/2025 S2/FIT5215/Eecoder-only Transformer.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Encoder-Decoder Models"
+              "title": "Eecoder-only Transformer"
             }
           },
           {
@@ -185,7 +185,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -201,25 +202,34 @@
   },
   "active": "5a3f515cdd2f3b17",
   "lastOpenFiles": [
-    "随笔/Minecraft 服务器详解.md",
-    "Monash/2025 S2/FIT5215/Encoder-Decoder Models.md",
-    "Monash/2025 S2/FIT5215/Text Analytics and Language Models.md",
-    "Pasted image 20251003120734.png",
+    "Pasted image 20251004183953.png",
+    "Monash/2025 S2/FIT5215/Decoder-only Transformer.md",
+    "Monash/2025 S2/FIT5215/Eecoder-only Transformer.md",
+    "Monash/2025 S2/FIT5215/Transformer.md",
+    "Pasted image 20251004180447.png",
+    "Pasted image 20251004180323.png",
+    "Pasted image 20251004180306.png",
+    "Pasted image 20251004180248.png",
+    "Monash/2025 S2/FIT5215/Attention Mechanism.md",
     "Monash/2025 S2/FIT5215/Negative sampling.md",
+    "Pasted image 20251004175552.png",
+    "Pasted image 20251004174054.png",
+    "Monash/2025 S2/FIT5215/Self-attention，Multiple Heads，Transformer Networks.md",
+    "Pasted image 20251004173614.png",
+    "Monash/2025 S2/FIT5215/Sequence Modelling.md",
+    "Monash/2025 S2/FIT5215/Positional Encoding.md",
+    "Pasted image 20251004173338.png",
+    "Pasted image 20251004172403.png",
+    "Pasted image 20251004165159.png",
+    "Monash/2025 S2/FIT5215/Encoder-Decoder Models.md",
+    "Monash/2025 S2/FIT5215/Beam Search.md",
+    "Monash/2025 S2/FIT5215/Long-Short Term Memory Cells (LSTM).md",
+    "随笔/Minecraft 服务器详解.md",
+    "Monash/2025 S2/FIT5215/Text Analytics and Language Models.md",
     "Monash/2025 S2/FIT5215/Hierarchical softmax.md",
-    "Pasted image 20251003115511.png",
-    "Pasted image 20251003112837.png",
     "随笔/MathJax.md",
-    "Pasted image 20251003105704.png",
-    "Pasted image 20251003105503.png",
-    "Pasted image 20251002220544.png",
-    "Pasted image 20251001200713.png",
     "随笔/本地多项目不同仓库拉取与推送.md",
     "Monash/2025 S2/FIT5215/Gated Recurrent Unit (GRU).md",
-    "Pasted image 20251001171833.png",
-    "Pasted image 20251001171759.png",
-    "Monash/2025 S2/FIT5215/Long-Short Term Memory Cells (LSTM).md",
-    "Pasted image 20251001165505.png",
     "Monash/2025 S2/FIT5215/Recurrent NNs (RNNs).md",
     "Monash/2025 S2/FIT5215/Gradient Desent.md",
     "随笔/Latex.md",
@@ -227,17 +237,8 @@
     "未命名.base",
     "未命名 1.base",
     "未命名.md",
-    "Monash/2025 S2/FIT5215/Sequence Modelling.md",
     "Monash/2025 S2/FIT5215/Autoregressive Model.md",
     "Monash/2025 S2/FIT5215/Adversarial Machine Learning.md",
-    "Monash/2025 S2/FIT5215/Markov Assumption.md",
-    "Monash/2025 S2/FIT5215/Convolutional Neural Networks(CNNs).md",
-    "Monash/2025 S2/FIT5215/GoogleNet.md",
-    "Monash/2025 S2/FIT5215/LeNet.md",
-    "Monash/2025 S2/FIT5215/对于线性提取和非线性提取的理解.md",
-    "Monash/2025 S2/FIT5215/Grad-CAM (Gradient-weighted Class Activation Mapping).md",
-    "Monash/2025 S2/FIT5215/ResNet.md",
-    "Monash/2025 S2/FIT5215/Mathematics.md",
-    "Monash/2025 S2/FIT5215/Feed-forward Neural Networks.md"
+    "Monash/2025 S2/FIT5215/Markov Assumption.md"
   ]
 }
