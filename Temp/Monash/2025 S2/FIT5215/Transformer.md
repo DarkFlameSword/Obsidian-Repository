@@ -5,41 +5,31 @@ author:
 tags:
   - FIT5215
 ---
-# Self-Attention
-## Query, Key, Value
-![[Pasted image 20251004172403.png]]
-**理解：**
-1. 并行先计算每一个token的Q，K，V
-2. 计算目标token的Q与其他所有token的Cosin Similarity（normally use dot product）
-3. 使用Softmax，将目标token的Q与其他所有token的Cosin Similarity，转化为概率分布
-4. 使用步骤3得出的对应概率分布，缩放每一个Value
-5. 将缩放后的值相加得到encoding的向量值
-
-==注意==
-- 首先需要明白[[Positional Encoding]]的概念
-
-
-# Multiple Heads
-![[Pasted image 20251004173614.png]]
-# Transformer
+# Tansformer Types
+**作者简笔：**
+在你阅读该篇文章时，你必须已经掌握[[Attention]]的相关知识
+## Classic Transformer
 **注意：**
 - Encoder，Decoder自身内部的所有的权重和bias在不同的LSTM Cell，QKV Cell， positional encoding，etc.中都是相同的
 - Encoder与Decoder内部的所有的权重不同
 - ==这样做的目的是为了并行计算，适应不同长度的input和output==
 
 ---
-## Encoding Input
+### Encoding Input
 ![[Pasted image 20251004174054.png]]
 
 ---
-## Decoding Module
+### Decoding Module
 ![[Pasted image 20251004175552.png]]
 
 ---
-## Compute the output
+### Compute the output
 ![[Pasted image 20251004180248.png]]![[Pasted image 20251004180306.png]]
 ![[Pasted image 20251004180323.png]]
+**完整Transformer结构图：**
 ![[Pasted image 20251004180447.png]]
+**完整Transformer结构图：**
+![[Pasted image 20251005202641.png]]
 **总结：**
 - Transformer use World Embbedinng to convert words into numbers
 - Positional Encoding to keep track of word order
@@ -47,3 +37,41 @@ tags:
 - Encoder-Decoder Attention to keep tracck of things between the input and output phrases to make sure important words in the inpput are not lost in the translation
 - Residual Connection to allow each sub-unit, like Self_Attention, to focus on solving just one part of the problem
 
+
+## Multiple Heads Transformer
+![[Pasted image 20251004173614.png]]
+
+## Decoder-only Transformer
+chatgpt
+
+---
+
+## Eecoder-only Transformer
+### BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding
+![[Pasted image 20251004183953.png]]
+
+---
+#### Context Aware Embbeding
+
+---
+## Vision Transformer （ViTs）
+[[https://arxiv.org/pdf/2010.11929/1000|An image is worth 16x16 words: Transformers for image recognition at scale]]
+
+
+## Swin Transformer
+![[Pasted image 20251005205659.png]]
+- ViTs：一张$256 \times 256$的狗狗图片，被划分为$4 \times 4$个patches，每个patch有$16 \times 16$的pixels
+- Swin Transformer：与ViTs相比，ST只有最后merging层的tokens是和ViTs一样的，之前几轮数据训练，都是通过将每一个patch不断缩小2倍得到，并且缩放后的target之间互相不连通
+
+![[Pasted image 20251005210642.png]]
+- C: the capacity of model(全连接层的参数数量)
+# CNNs与Transformer对比
+CNNs：
+- Locality Sensitive
+- Translation Invariant
+- Lack of global understanding
+
+Transformer：
+- Need very large dataset for training
+- Learns inductive biases
+- Able to find long-term dependencies
