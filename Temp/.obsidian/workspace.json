@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/The strategeies of improving Language models.md",
+                "file": "Monash/2025 S2/FIT5047/Ensemble Learning.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "The strategeies of improving Language models"
+              "title": "Ensemble Learning"
             }
           },
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/Attention.md",
+                "file": "随笔/MathJax.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Attention"
+              "title": "MathJax"
             }
           }
         ]
@@ -67,7 +67,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Word",
+                "query": "决策树",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -187,17 +187,23 @@
   },
   "active": "39a0baffc698a4c4",
   "lastOpenFiles": [
-    "Monash/2025 S2/FIT5215/RAG (Retrivel Argumented Generation).md",
+    "Monash/2025 S2/FIT5047/K Nearest Neighbour (k-NN).md",
+    "Monash/2025 S2/FIT5047/Ensemble Learning.md",
+    "Monash/2025 S2/FIT5047/Naïve Bayes Classifier.md",
+    "随笔/MathJax.md",
+    "Monash/2025 S2/FIT5215/Attention.md",
+    "Monash/2025 S2/FIT5047/Information Gain.md",
+    "Monash/2025 S2/FIT5047/Decision Tree.md",
+    "Monash/2025 S2/FIT5047/Algorithm.md",
     "Monash/2025 S2/FIT5215/The strategeies of improving Language models.md",
+    "Monash/2025 S2/FIT5215/RAG (Retrivel Argumented Generation).md",
     "Monash/2025 S2/FIT5215/Transformer.md",
     "Pasted image 20251005210642.png",
     "Pasted image 20251005205659.png",
     "Pasted image 20251005202641.png",
-    "Monash/2025 S2/FIT5215/Attention.md",
     "Pasted image 20251005202445.png",
     "Monash/2025 S2/FIT5215/Encoder-Decoder Models.md",
     "Monash/2025 S2/FIT5215/Eecoder-only Transformer.md",
-    "随笔/MathJax.md",
     "Monash/2025 S2/FIT5215/Attention Mechanism.md",
     "Pasted image 20251004183953.png",
     "Pasted image 20251004180447.png",
@@ -217,13 +223,7 @@
     "随笔/本地多项目不同仓库拉取与推送.md",
     "Monash/2025 S2/FIT5215/Gated Recurrent Unit (GRU).md",
     "Monash/2025 S2/FIT5215/Recurrent NNs (RNNs).md",
-    "Monash/2025 S2/FIT5215/Gradient Desent.md",
-    "随笔/Latex.md",
-    "Monash/2025 S2/FIT5047/Resolution.md",
     "未命名.base",
-    "未命名 1.base",
-    "未命名.md",
-    "Monash/2025 S2/FIT5215/Autoregressive Model.md",
-    "Monash/2025 S2/FIT5215/Adversarial Machine Learning.md"
+    "未命名 1.base"
   ]
 }
