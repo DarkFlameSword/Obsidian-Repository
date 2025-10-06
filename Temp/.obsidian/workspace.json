@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Monash/2025 S2/FIT5215/Activate Function.md",
+                "file": "Monash/2025 S2/FIT5047/FIT5047-35649917-2025S1-Ass3.pdf.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Activate Function"
+              "title": "FIT5047-35649917-2025S1-Ass3.pdf"
             }
           },
           {
@@ -187,6 +187,9 @@
   },
   "active": "39a0baffc698a4c4",
   "lastOpenFiles": [
+    "Monash/2025 S2/FIT5047/FIT5047-35649917-2025S1-Ass2.pdf.md",
+    "Monash/2025 S2/FIT5047/FIT5047-35649917-2025S1-Ass3.pdf.md",
+    "Monash/2025 S2/FIT5215/Activate Function.md",
     "Monash/2025 S2/FIT5047/Ensemble Learning.md",
     "Monash/2025 S2/FIT5047/K Nearest Neighbour (k-NN).md",
     "Monash/2025 S2/FIT5047/Naïve Bayes Classifier.md",
@@ -220,9 +223,6 @@
     "随笔/Minecraft 服务器详解.md",
     "Monash/2025 S2/FIT5215/Text Analytics and Language Models.md",
     "Monash/2025 S2/FIT5215/Hierarchical softmax.md",
-    "随笔/本地多项目不同仓库拉取与推送.md",
-    "Monash/2025 S2/FIT5215/Gated Recurrent Unit (GRU).md",
-    "Monash/2025 S2/FIT5215/Recurrent NNs (RNNs).md",
     "未命名.base",
     "未命名 1.base"
   ]
