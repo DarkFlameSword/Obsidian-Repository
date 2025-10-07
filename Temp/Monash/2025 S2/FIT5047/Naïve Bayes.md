@@ -5,6 +5,14 @@ author:
 tags:
   - FIT5047
 ---
+# Naïve Bayes
+**理解：**
+只有一个“因”，有多个“果”
+![[Pasted image 20251007220209.png]]
+$$P(y, x_1, x_2, \dots , x_n) = P(y)P(x_1|y)P(x_2|y) \dots P(x_n|y)$$
+
+---
+# Naïve Bayes Classifier
 **理解：**
 朴素贝叶斯分类器基于两个核心假设：
 1. **贝叶斯定理**：利用先验概率和条件概率进行推理

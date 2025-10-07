@@ -9,6 +9,6 @@ Ensemble Learning（集成学习）是机器学习中的一种强大策略，�
 
 # Strategies
 ## Bagging
-### #### Random Forest
+### Random Forest
 ## Boosting
 ## Stacking
