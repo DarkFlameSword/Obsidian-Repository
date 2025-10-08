@@ -13,21 +13,21 @@ A data structure that represents the dependence between random variables
 ![[Pasted image 20251007215947.png]]
 
 # D-separation
-## Chain
+## Causal Chain
 ```
 X → M → Y
 ```
 如果M被观测到，则X与Y独立
 如果M没被观测到，则X与Y不独立
 
-## Fork
+## Common Cause
 ```
 X ← M → Y
 ```
 如果M被观测到，则X与Y独立
 如果M没被观测到，则X与Y不独立
 
-## Collider
+## Common Effect
 ```
 X → M ← Y
 ```

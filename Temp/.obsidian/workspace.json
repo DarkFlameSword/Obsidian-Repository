@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Monash/2025 S2/FIT5047/Bayesian Networks.md",
+                "file": "Monash/2025 S2/FIT5047/Probability.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Bayesian Networks"
+              "title": "Probability"
             }
           },
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Monash/2025 S2/FIT5047/Probability.md",
+                "file": "Monash/2025 S2/FIT5047/Bayesian Networks.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Probability"
+              "title": "Bayesian Networks"
             }
           },
           {
@@ -49,7 +49,8 @@
               "title": "MathJax"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -199,12 +200,12 @@
       "github-sync:Sync with Remote": false
     }
   },
-  "active": "39a0baffc698a4c4",
+  "active": "5052dd8bf2b21c21",
   "lastOpenFiles": [
+    "Monash/2025 S2/FIT5047/Probability.md",
+    "Monash/2025 S2/FIT5047/Bayesian Networks.md",
     "Monash/2025 S2/FIT5047/FIT5047-35649917-2025S1-Ass3.pdf.md",
     "Monash/2025 S2/FIT5047/FIT5047-35649917-2025S1-Ass2.pdf.md",
-    "Monash/2025 S2/FIT5047/Bayesian Networks.md",
-    "Monash/2025 S2/FIT5047/Probability.md",
     "Monash/2025 S2/FIT5047/Naïve Bayes.md",
     "Pasted image 20251007220209.png",
     "Pasted image 20251007215947.png",
