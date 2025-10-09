@@ -644,6 +644,13 @@ model.fc = nn.Linear(model.fc.in_features, 10)
 # 现在只训练最后一层
 
 ```
+### Fine-Tuning with Additional Components
+### Fine-Tuning with Additional Prompts
+### Fine-Tuning with Additional Adapters
+
+### Fine-Tuning with Additional LoRA
+
+
 
 # Ill-conditioning problem
 

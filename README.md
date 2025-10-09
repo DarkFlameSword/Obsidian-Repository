@@ -2,50 +2,24 @@
 
 ## 📚 项目简介
 
-本项目是以Monash University AI 2025S1 的教学课程为参考，个人归纳编写的AI学习笔记。项目采用Obsidian笔记软件进行管理，涵盖了人工智能、深度学习、算法设计等多个技术领域的学习资料。
+本项目是以Monash University AI 2025S1 的教学课程为参考，个人归纳编写的AI学习笔记。
 
 如果项目中存在任何不合规的内容，请及时联系作者进行处理。
 
-## 📁 项目结构
-
-```
-Obsidian-Repository/
-├── Temp/
-│   ├── Monash/
-│   │   ├── 2025 S1/
-│   │   │   └── FIT9136/           # 算法与编程相关笔记
-│   │   └── 2025 S2/
-│   │       ├── FIT5215/           # AI与深度学习笔记
-│   │       │   ├── Lecture Note.md
-│   │       │   ├── Pytorch.md
-│   │       │   ├── CNNs.md
-│   │       │   ├── AlexNet.md
-│   │       │   ├── LeNet.md
-│   │       │   ├── VGG Network.md
-│   │       │   └── RCNNs.md
-│   │       └── FIT5047/           # 智能系统笔记
-│   │           ├── Algorithm.md
-│   │           ├── Resolution.md
-│   │           └── Knowledge Representation.md
-│   ├── 随笔/
-│   │   └── Git.md                 # Git使用笔记
-│   └── Latex.md                   # LaTeX语法参考
-```
-
 ## 📖 主要内容
 
-### 🤖 AI与深度学习 (FIT5215)
+### 🤖 深度学习 (FIT5215)
 - **深度学习基础**: 包含AI模型类型、数据集划分、性能指标等核心概念
 - **神经网络架构**: 详细介绍CNN、AlexNet、LeNet、VGG等经典网络结构
 - **PyTorch实践**: PyTorch框架的使用方法和实践技巧
 - **优化理论**: 梯度下降、Hessian矩阵、局部最优等优化问题
 
-### 🔍 智能系统 (FIT5047)
+### 🔍 机器学习 (FIT5047)
 - **搜索算法**: 包含盲目搜索、回溯算法、对抗性搜索等策略
 - **知识表示**: 命题逻辑、逻辑连接词等知识表示方法
 - **问题求解**: Resolution推理、算法设计等内容
 
-### 💻 编程与算法 (FIT9136)
+### 💻 Python (FIT9136)
 - 算法设计与分析
 - 编程实践与测验复习资料
 
