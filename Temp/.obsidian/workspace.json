@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Monash/2025 S2/FIT5047/Probability.md",
+                "file": "Monash/2025 S2/FIT5047/Machine Learning.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Probability"
+              "title": "Machine Learning"
             }
           },
           {
@@ -201,8 +201,9 @@
   },
   "active": "39a0baffc698a4c4",
   "lastOpenFiles": [
-    "Monash/2025 S2/FIT5047/Naïve Bayes.md",
     "Monash/2025 S2/FIT5047/Probability.md",
+    "Monash/2025 S2/FIT5047/Machine Learning.md",
+    "Monash/2025 S2/FIT5047/Naïve Bayes.md",
     "Monash/2025 S2/FIT5047/Bayesian Networks.md",
     "Monash/2025 S2/FIT5047/FIT5047-35649917-2025S1-Ass3.pdf.md",
     "Monash/2025 S2/FIT5047/FIT5047-35649917-2025S1-Ass2.pdf.md",

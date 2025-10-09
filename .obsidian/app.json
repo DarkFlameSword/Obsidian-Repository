@@ -1,0 +1,13 @@
+{
+  "useTab": true,
+  "showLineNumber": true,
+  "rightToLeft": false,
+  "livePreview": true,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  }
+}
