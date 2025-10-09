@@ -24,3 +24,14 @@ tags:
 - Precision（精确率）= $\frac{TP}{TP + FP}$
 - F1-score（F1 值）= $\frac{2 × (Precision × Recall) }{Precision + Recall}$
 
+# Overfitting and Generalization
+[[Image Analysis of Train & Loss Curve#^cb1e36|Overfitting]]
+
+# Terms
+- Bias: the true error of the best classifier in the concept class
+- Variance: a learning algorithm may return different hypotheses for different training sets
+- Noise: 训练数据中有一些无法被学习的数据，或者对有效学习有干扰的数据
+
+# Supervised ML
+[[Temp/Monash/2025 S2/FIT5215/Lecture Note|Supervised ML]]
+

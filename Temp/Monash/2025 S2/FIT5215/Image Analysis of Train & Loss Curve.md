@@ -70,6 +70,9 @@ The gradients can grow bigger and bigger, so many layers get insanely large weig
     - `ResNet` 中的 shortcut/skip connection 可以让梯度绕过深层传播，极大缓解梯度消失/爆炸
 ---
 # Overfitting
+
+^cb1e36
+
 ![[Pasted image 20250824192640.png]]
 ![[Pasted image 20250824192802.png]]
 ![[Pasted image 20250824204807.png]]

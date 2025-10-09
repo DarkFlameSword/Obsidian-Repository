@@ -1,13 +1,7 @@
 {
   "remoteURL": "https://github.com/DarkFlameSword/Obsidian-Repository.git",
-<<<<<<< HEAD
-  "gitLocation": "D:/Git/Git/bin/",
-  "syncinterval": 0,
-  "isSyncOnLoad": true,
-=======
-  "gitLocation": "D:\\Git\\Git\\bin\\",
+  "gitLocation": "C:\\work\\Git\\Git\\bin\\",
   "syncinterval": 0,
   "isSyncOnLoad": false,
->>>>>>> 37ee6d21cae2c501bb0b3764ba0085460603c83e
   "checkStatusOnLoad": true
 }

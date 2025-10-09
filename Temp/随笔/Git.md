@@ -54,3 +54,32 @@ git log --oneline
 git checkout -b new-feature   # 新建并切换分支 
 git checkout main             # 回到主分支
 ```
+
+# 解决Git Conflict
+**查看冲突文件：**
+`git status`
+
+**先尝试合并：**
+```
+获取远端更新：
+git fetch origin
+
+合并远端分支到本地：
+git merge origin/main
+
+解决冲突（见“冲突处理”）
+git commit
+git push
+```
+
+**如果无法合并，用本地覆盖远端历史**
+```
+git push --force-with-lease origin main
+```
+请慎用，先确认无人依赖远端现有提交
+
+**如果无法合并，用远端覆盖本地**
+```
+git fetch origin
+git reset --hard origin/main 会丢弃本地未推送的提交
+```
