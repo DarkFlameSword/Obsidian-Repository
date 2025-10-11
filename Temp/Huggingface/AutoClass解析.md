@@ -14,6 +14,17 @@ model = AutoModel.from_pretrained("google-bert/bert-base-cased")
 transformer库中已经预先注册了一些经典模型的记录，这些记录就是一个`AutoModel`，调用`from_pretrained`就会自动根据模型名称去拉取服务器上这个模型的`config file`和`model file`，然后自动实例化模型
 
 ---
+## AutoModelForSequenceClassification
+对于文本（或序列）分类，你应该加载`AutoModelForSequenceClassification`
+
+```
+from transformers import AutoModelForSequenceClassification
+
+model_name = "nlptown/bert-base-multilingual-uncased-sentiment"
+pt_model = AutoModelForSequenceClassification.from_pretrained(model_name)
+```
+
+---
 ## 如果想将自定义的模型数据，注册进AutoModel中
 ```
 from transformers import AutoConfig, AutoModel
@@ -48,7 +59,7 @@ AutoModel.register(NewModelConfig, NewModel)
 
 ![[Pasted image 20251010204149.png]]
 1. 去拉取服务器上这个模型的`config file`和`model file`
-2. 打开`config file`根据模型名字寻找应该使用的`AutoConfig`(例如GPT2，Deepseek-v1，etc.)
+2. 打开`config file`根据模型 名字/地址 寻找应该使用的`AutoConfig`(例如GPT2，Deepseek-v1，etc.)
 3. 实例化`AutoConfig`类。找到对应的`model class`
 4. 根据`AutoConfig`和`model class`，实例化一个完整的`model`(还是随机的weits)
 5. 从`model file`中加载权重到`model`中
@@ -113,13 +124,22 @@ class BertOnnxConfig(OnnxConfig):
         )
 ```
 
-`AutoConfig`类包含了实例化`model`的所有信息（随机权重），所以我们也可以直接通过`AutoConfig`类调用`.from_pretrained()`。
+创建指定`model`的`AutoConfig`类
 ```
 from transformers import BertConfig
 
 bert_config = BertConfig.from_pretrained("bert-base-cased")
 ```
+## 自定义模型构建
+你可以修改模型的配置类来改变模型的构建方式。配置指明了模型的属性，比如隐藏层或者注意力头的数量。
 
+```
+from transformers import AutoConfig
+
+my_config = AutoConfig.from_pretrained("distilbert/distilbert-base-uncased", n_heads=12)
+```
+
+---
 # 保存/加载 当前模型权重
 ```
 from transformers import BertModel, BertConfig
@@ -130,11 +150,80 @@ bert_model = BertModel(bert_config)
 .
 .
 
-bert_model.save_pretrained("my_bert_model")
+bert_model.save_pretrained("my_bert_model") # 在 my_bert_model 目录下保存
 ```
 
 ```
 from transformers import BertModel
 
-bert_model = BertModel.from_pretrained("my_bert_model")
+bert_model = BertModel.from_pretrained("my_bert_model") 
+```
+
+---
+# AutoTokenizer
+分词器负责预处理文本，将文本转换为用于输入模型的数字数组。有多个用来管理分词过程的规则，包括如何拆分单词和在什么样的级别上拆分单词（在 [分词器总结](https://huggingface.co/docs/transformers/zh/tokenizer_summary) 学习更多关于分词的信息）。要记住最重要的是实例化的分词器名称要与模型的名称相同, 来确保和模型训练时使用相同的分词规则。
+
+实例化`AutoTokenizer`
+```
+from transformers import AutoTokenizer
+
+model_name = "nlptown/bert-base-multilingual-uncased-sentiment"
+tokenizer = AutoTokenizer.from_pretrained(model_name)
+```
+
+**将文本传入分词器**
+```
+encoding = tokenizer("We are very happy to show you the 🤗 Transformers library.")
+print(encoding)
+```
+分词器返回了含有如下内容的字典:
+- [input_ids](https://huggingface.co/docs/transformers/zh/glossary#input-ids)：用数字表示的 token
+- [attention_mask](https://huggingface.co/docs/transformers/zh/.glossary#attention-mask)：应该关注哪些 token 的指示
+
+**分词器也可以接受列表作为输入，并填充和截断文本，返回具有统一长度的批次**
+```
+pt_batch = tokenizer(
+    ["We are very happy to show you the 🤗 Transformers library.", "We hope you don't hate it."],
+    padding=True,
+    truncation=True,
+    max_length=512,
+    return_tensors="pt",
+)
+```
+
+# Trainer 优化训练循环
+这个类只适用于huggingface的`PreTrainedModel` 和 `torch.nn.Module`
+
+```
+from transformers import AutoModelForSequenceClassification, AutoTokenizer, DataCollatorWithPadding, Trainer
+from datasets import load_dataset
+
+model = AutoModelForSequenceClassification.from_pretrained("distilbert/distilbert-base-uncased")
+
+tokenizer = AutoTokenizer.from_pretrained("distilbert/distilbert-base-uncased")
+
+dataset = load_dataset("rotten_tomatoes")  # doctest: +IGNORE_RESULT
+
+# 创建一个给数据集分词的函数，并且使用 `map` 应用到整个数据集
+def tokenize_dataset(dataset):
+# 只对"text"列的内容进行分片
+    return tokenizer(dataset["text"])
+
+# batched=True 表示按批处理（默认批大小约 1000，可用 batch_size=… 调整）
+dataset = dataset.map(tokenize_dataset, batched=True)
+
+# 用来从数据集中创建批次的 [DataCollatorWithPadding]
+data_collator = DataCollatorWithPadding(tokenizer=tokenizer)
+
+trainer = Trainer(
+    model=model,
+    args=training_args,
+    train_dataset=dataset["train"],
+    eval_dataset=dataset["test"],
+    processing_class=tokenizer,
+    data_collator=data_collator,
+)  # doctest: +SKIP
+
+# 对于像翻译或摘要这些使用序列到序列模型的任务,用 `Seq2SeqTrainer` 和 `Seq2SeqTrainingArguments` 来替代
+trainer.train()
 ```
