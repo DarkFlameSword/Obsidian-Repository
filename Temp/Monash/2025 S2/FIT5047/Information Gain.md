@@ -9,7 +9,7 @@ tags:
 Information Gain（信息增益）是**决策树算法**和**特征选择**中的核心概念，用于衡量一个特征对分类任务的**重要性**
 
 $$\begin{aligned}
-&IG(S, A) = H(S) - Σ (\frac{|S_v|}{|S|}) × H(S_v)\\
+&IG(S, A) = H(S) - Σ \left(\frac{|S_v|}{|S|} × H(S_v)\right)\\
 &v∈Values(A)
 \end{aligned}$$
 
