@@ -122,7 +122,7 @@ aliases:
 | $\dots$     | \dots       | $\vdots$     | \vdots          |
 | $\ddots$    | \ddots      | $\odot$      | \odot           |
 | \           | \backslash  | $\sim$       | \sim            |
-| ⊥           | \perp       |              |                 |
+| ⊥           | \perp       | $\propto$    | \propto         |
 
 # 包裹类命令
 ## 换行
