@@ -22,7 +22,7 @@ tags:
     $$
     d(p,q)=\sqrt{(p_1-q_1)^2 + (p_2-q_2)^2 + \dots + (p_n-q_n)^2}
     $$
-		连续距离度量其公式为：
+		连续距离度量是**Jaccard coefficient**，其公式为：
 		$$d(p,q)=\frac{[p_1,p_2,\dots]\cap [q_1,q_2,\dots]}{[p_1,p_2,\dots]\cup [q_1,q_2,\dots]}$$
 - p 和 q 是两个数据点，它们分别有 n 个特征（维度）
 
@@ -32,3 +32,6 @@ tags:
     - **对于回归任务**：不是投票，而是计算这K个邻居的数值（例如，房价、温度等）的**平均值**或**加权平均值**，作为新数据点的预测值
 
 ![[Pasted image 20251015192204.png]]
+
+
+Note that if the question had been to calculate the Jaccard coefficient to find nearest neighbours in kNN, we would not include the predicted value in the calculation
