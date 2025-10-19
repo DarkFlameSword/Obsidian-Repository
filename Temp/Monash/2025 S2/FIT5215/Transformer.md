@@ -69,10 +69,29 @@ tags:
 ## Swin Transformer
 ![[Pasted image 20251005205659.png]]
 - ViTs：一张$256 \times 256$的狗狗图片，被划分为$4 \times 4$个patches，每个patch有$16 \times 16$的pixels
-- Swin Transformer：与ViTs相比，ST只有最后merging层的tokens是和ViTs一样的，之前几轮数据训练，都是通过将每一个patch不断缩小2倍得到，并且缩放后的target之间互相不连通
-
+- Swin Transformer：与ViTs相比，ST只有最后merging层的tokens是和ViTs一样的，前一轮数据训练，通过将原始图片划分为4个part（$\text{每个part长宽缩小为一半}\frac{1}{2}\times H,\frac{1}{2}\times W$），4个part独立计算patch，$\text{每个patch长宽缩小为一半}\frac{1}{2}\times h,\frac{1}{2}\times w$,并且某一个part数据不互通
 ![[Pasted image 20251005210642.png]]
 - C: the capacity of model(全连接层的参数数量)
+
+### Window Self-Attention in Swin Transformers
+为了解决part与part之间信息不互通的问题，引入了**Window Self-Attention**
+
+**抽象理解：**
+老师在进行完一轮“小组讨论”后，会让学生们进行一次**轮换**
+
+1. **第一轮 (W-MSA)**：学生们在固定的**小组（Window）**内讨论。
+2. **第二轮 (SW-MSA)**：老师说：“请大家向右和向下各移动半个小组的距离，然后重新组成 4 人小组！”
+    - 现在，新的小组就形成了。原本在 A 组角落的学生，现在可能会和原来 B 组、C 组、D 组的同学组成一个全新的小组
+    - 通过这次**窗口移动 (Shifted Window)**，原本孤立的小组边界被打破了，信息得以在不同的小组之间传递
+![[Pasted image 20251019213525.png]]
+(上图：窗口发生位移，形成了新的窗口，实现了跨窗口的信息交流)_
+
+Swin Transformer 在连续的网络层中，会**交替**使用这两种注意力机制：
+- 第 L 层：使用**常规窗口 (W-MSA)** 进行高效的“小组内”讨论
+- 第 L+1 层：使用**移动窗口 (SW-MSA)** 进行“跨小组”讨论
+
+
+---
 # CNNs与ViTs对比
 CNNs：
 优：
