@@ -23,21 +23,46 @@ tags:
 
 **Pretext Task**
 ![[Pasted image 20251003115511.png]]
-**通常会使用的技术：**
-- speed up training by sub-sampling (e.g., frequent words)[[Negative sampling]]
-- 当词汇表很大（如 100,000 词）时，计算 softmax 需要归一化所有词的概率，计算成本极高[[Hierarchical softmax]]
 
+**如何解决softmax计算成本高的问题**
+[[Negative sampling]]替代softmax，目的是解决原始 Skip-gram 模型中 **Softmax 输出层计算成本过高**的问题。它通过将一个复杂的多分类问题（在数万个词中预测一个）转变为一系列简单的**二分类问题**（这个词是真实的上下文吗？是/否）来实现
+
+当词汇表很大（如 100,000 词）时，计算 softmax 需要归一化所有词的概率，计算成本极高[[Hierarchical softmax]]
+![[59950D04CEF0284DE2AAC911322ACDC9.png]]
 #### Skip-gram
 ==target word predicts context words==
 
-#### Bag-of-word vector representation
+
+**原理**：
+不是用环境来定义事物，而是用事物来定义它可能出现的环境
+**优点**：
+- 对稀有词 (Rare Words) 的处理效果更好
+- 能捕捉到更精细的语义信息
+- 在大型语料库上表现优异
+**缺点**：
+- 训练速度慢，计算成本高
+- Softmax 计算瓶颈
+- 对高频词的处理不如 CBOW 高效
+- 预测概率的值很小，并且很难在类别之间区分
+
+#### Continous Bag-of-word vector representation
 ==context words predict target word==
 
 ![[Pasted image 20251003105704.png]]
-**总结：**
-- **原理**：将文本表示为词汇的集合，忽略语法和词序
-- **优点**：简单易实现
-- **缺点**：丢失语义信息，维度高
+**原理**：
+与模板中描述的原理正好相反。CBOW 的核心原理是 **“用环境来定义事物”**
+
+**Tips：**
+- 输入应该是所有context的one-hot向量的均值和
+
+**优点**：
+- 训练速度快，计算成本低
+- 对高频词的处理效果好
+**缺点**：
+- 对稀有词 (Rare Words) 的处理效果较差
+- 语义信息不够精细
+- Softmax 计算瓶颈
+
 
 ---
 ### TF-IDF (Term Frequency-Inverse Document Frequency)
@@ -53,10 +78,17 @@ $$IDF(t, C) = log\frac{|C|}{|C_t|}$$
 - $|C_t|$: 包含词项 t 的文档数量（Document Frequency）
 ==为了避免分母为0，一般使用平滑IDF: $IDF(t, C) = log\frac{|C|+1}{|C_t|+1}$==
 
-**总结：**
-- **原理**：词频 × 逆文档频率，衡量词的重要性
-- **优点**：考虑词的重要性，降低常见词权重
-- **缺点**：仍然是稀疏表示
+**原理**：
+一个词的重要性由它在当前文档中的出现频率 (Term Frequency, TF) 和它在整个语料库中的稀有度 (Inverse Document Frequency, IDF) 共同决定
+- **TF**：一个词在本文档中出现越多，越可能重要。
+- **IDF**：一个词在所有文档中越少见，越能代表本文档的独特性，因此越重要。
+**优点**：
+- 简单、快速、无需训练
+- 解释性强 (Highly Interpretable)
+**缺点**：
+- 无法捕捉语义信息 (No Semantics)
+- 向量稀疏且维度高 (High-dimensional and Sparse)
+- 无法处理未登录词 (Out-of-Vocabulary Problem)
 
 
 ---
