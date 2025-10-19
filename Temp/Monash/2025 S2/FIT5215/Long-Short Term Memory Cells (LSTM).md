@@ -28,6 +28,22 @@ tags:
 └──────────────────────────────────────────────────────────┘
 ```
 ![[Pasted image 20251004160024.png]]
+**作者个人总结：**
+1. 先更新long-term memory，再更新short-term memory
+2. 决定原有long-term memory有多少被保留（forget gate）
+3. 决定保留的long-term memory需要更新多少（input gate）
+4. 计算新的short-term memory（output gate）
+
+对于计算百分之多少memory被保留，使用的都是同样的计算方式：
+1. 先对short-term memory和input乘权重，再把结果相加，再加bias
+2. 然后对结果使用sigmoid
+
+对于计算long-term memory和short-term memory的结果，都是同样的套路：
+1. 先计算potential long/short-term memory：先对long/short-term memory和input乘权重，再把结果相加，再加bias
+2. 然后对结果使用tanh
+3. 再把potential long/short-term memory乘`百分之多少memory被保留`
+
+
 
 **数学公式:**
 ![[Pasted image 20251001165505.png]]
@@ -47,7 +63,7 @@ h_t &= o_t \odot \tanh(c_t)\\
 	- $f_t⊙c_{t−1}$：保留的旧记忆
 	- $g_t⊙i_t$：添加的新记忆
 - $o_t$: 决定输出多少细胞状态信息
-	- - 控制有多少**长期记忆** ct 应该暴露给当前的**短期状态** ht
+	- 控制有多少**长期记忆** ct 应该暴露给当前的**短期状态** ht
 	- 防止无关信息干扰当前任务
 - $h_t$: 最终的隐藏状态：输出门控制的细胞状态
 	- $tanh⁡(c_t)$：将细胞状态压缩到 (−1,1)
