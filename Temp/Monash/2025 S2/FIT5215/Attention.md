@@ -5,8 +5,21 @@ author:
 tags:
   - FIT5215
 ---
-# Self-Attention
-## Query, Key, Value
+# 作者简笔
+关于注意力机制，从Monash FIT5215 提供的PPT教案来看是脱离实际的，建议结合网络教学资源。
+例如：[[https://www.youtube.com/watch?v=PSs6nxngL6k&list=PLJI03vBSNJqQQVt-6T4dHcy0V_R0p3gL7&index=26|# Attention for Neural Networks, Clearly Explained!!!]]
+
+![[Pasted image 20251004165159.png]]
+
+# Attention Mechanism Type
+## Global attention
+Use all input hidden states of the encoder when deriving the context $c_t$
+## Local attention
+Use a selective window of input hidden states of the encoder when deriving the context  $c_t$
+
+## Self-attention/Multiple Heads/Transformer Networks
+### Self-Attention
+#### Query, Key, Value
 ![[Pasted image 20251004172403.png]]
 **理解：**
 1. 并行先计算每一个token的Q，K，V
@@ -19,10 +32,19 @@ tags:
 - 首先需要明白[[Positional Encoding]]的概念
 
 ---
-# # Masked Self-Attention
+### Masked Self-Attention
 ![[Pasted image 20251005202445.png]]
 在计算Q和K的Cosine Similarity的时候，需要将当前目标token与未来token的Cosine Similarity设置为0
 
-# Cross-Attention
+## Cross-Attention
 **理解：**
 与Self-Attention不同的是，Cross-Attention的Q来源于target sequence，Q和V来源于conditional Information（通常是用户输入的text information）
+
+## Pyramidal encoders
+
+## Hierarchical Attention
+
+## Soft/Hard Attention
+
+
+
