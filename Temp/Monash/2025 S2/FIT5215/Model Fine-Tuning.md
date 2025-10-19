@@ -26,17 +26,47 @@ tags:
     - 关键点：使用一个**非常小的学习率 (low learning rate)**
     - **原因**：预训练模型的权重已经非常好了，你不想在训练中用一个大的学习率彻底“摧毁”这些宝贵的知识。你只想在它的基础上进行**微小的、精细的调整**，让它适应你“电影评论情感”这个特定领域
     - （可选高级操作）：有时，为了进一步保护预训练知识，人们会**冻结 (freeze)** 模型的大部分底层网络，只训练最后几层和新加的“头部”
-
-# Model Fine-Tuning with Additional Components
+# parameter-efficient fine-tuning (PEFT)
+## Model Fine-Tuning with Additional Components
+==这是其他几种方法的**总称**==
 ![[Pasted image 20251019220031.png]]
 
-# Model Fine-Tuning with Prompts
+核心思想就像改装汽车引擎，但又不是重新设计整个引擎。你不会去重新改造整个引擎缸体（庞大的预训练模型），而是**添加一些小型的、全新的高性能部件**（比如涡轮增压器或新的喷油器），然后只调试这些新部件，来提升它在特定类型比赛（新任务）中的表现。
+
+在这种方法中，你**冻结 (freeze)** 原始模型的数十亿个参数，并在其中**插入 (insert)** 一些小型的、可训练的模块。然后，你只需要在你自己的任务数据上训练这些新的、轻量级的模块。
+
+### Model Fine-Tuning with Prompts
 ![[Pasted image 20251019220042.png]]
 
+**插入位置：**
+We insert low-ranked matrices to token embeddings of ViTs and then fine-tune these low-ranked matrices
 
-# Model Fine-Tuning with Adapters
+**提示微调 (Prompt Tuning)** 会在输入序列中直接添加一些特殊的、可学习的“提示”词元 (prompt tokens)。原始模型和实际的输入文本嵌入都保持冻结。模型只需要学习这些“提示”词元的最佳值，就能引导强大的预训练模型正确地执行新任务。
+
+这就像是去发现能控制一个强大精灵（预训练模型）的**“魔法咒语”**。你不需要重新训练这个精灵，你只需要学习那段特定的、能让精灵完全按你的要求去执行新任务的“魔法咒语”
+
+
+
+
+### Model Fine-Tuning with Adapters
 ![[Pasted image 20251019220225.png]]
 
+**插入位置：**
+We insert low-ranked matrices to pointwise networks of ViTs and then fine-tune these low-ranked matrices
 
-# Model Fine-Tuning with Additional LoRA
+**适配器 (Adapters)** 是非常小的神经网络层，被插入到预训练模型的**现有层之间**（例如，在 Transformer 的自注意力和前馈网络层之间）。它们通常具有“瓶颈”结构，即先将输入的维度降低，然后再恢复它。
+
+你可以把它想象成在两个说不同方言的人之间，插入了一个小巧的**“翻译插件”**。主要说话的人（原始模型层）不改变他们说话的方式；这个小小的适配器只是学习对传递的信息进行微调，使其完美适应新的语境（新任务）。我们只训练这个“翻译插件”，而不去训练说话的人
+
+
+### Model Fine-Tuning with Additional LoRA
 ![[Pasted image 20251019220235.png]]
+
+**插入位置：**
+We insert low-ranked matrices to the key, query, and value matrices of ViTs and then fine-tune these low-ranked matrices
+
+**LoRA** 基于一个巧妙的数学洞见。它假设在你微调模型时，其巨大权重矩阵的变化并不需要很复杂，它们具有很低的“内在秩”。因此，LoRA 不直接改变原始的巨大矩阵 `W`，而是为其增加一个微小的变化量 `ΔW`。这个变化量由两个**更小的、低秩的矩阵**（`A` 和 `B`）的乘积来表示。
+
+你**冻结原始的巨大矩阵 `W`**，只**训练这两个小矩阵 `A` 和 `B`**。由于 `A` 和 `B` 与 `W` 相比非常小，所以你训练的参数量只是总参数量的极小一部分。
+
+这就像调整一台复杂的机器。你不是去更换一个巨大而昂贵的齿轮 (`W`)，而是给它装上了两个**小巧而简单的“调节旋钮”** (`A` 和 `B`)。通过转动这两个旋钮，你就能实现和更换整个齿轮一样的精细控制，但成本和精力却大大降低。
