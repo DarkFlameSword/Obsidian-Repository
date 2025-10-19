@@ -61,7 +61,9 @@ tags:
 
 ---
 ## Vision Transformer （ViTs）
-[[https://arxiv.org/pdf/2010.11929/1000|An image is worth 16x16 words: Transformers for image recognition at scale]]
+![[Pasted image 20251019205138.png]]
+[Vision Transformer](https://www.youtube.com/watch?v=vJF3TBI8esQ)
+[An image is worth 16x16 words: Transformers for image recognition at scale](https://arxiv.org/pdf/2010.11929/1000)
 
 
 ## Swin Transformer
@@ -71,13 +73,21 @@ tags:
 
 ![[Pasted image 20251005210642.png]]
 - C: the capacity of model(全连接层的参数数量)
-# CNNs与Transformer对比
+# CNNs与ViTs对比
 CNNs：
+优：
+- Translation equivariance
+缺：
 - Locality Sensitive
-- Translation Invariant
 - Lack of global understanding
+- cannot capture the spatial relationship of local objects inside images
 
-Transformer：
-- Need very large dataset for training
-- Learns inductive biases
+ViTs：
+优：
 - Able to find long-term dependencies
+- Can naturally capture the global information of images
+- can find the long-term dependencies among image patches
+- ViTs are more robust to patch permutation and occlusion than CNNs
+缺：
+- Need very large dataset for training
+- ViTs 缺乏很多**归纳偏置 (Inductive Bias)**。例如，CNNs 天生就具有“局部性 (locality)”（假设相邻像素更相关）和“平移等变性 (translation equivariance)”（物体在图像中的位置不影响其特征）的先验知识。ViT 没有这些内置假设，它必须从数据中从头学习这些视觉规律。因此，当训练数据不足时，ViT 很难学习到这些基本模式，导致性能不如 CNN
