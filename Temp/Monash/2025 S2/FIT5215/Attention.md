@@ -35,7 +35,9 @@ Use a selective window of input hidden states of the encoder when deriving the c
 ==注意==
 - 首先需要明白[[Positional Encoding]]的概念
 
-## Multiple Heads Transformer
+---
+
+## Multiple Heads Attention
 ![[Pasted image 20251004173614.png]]
 **计算过程：**
 
@@ -57,10 +59,16 @@ Use a selective window of input hidden states of the encoder when deriving the c
 ![[Pasted image 20251005202445.png]]
 在计算Q和K的Cosine Similarity的时候，需要将当前目标token与未来token的Cosine Similarity设置为0
 
+---
 ## Cross-Attention
+![[Pasted image 20251019200152.png]]
+![[Pasted image 20251019195653.png]]
 **理解：**
-与Self-Attention不同的是，Cross-Attention的Q来源于target sequence，K和V来源于conditional Information（通常是用户输入的text information）
+与Self-Attention不同的是，Cross-Attention的Q来源于**当前已经生成decoder output**，K和V来源于**encoder output**，其他部分和Self-Attention一样
 
+[A Dive Into Multihead Attention, Self-Attention and Cross-Attention](https://www.youtube.com/watch?v=mmzRYGCfTzc)
+
+---
 ## Pyramidal encoders
 
 ## Hierarchical Attention

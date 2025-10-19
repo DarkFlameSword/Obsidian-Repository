@@ -30,6 +30,10 @@ tags:
 ![[Pasted image 20251004180323.png]]
 **完整Transformer结构图：**
 ![[Pasted image 20251004180447.png]]
+
+**完整Transformer结构图：**
+![[Pasted image 20251019200308.png]]
+
 **完整Transformer结构图：**
 ![[Pasted image 20251019193308.png]]
 [Transformer可视化图解](https://poloclub.github.io/transformer-explainer/)
