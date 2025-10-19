@@ -28,6 +28,35 @@ $$\frac{\partial u}{\partial x} = \frac{\partial u}{\partial v} \times \frac{\pa
 ## Multiplication
 
 ![[Pasted image 20250727164902.png]]
+
+## @ 标量乘积
+符号 @ 表示矩阵乘法，不是逐元素相乘。它是 Python 3.5+ 中用于线性代数乘法的运算符（相当于 np.matmul / torch.matmul）
+
+**举例：**
+$$\begin{bmatrix}
+1&0&2\\-1&3&1
+\end{bmatrix}\times
+\begin{bmatrix}
+3&1\\2&1\\1&0
+\end{bmatrix}=
+\begin{bmatrix}
+5&1\\4&2
+\end{bmatrix}
+$$
+
+## $\odot$ Hadamard Product
+符号 $\odot$ 表示逐元素相乘
+
+![[Pasted image 20251019145012.png]]
+
+
+## $\otimes$ 克罗内克乘积
+
+$$
+\begin{bmatrix} 1 & 2 \\ 3 & 1 \end{bmatrix} \otimes \begin{bmatrix} 0 & 3 \\ 2 & 1 \end{bmatrix} = \begin{bmatrix} 1 \cdot 0 & 1 \cdot 3 & 2 \cdot 0 & 2 \cdot 3 \\ 1 \cdot 2 & 1 \cdot 1 & 2 \cdot 2 & 2 \cdot 1 \\ 3 \cdot 0 & 3 \cdot 3 & 1 \cdot 0 & 1 \cdot 3 \\ 3 \cdot 2 & 3 \cdot 1 & 1 \cdot 2 & 1 \cdot 1 \end{bmatrix} = \begin{bmatrix} 0 & 3 & 0 & 6 \\ 2 & 1 & 4 & 2 \\ 0 & 9 & 0 & 3 \\ 6 & 3 & 2 & 1 \end{bmatrix}
+$$
+
+---
 ## Transpose
 ![[Pasted image 20250727165020.png]]
 ## p-norm/范数

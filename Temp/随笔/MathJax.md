@@ -123,6 +123,7 @@ aliases:
 | $\ddots$    | \ddots      | $\odot$      | \odot           |
 | \           | \backslash  | $\sim$       | \sim            |
 | ⊥           | \perp       | $\propto$    | \propto         |
+| $\cdot$     | \cdot       | $\otimes$    | \otimes         |
 
 # 包裹类命令
 ## 换行

@@ -5,14 +5,17 @@ author:
 tags:
   - FIT5215
 ---
-![[Pasted image 20251001171759.png]]
+![[Pasted image 20251019144225.png]]
+
+**运行过程：**
+
 **Update gate 𝑧+** 
 decides how much the unit updates its state
-$$```
+$$
 z_t = sigmoid(W_z @ [h_{t-1}, x_t] + b_z)
-```$$
-- z_t ≈ 0: 保留旧状态 h_{t-1}，忽略新信息
-- z_t ≈ 1: 接受新信息 g_t，丢弃旧状态
+$$
+- $z_t ≈ 0:$ 保留旧状态 $h_{t-1}$，忽略新信息
+- $z_t ≈ 1:$ 接受新信息 $g_t$，丢弃旧状态
 
 **Reset gate $r_t$**
 controls which parts of the state get used to compute the next target state
