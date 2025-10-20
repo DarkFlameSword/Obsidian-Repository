@@ -37,6 +37,19 @@ $$
 - `Kw,Kh`: 卷积核宽, 高
 - `Sw,Sh`: 步长核宽, 高
 -  `P`: 填充
+
+### 反卷积ConvTranspose2d
+
+$$\begin{aligned}
+&H_{out} = (H_{in} - 1) * S_h + K_h - 2P  + P_{output}\\
+&W_{out} = (W_{in} - 1) * S_w + K_w - 2P  + P_{output}
+\end{aligned}$$
+- `Wi,Hi`: 输入图像尺寸
+- `Wo,Ho`: 输出图像尺寸
+- `Kw,Kh`: 卷积核宽, 高
+- `Sw,Sh`: 步长核宽, 高
+-  `P`: 填充
+- $P_{output}$: 用于解决输出尺寸歧义的附加填充
 ## Activation Layer
 ==作用:==
 Introduce Non-linearity
