@@ -12,6 +12,13 @@ tags:
 3. Compute performance on Test Data
 
 # Evaluation Metrix
+
+|     | T   | F   |
+| --- | --- | --- |
+| P   | TP  | FP  |
+| N   | TN  | FN  |
+
+
 混淆矩阵中的四个量
 - TP（True Positive）：实际为正，预测为正
 - FP（False Positive）：实际为负，预测为正
