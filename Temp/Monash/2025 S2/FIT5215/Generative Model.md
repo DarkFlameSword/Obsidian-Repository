@@ -71,11 +71,13 @@ GAN 是一种强大的**生成模型**，旨在创建全新的、与真实数据
 
 **GAN的训练公式：**
 $$Min_G\;Max_D\;J(G,D) = E_{x\sim P_{data}(x)}[logD(x)]+E_{z\sim P_z}[log(1-D(G(z))]$$
+- 理想情况是$[logD(x)]$和$[log(1-D(G(z))]$都最大
 - Training 𝐷 is to maximize the probability of detecting correct labels
-- Training 𝐺 is to minimize or fool the discriminator 𝐷, i.e., minimize $1-D(G(z))$ to 0, which means maximise D(G(z)) to 1
+- Training 𝐺 is to minimize or fool the discriminator 𝐷, i.e., maximise $1-D(G(z))$ to 1, which means minimize G(z) to 0
 
 **Generator的训练公式：**
 $$Min_\theta \;E_{z\sim P_z} [log(1-D_\theta(G(z))]$$
+- 理想情况是$[log(1-D(G(z))]$最大
 - Gradient descent to train the generator $D_\theta$
 
 **Discriminator的训练公式：**

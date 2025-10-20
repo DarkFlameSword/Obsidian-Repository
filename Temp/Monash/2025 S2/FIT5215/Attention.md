@@ -64,7 +64,7 @@ Use a selective window of input hidden states of the encoder when deriving the c
 ![[Pasted image 20251019200152.png]]
 ![[Pasted image 20251019195653.png]]
 **理解：**
-与Self-Attention不同的是，Cross-Attention的Q来源于**当前已经生成decoder output**，K和V来源于**encoder output**，其他部分和Self-Attention一样
+与Self-Attention不同的是，Cross-Attention的Q来源于**target sentence**，K和V来源于**encoder output**，其他部分和Self-Attention一样
 
 [A Dive Into Multihead Attention, Self-Attention and Cross-Attention](https://www.youtube.com/watch?v=mmzRYGCfTzc)
 
