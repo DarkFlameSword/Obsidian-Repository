@@ -22,9 +22,11 @@ jupyter nbconvert --to html YOUR_DOCUMENT_PATH.ipynb
 # 报错解决方案
 如果出现下面的报错
 ```
-**File "/usr/local/lib/python3.12/dist-packages/nbconvert/filters/widgetsdatatypefilter.py", line 58, in __call__ metadata["widgets"][WIDGET_STATE_MIMETYPE]["state"] ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-^^^^^^^^^ 
-KeyError: 'state'**.
+File "/usr/local/share/jupyter/nbconvert/templates/lab/base.html.j2", line 131, in block 'data_priority' {{ super() }} 
+^^^^^^^^^^^^^^ 
+File "/usr/local/share/jupyter/nbconvert/templates/base/display_priority.j2", line 7, in block 'data_priority' {%- for type in output.data | filter_data_type -%} ^^^^^^^^^^^^^^^^^^^^^^^^^ 
+File "/usr/local/lib/python3.12/dist-packages/nbconvert/filters/widgetsdatatypefilter.py", line 58, in __call__ metadata["widgets"][WIDGET_STATE_MIMETYPE]["state"] ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^ 
+KeyError: 'state'
 ```
 
 1. 用notepad打开原始 .ipynb file
