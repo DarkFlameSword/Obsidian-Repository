@@ -293,6 +293,17 @@ print(f"输入形状: {x.shape}")
 print(f"输出形状: {output.shape}")  # (32, 64, 112, 112)
 ```
 
+### 输出shape计算
+$$
+W_o = {floor}(\lfloor \frac{W_i - K_w + 2P}{S_w} \rfloor) + 1 \;\;\;\;\;\;\; H_o = floor(\lfloor \frac{H_i - K_h + 2P}{S_h} \rfloor) + 1
+$$
+- `Wi,Hi`: 输入图像尺寸
+- `Wo,Ho`: 输出图像尺寸
+- `Kw,Kh`: 卷积核宽, 高
+- `Sw,Sh`: 步长核宽, 高
+-  `P`: 填充
+
+
 ---
 
 ## 9. nn.Embedding - 嵌入层

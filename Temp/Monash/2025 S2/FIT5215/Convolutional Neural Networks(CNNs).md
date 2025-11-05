@@ -38,7 +38,7 @@ $$
 - `Sw,Sh`: 步长核宽, 高
 -  `P`: 填充
 
-### 反卷积ConvTranspose2d
+### ConvTranspose2d
 
 $$\begin{aligned}
 &H_{out} = (H_{in} - 1) * S_h + K_h - 2P  + P_{output}\\
