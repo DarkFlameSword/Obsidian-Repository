@@ -70,22 +70,23 @@ GAN 是一种强大的**生成模型**，旨在创建全新的、与真实数据
 - 生成器努力学习如何“欺骗”判别器。 随着训练的进行，双方的能力都不断提升，最终生成器会变得非常出色，能够生成高度逼真的数据
 
 **GAN的训练公式：**
-$$Min_G\;Max_D\;J(G,D) = E_{x\sim P_{data}(x)}[logD(x)]+E_{z\sim P_z}[log(1-D(G(z))]$$
+$$Min_G\;Max_D\;J(G,D) = E_{x\sim P_{discriminator}}[logD(x)]+E_{z\sim P_{generator}}[log(1-D(G(z))]$$
 - 理想情况是$[logD(x)]$和$[log(1-D(G(z))]$都最大
 - Training 𝐷 is to maximize the probability of detecting correct labels
 - Training 𝐺 is to minimize or fool the discriminator 𝐷, i.e., maximise $1-D(G(z))$ to 1, which means minimize G(z) to 0
 
 **Generator的训练公式：**
-$$Min_\theta \;E_{z\sim P_z} [log(1-D_\theta(G(z))]$$
-- 理想情况是$[log(1-D(G(z))]$最大
+$$Min_\theta \;E_{z\sim P_{generator}} [log(1-D(G(z))]$$
 - Gradient descent to train the generator $D_\theta$
+**化简后：**
+$$p_g=p_d$$
 
 **Discriminator的训练公式：**
-$$Max_\theta\;E_{x\sim P_{data}(x)}[logD_\theta(x)]+E_{z\sim P_z}[log(1-D_\theta(G(z))]$$
+$$Max_\theta\;E_{x\sim P_{discriminator}}[logD(x)]+E_{z\sim P_{generator}}[log(1-D(G(z))]$$
 - Gradient ascent to train discriminator $D_\theta$
+**化简后：**
+$$D^*(x) = \frac{P_{discriminator}(x)}{P_{discriminator}(x)+P_{generator}(x)}$$
 
-**optimal discriminator的训练公式：**
-$$D^*(x) = \frac{P_{dataset}(x)}{P_{dataset}(x)+P_{generat}(x)}$$
 
 **Perseudocode**
 ```
