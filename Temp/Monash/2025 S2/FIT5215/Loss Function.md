@@ -33,13 +33,12 @@ log: 对数函数。对数的底 (base) 决定了熵的单位:
 个人理解: 计算预测结果与真实结果之间的差距, CE越大预测结果越离谱; CE越接近0, 则说明该事件越接近真实概率
 $$\text{CE} = -\sum_{i=1}^n  p_i \log(q_i)$$
 ### **Binary Classification Cross-Entropy Loss**
-$$𝐶𝐸(1_𝑦, 𝑝(𝑥))$$
 - One-hot标签的分类任务标准式子
 $$
 \text{BCE} = -\sum_{i=1}^n \Big[ p_i \log(q_i) + (1 - p_i)\log(1 - q_i) \Big]
 $$
 化简之后：
-$$\text{BCE} = -\sum_{i=1}^n log(q_i)$$
+$$\text{BCE} =(1_𝑦, 𝑝(𝑥))= -\sum_{i=1}^n log(q_i)$$
 - $p_i$: 真实标签，只能是 **0 或 1**
 - $q_i$: 模型预测的概率，通常是经过 `Sigmoid` 函数输出的，值在 (0, 1) 之间，表示样本为类别 1 的概率
 - $n$: 样本的数量
