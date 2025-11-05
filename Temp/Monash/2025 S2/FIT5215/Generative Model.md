@@ -286,8 +286,14 @@ $$x_t= \sqrt{\alpha_t}\times x_{0}+\sqrt{1-\alpha_t\epsilon_{0}}$$
 
 ---
 #### 2. 反向过程 (Reverse Process)：去噪
+去噪数学公式：
+$$min_{\theta,\phi} E_{x\sim P} \big[\;E_{x'\sim N(x,\eta I)} [d(x, g_\phi(f_\theta(x')))]\;\big]$$
+- $x\sim P$：真实图像P的数据分布$x$
+- x′∼N(x,ηI)：添加高斯噪声后的图像$N(x,ηI)$的数据分布$x'$
+- $f_\theta()$：encoder
+- $g_\phi()$：decoder
+- $d(x,g_\phi(f_\theta(x′)))$：去噪后图像与原始图像的数据点$x$的距离
 
-这是**模型真正需要学习**的部分，也是整个魔法发生的地方
 
 - **目标**：从一个纯噪声图像 $x_T$ 开始，通过 `T` 个步骤，逐步地将其恢复成一张清晰的图片 $x_0$
 - **模型**：我们使用一个深度神经网络（通常是 U-Net 架构）来执行这个任务
