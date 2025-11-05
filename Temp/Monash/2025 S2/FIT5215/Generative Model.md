@@ -292,7 +292,7 @@ $$min_{\theta,\phi} E_{x\sim P} \big[\;E_{x'\sim N(x,\eta I)} [d(x, g_\phi(f_\th
 - x′∼N(x,ηI)：添加高斯噪声后的图像$N(x,ηI)$的数据分布$x'$
 - $f_\theta()$：encoder
 - $g_\phi()$：decoder
-- $d(x,g_\phi(f_\theta(x′)))$：去噪后图像与原始图像的数据点$x$的距离
+- $d(x,g_\phi(f_\theta(x′)))$：去噪后图像与原始图像的距离
 
 
 - **目标**：从一个纯噪声图像 $x_T$ 开始，通过 `T` 个步骤，逐步地将其恢复成一张清晰的图片 $x_0$
