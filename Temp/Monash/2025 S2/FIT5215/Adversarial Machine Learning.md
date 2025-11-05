@@ -56,20 +56,21 @@ x_adv = generate_adversarial(substitute_model, x)
 ---
 ## 目标攻击 
 ```
-# 非目标攻击（Untargeted）：
-# 只要让模型预测错误即可
-# 目标：max L(model(x_adv), y_true)
+# 目标攻击（Targeted）：
+# 让模型预测为特定的错误类别
+# 例如：把"熊猫"预测为"长臂猿"
+# 目标：min L(model(x_adv), y_target)
 ```
 
 ---
 ## 非目标攻击
 ![[Pasted image 20251001101301.png]]
 ```
-# 目标攻击（Targeted）：
-# 让模型预测为特定的错误类别
-# 例如：把"熊猫"预测为"长臂猿"
-# 目标：min L(model(x_adv), y_target)
+# 非目标攻击（Untargeted）：
+# 只要让模型预测错误即可
+# 目标：max L(model(x_adv), y_true)
 ```
+
 
 ---
 # 经典攻击模型
