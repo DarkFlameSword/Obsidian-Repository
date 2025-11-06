@@ -303,6 +303,10 @@ $$
 - `Sw,Sh`: 步长核宽, 高
 -  `P`: 填充
 
+| padding   | 规则      |
+| --------- | ------- |
+| `'valid'` | ✅ 向下取整  |
+| `'same'`  | ⚠️ 向上取整 |
 
 ---
 
@@ -561,3 +565,4 @@ print(f"输出形状: {output.shape}")  # (32, 50, 10000)
 | RNN | 序列处理 | (seq_len, N, input_size) | (seq_len, N, hidden_size) |
 | LSTM | 序列处理 | (seq_len, N, input_size) | (seq_len, N, hidden_size) |
 | GRU | 序列处理 | (seq_len, N, input_size) | (seq_len, N, hidden_size) |
+

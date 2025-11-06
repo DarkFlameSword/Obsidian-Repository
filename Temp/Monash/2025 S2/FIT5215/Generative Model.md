@@ -70,7 +70,7 @@ GAN 是一种强大的**生成模型**，旨在创建全新的、与真实数据
 - 生成器努力学习如何“欺骗”判别器。 随着训练的进行，双方的能力都不断提升，最终生成器会变得非常出色，能够生成高度逼真的数据
 
 **GAN的训练公式：**
-$$Min_G\;Max_D\;J(G,D) = E_{x\sim P_{discriminator}}[logD(x)]+E_{z\sim P_{generator}}[log(1-D(G(z))]$$
+$$Min_G\;Max_D\;J(G,D) = E_{x\sim P_{d}(x)}[logD(x)]+E_{z\sim P_z}[log(1-D(G(z))]$$
 - Training 𝐷 is to maximize the probability of detecting correct labels
 - Training 𝐺 is to minimize or fool the discriminator 𝐷, i.e., minimize $1-D(G(z))$ to 0, which means maximize G(z) to 1
 
