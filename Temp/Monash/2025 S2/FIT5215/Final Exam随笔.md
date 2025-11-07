@@ -44,6 +44,16 @@ print(f"输入形状: {x.shape}")
 print(f"输出形状: {output.shape}")  # (4, 64, 224, 224)
 ```
 
+### 输出shape计算
+$$
+W_o = {floor}(\lfloor \frac{W_i - K_w + 2P}{S_w} \rfloor) + 1 \;\;\;\;\;\;\; H_o = floor(\lfloor \frac{H_i - K_h + 2P}{S_h} \rfloor) + 1
+$$
+- `Wi,Hi`: 输入图像尺寸
+- `Wo,Ho`: 输出图像尺寸
+- `Kw,Kh`: 卷积核宽, 高
+- `Sw,Sh`: 步长核宽, 高
+-  `P`: 填充
+
 ---
 
 ## 2. nn.Conv2dTranspose - 转置卷积层（反卷积）
@@ -81,6 +91,21 @@ output = deconv(x)
 print(f"输入形状: {x.shape}")
 print(f"输出形状: {output.shape}")  # (4, 3, 112, 112)
 ```
+
+### 输出shape计算
+$$\begin{aligned}
+&H_{out} = (H_{in} - 1) * S_h + K_h - 2P  + P_{output}\\
+&W_{out} = (W_{in} - 1) * S_w + K_w - 2P  + P_{output}
+\end{aligned}$$
+- `Wi,Hi`: 输入图像尺寸
+- `Wo,Ho`: 输出图像尺寸
+- `Kw,Kh`: 卷积核宽, 高
+- `Sw,Sh`: 步长核宽, 高
+-  `P`: 填充
+- $P_{output}$: 用于解决输出尺寸歧义的附加填充
+
+只有 **TensorFlow/Keras** 的 `Conv2DTranspose` 支持 `padding='same'`
+$$H_{out}=H_{in}\times stride$$
 
 ---
 

@@ -15,6 +15,18 @@ tags:
 
 模型的训练目标是让**重建后的输出**与**原始的输入**尽可能地相似。在这个过程中，编码器被迫学习如何提取数据中最重要的特征，以便解码器能够成功重建。
 
+**优化公式：**
+$$min_{\theta,\phi} E_{x\sim P} \;d(x, g_\phi(f_\theta(x)))$$
+- $θ$: 编码器 $f_θ$ 的参数
+- $ϕ$: 解码器 $g_ϕ$ 的参数
+- $x$: 原始输入数据
+- $P$: 数据分布
+- $fθ(x)$: 编码器：将数据映射到**latent space**
+- $gϕ(fθ(x))$: 解码器将潜在表示重构回原始空间
+- $d(x,gϕ(fθ(x)))$: 重构误差距离函数
+- $Ex∼P[⋅]$: 在整个数据分布上的期望
+- $minθ,ϕ$: 同时优化两个参数集
+
 **Perseudocode**
 ```
 # 1. 定义模型结构
@@ -57,6 +69,29 @@ for epoch in range(num_epochs):
 ```
 
 ---
+# Sparse Auto-Encoder
+**核心思想**：
+在自编码器的基础上，对隐藏层（Hidden Layer）的神经元施加**稀疏性约束（Sparsity Constraint）**，迫使网络在任何给定时刻只有少量的神经元处于“激活”状态，而大多数神经元处于“抑制”（非激活）状态
+
+**优化公式：**
+$$min_{\theta,\phi} E_{x\sim P} \;[d(x, g_\phi(f_\theta(x)))]+ \lambda \Omega(z)$$
+- **$x$**：输入数据（例如一张图片，一段文本的向量）
+- **$\theta$ 和 $\phi$**：需要学习的网络参数（权重和偏置）
+- **$f_\theta(x)$**：**编码器函数**。它将高维输入 $x$ 映射到低维（或稀疏）的隐藏层表示 $z$。即 $z = f_\theta(x)$
+- **$g_\phi(z)$**：**解码器函数**。它将隐藏层表示 $z$ 映射回原始数据空间，得到重构后的数据 $\hat{x}$
+- **$\Omega(z)$**：**正则化项（或惩罚项）**。这是对隐藏层表示 $z$（即 $f_\theta(x)$）施加的额外约束
+    - 在稀疏自编码器（SAE的上下文中，$\Omega(z)$ 就是**稀疏惩罚**（例如 L1 范数 $||z||_1$），用于迫使 $z$ 中的大部分元素为 0
+    - 在其他变体中，它可以是其他约束（例如收缩自编码器中的雅可比矩阵范数）
+- **$\lambda$**：**超参数（正则化系数）**。它控制了“重构质量”和“约束强度”之间的权衡
+    - $\lambda$ 越大，网络越重视满足约束（如更稀疏），但可能会牺牲重构的清晰度
+    - $\lambda$ 越小，网络越重视还原数据，可能导致学到的特征不够本质或包含噪声
+
+**作用：**
+- **特征解耦（Disentanglement）**：稀疏性有助于学习到更加独立、含义更明确的特征。例如在人脸识别中，一个神经元可能专门负责识别“眼镜”，另一个专门负责“胡子”，而不是纠缠在一起
+- **抗噪能力**：稀疏表示通常比稠密表示对噪声具有更强的鲁棒性
+- **更高效的表示**：在高维空间中，稀疏表示往往能更高效地捕捉数据的内在结构
+
+---
 # GAN (Generative Adversarial Network)
 **核心思想**：
 GAN 是一种强大的**生成模型**，旨在创建全新的、与真实数据难以区分的数据（如逼真的名人照片、画作等）。它的灵感来源于一场“伪造者”与“鉴定师”之间的博弈。它也由两个主要部分组成，但它们是相互竞争的：
@@ -71,20 +106,31 @@ GAN 是一种强大的**生成模型**，旨在创建全新的、与真实数据
 
 **GAN的训练公式：**
 $$Min_G\;Max_D\;J(G,D) = E_{x\sim P_{d}(x)}[logD(x)]+E_{z\sim P_z}[log(1-D(G(z))]$$
-- Training 𝐷 is to maximize the probability of detecting correct labels
-- Training 𝐺 is to minimize or fool the discriminator 𝐷, i.e., minimize $1-D(G(z))$ to 0, which means maximize G(z) to 1
+
+- $Ex∼P_d(x)$: 从真实数据分布 $P_d$ 中采样
+- $x$: 真实数据（如真实图像）
+- $D(x)$: 判别器输出（0-1 的概率）
+- $logD(x)$: 判别器认为 x 是真实的概率的对数
+- $Ez∼Pz$: 从噪声分布（如高斯分布）中采样
+- $z$: 随机噪声向量
+- $G(z)$: 生成器生成的假数据
+- $D(G(z))$: 判别器认为生成数据是真实的概率
+- $log(1−D(G(z)))$: 判别器认为生成数据是假数据的概率的对数
+
 
 **Generator的训练公式：**
-$$Min_\theta \;E_{z\sim P_{generator}} [log(1-D(G(z))]$$
+$$Min_\theta \;E_{z\sim P_{z}} [log(1-D(G(z))]$$
 - Gradient descent to train the generator $D_\theta$
-**化简后：**
-$$p_g=p_d$$
+
+**Optimal generator：**
+![[PixPin_2025-11-06_19-07-32 1.png]]
 
 **Discriminator的训练公式：**
-$$Max_\theta\;E_{x\sim P_{discriminator}}[logD(x)]+E_{z\sim P_{generator}}[log(1-D(G(z))]$$
+$$Max_\theta\;E_{x\sim P_{d}}[logD(x)]+E_{z\sim P_{z}}[log(1-D(G(z))]$$
 - Gradient ascent to train discriminator $D_\theta$
-**化简后：**
-$$D^*(x) = \frac{P_{discriminator}(x)}{P_{discriminator}(x)+P_{generator}(x)}$$
+
+**optimal discriminator：**
+![[PixPin_2025-11-06_19-08-26.png]]
 
 
 **Perseudocode**
@@ -159,20 +205,20 @@ The solution of the minimax problem $Min_G\;Max_D\;J(G,D)$
 Nash equilibrium point $(D^*,G^*)$ which satisfies
 $$\begin{aligned}
 &P_{g^*}=P_d\\
-&D^*(x) = \frac{P_{dataset}(x)}{P_{dataset}(x)+P_{generat}(x)}=0.5
+&D^*(x) = \frac{P_{d}(x)}{P_{d}(x)+P_{g^*}(x)}=0.5
 \end{aligned}$$
+- $p_d$: 真实数据的概率分布
+- $P_{g^*}$: 最优生成器生成数据的概率分布
+- $p_d(x)$: 数据 x 来自真实分布的概率
+- $P_{d}(x)+P_{g^*}(x)$: 数据 x 来自任意来源的总概率
 
 ## Issues with GAN
-### Mode collapsing problem
-**What is a "mode"?** In a dataset, a **"mode"** refers to a distinct cluster or type of data. For example, in the MNIST dataset of handwritten digits, the digits '0', '1', '2', etc., are all different modes. In a dataset of animal faces, "cats", "dogs", and "birds" would be different modes.
+- Mode collapsing problem
+	**What is a "mode"?** In a dataset, a **"mode"** refers to a distinct cluster or type of data. For example, in the MNIST dataset of handwritten digits, the digits '0', '1', '2', etc., are all different modes. In a dataset of animal faces, "cats", "dogs", and "birds" would be different modes.
 
-**What is "Mode Collapse"?** Mode collapse happens when the **Generator gets lazy**. Instead of learning to create the full diversity of the real data (e.g., all 10 digits), it finds one or a few modes that are particularly easy to generate and are effective at fooling the Discriminator. The Generator then "collapses" on these few modes and produces very little variety in its output.
-
-### Convergence is hard due to minimax formulation
-
-
-### unrealistic generated images for complex datasets
-
+	**What is "Mode Collapse"?** Mode collapse happens when the **Generator gets lazy**. Instead of learning to create the full diversity of the real data (e.g., all 10 digits), it finds one or a few modes that are particularly easy to generate and are effective at fooling the Discriminator. The Generator then "collapses" on these few modes and produces very little variety in its output.
+- Convergence is hard due to minimax formulation
+- unrealistic generated images for complex datasets
 
 ---
 # VAN (Variational Auto-Encoder)
