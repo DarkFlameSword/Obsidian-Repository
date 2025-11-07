@@ -573,21 +573,5 @@ print(f"输出形状: {output.shape}")  # (32, 50, 10000)
 ```
 
 ---
-
-## 快速对比表
-
-| 模块 | 用途 | 输入维度 | 输出维度 |
-|-----|------|---------|---------|
-| Conv2d | 图像卷积 | (N, C_in, H, W) | (N, C_out, H', W') |
-| ConvTranspose2d | 图像上采样 | (N, C_in, H, W) | (N, C_out, H', W') |
-| Linear | 线性变换 | (N, in_features) | (N, out_features) |
-| Flatten | 展平 | 任意维度 | (N, -1) |
-| Unflatten | 反展平 | (N, -1) | 指定形状 |
-| BatchNorm2d | 批量归一化 | (N, C, H, W) | (N, C, H, W) |
-| MaxPool2d | 最大池化 | (N, C, H, W) | (N, C, H', W') |
-| AdaptiveAvgPool2d | 自适应平均池化 | (N, C, H, W) | (N, C, output_h, output_w) |
-| Embedding | 词嵌入 | (N, seq_len) | (N, seq_len, embedding_dim) |
-| RNN | 序列处理 | (seq_len, N, input_size) | (seq_len, N, hidden_size) |
-| LSTM | 序列处理 | (seq_len, N, input_size) | (seq_len, N, hidden_size) |
-| GRU | 序列处理 | (seq_len, N, input_size) | (seq_len, N, hidden_size) |
-
+# 错题回顾
+![[Pasted image 20251107222548.png]]![[Pasted image 20251107223058.png]]
