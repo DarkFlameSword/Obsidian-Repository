@@ -7,6 +7,7 @@ tags:
 aliases:
   - summary
 ---
+![[Pasted image 20251108155732.png]]
 # Stochastic Gradient Descent(SGD)
 
 **核心思想:**

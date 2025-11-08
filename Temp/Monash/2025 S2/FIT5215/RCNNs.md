@@ -7,6 +7,11 @@ tags:
 aliases:
   - summary
 ---
+
+![[Pasted image 20251108205456.png]]
+$ℎ_t$ can be considered as a kind of **lossy summary** of the history $𝑥_{1:t}$
+
+![[Pasted image 20251108205607.png]]
 # Gradient Decent
 $$\hat{y} = \sigma(w^T x + b), \quad \sigma(z) = \frac{1}{1 + e^{-z}}$$
 - $\sigma(z)$: 使用`Sigmoid`对$z$激活

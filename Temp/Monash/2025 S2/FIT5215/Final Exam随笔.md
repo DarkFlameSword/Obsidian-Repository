@@ -53,6 +53,9 @@ $$
 - `Kw,Kh`: 卷积核宽, 高
 - `Sw,Sh`: 步长核宽, 高
 -  `P`: 填充
+只有 **TensorFlow/Keras** 的 `Conv2D` 支持 `padding='same'`
+$$H_{out}=\frac{H_{in}}{stride}$$
+
 
 ---
 
@@ -492,86 +495,50 @@ print(f"隐藏状态形状: {hidden.shape}")  # (2, 32, 128)
 
 ---
 
-## 完整网络示例
-
-### CNN + 全连接层
-```python
-import torch
-import torch.nn as nn
-
-class SimpleCNN(nn.Module):
-    def __init__(self):
-        super(SimpleCNN, self).__init__()
-        # 卷积块1
-        self.conv1 = nn.Conv2d(3, 64, kernel_size=3, padding=1)
-        self.bn1 = nn.BatchNorm2d(64)
-        self.pool1 = nn.MaxPool2d(kernel_size=2, stride=2)
-        
-        # 卷积块2
-        self.conv2 = nn.Conv2d(64, 128, kernel_size=3, padding=1)
-        self.bn2 = nn.BatchNorm2d(128)
-        self.pool2 = nn.MaxPool2d(kernel_size=2, stride=2)
-        
-        # 自适应平均池化
-        self.adaptive_avg = nn.AdaptiveAvgPool2d((1, 1))
-        
-        # 展平
-        self.flatten = nn.Flatten()
-        
-        # 全连接层
-        self.fc = nn.Linear(128, 10)
-    
-    def forward(self, x):
-        # (N, 3, 224, 224)
-        x = self.conv1(x)  # (N, 64, 224, 224)
-        x = self.bn1(x)
-        x = torch.relu(x)
-        x = self.pool1(x)  # (N, 64, 112, 112)
-        
-        x = self.conv2(x)  # (N, 128, 112, 112)
-        x = self.bn2(x)
-        x = torch.relu(x)
-        x = self.pool2(x)  # (N, 128, 56, 56)
-        
-        x = self.adaptive_avg(x)  # (N, 128, 1, 1)
-        x = self.flatten(x)  # (N, 128)
-        x = self.fc(x)  # (N, 10)
-        return x
-
-# 使用示例
-model = SimpleCNN()
-x = torch.randn(32, 3, 224, 224)
-output = model(x)
-print(f"输出形状: {output.shape}")  # (32, 10)
-```
-
-### 序列到序列模型（Seq2Seq）
-```python
-import torch
-import torch.nn as nn
-
-class Seq2SeqModel(nn.Module):
-    def __init__(self, vocab_size, embedding_dim, hidden_size):
-        super(Seq2SeqModel, self).__init__()
-        self.embedding = nn.Embedding(vocab_size, embedding_dim, padding_idx=0)
-        self.lstm = nn.LSTM(embedding_dim, hidden_size, num_layers=2, 
-                           batch_first=True, bidirectional=False)
-        self.fc = nn.Linear(hidden_size, vocab_size)
-    
-    def forward(self, x):
-        # x: (batch_size, sequence_length)
-        x = self.embedding(x)  # (batch_size, sequence_length, embedding_dim)
-        output, (hidden, cell) = self.lstm(x)  # (batch_size, seq_len, hidden_size)
-        output = self.fc(output)  # (batch_size, seq_len, vocab_size)
-        return output
-
-# 使用示例
-model = Seq2SeqModel(vocab_size=10000, embedding_dim=256, hidden_size=128)
-x = torch.randint(0, 10000, (32, 50))  # (32, 50)
-output = model(x)
-print(f"输出形状: {output.shape}")  # (32, 50, 10000)
-```
+## 13. torch.squeeze
+squeeze(input: Tensor, dim: Optional)
+- **input** – the input tensor.
+- **dim** – if given, the input will be squeezed only in the specified dimensions.
 
 ---
 # 错题回顾
 ![[Pasted image 20251107222548.png]]![[Pasted image 20251107223058.png]]
+![[Pasted image 20251108144250.png]]
+![[Pasted image 20251108144410.png]]
+![[Pasted image 20251108144453.png]]
+![[Pasted image 20251108150642.png]]
+![[Pasted image 20251108151626.png]]
+![[Pasted image 20251108152616.png]]
+![[Pasted image 20251108152704.png]]
+![[Pasted image 20251108160349.png]]
+![[Pasted image 20251108165059.png]]
+![[Pasted image 20251108165536.png]]
+![[Pasted image 20251108165731.png]]
+![[9AB91B7133868A56BC1AF90EAEBC8C7E.png]]
+![[Pasted image 20251108222742.png]]
+![[Pasted image 20251108223210.png]]
+![[Pasted image 20251108223655.png]]
+![[Pasted image 20251108233234.png]]
+![[Pasted image 20251108233416.png]]
+![[Pasted image 20251108233820.png]]
+![[Pasted image 20251108234145.png]]
+
+
+
+# 大题预测
+## 给出计算图，让求各个参数对h的偏导，考察chain rule得到应用
+![[Pasted image 20251108155233.png]]
+
+## 多维向量求导
+![[Pasted image 20251108152105.png]]
+
+## 序列模型求值
+![[Pasted image 20251108215705.png]]
+
+## TF-IDF
+![[Pasted image 20251108225519.png]]
+## Skip-gram
+![[Pasted image 20251108231147.png]]
+## CBOW
+![[Pasted image 20251108231202.png]]
+## 
