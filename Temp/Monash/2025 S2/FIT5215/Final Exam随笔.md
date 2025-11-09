@@ -524,6 +524,15 @@ squeeze(input: Tensor, dim: Optional)
 ![[Pasted image 20251108234145.png]]
 ![[Pasted image 20251108234251.png]]
 ![[Pasted image 20251108234604.png]]
+![[Pasted image 20251109122829.png]]
+![[Pasted image 20251109125427.png]]
+![[Pasted image 20251109132820.png]]
+![[Pasted image 20251109133630.png]]
+![[Pasted image 20251109133810.png]]
+![[Pasted image 20251109133903.png]]
+![[Pasted image 20251109133938.png]]
+![[Pasted image 20251109134000.png]]
+![[Pasted image 20251109134016.png]]
 
 
 # 大题预测
@@ -542,4 +551,10 @@ squeeze(input: Tensor, dim: Optional)
 ![[Pasted image 20251108231147.png]]
 ## CBOW
 ![[Pasted image 20251108231202.png]]
-## 
+## Global Attention 计算
+![[Pasted image 20251109123426.png]]
+## Local Attention 计算
+![[Pasted image 20251109123458.png]]
+## Self-Attention计算
+![[Pasted image 20251109125723.png]]
+![[Pasted image 20251109125733.png]]

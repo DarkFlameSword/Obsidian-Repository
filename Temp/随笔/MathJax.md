@@ -48,6 +48,7 @@ aliases:
 - 带括号矩阵：
 `$\begin{pmatrix} -1 & 1 & -1 \\ 1 & 1 & -1\\ -1 & 1 & 1 \\ -1 & -1 & 2\end{pmatrix}$`  → $\begin{pmatrix} -1 & 1 & -1 \\ 1 & 1 & -1\\ -1 & 1 & 1 \\ -1 & -1 & 2\end{pmatrix}$
 `$\begin{bmatrix} -1 & 1 & -1 \\ 1 & 1 & -1\\ -1 & 1 & 1 \\ -1 & -1 & 2\end{bmatrix}$` → $\begin{bmatrix} -1 & 1 & -1 \\ 1 & 1 & -1\\ -1 & 1 & 1 \\ -1 & -1 & 2\end{bmatrix}$
+-  向量：`$\mathbf{R}$` → $\mathbf{R}$
 
 ## 常用函数
 
@@ -155,3 +156,5 @@ $$ \alpha =
 \end{cases} 
 $$
 ```
+
+# 样式

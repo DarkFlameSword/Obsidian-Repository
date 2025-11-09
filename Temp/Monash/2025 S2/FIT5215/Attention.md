@@ -11,7 +11,8 @@ tags:
 
 ![[Pasted image 20251004165159.png]]
 
-# Attention Mechanism Type
+# Attention Mechanism
+Attention mechanism allows the decoding network to refer to the input.
 ## Global attention
 Use all input hidden states of the encoder when deriving the context $c_t$
 在解码器（Decoder）生成每一个词时，都要计算当前解码状态与编码器（Encoder）**所有**隐藏状态的对齐分数（attention score）
@@ -25,6 +26,7 @@ Use a selective window of input hidden states of the encoder when deriving the c
 ## Self-Attention
 #### Query, Key, Value
 ![[Pasted image 20251004172403.png]]
+![[Pasted image 20251109125808.png]]
 **理解：**
 1. 并行先计算每一个token的Q，K，V
 2. 计算目标token的Q与其他所有token的Cosine Similarity（normally use dot product）
@@ -57,7 +59,7 @@ Use a selective window of input hidden states of the encoder when deriving the c
 ---
 ## Masked Self-Attention
 ![[Pasted image 20251005202445.png]]
-在计算Q和K的Cosine Similarity的时候，需要将当前目标token与未来token的Cosine Similarity设置为0
+在计算Q和K的Attention score的时候，需要将当前目标token与未来token的值设置为0
 
 ---
 ## Cross-Attention
@@ -68,6 +70,8 @@ Use a selective window of input hidden states of the encoder when deriving the c
 
 [A Dive Into Multihead Attention, Self-Attention and Cross-Attention](https://www.youtube.com/watch?v=mmzRYGCfTzc)
 
+![[Pasted image 20251109134156.png]]
+
 ---
 ## Pyramidal encoders
 
@@ -77,3 +81,6 @@ Use a selective window of input hidden states of the encoder when deriving the c
 
 
 
+# Layer Normalization
+![[Pasted image 20251109130045.png]]
+Layer normalization (LN) is the same as batch normalization except that LN normalizes across the feature dimension
