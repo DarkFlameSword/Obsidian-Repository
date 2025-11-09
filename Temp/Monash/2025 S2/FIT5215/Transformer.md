@@ -32,7 +32,7 @@ tags:
 ![[Pasted image 20251004180447.png]]
 
 **完整Transformer结构图：**
-![[Pasted image 20251019200308.png]]
+![[Pasted image 20251109134251.png]]
 
 **完整Transformer结构图：**
 ![[Pasted image 20251019193308.png]]
@@ -60,8 +60,10 @@ tags:
 #### Context Aware Embbeding
 
 ---
-## Vision Transformer （ViTs）
-![[Pasted image 20251019205138.png]]
+## Vision Transformers （ViTs）
+![[Pasted image 20251109134826.png]]
+![[Pasted image 20251109134913.png]]
+[[Perceptron#Multi-Layer Perceptron|多层感知机MLP]]
 [Vision Transformer](https://www.youtube.com/watch?v=vJF3TBI8esQ)
 [An image is worth 16x16 words: Transformers for image recognition at scale](https://arxiv.org/pdf/2010.11929/1000)
 
