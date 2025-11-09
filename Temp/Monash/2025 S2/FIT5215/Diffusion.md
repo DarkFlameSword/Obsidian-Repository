@@ -21,7 +21,7 @@ Formulated as Markov chain with 𝑇 steps (usually large)
 
 ### How to sample $𝑥_𝑡$ from $N(x_t;\sqrt{1-\beta_t}\times x_{t-1},𝛽_𝑡 𝑰)$
 use [[Reparameterization Trick]] to get 
-$$x_t= \sqrt{1-\beta}\times x_{t-1}+\sqrt{\beta_t}\times \epsilon_{t-1}$$
+$$x_t= \sqrt{1-\beta_t}\times x_{t-1}+\sqrt{\beta_t}\times \epsilon_{t-1}$$
 ### Is there an analytical form for $𝑥_𝑡$ directly from $𝑥_0$
 ![[Pasted image 20251109154007.png]]
 ![[Pasted image 20251109154038.png]]
