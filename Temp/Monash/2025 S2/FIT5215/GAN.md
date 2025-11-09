@@ -118,7 +118,7 @@ The solution of the minimax problem $Min_G\;Max_D\;J(G,D)$
 
 Nash equilibrium point $(D^*,G^*)$ which satisfies
 $$\begin{aligned}
-&P_{g^*}=P_d\\
+&P_{g^*}=P_d \;\text{for all x}\\
 &D^*(x) = \frac{P_{d}(x)}{P_{d}(x)+P_{g^*}(x)}=0.5
 \end{aligned}$$
 - $p_d$: 真实数据的概率分布
