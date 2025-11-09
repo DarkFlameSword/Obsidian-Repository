@@ -116,7 +116,8 @@ $$Min_G\;Max_D\;J(G,D) = E_{x\sim P_{d}(x)}[logD(x)]+E_{z\sim P_z}[log(1-D(G(z))
 - $G(z)$: 生成器生成的假数据
 - $D(G(z))$: 判别器认为生成数据是真实的概率
 - $log(1−D(G(z)))$: 判别器认为生成数据是假数据的概率的对数
-
+- $D(x) = P(y=1|x)$: probability x is true data.
+- $1-D(x) = P(y=-1|x)$: probability x is fake data.
 
 **Generator的训练公式：**
 $$Min_\theta \;E_{z\sim P_{z}} [log(1-D(G(z))]$$
