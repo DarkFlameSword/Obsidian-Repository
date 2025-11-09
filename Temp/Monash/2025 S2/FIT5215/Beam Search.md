@@ -56,3 +56,9 @@ Decoder 输出概率：
 候选 1: ["我", "爱"]      (累积概率: 0.42)
 候选 2: ["喜欢", "AI"]    (累积概率: 0.075)
 ```
+
+![[Pasted image 20251109122706.png]]
+![[Pasted image 20251109122805.png]]
+# Drawback of fixed context
+- Fixed context vector 𝒄 is easily overwhelmed by long inputs or long outputs
+- At a specific timestep 𝑗, some words or items in the input sequence might possibly contribute more to the generation of next item or word in the output sequence

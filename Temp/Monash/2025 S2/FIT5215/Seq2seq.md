@@ -7,14 +7,28 @@ tags:
 ---
 # Encoder-decoder model for seq2seq
 ![[Pasted image 20251109122548.png]]
+**简单理解：**
+```
+输入序列        Encoder        上下文向量            Decoder                 输出序列
+   ↓              ↓                ↓                 ↓                       ↓
+"How are you" → [编码] →     [0.2, -0.5, ...] →   分析input和[上下文向量] →  "你好吗"
+```
+**Encoder:**
+将**输入序列**编码成固定长度的**上下文向量**（Context Vector）
+
+**Decoder:**
+根据**上下文向量**和**intput**生成**目标序列**
+
+**数学公式：**
+![[Pasted image 20251004150929.png]]We need to maximize the log-likelihood:
+$$max\left(J(\theta) = \sum_{(x,y)\in D} log{P(y|x,(\theta_e, \theta_d)})\right)$$
+![[Pasted image 20251004162538.png]]
+
 # Two strategies for trainning
+在序列生成任务中，模型需要从大量可能的序列中选择最优的输出，所以需要用到
 ## Greedy decoding
 ![[Pasted image 20251109122658.png]]
 
 ---
 ## Beam search
-![[Pasted image 20251109122706.png]]
-![[Pasted image 20251109122805.png]]
-# Drawback of fixed context
-- Fixed context vector 𝒄 is easily overwhelmed by long inputs or long outputs
-- At a specific timestep 𝑗, some words or items in the input sequence might possibly contribute more to the generation of next item or word in the output sequence
+[[Beam Search]]

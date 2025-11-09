@@ -533,6 +533,11 @@ squeeze(input: Tensor, dim: Optional)
 ![[Pasted image 20251109133938.png]]
 ![[Pasted image 20251109134000.png]]
 ![[Pasted image 20251109134016.png]]
+![[Pasted image 20251109145437.png]]
+![[Pasted image 20251109145839.png]]
+![[Pasted image 20251109150059.png]]
+![[Pasted image 20251109150324.png]]
+![[Pasted image 20251109150338.png]]
 
 
 # 大题预测
