@@ -11,7 +11,7 @@ a.
 Given a noise variable z sampled from a distribution $P_z$, the generator tries to use this noise to create fake data that are indistinguishable from real data (the original images in the dataset S)
 
 b.
-generator (G) : in this min-max gamed, G plays like a crriminal who making counterfiet money
+generator (G) : in this min-max gamed, G plays like a criminal who making counterfiet money
 criminator (D): in this min-max gamed, D plays like a policeman who trying to distinguish the counterfiet money
 
 c. 
