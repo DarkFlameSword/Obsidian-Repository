@@ -76,7 +76,7 @@ An application that utilizes the many-to-one RNN model is Sentiment Analasis. In
 # 20
 ![[Pasted image 20251110193834.png]]
 a.
-Name: Average loss function
+Name: Emperical Risk(Average Loss)
 Purpose: The purpose of this term is to minimize the error of the neural network's predictions on the training data
 
 b.
@@ -101,3 +101,4 @@ Stop training early: Stop training when performance on the validation set begins
 
 Early Stopping:
 During training, a portion of neurons are randomly dropped to force the model to learn more robust features and prevent the model from becoming overly reliant on certain specific neurons
+$min_{\theta}J(\theta)=\Omega(\theta)+\frac{1}{N}\sum^N_{i=1}CE(y_i,f(x_i;\theta))$
