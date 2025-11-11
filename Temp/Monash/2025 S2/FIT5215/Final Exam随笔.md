@@ -510,6 +510,7 @@ squeeze(input: Tensor, dim: Optional)
 ![[Pasted image 20251108151626.png]]
 ![[Pasted image 20251108152616.png]]
 ![[Pasted image 20251108152704.png]]
+![[Pasted image 20251111123640.png]]
 ![[Pasted image 20251108160349.png]]
 ![[Pasted image 20251108165059.png]]
 ![[Pasted image 20251108165536.png]]
@@ -564,3 +565,5 @@ squeeze(input: Tensor, dim: Optional)
 ## Self-Attention计算
 ![[Pasted image 20251109125723.png]]
 ![[Pasted image 20251109125733.png]]
+# ViTs shape
+![[11666a21887c7c44b0df33707f5bc082_720.png]]

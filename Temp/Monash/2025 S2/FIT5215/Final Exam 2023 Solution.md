@@ -76,16 +76,16 @@ An application that utilizes the many-to-one RNN model is Sentiment Analasis. In
 # 20
 ![[Pasted image 20251110193834.png]]
 a.
-Name: Emperical Risk(Average Loss)
+Name: Emperical Loss
 Purpose: The purpose of this term is to minimize the error of the neural network's predictions on the training data
 
 b.
-Name: The regularization term
-Purpose: To prevent overfitting by regularize extrem weights in the model parameters $\theta$
+Name: The L2 regularization term
+Purpose: To prevent overfitting by regularizing extrem weights in the model parameters $\theta$ and encouraging simple models
 
 # 21
 ![[Pasted image 20251110195226.png]]
-- **Receptive Field:** As you move deeper into the network (through successive convolution and pooling layers), each neuron "sees" a larger portion of the original input image
+- **Receptive Field:** As you move deeper into the network, each neuron "sees" a larger portion of the original input image
 - **Hierarchical Composition:** Lower layers detect simple, local patterns (like edges) because their receptive fields are small. Higher layers combine these simple patterns from previous layers across a wider spatial area, allowing them to recognize complex, global structures (like entire objects)
 
 # 23
