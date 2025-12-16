@@ -85,4 +85,8 @@ git config --global user.email "your GitHub E-mail"
 # 推送目标文件夹
 ==注意:==
 - 请逐行运行, 不要全部复制
-- 在Github上新建的空白仓库页面, **会提供guan'f完全正确的命令行**, 下列代码行需要自行替换
+- 在Github上新建的空白仓库页面, **会提供官方完全正确的命令行**
+- 如果是推送文件到私有仓库，需要先使用下面代码登录
+```
+ssh -T git@github.com
+```
