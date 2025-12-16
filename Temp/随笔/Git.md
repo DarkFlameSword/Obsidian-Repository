@@ -24,6 +24,22 @@ git branch
 
 # 场景
 ## 推送本地修改后的版本到github
+## 如果是第一次将本地文件remote到github，则需要提前配置用户信息
+### 配置用户信息（身份标识）
+Git 需要知道是谁在提交代码。这步配置会影响你提交记录中的名字和邮箱。
+
+1. 打开你的终端（Terminal / Git Bash / PowerShell）
+2. 输入以下命令（替换双引号内的内容为你自己的信息）：
+
+```
+# 设置你的用户名（可以是英文名或 GitHub ID）
+git config --global user.name "你的名字"
+
+# 设置你的邮箱（必须是你注册 GitHub 账户时使用的邮箱）
+git config --global user.email "你的邮箱@example.com"
+```
+
+> **注意：** 这里的邮箱非常重要。如果和 GitHub 账号的邮箱不一致，你的 Commits 将不会计入 GitHub 的贡献图（绿格子）中
 ### 1. 添加修改过的文件到暂存区：
 ```
 git add .
@@ -83,19 +99,3 @@ git push --force-with-lease origin main
 git fetch origin
 git reset --hard origin/main 会丢弃本地未推送的提交
 ```
-### 配置用户信息（身份标识）
-
-Git 需要知道是谁在提交代码。这步配置会影响你提交记录中的名字和邮箱。
-
-1. 打开你的终端（Terminal / Git Bash / PowerShell）
-2. 输入以下命令（替换双引号内的内容为你自己的信息）：
-
-```
-# 设置你的用户名（可以是英文名或 GitHub ID）
-git config --global user.name "你的名字"
-
-# 设置你的邮箱（必须是你注册 GitHub 账户时使用的邮箱）
-git config --global user.email "你的邮箱@example.com"
-```
-
-> **注意：** 这里的邮箱非常重要。如果和 GitHub 账号的邮箱不一致，你的 Commits 将不会计入 GitHub 的贡献图（绿格子）中
