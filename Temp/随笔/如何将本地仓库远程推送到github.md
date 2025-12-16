@@ -85,9 +85,4 @@ git config --global user.email "your GitHub E-mail"
 # 推送目标文件夹
 ==注意:==
 - 请逐行运行, 不要全部复制
-- 在Github上新建的空白仓库页面, 会提供完全正确的命令行, 下列代码行需要自行替换`YourUsername`和`RepoName`
-```
-git remote add origin git@github.com:YourUsername/RepoName.git
-git branch -M main
-git push -u origin main
-```
+- 在Github上新建的空白仓库页面, **会提供guan'f完全正确的命令行**, 下列代码行需要自行替换
