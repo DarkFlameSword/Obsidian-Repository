@@ -48,3 +48,13 @@ Filters: [output_channel = num_of_filters, input_channel = filter_depth, filter_
 ```
 Data batch: [batch_size, input_channel, input_height, input_width]
 ```
+
+
+# detach
+
+|**特性**|**x.detach()**|**with torch.no_grad():**|
+|---|---|---|
+|**作用范围**|**局部**：只针对调用它的那个 Tensor。|**全局（上下文）**：包裹在该代码块内的**所有**计算。|
+|**显存占用**|**较高**：虽然切断了联系，但之前的计算图中间状态可能还保留在内存中。|**最低**：根本不建立计算图，不保存中间激活值，大幅节省显存。|
+|**主要目的**|**截断梯度流**：用于复杂的网络设计（如 GAN、RL），只想更新部分网络。|**推理/评估 (Inference)**：验证模型或测试模型时，完全不需要反向传播。|
+|**结果属性**|返回一个新的 Tensor，`requires_grad=False`。|代码块内生成的所有 Tensor，默认 `requires_grad=False`。|
