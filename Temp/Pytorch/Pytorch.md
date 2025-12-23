@@ -60,6 +60,39 @@ Data batch: [batch_size, input_channel, input_height, input_width]
 |**主要目的**|**截断梯度流**：用于复杂的网络设计（如 GAN、RL），只想更新部分网络。|**推理/评估 (Inference)**：验证模型或测试模型时，完全不需要反向传播。|
 |**结果属性**|返回一个新的 Tensor，`requires_grad=False`。|代码块内生成的所有 Tensor，默认 `requires_grad=False`。|
 ## expand
+```
+x = torch.randn(3, 1, 5)
+x.expand(3, 4, 5)  # OK:  维度1从1扩展到4
+```
+- 只能扩展 size=1 的维度
+- 不复制数据，不分配新内存
+- 通过广播机制扩展
+- 返回视图
 
 ## repeat
+```
+x = torch.tensor([[1, 2],
+                  [3, 4]])  # shape: [2, 2]
+print("原始张量:\n", x)
+
+# 沿各维度重复（维度0重复2次，维度1重复3次）
+y = x.repeat(2, 3)
+print("\n重复后:\n", y)
+print("Shape:", y.shape)  # [4, 6]
+# 输出:
+# tensor([[1, 2, 1, 2, 1, 2],
+#         [3, 4, 3, 4, 3, 4],
+#         [1, 2, 1, 2, 1, 2],
+#         [3, 4, 3, 4, 3, 4]])
+```
+- 可以重复任意维度，
+- 实际复制数据，分配新内存
 ## squeeze
+```
+x = torch.randn(1, 3, 1, 5, 1)
+print("原始 shape:", x.shape)  # [1, 3, 1, 5, 1]
+
+y = x.squeeze()
+print("squeeze() 后:", y.shape)  # [3, 5]
+```
+- 移除所有或指定的 **size=1** 的维度
