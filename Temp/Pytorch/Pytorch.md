@@ -7,6 +7,21 @@ author:
 aliases:
   - Summary
 ---
+
+适用于 **Windows** 和 **Linux**
+1. 打开终端：
+    - **Windows**: 按 `Win + R`，输入 `cmd` 并回车。
+    - **Linux**: 打开 Terminal。
+2. 输入以下命令并回车：
+
+```
+nvidia-smi
+```
+
+3. 查看输出结果表格的右上角：
+    - 找到 **`CUDA Version: xx.x`** 这一项
+    - **这个数字就是你当前驱动所能支持的最高CUDA版本**（即你可以安装低于或等于这个版本的CUDA Toolkit）
+
 # 关于torch包下所有的操作,直接查看官方doc
 [The Official DOC](https://docs.pytorch.org/docs)
 
