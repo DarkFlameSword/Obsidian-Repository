@@ -30,7 +30,7 @@ aliases:
 
 # 下面
 
-`\underbrace{(n−2)+(n−1)}` → $\underbrace{(n−2)+(n−1)}_2$
+`\underbrace{公式}_{标注}` → $\underbrace{(n−2)+(n−1)}_2$
 ## 根号
 - `$\sqrt{x}$` → $\sqrt{x}$
 -  `$\sqrt[3]{x}$` → $\sqrt[3]{x}$
