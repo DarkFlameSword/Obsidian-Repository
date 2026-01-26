@@ -31,6 +31,11 @@ aliases:
 # 下面
 
 `\underbrace{公式}_{标注}` → $\underbrace{(n−2)+(n−1)}_2$
+
+# 后面
+- $$P(Y|do(X=x)) = \sum_{u} P(u|X=x) \sum_{x}  P(X=x)P(Y|X=x, u) \quad (1)$$
+- 
+
 ## 根号
 - `$\sqrt{x}$` → $\sqrt{x}$
 -  `$\sqrt[3]{x}$` → $\sqrt[3]{x}$
