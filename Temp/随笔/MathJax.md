@@ -129,7 +129,7 @@ aliases:
 | $\ddots$    | \ddots      | $\odot$      | \odot           |
 | \           | \backslash  | $\sim$       | \sim            |
 | ⊥           | \perp       | $\propto$    | \propto         |
-| $\cdot$     | \cdot       | $\otimes$    | \otimes         |
+|             |             | $\otimes$    | \otimes         |
 
 # 包裹类命令
 ## 换行
@@ -163,3 +163,4 @@ $$
 ```
 
 # 样式
+$\mathcal{M}$→ $M$: 数学花体
