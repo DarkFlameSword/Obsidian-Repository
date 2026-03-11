@@ -93,19 +93,29 @@ aliases:
 
 ## 希腊字母
 
-| 显示  | 语法       | 显示  | 语法     |
-| --- | -------- | --- | ------ |
-| γ   | \gamma   | δ   | \delta |
-| ϵ   | \epsilon | ζ   | \zeta  |
-| η   | \eta     | θ   | \theta |
-| ι   | \iota    | κ   | \kappa |
-| λ   | \lambda  | μ   | \mu    |
-| ν   | \nu      | ξ   | \xi    |
-| π   | \pi      | ρ   | \rho   |
-| σ   | \sigma   | τ   | \tau   |
-| υ   | \upsilon | ϕ   | \phi   |
-| χ   | \chi     | ψ   | \psi   |
-| ω   | \omega   |     |        |
+| **小写字母**   | **小写 LaTeX 语法** | **大写字母**   | **大写 LaTeX 语法（或英文替代）** | **字母读音 (参考)** |
+| ---------- | --------------- | ---------- | ---------------------- | ------------- |
+| $\gamma$   | `\gamma`        | $\Gamma$   | `\Gamma`               | Gamma         |
+| $\delta$   | `\delta`        | $\Delta$   | `\Delta`               | Delta         |
+| $\epsilon$ | `\epsilon`      | $E$        | `E`                    | Epsilon       |
+| $\zeta$    | `\zeta`         | $Z$        | `Z`                    | Zeta          |
+| $\eta$     | `\eta`          | $H$        | `H`                    | Eta           |
+| $\theta$   | `\theta`        | $\Theta$   | `\Theta`               | Theta         |
+| $\iota$    | `\iota`         | $I$        | `I`                    | Iota          |
+| $\kappa$   | `\kappa`        | $K$        | `K`                    | Kappa         |
+| $\lambda$  | `\lambda`       | $\Lambda$  | `\Lambda`              | Lambda        |
+| $\mu$      | `\mu`           | $M$        | `M`                    | Mu            |
+| $\nu$      | `\nu`           | $N$        | `N`                    | Nu            |
+| $\xi$      | `\xi`           | $\Xi$      | `\Xi`                  | Xi            |
+| $\pi$      | `\pi`           | $\Pi$      | `\Pi`                  | Pi            |
+| $\rho$     | `\rho`          | $P$        | `P`                    | Rho           |
+| $\sigma$   | `\sigma`        | $\Sigma$   | `\Sigma`               | Sigma         |
+| $\tau$     | `\tau`          | $T$        | `T`                    | Tau           |
+| $\upsilon$ | `\upsilon`      | $\Upsilon$ | `\Upsilon`             | Upsilon       |
+| $\phi$     | `\phi`          | $\Phi$     | `\Phi`                 | Phi           |
+| $\chi$     | `\chi`          | $X$        | `X`                    | Chi           |
+| $\psi$     | `\psi`          | $\Psi$     | `\Psi`                 | Psi           |
+| $\omega$   | `\omega`        | $\Omega$   | `\Omega`               | Omega         |
 
 # 常用符号
 

@@ -1,8 +1,8 @@
 {
 	"nodes":[
-		{"id":"ae1370eadf188bba","x":318,"y":5,"width":250,"height":60,"type":"text","text":"在OpenClaw里调用Claude Code的API"},
-		{"id":"c7ec9bd2d7d6bd36","x":-125,"y":-30,"width":250,"height":60,"type":"text","text":"OpenClaw负责文献批量阅读、实验数据初步分析"},
-		{"id":"1634ad6e15bdbdc2","x":-140,"y":140,"width":250,"height":60,"type":"text","text":"Claude Code负责代码编写、复杂数据分析、论文排版"}
+		{"id":"ae1370eadf188bba","type":"text","text":"在OpenClaw里调用Claude Code的API","x":318,"y":5,"width":250,"height":60},
+		{"id":"c7ec9bd2d7d6bd36","type":"text","text":"OpenClaw负责文献批量阅读、实验数据初步分析","x":-125,"y":-30,"width":250,"height":60},
+		{"id":"1634ad6e15bdbdc2","type":"text","text":"Claude Code负责代码编写、复杂数据分析、论文排版","x":-140,"y":140,"width":250,"height":60}
 	],
 	"edges":[]
 }
