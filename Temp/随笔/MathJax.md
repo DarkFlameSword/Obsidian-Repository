@@ -93,29 +93,29 @@ aliases:
 
 ## 希腊字母
 
-| **小写字母**   | **小写 LaTeX 语法** | **大写字母**   | **大写 LaTeX 语法（或英文替代）** | **字母读音 (参考)** |
-| ---------- | --------------- | ---------- | ---------------------- | ------------- |
-| $\gamma$   | `\gamma`        | $\Gamma$   | `\Gamma`               | Gamma         |
-| $\delta$   | `\delta`        | $\Delta$   | `\Delta`               | Delta         |
-| $\epsilon$ | `\epsilon`      | $E$        | `E`                    | Epsilon       |
-| $\zeta$    | `\zeta`         | $Z$        | `Z`                    | Zeta          |
-| $\eta$     | `\eta`          | $H$        | `H`                    | Eta           |
-| $\theta$   | `\theta`        | $\Theta$   | `\Theta`               | Theta         |
-| $\iota$    | `\iota`         | $I$        | `I`                    | Iota          |
-| $\kappa$   | `\kappa`        | $K$        | `K`                    | Kappa         |
-| $\lambda$  | `\lambda`       | $\Lambda$  | `\Lambda`              | Lambda        |
-| $\mu$      | `\mu`           | $M$        | `M`                    | Mu            |
-| $\nu$      | `\nu`           | $N$        | `N`                    | Nu            |
-| $\xi$      | `\xi`           | $\Xi$      | `\Xi`                  | Xi            |
-| $\pi$      | `\pi`           | $\Pi$      | `\Pi`                  | Pi            |
-| $\rho$     | `\rho`          | $P$        | `P`                    | Rho           |
-| $\sigma$   | `\sigma`        | $\Sigma$   | `\Sigma`               | Sigma         |
-| $\tau$     | `\tau`          | $T$        | `T`                    | Tau           |
-| $\upsilon$ | `\upsilon`      | $\Upsilon$ | `\Upsilon`             | Upsilon       |
-| $\phi$     | `\phi`          | $\Phi$     | `\Phi`                 | Phi           |
-| $\chi$     | `\chi`          | $X$        | `X`                    | Chi           |
-| $\psi$     | `\psi`          | $\Psi$     | `\Psi`                 | Psi           |
-| $\omega$   | `\omega`        | $\Omega$   | `\Omega`               | Omega         |
+| **小写字母**   | **小写 LaTeX 语法** | **大写字母**   | **大写 LaTeX 语法（或英文替代）** |
+| ---------- | --------------- | ---------- | ---------------------- |
+| $\gamma$   | `\gamma`        | $\Gamma$   | `\Gamma`               |
+| $\delta$   | `\delta`        | $\Delta$   | `\Delta`               |
+| $\epsilon$ | `\epsilon`      | $E$        | `E`                    |
+| $\zeta$    | `\zeta`         | $Z$        | `Z`                    |
+| $\eta$     | `\eta`          | $H$        | `H`                    |
+| $\theta$   | `\theta`        | $\Theta$   | `\Theta`               |
+| $\iota$    | `\iota`         | $I$        | `I`                    |
+| $\kappa$   | `\kappa`        | $K$        | `K`                    |
+| $\lambda$  | `\lambda`       | $\Lambda$  | `\Lambda`              |
+| $\mu$      | `\mu`           | $M$        | `M`                    |
+| $\nu$      | `\nu`           | $N$        | `N`                    |
+| $\xi$      | `\xi`           | $\Xi$      | `\Xi`                  |
+| $\pi$      | `\pi`           | $\Pi$      | `\Pi`                  |
+| $\rho$     | `\rho`          | $P$        | `P`                    |
+| $\sigma$   | `\sigma`        | $\Sigma$   | `\Sigma`               |
+| $\tau$     | `\tau`          | $T$        | `T`                    |
+| $\upsilon$ | `\upsilon`      | $\Upsilon$ | `\Upsilon`             |
+| $\phi$     | `\phi`          | $\Phi$     | `\Phi`                 |
+| $\chi$     | `\chi`          | $X$        | `X`                    |
+| $\psi$     | `\psi`          | $\Psi$     | `\Psi`                 |
+| $\omega$   | `\omega`        | $\Omega$   | `\Omega`               |
 
 # 常用符号
 
