@@ -27,8 +27,6 @@ $$\frac{\partial u}{\partial x} = \frac{\partial u}{\partial v} \times \frac{\pa
 1. 一般用变量表示的向量默认是列向量, 横向量需要使用转置符号`T`标明
 ## Multiplication
 
-![[Pasted image 20250727164902.png]]
-
 ## @ Scalar Product
 符号 @ 表示矩阵乘法，不是逐元素相乘。它是 Python 3.5+ 中用于线性代数乘法的运算符（相当于 np.matmul / torch.matmul）
 
