@@ -28,12 +28,13 @@
 
 ## ⚙️ 模型与模式
 
-|命令|说明|
-|---|---|
-|`/model sonnet`|切换到 Sonnet 模型（日常任务，性价比高）|
-|`/model opus`|切换到 Opus 模型（复杂架构、疑难 bug）|
-|`/fast`|切换快速模式（速度提升 2.5x，成本更高）|
-|`/plan`|进入规划模式，先制定方案再执行|
+| 命令              | 说明                              |
+| --------------- | ------------------------------- |
+| `/model sonnet` | 切换到 Sonnet 模型（日常任务，性价比高）        |
+| `/model opus`   | 切换到 Opus 模型（复杂架构、疑难 bug）        |
+| `/fast`         | 切换快速模式（速度提升 2.5x，成本更高）          |
+| `/plan`         | 进入规划模式，先制定方案再执行                 |
+| /model opusplan | 复杂推理时使用opus4.6，然后切换到sonnet4.6执行 |
 
 ---
 
@@ -107,3 +108,8 @@ echo "检查此代码的安全漏洞：" > ~/.claude/commands/security.md
 ---
 
 输入 `/help` 可在 Claude Code 内随时查看完整命令列表
+
+==安全隐患命令：==
+```shell
+claude --dangerously-skip-permissions
+```

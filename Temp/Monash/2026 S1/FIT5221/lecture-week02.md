@@ -11,6 +11,7 @@ $$\frac{\partial f(x,y)}{\partial x}= \lim_{\epsilon \rightarrow0}\frac{f(x+\eps
 For discrete data, we can approximate using finite differences:
 $$\frac{\partial f(x,y)}{\partial x}= \lim_{\epsilon \rightarrow0}\frac{f(x+\epsilon,y)-f(x,y)}{1}$$
 ![[Pasted image 20260311231829.png]]
+![[Pasted image 20260325151059.png]]
 
 The gradient of an image:
 $$\nabla f=[\frac{\partial f}{\partial x},\frac{\partial f}{\partial y}]$$
@@ -33,7 +34,7 @@ $$||\nabla f||=\sqrt{(\frac{\partial f}{\partial x})^2+(\frac{\partial f}{\parti
 
 在计算完梯度幅值后，真实的边缘周围通常会形成一条比较宽的“高值带”（就像宽阔的山脊），而不是锐利的一条线。为了得到精确的边缘，我们需要进行“瘦身”
 
-**操作方法**：算法会遍历图像中的每一个像素。对于当前像素，它会查看其**梯度方向**上的相邻像素。如果当前像素的梯度幅值**不是**这个方向上的局部最大值（即它比旁边的像素小），那么就将它的值抑制为 0 黑色（当作非边缘处理）
+**操作方法**：算法会遍历图像中的每一个像素。对于当前像素，它会查看其**梯度方向**上的相邻像素。如果当前像素的梯度幅值**不是**这个方向上的局部最大值（即它比旁边的像素小/黑），那么就将它的值抑制为 0 黑色（当作非边缘处理）
 ![[Pasted image 20260312161343.png]]
 
 **目的**：确保提取出的边缘是细致的、单像素宽的线条，精确定位物理边缘的中心
@@ -153,6 +154,7 @@ $\begin{bmatrix} u & v \end{bmatrix} M \begin{bmatrix} u \\ v \end{bmatrix} = \t
 
 
 ---
+
 # Feature Points
 ## Panorama Stitching全景拼接
 ![[Pasted image 20260312161849.png]]

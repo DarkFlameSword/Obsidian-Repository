@@ -1,0 +1,9 @@
+{
+	"nodes":[
+		{"id":"ab229e03521f9bd8","x":-312,"y":-151,"width":250,"height":60,"type":"text","text":"$p_{wp} = 0.2$"},
+		{"id":"80d5aa588c1a0e4b","x":-17,"y":512,"width":737,"height":548,"type":"text","text":"![[Pasted image 20260320162814.png]]"},
+		{"id":"001be35ac77697a3","x":-440,"y":-40,"width":541,"height":298,"type":"text","text":"$$A = \\begin{pmatrix} & P & U & W & L \\\\ P & 0.80 & 0 & 0.20 & 0 \\\\ U & 0.05 & 0.93 & 0.02 & 0 \\\\ W & 0.80 & 0.10 & 0 & 0.10 \\\\ L & 0 & 0.50 & 0 & 0.50 \\end{pmatrix}$$\n- **P (Paired)** \n- **U (Unpaired)**\n- **W (Worn):** washing or worn\n- **L (Lost):**"},
+		{"id":"ed1f8e6f6d85db1c","x":-300,"y":-269,"width":477,"height":296,"type":"text","text":"- $0.80\\pi_P + 0.05\\pi_U + 0.80\\pi_W = \\pi_P$\n    \n- $0.93\\pi_U + 0.10\\pi_W + 0.50\\pi_L = \\pi_U$\n    \n- $0.20\\pi_P + 0.02\\pi_U = \\pi_W$\n    \n- $0.10\\pi_W + 0.50\\pi_L = \\pi_L$\n    \n- $\\pi_P + \\pi_U + \\pi_W + \\pi_L = 1$"}
+	],
+	"edges":[]
+}
