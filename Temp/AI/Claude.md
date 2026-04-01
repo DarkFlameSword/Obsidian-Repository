@@ -1,11 +1,13 @@
 ## 🖥️ CLI 启动命令
 
-|命令|说明|
-|---|---|
-|`claude`|启动交互式会话|
-|`claude -c`|恢复最近一次会话|
-|`claude -r "名称"`|按名称恢复指定会话|
-|`claude -p "提示词"`|非交互模式，发送后直接退出（适合脚本/CI）|
+| 命令                                    | 说明                      |
+| ------------------------------------- | ----------------------- |
+| `claude`                              | 启动交互式会话                 |
+| `claude -c`                           | 恢复最近一次会话                |
+| `claude -r "名称"`                      | 按名称恢复指定会话               |
+| `claude -p "提示词"`                     | 非交互模式，发送后直接退出（适合脚本/CI）  |
+| claude --dangerously-skip-permissions | 安全隐患命令                  |
+| claude --enable-auto-mode             | 在claude自带的5层安全评估下自动处理许可 |
 
 ---
 
@@ -109,7 +111,4 @@ echo "检查此代码的安全漏洞：" > ~/.claude/commands/security.md
 
 输入 `/help` 可在 Claude Code 内随时查看完整命令列表
 
-==安全隐患命令：==
-```shell
-claude --dangerously-skip-permissions
-```
+
