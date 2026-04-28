@@ -15,7 +15,7 @@ tags:
     ```
 *   **创建新环境**（指定 Python 版本）：
     ```bash
-    conda create --name myenv python=3.9
+    conda create --name myenv python=3.13.12
     ```
 *   **激活环境**：
     ```bash
